@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <Resource name="jdbc/REG"
+              auth="Uejdis Dushi"
+              type="javax.sql.DataSource"
+              username="postgres"
+              password="admin"
+              driverClassName="org.postgresql.Driver"
+              url="jdbc:postgresql://localhost/dbREG"
+              validationQuery="select 1"
+              maxActive="10"
+              maxIdle="2"/>
+</Context>
