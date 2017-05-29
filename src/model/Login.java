@@ -3,7 +3,7 @@ package model;
 import org.apache.struts.action.ActionForm;
 
 
-public class LoginForm extends ActionForm {
+public class Login extends ActionForm {
     private String user = null;
     private String password = null;
 

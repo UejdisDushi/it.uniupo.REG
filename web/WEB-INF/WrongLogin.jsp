@@ -8,9 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>wrong</title>
+    <title>Credenziali errate</title>
 </head>
 <body>
-
+<script>
+    alert("Alcuni dati non sono corretti. Riprova.");
+    window.location='/login.jsp'
+</script>
 </body>
 </html>
