@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body{
+    font-family: "League Spartan";
+    line-height: 1.5;
+    background:transparent;
+    max-width:1000px;
+    font-size:14px;
+    margin:0 auto;
+}
+
+h2 {
+    margin:2em auto 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+header#main {
+    border-bottom: 1px solid black;
+    margin: 2.618em 0;
+    position: relative;		/*da testare*/
+}
+
+header#main nav {
+    padding-right: 1em;
+    /*padding-top: 1em;*/
+}
+
+header#main nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+header#main nav ul li {
+    display: inline-block;
+    margin: 0 0.98em;
+    padding:0;
+}
+
+header#main nav ul li a{
+    color: #333;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+h1.login {
+    font-size: 3em;
+    line-height: 1.1;
+    font-weight: normal;
+}
+
+label {
+    font-family: "League Spartan";
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 0.7rem;
+    color:black;
+    text-transform:uppercase;
+    margin:0.618em auto 1em auto;
+    display: block;
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+form.login{
+    max-width: 445.65217px;				/*larghezza form*/
+    padding: 1rem;						/*creo spazio attorno al contenuto*/
+    border: 1px solid #e8e8e8;			/*aggiungo il bordo color binacastro*/
+    border-radius: 25px;				/*arrotondo i bordi*/
+    background-clip: padding-box;		/*ritaglio lo sfondo*/
+    margin: 8em auto;					/*centro i margini*/
+    text-align: center;					/*centro il contenuto*/
+}
+
+form.login h1{
+    font-family:"League Spartan";
+    margin:1em auto;
+}
+
+form.login input {
+    margin: auto;
+}
+
+input[type=text],input[type=password]{
+    font-family:"Lucida Grande";
+    color:#5c6f56;
+    /*padding:12px 200px 12px 18px;*/
+    border:1px solid rgba(0,0,0,0.12);
+    height: 30px;
+    width: 250px;
+    display: block;
+    background:white;
+    border-radius: 15px;
+    margin: auto;
+
+}
+
+input[type="submit"]{
+    font-family:"League Spartan";
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;		/*testarlo*/
+    color:white;
+    padding:12px 18px 8px 18px;
+    margin:6px auto;	/*testarlo**/
+    background:#5c6f56;
+    border-radius: 15px;
+}
+
+.submitFarm{
+    font-family:"League Spartan";
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color:white;
+    padding:auto;
+    margin:auto;	/*testarlo**/
+    background:#5c6f56;
+    border-radius: 15px;
+    width: 25%;
+}
+
+#wrapper{
+    min-height:100%;
+    height:auto !important;
+    height:100%;
+    margin:0 auto -100px;
+}
+
+
+footer{
+    height:0; /* altezza footer */
+
+    text-align: center;
+    padding: 30px 0 0 0;
+    margin-bottom: 2.618em;
+    background-color: white;
+    color: silver;
+    font-size: 11px;
+    font-family:"Lucida Grande";
+}
