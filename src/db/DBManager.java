@@ -78,12 +78,12 @@ public class DBManager {
         if(preparedStatement.executeUpdate() > 0) {
 
 
-           // connection.prepareStatement("SELECT id_farmacia FROM farmacia where nome=?");
-           // preparedStatement.setString(1,farmacia.getNomeFarmacia());
-           // ResultSet result = preparedStatement.executeQuery();
-           // result.ge
+           connection.prepareStatement("SELECT id_farmacia FROM farmacia where nome=?");
+           preparedStatement.setString(1,farmacia.getNomeFarmacia());
+           ResultSet result = preparedStatement.executeQuery();
+           String cazzo = result.getString(1);
 
-
+            preparedStatement.getResultSet().getInt(1);
             id = preparedStatement.getResultSet().getInt("id_farmacia");
             preparedStatement = connection.prepareStatement("INSERT into personale(nome, cognome, cf, data_nascita, ruolo, id_farmacia) VALUES (?,?,?,?,?,id)");
             preparedStatement.setString(1,personale.getNome());

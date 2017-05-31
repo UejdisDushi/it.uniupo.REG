@@ -25,11 +25,11 @@
         <h1 class="login">Log In</h1>
         <p>
             <label>Username</label>
-            <input id="user" name="user" placeholder="Username" type="text">
+            <input id="user" name="user" placeholder="Username" type="text" required>
         </p>
         <p>
             <label>Password</label>
-            <input id="password" name="password" placeholder="Password" type="password">
+            <input id="password" name="password" placeholder="Password" type="password" required>
         </p>
        <p>
            <input value="Log In" type="submit">

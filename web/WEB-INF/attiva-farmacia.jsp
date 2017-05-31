@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://struts.apache.org/tags-html" prefix="html" %>
 <html>
 <head>
     <meta charset="utf-8">
@@ -9,7 +10,7 @@
 <header id="main">
     <nav>
         <ul>
-            <li><a href="/attivaFarmacia">Attiva farmacia</a></li>
+            <html:link action="/prova.do">Prova</html:link>
             <li><a href="/creaAccountIndividuale">Crea account individuale</a></li>
             <li><a href="/attivaFarmacia">Attività farmacia</a></li>
             <li><a href="/vendita">Vendita</a></li>
@@ -29,7 +30,7 @@
 <form action="/attiva-farmacia.do" method="post">
     <p>
         <label>Nome</label>
-        <input type="text" name="nome" />
+        <input type="text" name="nomeFarmacia" />
     </p>
     <p>
         <label>Indirizzo</label>
@@ -51,6 +52,29 @@
         <label>Numero di telefono</label>
         <input type="text" name="numeroTelefono" />
     </p>
+    <br>
+    <br>
+    <p>
+        <label>Nome del personale da attivare</label>
+        <input type="text" name="nomePersonale" />
+    </p>
+    <p>
+        <label>Cognome del personale da attivare</label>
+        <input type="text" name="cognomePersonale"/>
+    </p>
+    <p>
+        <label>CF del personale da attivare</label>
+        <input type="text" name="cf" pattern="^[a-zA-Z]{6}[0-9]{2}[a-zA-Z][0-9]{2}[a-zA-Z][0-9]{3}[a-zA-Z]$" required="required"/>
+    </p>
+    <p>
+        <label>Data di nascita del personale da attivare</label>
+        <input type="text" name="dataNascitaPersonale" min="2000-01-02" max="2020-12-31"/>
+    </p>
+    <p>
+        <label>Ruolo del personale da attivare</label>
+        <input type="text" name="ruoloPersonale"/>
+    </p>
+
     <input type="submit" value="Registra farmacia"/>
 </form>
 
