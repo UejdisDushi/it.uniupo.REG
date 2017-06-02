@@ -1,4 +1,8 @@
 <script>
     alert("Inserimento avenuto con successo.");
-    window.location='/WEB-INF/attiva-farmacia.jsp'
+    window.op
 </script>
+
+<%
+    request.getRequestDispatcher("attiva-farmacia.jsp").forward(request,response);
+%>

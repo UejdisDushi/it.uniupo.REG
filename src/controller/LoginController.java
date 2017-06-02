@@ -18,11 +18,21 @@ public class LoginController extends Action{
         String utente = login.getUser();
         String password = login.getPassword();
         DBManager dbManager = new DBManager();
-        if(dbManager.validate(utente,password)) {
 
-            return mapping.findForward("successLogin");
+        String ruolo = dbManager.validate(utente,password);
+
+        switch (ruolo) {
+            case "adm":
+                return mapping.findForward("home-adm");
+            case "tf":
+                return mapping.findForward("home-tf");
+            case "op":
+                return mapping.findForward("home-op");
+            case "df":
+                return mapping.findForward("home-df");
+            default:
+                return mapping.findForward("dati-errati");
         }
-        else
-            return mapping.findForward("badLogin");
+
     }
 }

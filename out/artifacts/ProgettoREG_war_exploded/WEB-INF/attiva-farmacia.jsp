@@ -60,7 +60,7 @@
     </p>
     <p>
         <label>Cognome del personale da attivare</label>
-        <input type="text" name="cognomePersonale"/>
+        <input type="text" name="cognome"/>
     </p>
     <p>
         <label>CF del personale da attivare</label>
@@ -68,11 +68,17 @@
     </p>
     <p>
         <label>Data di nascita del personale da attivare</label>
-        <input type="text" name="dataNascitaPersonale" min="2000-01-02" max="2020-12-31"/>
+        <input type="date" name="dataNascita" min="1950-01-01" max="2017-06-01"/>
+    </p>
+    <br>
+    <br>
+    <p>
+        <label>Nome login da assegnare al personale creato</label>
+        <input type="text" name="user"/>
     </p>
     <p>
-        <label>Ruolo del personale da attivare</label>
-        <input type="text" name="ruoloPersonale"/>
+    <label>Password da assegnare al personale creato</label>
+    <input type="text" name="password"/>
     </p>
 
     <input type="submit" value="Registra farmacia"/>

@@ -2,7 +2,12 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="REG@localhost" uuid="52e46335-53f1-46e2-b535-63db79b72ac6">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4.1212">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
       <introspection-schemas>REG:public</introspection-schemas>
     </data-source>
   </component>

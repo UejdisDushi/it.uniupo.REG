@@ -14,15 +14,19 @@
     <!--gestisco i controller, nel primo path non ho bisogno di specificare il tipo della pagina!-->
     <action-mappings>
         <action path="/login" type="controller.LoginController" name="login" scope="session">
-            <forward name="badLogin" path="/WEB-INF/WrongLogin.jsp"></forward>
-            <forward name="successLogin" path="/WEB-INF/attiva-farmacia.jsp" ></forward>
+            <forward name="dati-errati" path="/WEB-INF/WrongLogin.jsp"></forward>
+            <forward name="home-adm" path="/WEB-INF/attiva-farmacia.jsp" ></forward>
+            <forward name="home-tf" path="/WEB-INF/home-tf.jsp"></forward>
+            <forward name="home-op" path="/WEB-INF/home-op.jsp"></forward>
+            <forward name="home-df" path="/WEB-INF/home-df.jsp"></forward>
+
         </action>
 
         <action path="/lista-farmacie" type="controller.ElencoFarmacieController">
             <forward name="farmacie" path="/WEB-INF/farmacie.jsp"></forward>
         </action>
 
-        <action path="/attiva-farmacia" type="controller.AttivaFarmaciaController" name="inserimentoFarmaciaAndTF">
+        <action path="/attiva-farmacia" type="controller.AttivaFarmaciaAndTFController" name="inserimentoFarmaciaAndTF">
             <forward name="inserimento-farmacia-corretto" path="/WEB-INF/inserimento-farmacia-corretto.jsp"></forward>
             <forward name="inserimento-farmacia-errato" path="/WEB-INF/inserimento-farmacia-errato.jsp"></forward>
         </action>

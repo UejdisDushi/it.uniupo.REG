@@ -2,465 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="725fbaa1-ea8d-4bf4-a6fc-3c6f34d201dc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Personale.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/controller/AttivaFarmaciaController.class" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/controller/AttivaFarmaciaController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/AttivaPersonaleController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/servlets/getAttivaFarmacia.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/home-df.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/home-op.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/home-reg.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/home-tf.jsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/controller/AttivaFarmaciaController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ProgettoREG/controller/AttivaFarmaciaController.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/controller/AttivaFarmaciaController.java" afterPath="$PROJECT_DIR$/src/controller/AttivaFarmaciaAndTFController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/controller/LoginController.class" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/controller/LoginController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/db/DBManager.class" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/db/DBManager.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/model/Farmacia.class" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/model/Farmacia.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProgettoREG/controller/AttivaFarmaciaController.class" afterPath="$PROJECT_DIR$/out/production/ProgettoREG/controller/AttivaFarmaciaController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProgettoREG/controller/LoginController.class" afterPath="$PROJECT_DIR$/out/production/ProgettoREG/controller/LoginController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProgettoREG/db/DBManager.class" afterPath="$PROJECT_DIR$/out/production/ProgettoREG/db/DBManager.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProgettoREG/model/Farmacia.class" afterPath="$PROJECT_DIR$/out/production/ProgettoREG/model/Farmacia.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/attiva-farmacia.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/attiva-farmacia.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/LICENSE" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/NOTICE" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/NOTICE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/RELEASE-NOTES" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/RELEASE-NOTES" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/RUNNING.txt" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/RUNNING.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/catalina-tasks.xml" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/catalina-tasks.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/catalina.bat" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/catalina.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/catalina.sh" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/catalina.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/configtest.bat" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/configtest.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/digest.bat" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/digest.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/setclasspath.bat" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/setclasspath.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/shutdown.bat" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/shutdown.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/startup.bat" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/startup.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/tool-wrapper.bat" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/tool-wrapper.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/version.bat" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/version.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/catalina.policy" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/catalina.policy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/catalina.properties" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/catalina.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/context.xml" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/jaspic-providers.xml" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/jaspic-providers.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/jaspic-providers.xsd" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/jaspic-providers.xsd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/logging.properties" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/logging.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/server.xml" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/server.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/tomcat-users.xml" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/tomcat-users.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/tomcat-users.xsd" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/tomcat-users.xsd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/RELEASE-NOTES.txt" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/RELEASE-NOTES.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/asf-logo-wide.svg" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/asf-logo-wide.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/tomcat.css" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/tomcat.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/tomcat.svg" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/tomcat.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/BUILDING.txt" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/BUILDING.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/RELEASE-NOTES.txt" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/RELEASE-NOTES.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/RUNNING.txt" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/RUNNING.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/aio.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/aio.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/api/index.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/api/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/build.xml.txt" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/build.xml.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/deployment.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/deployment.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/index.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/installation.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/installation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/introduction.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/introduction.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/processes.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/processes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/sample/build.xml" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/sample/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/sample/docs/README.txt" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/sample/docs/README.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/sample/index.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/sample/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/sample/src/mypackage/Hello.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/sample/src/mypackage/Hello.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/sample/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/sample/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/sample/web/hello.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/sample/web/hello.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/sample/web/index.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/sample/web/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/source.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/source.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/web.xml.txt" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/web.xml.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/apr.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/apr.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/architecture/index.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/architecture/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/architecture/overview.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/architecture/overview.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/architecture/requestProcess.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/architecture/requestProcess.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/architecture/startup.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/architecture/startup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/architecture/startup/serverStartup.txt" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/architecture/startup/serverStartup.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/balancer-howto.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/balancer-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/building.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/building.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/cgi-howto.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/cgi-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/changelog.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/changelog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/class-loader-howto.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/class-loader-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/cluster-howto.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/cluster-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/comments.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/comments.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/ajp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/ajp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/automatic-deployment.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/automatic-deployment.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-channel.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-channel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-deployer.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-deployer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-interceptor.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-interceptor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-listener.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-listener.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-manager.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-manager.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-membership.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-membership.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-receiver.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-receiver.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-sender.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-sender.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-valve.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-valve.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/context.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/context.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cookie-processor.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cookie-processor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/credentialhandler.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/credentialhandler.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/engine.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/engine.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/executor.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/executor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/filter.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/filter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/globalresources.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/globalresources.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/host.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/host.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/http.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/http.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/http2.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/http2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/index.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/jar-scan-filter.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/jar-scan-filter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/jar-scanner.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/jar-scanner.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/jaspic.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/jaspic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/listeners.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/listeners.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/loader.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/loader.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/manager.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/manager.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/realm.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/realm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/resources.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/resources.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/server.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/server.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/service.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/service.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/sessionidgenerator.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/sessionidgenerator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/systemprops.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/systemprops.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/valve.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/valve.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/connectors.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/connectors.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/default-servlet.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/default-servlet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/deployer-howto.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/deployer-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/developers.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/developers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/elapi/index.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/elapi/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/extras.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/extras.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/fs-admin-apps.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/fs-admin-apps.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/fs-admin-objects.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/fs-admin-objects.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/fs-admin-opers.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/fs-admin-opers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/fs-default.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/fs-default.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/fs-jdbc-realm.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/fs-jdbc-realm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/fs-jndi-realm.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/fs-jndi-realm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/fs-memory-realm.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/fs-memory-realm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/index.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/mbean-names.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/mbean-names.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/html-manager-howto.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/html-manager-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/asf-logo.svg" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/asf-logo.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/docs-stylesheet.css" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/docs-stylesheet.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/fonts/fonts.css" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/fonts/fonts.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/tomcat.svg" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/tomcat.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/index.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/introduction.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/introduction.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/jasper-howto.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/jasper-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/jdbc-pool.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/jdbc-pool.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/jndi-datasource-examples-howto.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/jndi-datasource-examples-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/jndi-resources-howto.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/jndi-resources-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/jspapi/index.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/jspapi/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/logging.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/logging.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/manager-howto.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/manager-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/maven-jars.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/maven-jars.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/mbeans-descriptors-howto.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/mbeans-descriptors-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/monitoring.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/monitoring.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/proxy-howto.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/proxy-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/realm-howto.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/realm-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/rewrite.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/rewrite.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/security-howto.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/security-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/security-manager-howto.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/security-manager-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/servletapi/index.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/servletapi/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/setup.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/setup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/ssi-howto.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/ssi-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/ssl-howto.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/ssl-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/tribes/developers.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/tribes/developers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/tribes/faq.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/tribes/faq.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/tribes/interceptors.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/tribes/interceptors.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/tribes/introduction.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/tribes/introduction.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/tribes/membership.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/tribes/membership.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/tribes/setup.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/tribes/setup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/tribes/status.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/tribes/status.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/tribes/transport.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/tribes/transport.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/virtual-hosting-howto.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/virtual-hosting-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/web-socket-howto.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/web-socket-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/websocketapi/index.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/websocketapi/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/windows-auth-howto.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/windows-auth-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/windows-service-howto.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/windows-service-howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/CookieExample.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/CookieExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/HelloWorldExample.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/HelloWorldExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/LocalStrings.properties" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/LocalStrings.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/LocalStrings_en.properties" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/LocalStrings_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/LocalStrings_es.properties" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/LocalStrings_es.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/LocalStrings_fr.properties" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/LocalStrings_fr.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/LocalStrings_pt.properties" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/LocalStrings_pt.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/RequestHeaderExample.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/RequestHeaderExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/RequestInfoExample.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/RequestInfoExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/RequestParamExample.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/RequestParamExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/ServletToJsp.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/ServletToJsp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/SessionExample.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/SessionExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Async0.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Async0.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Async1.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Async1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Async2.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Async2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Async3.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Async3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/AsyncStockServlet.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/AsyncStockServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Stockticker.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Stockticker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/cal/Entries.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/cal/Entries.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/cal/Entry.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/cal/Entry.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/cal/JspCalendar.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/cal/JspCalendar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/cal/TableBean.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/cal/TableBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/checkbox/CheckTest.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/checkbox/CheckTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/colors/ColorGameBean.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/colors/ColorGameBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/compressionFilters/CompressionFilter.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/compressionFilters/CompressionFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/compressionFilters/CompressionFilterTestServlet.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/compressionFilters/CompressionFilterTestServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/compressionFilters/CompressionResponseStream.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/compressionFilters/CompressionResponseStream.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/compressionFilters/CompressionServletResponseWrapper.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/compressionFilters/CompressionServletResponseWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/dates/JspCalendar.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/dates/JspCalendar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/error/Smart.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/error/Smart.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/examples/ExampleTagBase.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/examples/ExampleTagBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/examples/FooTag.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/examples/FooTag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/examples/FooTagExtraInfo.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/examples/FooTagExtraInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/examples/LogTag.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/examples/LogTag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/examples/ShowSource.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/examples/ShowSource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/examples/ValuesTag.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/examples/ValuesTag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/filters/ExampleFilter.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/filters/ExampleFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/http2/SimpleImagePush.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/http2/SimpleImagePush.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/BookBean.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/BookBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/FooBean.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/FooBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/ValuesBean.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/ValuesBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/el/Functions.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/el/Functions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/EchoAttributesTag.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/EchoAttributesTag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/FindBookSimpleTag.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/FindBookSimpleTag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/HelloWorldSimpleTag.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/HelloWorldSimpleTag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/RepeatSimpleTag.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/RepeatSimpleTag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/ShuffleSimpleTag.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/ShuffleSimpleTag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/TileSimpleTag.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/TileSimpleTag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/listeners/ContextListener.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/listeners/ContextListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/listeners/SessionListener.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/listeners/SessionListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/nonblocking/ByteCounter.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/nonblocking/ByteCounter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/nonblocking/NumberWriter.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/nonblocking/NumberWriter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/num/NumberGuessBean.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/num/NumberGuessBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/sessions/DummyCart.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/sessions/DummyCart.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/util/CookieFilter.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/util/CookieFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/util/HTMLFilter.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/util/HTMLFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/validators/DebugValidator.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/validators/DebugValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/ExamplesConfig.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/ExamplesConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/chat/ChatAnnotation.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/chat/ChatAnnotation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/Client.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/Client.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawMessage.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardContextListener.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardContextListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/Room.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/Room.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/AbstractWebsocketMessage.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/AbstractWebsocketMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/BinaryWebsocketMessage.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/BinaryWebsocketMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/CloseWebsocketMessage.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/CloseWebsocketMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/StringWebsocketMessage.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/StringWebsocketMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/echo/EchoAnnotation.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/echo/EchoAnnotation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/echo/EchoAsyncAnnotation.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/echo/EchoAsyncAnnotation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/echo/EchoEndpoint.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/echo/EchoEndpoint.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/echo/EchoStreamAnnotation.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/echo/EchoStreamAnnotation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/echo/servers.json" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/echo/servers.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/snake/Direction.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/snake/Direction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/snake/Location.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/snake/Location.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/snake/Snake.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/snake/Snake.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/snake/SnakeAnnotation.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/snake/SnakeAnnotation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/snake/SnakeTimer.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/snake/SnakeTimer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/jsp/applet/Clock2.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/jsp/applet/Clock2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/jsp/debug-taglib.tld" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/jsp/debug-taglib.tld" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/jsp/example-taglib.tld" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/jsp/example-taglib.tld" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/jsp2/jsp2-example-taglib.tld" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/jsp2/jsp2-example-taglib.tld" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/tags/displayProducts.tag" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/tags/displayProducts.tag" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/tags/helloWorld.tag" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/tags/helloWorld.tag" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/tags/panel.tag" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/tags/panel.tag" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/index.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/async/async1.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/async/async1.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/async/async1.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/async/async1.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/async/async3.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/async/async3.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/async/async3.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/async/async3.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/async/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/async/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/async/index.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/async/index.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/Entries.java.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/Entries.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/Entry.java.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/Entry.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/JspCalendar.java.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/JspCalendar.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/TableBean.java.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/TableBean.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/cal1.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/cal1.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/cal1.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/cal1.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/cal2.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/cal2.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/cal2.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/cal2.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/calendar.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/calendar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/login.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/checkbox/CheckTest.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/checkbox/CheckTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/checkbox/check.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/checkbox/check.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/checkbox/checkresult.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/checkbox/checkresult.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/checkbox/checkresult.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/checkbox/checkresult.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/checkbox/cresult.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/checkbox/cresult.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/colors/ColorGameBean.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/colors/ColorGameBean.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/colors/clr.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/colors/clr.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/colors/colors.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/colors/colors.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/colors/colrs.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/colors/colrs.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/colors/colrs.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/colors/colrs.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/dates/date.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/dates/date.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/dates/date.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/dates/date.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/dates/date.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/dates/date.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/error/er.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/error/er.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/error/err.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/error/err.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/error/err.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/error/err.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/error/error.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/error/error.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/error/errorpge.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/error/errorpge.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/error/errorpge.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/error/errorpge.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/forward/forward.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/forward/forward.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/forward/forward.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/forward/forward.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/forward/fwd.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/forward/fwd.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/forward/one.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/forward/one.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/forward/one.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/forward/one.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/forward/two.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/forward/two.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/include/foo.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/include/foo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/include/foo.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/include/foo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/include/foo.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/include/foo.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/include/inc.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/include/inc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/include/include.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/include/include.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/include/include.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/include/include.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/index.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/Functions.java.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/Functions.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/ValuesBean.java.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/ValuesBean.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/ValuesTag.java.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/ValuesTag.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/basic-arithmetic.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/basic-arithmetic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/basic-arithmetic.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/basic-arithmetic.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/basic-arithmetic.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/basic-arithmetic.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/basic-comparisons.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/basic-comparisons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/basic-comparisons.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/basic-comparisons.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/basic-comparisons.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/basic-comparisons.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/composite.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/composite.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/composite.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/composite.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/composite.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/composite.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/functions.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/functions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/functions.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/functions.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/functions.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/functions.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/implicit-objects.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/implicit-objects.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/implicit-objects.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/implicit-objects.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/implicit-objects.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/implicit-objects.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/FooBean.java.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/FooBean.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/HelloWorldSimpleTag.java.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/HelloWorldSimpleTag.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/ShuffleSimpleTag.java.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/ShuffleSimpleTag.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/TileSimpleTag.java.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/TileSimpleTag.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/jspattribute.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/jspattribute.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/jspattribute.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/jspattribute.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/jspattribute.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/jspattribute.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/shuffle.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/shuffle.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/shuffle.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/shuffle.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/shuffle.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/shuffle.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspx/basic.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspx/basic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspx/basic.jspx" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspx/basic.jspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspx/basic.jspx.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspx/basic.jspx.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspx/svgexample.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspx/svgexample.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspx/textRotate.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspx/textRotate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspx/textRotate.jspx" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspx/textRotate.jspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspx/textRotate.jspx.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspx/textRotate.jspx.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/EchoAttributesTag.java.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/EchoAttributesTag.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/coda.jspf" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/coda.jspf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/coda.jspf.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/coda.jspf.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/config.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/config.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/config.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/config.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/config.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/config.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/dynamicattrs.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/dynamicattrs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/dynamicattrs.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/dynamicattrs.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/dynamicattrs.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/dynamicattrs.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/prelude.jspf" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/prelude.jspf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/prelude.jspf.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/prelude.jspf.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/BookBean.java.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/BookBean.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/FindBookSimpleTag.java.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/FindBookSimpleTag.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/Functions.java.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/Functions.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/HelloWorldSimpleTag.java.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/HelloWorldSimpleTag.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/RepeatSimpleTag.java.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/RepeatSimpleTag.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/book.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/book.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/book.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/book.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/book.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/book.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/hello.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/hello.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/hello.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/hello.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/hello.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/hello.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/repeat.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/repeat.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/repeat.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/repeat.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/repeat.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/repeat.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/displayProducts.tag.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/displayProducts.tag.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/hello.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/hello.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/hello.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/hello.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/hello.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/hello.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/helloWorld.tag.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/helloWorld.tag.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/panel.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/panel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/panel.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/panel.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/panel.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/panel.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/panel.tag.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/panel.tag.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/products.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/products.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/products.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/products.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/products.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/products.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsptoserv/ServletToJsp.java.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsptoserv/ServletToJsp.java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsptoserv/hello.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsptoserv/hello.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsptoserv/hello.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsptoserv/hello.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsptoserv/jsptoservlet.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsptoserv/jsptoservlet.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsptoserv/jsptoservlet.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsptoserv/jsptoservlet.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsptoserv/jts.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsptoserv/jts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/num/numguess.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/num/numguess.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/num/numguess.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/num/numguess.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/num/numguess.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/num/numguess.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/plugin/applet/Clock2.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/plugin/applet/Clock2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/plugin/plugin.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/plugin/plugin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/plugin/plugin.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/plugin/plugin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/plugin/plugin.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/plugin/plugin.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/security/protected/error.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/security/protected/error.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/security/protected/error.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/security/protected/error.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/security/protected/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/security/protected/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/security/protected/index.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/security/protected/index.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/security/protected/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/security/protected/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/security/protected/login.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/security/protected/login.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/sessions/DummyCart.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/sessions/DummyCart.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/sessions/carts.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/sessions/carts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/sessions/carts.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/sessions/carts.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/sessions/carts.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/sessions/carts.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/sessions/crt.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/sessions/crt.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/simpletag/foo.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/simpletag/foo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/simpletag/foo.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/simpletag/foo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/simpletag/foo.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/simpletag/foo.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/snp/snoop.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/snp/snoop.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/snp/snoop.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/snp/snoop.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/snp/snoop.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/snp/snoop.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/source.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/source.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/source.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/source.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/choose.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/choose.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/choose.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/choose.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/choose.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/choose.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/foreach.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/foreach.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/foreach.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/foreach.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/foreach.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/foreach.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/howto.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/howto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/if.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/if.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/if.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/if.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/if.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/if.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/notes.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/notes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/xml/xml.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/xml/xml.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/xml/xml.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/xml/xml.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/xml/xml.jsp.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/xml/xml.jsp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/cookies.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/cookies.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/helloworld.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/helloworld.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/index.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/nonblocking/bytecounter.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/nonblocking/bytecounter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/reqheaders.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/reqheaders.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/reqinfo.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/reqinfo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/reqparams.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/reqparams.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/sessions.html" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/sessions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/websocket/chat.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/websocket/chat.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/websocket/drawboard.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/websocket/drawboard.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/websocket/echo.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/websocket/echo.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/websocket/index.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/websocket/index.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/websocket/snake.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/websocket/snake.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/META-INF/context.xml" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/META-INF/context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/WEB-INF/jsp/401.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/WEB-INF/jsp/401.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/WEB-INF/jsp/403.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/WEB-INF/jsp/403.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/WEB-INF/jsp/404.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/WEB-INF/jsp/404.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/images/asf-logo.svg" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/images/asf-logo.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/manager.xml" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/manager.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/META-INF/context.xml" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/META-INF/context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/WEB-INF/jsp/401.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/WEB-INF/jsp/401.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/WEB-INF/jsp/403.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/WEB-INF/jsp/403.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/WEB-INF/jsp/404.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/WEB-INF/jsp/404.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/WEB-INF/jsp/connectorCiphers.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/WEB-INF/jsp/connectorCiphers.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/WEB-INF/jsp/sessionDetail.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/WEB-INF/jsp/sessionDetail.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/WEB-INF/jsp/sessionsList.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/WEB-INF/jsp/sessionsList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/images/asf-logo.svg" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/images/asf-logo.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/status.xsd" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/status.xsd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/xform.xsl" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/xform.xsl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/work/Catalina/localhost/ROOT/org/apache/jsp/index_jsp.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/work/Catalina/localhost/ROOT/org/apache/jsp/index_jsp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/work/Catalina/localhost/examples/org/apache/jsp/jsp/async/async3_jsp.java" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/work/Catalina/localhost/examples/org/apache/jsp/jsp/async/async3_jsp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/inserimento-farmacia-corretto.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/inserimento-farmacia-corretto.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/struts-config.xml" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/struts-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/AttivaFarmaciaController.java" afterPath="$PROJECT_DIR$/src/controller/AttivaFarmaciaController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/controller/LoginController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db/DBManager.java" afterPath="$PROJECT_DIR$/src/db/DBManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Farmacia.java" afterPath="$PROJECT_DIR$/src/model/Farmacia.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Personale.java" afterPath="$PROJECT_DIR$/src/model/Personale.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/attiva-farmacia.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/attiva-farmacia.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/inserimento-farmacia-corretto.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/inserimento-farmacia-corretto.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/login.jsp" afterPath="$PROJECT_DIR$/web/login.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -528,123 +97,15 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
       </PATH_ELEMENT>
     </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="REG@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="REG" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="public" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="personale" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="REG@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="REG" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="public" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="farmacia" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AttivaFarmaciaController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/AttivaFarmaciaController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DBManager.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/db/DBManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="81" column="27" lean-forward="false" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
-              <folding>
-                <marker date="1496210334000" expanded="true" signature="1102:1209" ph="select * fro... login" />
-                <marker date="1496210334000" expanded="true" signature="1754:1776" ph="select * fro... farmacia" />
-                <marker date="1496210334000" expanded="true" signature="2721:2813" ph="INSERT into farmacia... " />
-                <marker date="1496210334000" expanded="true" signature="3287:3332" ph="SELECT id_fa... farmacia" />
-                <marker date="1496210334000" expanded="true" signature="3708:3804" ph="INSERT into personale... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="REG.public.personale" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.personale">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="REG.public.farmacia" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.farmacia">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -663,12 +124,22 @@
         <option value="$PROJECT_DIR$/web/login.jsp" />
         <option value="$PROJECT_DIR$/web/assets/stylesheets/main3.css" />
         <option value="dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.personale" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" />
         <option value="$PROJECT_DIR$/src/model/Personale.java" />
         <option value="$PROJECT_DIR$/src/model/Farmacia.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/attiva-farmacia.jsp" />
         <option value="$PROJECT_DIR$/src/controller/AttivaFarmaciaController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/attiva-farmacia.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/inserimento-farmacia-corretto.jsp" />
+        <option value="$PROJECT_DIR$/web/servlets/getAttivaFarmacia.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/home-reg.jsp" />
+        <option value="$PROJECT_DIR$/src/servlets/getAttivaFarmacia.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/home-df.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/home-op.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/home-tf.jsp" />
+        <option value="$PROJECT_DIR$/src/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" />
         <option value="$PROJECT_DIR$/src/db/DBManager.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/52e46335-53f1-46e2-b535-63db79b72ac6/console.sql" />
       </list>
     </option>
   </component>
@@ -686,8 +157,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="37" />
     <option name="y" value="22" />
-    <option name="width" value="1440" />
+    <option name="width" value="1291" />
     <option name="height" value="791" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -809,6 +281,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="servlets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="it.uniupo.REG" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="it.uniupo.REG" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -856,6 +346,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -1361,7 +856,7 @@
       <updated>1496091036311</updated>
       <workItem from="1496091037615" duration="169000" />
       <workItem from="1496091555772" duration="7363000" />
-      <workItem from="1496174666500" duration="2025000" />
+      <workItem from="1496174666500" duration="20290000" />
     </task>
     <task id="LOCAL-00001" summary="Sistemare inserimento farmacia e username, in particolare non funziona il recupero dell'id_farmacia tramite quel metodo">
       <created>1496175910137</created>
@@ -1370,15 +865,21 @@
       <option name="project" value="LOCAL" />
       <updated>1496175910137</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Sistemare inserimento farmacia e username, in particolare non funziona il recupero dell'id_farmacia tramite quel metodo">
+      <created>1496223294774</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1496223294774</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9557000" />
+    <option name="totallyTimeSpent" value="27822000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="791" extended-state="6" />
-    <editor active="true" />
+    <frame x="37" y="22" width="1291" height="791" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1388,23 +889,24 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Struts Assistant" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Struts Assistant" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298639" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17453963" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914164" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904148" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32904148" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32904148" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3319027" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18597998" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31064853" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1415,6 +917,43 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904148" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3319027" sideWeight="0.5028612" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Struts Assistant" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298639" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17453963" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914164" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904148" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904148" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3319027" sideWeight="0.49713877" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32904148" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31064853" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904148" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -1428,39 +967,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/db/DBManager.java</url>
-          <line>87</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/db/DBManager.java</url>
-          <line>93</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/db/DBManager.java</url>
-          <line>94</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/db/DBManager.java</url>
-          <line>86</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/db/DBManager.java</url>
-          <line>85</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1469,14 +976,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="56" lean-forward="false" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/stylesheets/main3.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1501,7 +1000,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/AttivaFarmaciaController.java">
+    <entry file="file://$PROJECT_DIR$/src/controller/AttivaFarmaciaAndTFController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="60" lean-forward="false" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
@@ -1535,7 +1034,7 @@
         <state relative-caret-position="270">
           <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1562,28 +1061,14 @@
         <state relative-caret-position="1095">
           <caret line="78" column="46" lean-forward="false" selection-start-line="78" selection-start-column="46" selection-end-line="78" selection-end-column="46" />
           <folding>
-            <marker date="1496210334000" expanded="true" signature="1102:1209" ph="select * fro... login" />
-            <marker date="1496210334000" expanded="true" signature="1754:1776" ph="select * fro... farmacia" />
-            <marker date="1496210334000" expanded="true" signature="2721:2813" ph="INSERT into farmacia... " />
-            <marker date="1496210334000" expanded="true" signature="3287:3332" ph="SELECT id_fa... farmacia" />
-            <marker date="1496210334000" expanded="true" signature="3708:3804" ph="INSERT into personale... " />
+            <marker date="1496406880000" expanded="true" signature="1260:1355" ph="select * fro... login" />
+            <marker date="1496406880000" expanded="true" signature="1919:1941" ph="select * fro... farmacia" />
+            <marker date="1496406880000" expanded="true" signature="3116:3208" ph="INSERT into farmacia... " />
+            <marker date="1496406880000" expanded="true" signature="3704:3749" ph="SELECT id_fa... farmacia" />
+            <marker date="1496406880000" expanded="true" signature="4061:4156" ph="INSERT into personale... " />
+            <marker date="1496406880000" expanded="true" signature="4695:4732" ph="SELECT cf fr... personale" />
+            <marker date="1496406880000" expanded="true" signature="5032:5086" ph="insert into login... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="56" lean-forward="false" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1591,76 +1076,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/struts-config.xml">
-      <provider editor-type-id="com.intellij.struts.diagram.DiagramEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="89" lean-forward="false" selection-start-line="30" selection-start-column="89" selection-end-line="30" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#200#201#0" expanded="false" />
-            <element signature="e#227#228#0" expanded="false" />
-            <element signature="e#267#268#0" expanded="false" />
-            <element signature="e#299#300#0" expanded="false" />
-            <element signature="e#334#335#0" expanded="false" />
-            <element signature="e#365#366#0" expanded="false" />
-            <element signature="e#413#414#0" expanded="false" />
-            <element signature="e#453#454#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Personale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="53" column="5" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="53" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Farmacia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/attiva-farmacia.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-281">
-          <caret line="32" column="45" lean-forward="false" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/struts-core.jar!/org/apache/struts/chain/ComposableRequestProcessor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="130" column="25" lean-forward="true" selection-start-line="130" selection-start-column="25" selection-end-line="130" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/commons-chain.jar!/org/apache/commons/chain/impl/ChainBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1673,15 +1088,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/LoginController.java">
+    <entry file="jar://$PROJECT_DIR$/lib/struts-core.jar!/org/apache/struts/chain/ComposableRequestProcessor.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="153">
+          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.personale">
+    <entry file="jar://$PROJECT_DIR$/lib/javax.servlet.jar!/javax/servlet/ServletException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/commons-chain.jar!/org/apache/commons/chain/impl/ChainBase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Personale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#205#206#0" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
+            <element signature="e#1127#1128#0" expanded="true" />
+            <element signature="e#1161#1162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Farmacia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="e#781#782#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#900#901#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/prova-menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="22" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="39" lean-forward="false" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.farmacia">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1707,24 +1184,336 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/AttivaFarmaciaController.java">
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.farmacia">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.farmacia">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.farmacia">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.farmacia">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.farmacia">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.farmacia">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.farmacia">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.farmacia">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/getAttivaFarmacia.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="21" column="2" lean-forward="false" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.farmacia">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/AttivaPersonaleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/home-df.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/home-op.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/home-reg.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/inserimento-farmacia-corretto.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/home-tf.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="31" column="49" lean-forward="false" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.farmacia">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.farmacia">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.farmacia">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.farmacia">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/attiva-farmacia.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="51" lean-forward="false" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/AttivaFarmaciaAndTFController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.login">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/52e46335-53f1-46e2-b535-63db79b72ac6/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="117" lean-forward="false" selection-start-line="0" selection-start-column="117" selection-end-line="0" selection-end-column="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.personale">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/struts-config.xml">
+      <provider selected="true" editor-type-id="com.intellij.struts.diagram.DiagramEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/db/DBManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="81" column="27" lean-forward="false" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
+        <state relative-caret-position="301">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
-            <marker date="1496210334000" expanded="true" signature="1102:1209" ph="select * fro... login" />
-            <marker date="1496210334000" expanded="true" signature="1754:1776" ph="select * fro... farmacia" />
-            <marker date="1496210334000" expanded="true" signature="2721:2813" ph="INSERT into farmacia... " />
-            <marker date="1496210334000" expanded="true" signature="3287:3332" ph="SELECT id_fa... farmacia" />
-            <marker date="1496210334000" expanded="true" signature="3708:3804" ph="INSERT into personale... " />
+            <marker date="1496406880000" expanded="true" signature="1260:1355" ph="select * fro... login" />
+            <marker date="1496406880000" expanded="true" signature="1919:1941" ph="select * fro... farmacia" />
+            <marker date="1496406880000" expanded="true" signature="3116:3208" ph="INSERT into farmacia... " />
+            <marker date="1496406880000" expanded="true" signature="3704:3749" ph="SELECT id_fa... farmacia" />
+            <marker date="1496406880000" expanded="true" signature="4061:4156" ph="INSERT into personale... " />
+            <marker date="1496406880000" expanded="true" signature="4695:4732" ph="SELECT cf fr... personale" />
+            <marker date="1496406880000" expanded="true" signature="5032:5086" ph="insert into login... " />
           </folding>
         </state>
       </provider>

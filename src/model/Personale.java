@@ -6,20 +6,20 @@ import org.apache.struts.action.ActionForm;
 import java.util.Date;
 
 public class Personale extends ActionForm{
-    String nome;
+    public String getNomePersonale() {
+        return nomePersonale;
+    }
+
+    public void setNomePersonale(String nomePersonale) {
+        this.nomePersonale = nomePersonale;
+    }
+
+    String nomePersonale;
     String cognome;
     String cf;          //controllare con js
-    Date dataNascita;
+    java.sql.Date dataNascita;
     String ruolo;       //da mettere in javascript il controllo, potendo scegliere tra le 4 opzioni
 
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
 
     public String getCognome() {
         return cognome;
@@ -37,11 +37,11 @@ public class Personale extends ActionForm{
         this.cf = cf;
     }
 
-    public Date getDataNascita() {
+    public java.sql.Date getDataNascita() {
         return dataNascita;
     }
 
-    public void setDataNascita(Date dataNascita) {
+    public void setDataNascita(java.sql.Date dataNascita) {
         this.dataNascita = dataNascita;
     }
 

@@ -1,6 +1,7 @@
 package db;
 
 import model.Farmacia;
+import model.Login;
 import model.Personale;
 
 import java.sql.*;
@@ -29,18 +30,24 @@ public class DBManager {
         }
     }
 
-    public boolean validate(String utente, String password) throws SQLException {
-        boolean status;
+    public String validate(String utente, String password) throws SQLException {
+        String ruolo = "";
         if(connection == null)
             this.connessione();
+        if(utente.equals("REG") && password.equals("amministratore")) {
+            ruolo = "adm";
+            return ruolo;
+        }
+
         PreparedStatement preparedStatement = connection.prepareStatement(
-                "select * from login join personale on login.cf = personale.cf where utente=? and password=? and ruolo='adm'");
+                "select ruolo from login join personale on login.cf = personale.cf where utente=? and password=?");
         preparedStatement.setString(1,utente);
         preparedStatement.setString(2,password);
         ResultSet resultSet = preparedStatement.executeQuery();
-        status = resultSet.next();
-        connection.close();
-        return status;
+        while(resultSet.next())
+            ruolo = resultSet.getString("ruolo");
+
+        return ruolo;
     }
 
     public List<Farmacia> elencoFarmacie() throws SQLException {
@@ -64,8 +71,12 @@ public class DBManager {
         return listaFarmacie;
     }
 
-    public boolean attivaFarmaciaAndTF(Farmacia farmacia, Personale personale) throws SQLException {
-        int id;
+    public boolean attivaFarmaciaAndTF(Farmacia farmacia, Personale personale, Login login) throws SQLException {
+        long id = 0;
+        PreparedStatement preparedStatement1 = null;
+        PreparedStatement preparedStatement2 = null;
+        PreparedStatement preparedStatement3 = null;
+        PreparedStatement preparedStatement4 = null;
         if(connection == null)
             this.connessione();
         PreparedStatement preparedStatement = connection.prepareStatement("INSERT into farmacia(nome, cap, citta, numero_telefono, provincia, via) VALUES (?,?,?,?,?,?)");
@@ -75,25 +86,48 @@ public class DBManager {
         preparedStatement.setString(4,farmacia.getNumeroTelefono());
         preparedStatement.setString(5,farmacia.getProvincia());
         preparedStatement.setString(6,farmacia.getVia());
+
         if(preparedStatement.executeUpdate() > 0) {
 
+            preparedStatement1 = connection.prepareStatement("SELECT id_farmacia FROM farmacia where nome=?");
+            preparedStatement1.setString(1, farmacia.getNomeFarmacia());
+            ResultSet result = preparedStatement1.executeQuery();
+            while (result.next())
+                id = result.getLong(1);
 
-           connection.prepareStatement("SELECT id_farmacia FROM farmacia where nome=?");
-           preparedStatement.setString(1,farmacia.getNomeFarmacia());
-           ResultSet result = preparedStatement.executeQuery();
-           String cazzo = result.getString(1);
+            String role = "tf";
+            preparedStatement2 = connection.prepareStatement("INSERT into personale(nome, cognome, cf, data_nascita, ruolo, id_farmacia) VALUES (?,?,?,?,?,?)");
+            preparedStatement2.setString(1, personale.getNomePersonale());
+            preparedStatement2.setString(2, personale.getCognome());
+            preparedStatement2.setString(3, personale.getCf());
+            preparedStatement2.setDate(4, personale.getDataNascita());
+            preparedStatement2.setString(5, role);
+            preparedStatement2.setLong(6, id);
 
-            preparedStatement.getResultSet().getInt(1);
-            id = preparedStatement.getResultSet().getInt("id_farmacia");
-            preparedStatement = connection.prepareStatement("INSERT into personale(nome, cognome, cf, data_nascita, ruolo, id_farmacia) VALUES (?,?,?,?,?,id)");
-            preparedStatement.setString(1,personale.getNome());
-            preparedStatement.setString(2,personale.getCognome());
-            preparedStatement.setString(3,personale.getCf());
-            preparedStatement.setDate(4,(Date) personale.getDataNascita());
-            preparedStatement.setString(5,personale.getRuolo());
-            if(preparedStatement.executeUpdate() > 0)
-                return true;
+            if (preparedStatement2.executeUpdate() > 0) {
+
+                String cf = "";
+                preparedStatement3 = connection.prepareStatement("SELECT cf from personale where cf = ?");
+                preparedStatement3.setString(1, personale.getCf());
+                ResultSet result1 = preparedStatement3.executeQuery();
+
+                while (result1.next())
+                    cf = result1.getString("cf");
+
+                preparedStatement4 = connection.prepareStatement("insert into login(utente, password, cf) VALUES (?,?,?)");
+                preparedStatement4.setString(1, login.getUser());
+                preparedStatement4.setString(2, login.getPassword());
+                preparedStatement4.setString(3, cf);
+
+                if (preparedStatement4.executeUpdate() > 0)
+                    return true;
+
+
+            }
         }
+
+
+
 
         return false;
     }

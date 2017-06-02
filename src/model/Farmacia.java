@@ -17,8 +17,30 @@ public class Farmacia extends ActionForm{
     private String nomePersonale;
     private String cognome;
     private String cf;          //controllare con js
-    private Date dataNascita;
+    private java.sql.Date dataNascita;
     private String ruolo;       //da mettere in javascript il controllo, potendo scegliere tra le 4 opzioni
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    private String user;
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    private String password;
+
+
 
 
     public long getIdFarmacia() {
@@ -101,11 +123,11 @@ public class Farmacia extends ActionForm{
         this.cf = cf;
     }
 
-    public Date getDataNascita() {
+    public java.sql.Date getDataNascita() {
         return dataNascita;
     }
 
-    public void setDataNascita(Date dataNascita) {
+    public void setDataNascita(java.sql.Date dataNascita) {
         this.dataNascita = dataNascita;
     }
 
