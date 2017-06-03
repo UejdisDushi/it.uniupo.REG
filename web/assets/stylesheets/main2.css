@@ -77,7 +77,6 @@ form.login{
     max-width: 445.65217px;				/*larghezza form*/
     padding: 1rem;						/*creo spazio attorno al contenuto*/
     border: 1px solid #e8e8e8;			/*aggiungo il bordo color binacastro*/
-    border-radius: 25px;				/*arrotondo i bordi*/
     background-clip: padding-box;		/*ritaglio lo sfondo*/
     margin: 8em auto;					/*centro i margini*/
     text-align: center;					/*centro il contenuto*/
@@ -101,9 +100,7 @@ input[type=text],input[type=password]{
     width: 250px;
     display: block;
     background:white;
-    border-radius: 15px;
     margin: auto;
-
 }
 
 input[type="submit"]{
@@ -116,7 +113,6 @@ input[type="submit"]{
     padding:12px 18px 8px 18px;
     margin:6px auto;	/*testarlo**/
     background:#5c6f56;
-    border-radius: 15px;
 }
 
 .submitFarm{

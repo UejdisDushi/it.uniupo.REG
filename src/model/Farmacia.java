@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class Farmacia extends ActionForm{
 
-    private long idFarmacia;
+    private int idFarmacia;
     private String nomeFarmacia;
     private String cap;
     private String citta;
@@ -43,11 +43,11 @@ public class Farmacia extends ActionForm{
 
 
 
-    public long getIdFarmacia() {
+    public int getIdFarmacia() {
         return idFarmacia;
     }
 
-    public void setIdFarmacia(long idFarmacia) {
+    public void setIdFarmacia(int idFarmacia) {
         this.idFarmacia = idFarmacia;
     }
 

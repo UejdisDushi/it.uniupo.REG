@@ -3,11 +3,28 @@
 
 <html>
 <head>
+    <link rel="stylesheet" href="/assets/stylesheets/main3.css">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" href="/assets/stylesheets/main2.css">
+    <script type="application/javascript" src="assets/javascripts/main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Login</title>
 </head>
+
 <body>
+<header >
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Attiva farmacia</a>
+    <a href="#">Gestione messaggi</a>
+</div>
+</header>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+
+
     <header id="main">
         <nav>
             <ul>
@@ -20,17 +37,21 @@
             </ul>
         </nav>
     </header>
+
+
 <div class="body">
     <form action="login.do" method="post" class="login">
         <h1 class="login">Log In</h1>
-        <p>
-            <label>Username</label>
-            <input id="user" name="user" placeholder="Username" type="text" required>
-        </p>
-        <p>
-            <label>Password</label>
-            <input id="password" name="password" placeholder="Password" type="password" required>
-        </p>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input id="user" type="text" class="form-control" name="user" placeholder="Username" required>
+        </div>
+        <br>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+            <input id="password" type="password" class="form-control" name="password" placeholder="Password" required>
+        </div>
+        <br><br>
        <p>
            <input value="Log In" type="submit">
        </p>

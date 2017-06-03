@@ -9,8 +9,8 @@
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>22948</ObjectId>
-      <IntrospectionTimestamp>2017-06-02.14:39:56.672</IntrospectionTimestamp>
-      <IntrospectionStateNumber>3785</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2017-06-02.21:25:25.080</IntrospectionTimestamp>
+      <IntrospectionStateNumber>3794</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -99,7 +99,7 @@
     </table>
     <table id="23" parent="3" name="prodotti">
       <ObjectId>23140</ObjectId>
-      <StateNumber>3771</StateNumber>
+      <StateNumber>3793</StateNumber>
     </table>
     <table id="24" parent="3" name="ricetta">
       <ObjectId>23222</ObjectId>
@@ -529,9 +529,9 @@ id_prodotto</ColNames>
     </column>
     <column id="92" parent="23" name="categoria">
       <Position>3</Position>
-      <DataType>varchar(16) []|0</DataType>
+      <DataType>varchar(16)|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3763</StateNumber>
+      <StateNumber>3793</StateNumber>
     </column>
     <column id="93" parent="23" name="costo">
       <Position>4</Position>
@@ -545,11 +545,11 @@ id_prodotto</ColNames>
       <NotNull>1</NotNull>
       <StateNumber>3763</StateNumber>
     </column>
-    <column id="95" parent="23" name="qta_disponibile">
+    <column id="95" parent="23" name="qta">
       <Position>6</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3763</StateNumber>
+      <StateNumber>3794</StateNumber>
     </column>
     <column id="96" parent="23" name="ricetta">
       <Position>7</Position>
@@ -576,7 +576,7 @@ id_prodotto</ColNames>
     </check>
     <check id="100" parent="23" name="prodotti_qta_disponibile_check">
       <ObjectId>23145</ObjectId>
-      <ColNames>qta_disponibile</ColNames>
+      <ColNames>qta</ColNames>
       <Predicate>qta_disponibile &gt; 0</Predicate>
     </check>
     <column id="101" parent="24" name="numero_ricetta">

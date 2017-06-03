@@ -3,7 +3,7 @@
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
 <html>
 <head>
-    <title>Dashboard REG</title>
+    <title>Home Titolare Farmacista</title> <!--bentornato ....!-->
     <link rel="stylesheet" href="/assets/stylesheets/main3.css">
     <script type="application/javascript" src="assets/javascripts/main.js"></script>
 </head>
@@ -11,19 +11,12 @@
 
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-
-
-    <a <jsp:forward page="attiva-farmacia.jsp"> Attiva Farmacia</jsp:forward>> Attiva farmacia</a>
-    <a href="#">Attiva farmacia</a>
-
-
-    <a href="#">Gestione messaggi</a>
+    <html:link action="/forwardToAttivaCollaboratore">Attiva collaboratore</html:link>
+    <html:link action="/forwardToReintegraMagazzino">Reintegra magazzino</html:link>
+    <html:link action="/logout">Log Out</html:link>
 </div>
 
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-<span>&#9776; Log Out </span>
-
 
 </body>
 </html>

@@ -1,87 +1,55 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html" %>
+
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Attiva farmacia</title>
+    <title>Attiva Collaboratore</title>
     <link rel="stylesheet" href="/assets/stylesheets/main2.css">
 </head>
 <body>
-<header id="main">
-    <nav>
-        <ul>
-            <html:link action="/prova.do">Prova</html:link>
-            <li><a href="/creaAccountIndividuale">Crea account individuale</a></li>
-            <li><a href="/attivaFarmacia">Attività farmacia</a></li>
-            <li><a href="/vendita">Vendita</a></li>
-            <li><a href="/reintegra">Reintegra magazzino</a></li>
-            <li><a href="/verificaCliente">Verifica cliente</a></li>
 
-            <li>Log Out<a href="#">
-                <span class="log-out"></span>
-            </a></li>
-        </ul>
-    </nav>
-</header>
 <h2>
-    Attiva farmacia
+    Inserisci collaboratore
 </h2>
 
-<form action="/attiva-farmacia.do" method="post">
+<form action="/attiva-collaboratore.do" method="post">
     <p>
-        <label>Nome</label>
-        <input type="text" name="nomeFarmacia" />
-    </p>
-    <p>
-        <label>Indirizzo</label>
-        <input type="text" name="via" />
-    </p>
-    <p>
-        <label>Citta</label>
-        <input type="text" name="citta" />
-    </p>
-    <p>
-        <label>CAP</label>
-        <input type="text" name="cap" />
-    </p>
-    <p>
-        <label>Provincia</label>
-        <input type="text" name="provincia" />
-    </p>
-    <p>
-        <label>Numero di telefono</label>
-        <input type="text" name="numeroTelefono" />
-    </p>
-    <br>
-    <br>
-    <p>
-        <label>Nome del personale da attivare</label>
+        <label>Nome collaboratore</label>
         <input type="text" name="nomePersonale" />
     </p>
     <p>
-        <label>Cognome del personale da attivare</label>
+        <label>Cognome collaboratore</label>
         <input type="text" name="cognome"/>
     </p>
     <p>
-        <label>CF del personale da attivare</label>
+        <label>CF collaboratore</label>
         <input type="text" name="cf" pattern="^[a-zA-Z]{6}[0-9]{2}[a-zA-Z][0-9]{2}[a-zA-Z][0-9]{3}[a-zA-Z]$" required="required"/>
     </p>
     <p>
-        <label>Data di nascita del personale da attivare</label>
+        <label>Data di nascita collaboratore</label>
         <input type="date" name="dataNascita" min="1950-01-01" max="2017-06-01"/>
+    </p>
+    <p>
+        <label>Ruolo collaboratore</label>
+        <select id="ddt" name="ruolo" onmouseover="deleteSelectRole()">
+            <option id="def" name="" selected on>Seleziona ruolo </option>
+            <option name="df">df</option>
+            <option name="ob">ob</option>
+        </select>
+
     </p>
     <br>
     <br>
     <p>
-        <label>Nome login da assegnare al personale creato</label>
+        <label>Nome login per collaboratore</label>
         <input type="text" name="user"/>
     </p>
     <p>
-    <label>Password da assegnare al personale creato</label>
-    <input type="text" name="password"/>
+        <label>Password per collaboratore</label>
+        <input type="text" name="password"/>
     </p>
 
-    <input type="submit" value="Registra farmacia"/>
+    <input type="submit" value="Registra collaboratore"/>
 </form>
 
 
