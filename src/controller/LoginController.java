@@ -35,19 +35,22 @@ public class LoginController extends Action{
         //rimanenze.setIdFarmacia(idFarmacia);
 
         //request.getSession().setAttribute("utenteLoggato", login);
-        ArrayList<Prodotti> prodotti = new ArrayList<Prodotti>();
-        prodotti = dbManager.getProdotti();
-        request.getSession().setAttribute("elenco-prodotti",prodotti);
+
         request.getSession().setAttribute("id-farmacia",idFarmacia);
         switch (ruolo) {
             case "adm":
                 return mapping.findForward("home-adm");
             case "tf":
                 //request.getSession().setAttribute("rimanenze",rimanenze);
-
+                ArrayList<Prodotti> prodotti=  dbManager.getTuttiProdotti();
+                request.getSession().setAttribute("elenco-prodotti",prodotti);
                 return mapping.findForward("home-tf");
-            case "op":
-                return mapping.findForward("home-op");
+            case "ob":
+                ArrayList<Prodotti> venditaOB = dbManager.getOBMagazzino(idFarmacia);
+                ArrayList<Rimanenze> rimanenze = dbManager.getRimanenzeByIdFarmacia(idFarmacia);
+                request.getSession().setAttribute("vendita-prodotti-per-ob-qta", rimanenze);
+                request.getSession().setAttribute("vendita-prodotti-per-ob", venditaOB);
+                return mapping.findForward("home-ob");
             case "df":
                 return mapping.findForward("home-df");
             default:

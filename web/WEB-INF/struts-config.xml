@@ -10,7 +10,7 @@
         <form-bean name="login" type="model.Login"></form-bean>
         <form-bean name="inserimentoFarmaciaAndTF" type="model.Farmacia"></form-bean>
         <form-bean name="attiva-collaboratore" type="model.Farmacia"></form-bean>
-        <form-bean name="reintegra-magazzino" type="model.Rimanenze"></form-bean>
+        <form-bean name="rimanenze" type="model.Rimanenze"></form-bean>
     </form-beans>
 
     <!--gestisco i controller, nel primo path non ho bisogno di specificare il tipo della pagina!-->
@@ -19,15 +19,19 @@
             <forward name="dati-errati" path="/WEB-INF/WrongLogin.jsp"></forward>
             <forward name="home-adm" path="/WEB-INF/REG/home-reg.jsp" ></forward>
             <forward name="home-tf" path="/WEB-INF/tf/home-tf.jsp"></forward>
-            <forward name="home-op" path="/WEB-INF/home-op.jsp"></forward>
+            <forward name="home-ob" path="/WEB-INF/ob/home-ob.jsp"></forward>
             <forward name="home-df" path="/WEB-INF/home-df.jsp"></forward>
+        </action>
+
+        <action path="/vendita-prodotti-per-ob" type="controller.VenditaTramiteOB" name="rimanenze">
+            <forward name="vendita-tramite-ob-ok" path="/WEB-INF/ob/vendita-tramite-ob.jsp"></forward>
         </action>
 
         <action path="/attiva-collaboratore" type="controller.AttivaPersonaleController" name="attiva-collaboratore">
             <forward name="attiva-collaboratore-ok" path="/WEB-INF/tf/attiva-collaboratore-ok.jsp"></forward>
         </action>
 
-        <action path="/reintegra-magazzino" type="controller.ReintegraMagazzinoController" name="reintegra-magazzino">
+        <action path="/reintegra-magazzino" type="controller.ReintegraMagazzinoController" name="rimanenze">
             <forward name="reintegra-ok" path="/WEB-INF/tf/reintegra-magazzino-ok.jsp"></forward>
             <forward name="reintegra-no" path="/WEB-INF/tf/reintegra-magazzino-no.jsp"></forward>
         </action>
@@ -52,12 +56,16 @@
         <action path="/forwardToReintegraMagazzino" type="controller.forward.ForwardReintegraMagazzino">
             <forward name="reintegra-magazzino" path="/WEB-INF/tf/reintegra-magazzino.jsp"></forward>
         </action>
+        <action path="/forwardToVenditaTramiteOB" type="controller.forward.ForwardToVenditaTramiteOB">
+            <forward name="vendita-tramite-ob" path="/WEB-INF/ob/vendita-tramite-ob.jsp"></forward>
+        </action>
 
 
         <action path="/prova" type="org.apache.struts.actions.ForwardAction" parameter="/attiva-farmacia.jsp"></action>
         <action path="/logout" type="controller.LogoutController">
             <forward name="logout" path="/login.jsp"></forward>
         </action>
+
 
 
     </action-mappings>

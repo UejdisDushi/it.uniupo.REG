@@ -1,9 +1,6 @@
 package db;
 
-import model.Farmacia;
-import model.Login;
-import model.Personale;
-import model.Prodotti;
+import model.*;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -31,7 +28,7 @@ public class DBManager {
         }
     }
 
-    public ArrayList<Prodotti> getProdotti() throws SQLException {
+    public ArrayList<Prodotti> getTuttiProdotti() throws SQLException {
         ArrayList<Prodotti> prodotti = new ArrayList<Prodotti>();
         Prodotti prodotto = new Prodotti();
 
@@ -51,6 +48,72 @@ public class DBManager {
             prodotto = new Prodotti();
         }
         return prodotti;
+    }
+
+    public ArrayList<Rimanenze> getRimanenzeByIdFarmacia(int id_farmacia) throws SQLException {
+        ArrayList<Rimanenze> rimanenze = new ArrayList<Rimanenze>();
+        Rimanenze rimanenza = new Rimanenze();
+
+        if(connection == null)
+            this.connessione();
+
+        PreparedStatement preparedStatement = connection.prepareStatement("SELECT qta, id_prodotto from rimanenze WHERE id_farmacia=?");
+        preparedStatement.setInt(1, id_farmacia);
+        ResultSet risultato = preparedStatement.executeQuery();
+
+        while (risultato.next()) {
+            rimanenza.setQuantita(risultato.getInt(1));
+            rimanenza.setIdProdotto(risultato.getInt(2));
+            rimanenze.add(rimanenza);
+            rimanenza = new Rimanenze();
+        }
+        return rimanenze;
+    }
+
+    public ArrayList<Prodotti> getOBMagazzino(int id_farmacia) throws SQLException {
+        ArrayList<Prodotti> prodotti = new ArrayList<Prodotti>();
+        Prodotti prodotto = new Prodotti();
+
+        if(connection == null)
+            this.connessione();
+
+        PreparedStatement preparedStatement = connection.prepareStatement("SELECT id_prodotto,nome,categoria, costo,principio_attivo from prodotti join rimanenze on prodotti.id = rimanenze.id_prodotto where ricetta='false' and id_farmacia=?");
+        preparedStatement.setInt(1, id_farmacia);
+        ResultSet risultato = preparedStatement.executeQuery();
+
+        while (risultato.next()) {
+            prodotto.setId(risultato.getInt("id_prodotto"));
+            prodotto.setNome(risultato.getString("nome"));
+            prodotto.setCategoria(risultato.getString("categoria"));
+            prodotto.setCosto(risultato.getDouble("costo"));
+            prodotto.setPrincipioAttivo(risultato.getString("principio_attivo"));
+            prodotti.add(prodotto);
+            prodotto = new Prodotti();
+        }
+        return prodotti;
+    }
+
+    public boolean setVendita(int id_farmacia, String[] qtaVenduta, ArrayList<Prodotti> prodotti) throws SQLException {
+        if(connection == null)
+            this.connessione();
+
+        PreparedStatement preparedStatement = null;
+        System.out.print(qtaVenduta[0]);
+        System.out.print(qtaVenduta[1]);
+        for(int i = 0;i<prodotti.size();i++) {
+            preparedStatement = connection.prepareStatement("UPDATE rimanenze SET qta = qta - ? WHERE id_prodotto = ? and id_farmacia = ?");
+            if(qtaVenduta[i].equals(""))
+                preparedStatement.setInt(1, 0);
+            else {
+                preparedStatement.setInt(1, Integer.parseInt(qtaVenduta[i].toString()));
+            }
+            preparedStatement.setInt(2, prodotti.get(i).getId());
+            preparedStatement.setInt(3, id_farmacia);
+            if(preparedStatement.executeUpdate() > 0)
+                preparedStatement = null;
+            else return false;
+        }
+        return true;
     }
 
     public int getIdFarmacia(String cf) throws SQLException {
