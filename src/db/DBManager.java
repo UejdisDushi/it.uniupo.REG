@@ -3,7 +3,10 @@ package db;
 import model.*;
 
 import java.sql.*;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class DBManager {
@@ -93,27 +96,44 @@ public class DBManager {
         return prodotti;
     }
 
-    public boolean setVendita(int id_farmacia, String[] qtaVenduta, ArrayList<Prodotti> prodotti) throws SQLException {
+    public String getCFByUser(String username) throws SQLException {
+        if(connection == null)
+            this.connessione();
+        String out = "";
+        PreparedStatement getCFByUser = connection.prepareStatement("SELECT cf from login WHERE utente=?");
+        getCFByUser.setString(1, username);
+        ResultSet risultato = getCFByUser.executeQuery();
+        while (risultato.next())
+            out = risultato.getString(1);
+        return out;
+    }
+
+    public boolean setVendita(int id_farmacia, String[] qtaVenduta, ArrayList<Prodotti> prodotti, String userCheEffettuaVendita) throws SQLException {
         if(connection == null)
             this.connessione();
 
-        PreparedStatement preparedStatement = null;
-        System.out.print(qtaVenduta[0]);
-        System.out.print(qtaVenduta[1]);
+        PreparedStatement aggiornaRimanenze = null;
+        double totaleAcquisto = 0;
         for(int i = 0;i<prodotti.size();i++) {
-            preparedStatement = connection.prepareStatement("UPDATE rimanenze SET qta = qta - ? WHERE id_prodotto = ? and id_farmacia = ?");
+            aggiornaRimanenze = connection.prepareStatement("UPDATE rimanenze SET qta = qta - ? WHERE id_prodotto = ? and id_farmacia = ?");
             if(qtaVenduta[i].equals(""))
-                preparedStatement.setInt(1, 0);
+                aggiornaRimanenze.setInt(1, 0);
             else {
-                preparedStatement.setInt(1, Integer.parseInt(qtaVenduta[i].toString()));
+                aggiornaRimanenze.setInt(1, Integer.parseInt(qtaVenduta[i].toString()));
+                totaleAcquisto = totaleAcquisto + (prodotti.get(i).getCosto() * Integer.parseInt(qtaVenduta[i].toString()));
             }
-            preparedStatement.setInt(2, prodotti.get(i).getId());
-            preparedStatement.setInt(3, id_farmacia);
-            if(preparedStatement.executeUpdate() > 0)
-                preparedStatement = null;
-            else return false;
+            aggiornaRimanenze.setInt(2, prodotti.get(i).getId());
+            aggiornaRimanenze.setInt(3, id_farmacia);
+            if(aggiornaRimanenze.executeUpdate() > 0) {
+                aggiornaRimanenze = null;
+            }
         }
-        return true;
+        PreparedStatement inserisciInOrdine = connection.prepareStatement("insert INTO ordine( utente, totale_ordine) VALUES (?,?)");
+        inserisciInOrdine.setString(1,this.getCFByUser(userCheEffettuaVendita));
+        inserisciInOrdine.setDouble(2, totaleAcquisto);
+        if(inserisciInOrdine.executeUpdate() > 0)
+            return true;
+        return false;
     }
 
     public int getIdFarmacia(String cf) throws SQLException {

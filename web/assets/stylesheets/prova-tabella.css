@@ -2,7 +2,54 @@
     box-sizing: border-box;
 }
 
-#myInput {
+body {
+    font-family: "League Spartan";
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#menu {
+    border-bottom: solid rgba(255,255,255,1);
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#cercaPerNome {
     background-image: url('/assets/images/icona-ricerca.png');
     background-position: 10px 10px;
     background-repeat: no-repeat;
@@ -13,22 +60,22 @@
     margin-bottom: 12px;
 }
 
-#myTable {
+#tabella {
     border-collapse: collapse;
     width: 100%;
     border: 1px solid #ddd;
     font-size: 18px;
 }
 
-#myTable th, #myTable td {
+#tabella th, #tabella td {
     text-align: left;
     padding: 12px;
 }
 
-#myTable tr {
+#tabella tr {
     border-bottom: 1px solid #ddd;
 }
 
-#myTable tr.header, #myTable tr:hover {
+#tabella tr.header, #tabella tr:hover {
     background-color: #f1f1f1;
 }

@@ -9,8 +9,8 @@
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>22948</ObjectId>
-      <IntrospectionTimestamp>2017-06-02.21:25:25.080</IntrospectionTimestamp>
-      <IntrospectionStateNumber>3794</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2017-06-06.21:18:32.697</IntrospectionTimestamp>
+      <IntrospectionStateNumber>3835</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -79,7 +79,7 @@
     </table>
     <table id="18" parent="3" name="medico">
       <ObjectId>23209</ObjectId>
-      <StateNumber>3769</StateNumber>
+      <StateNumber>3835</StateNumber>
     </table>
     <table id="19" parent="3" name="messaggi">
       <ObjectId>23280</ObjectId>
@@ -87,7 +87,7 @@
     </table>
     <table id="20" parent="3" name="ordine">
       <ObjectId>23180</ObjectId>
-      <StateNumber>3771</StateNumber>
+      <StateNumber>3814</StateNumber>
     </table>
     <table id="21" parent="3" name="paziente">
       <ObjectId>23194</ObjectId>
@@ -277,9 +277,9 @@ id_prodotto</ColNames>
     </column>
     <column id="52" parent="18" name="cf">
       <Position>4</Position>
-      <DataType>varchar(16) []|0</DataType>
+      <DataType>varchar(16)|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3768</StateNumber>
+      <StateNumber>3835</StateNumber>
     </column>
     <column id="53" parent="18" name="data_nascita">
       <Position>5</Position>
@@ -293,7 +293,7 @@ id_prodotto</ColNames>
       <Unique>1</Unique>
     </index>
     <index id="55" parent="18" name="medico_cf_key">
-      <ObjectId>23218</ObjectId>
+      <ObjectId>23314</ObjectId>
       <ColNames>cf</ColNames>
       <Unique>1</Unique>
     </index>
@@ -304,7 +304,7 @@ id_prodotto</ColNames>
       <Primary>1</Primary>
     </key>
     <key id="57" parent="18" name="medico_cf_key">
-      <ObjectId>23219</ObjectId>
+      <ObjectId>23315</ObjectId>
       <ColNames>cf</ColNames>
       <UnderlyingIndexName>medico_cf_key</UnderlyingIndexName>
     </key>
@@ -376,17 +376,16 @@ id_prodotto</ColNames>
       <SequenceName>ordine_numero_ordine_seq</SequenceName>
       <DefaultExpression>nextval(&apos;ordine_numero_ordine_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="68" parent="20" name="data_ordine">
-      <Position>2</Position>
-      <DataType>date|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>3766</StateNumber>
-    </column>
-    <column id="69" parent="20" name="utente">
+    <column id="68" parent="20" name="utente">
       <Position>3</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>3766</StateNumber>
+    </column>
+    <column id="69" parent="20" name="totale_ordine">
+      <Position>4</Position>
+      <DataType>double precision|0</DataType>
+      <StateNumber>3814</StateNumber>
     </column>
     <index id="70" parent="20" name="ordine_pkey">
       <ObjectId>23187</ObjectId>

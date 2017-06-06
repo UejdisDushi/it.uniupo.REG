@@ -11,11 +11,11 @@ function deleteSelectRole()
     document.getElementById("def").style.display="none";
 }
 
-function myFunction() {
+function cercaPerNome() {
     var input, filter, table, tr, td, i;
-    input = document.getElementById("myInput");
+    input = document.getElementById("cercaPerNome");
     filter = input.value.toUpperCase();
-    table = document.getElementById("myTable");
+    table = document.getElementById("tabella");
     tr = table.getElementsByTagName("tr");
     for (i = 0; i < tr.length; i++) {
         td = tr[i].getElementsByTagName("td")[0];
