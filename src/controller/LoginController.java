@@ -23,18 +23,14 @@ public class LoginController extends Action{
         String password = login.getPassword();
         DBManager dbManager = new DBManager();
 
+        //recupero ruolo tramite credenziali
         String ruolo = dbManager.validate(utente,password);
 
         //recupero cf per repcuperare personale e poi id farmacia, per permettere inserimento collaboratore
         String cf = dbManager.getCF(utente);
 
-        //recupero id farmacia tramite cf
+        //recupero id farmacia dove lavora il personale tramite cf
         int idFarmacia = dbManager.getIdFarmacia(cf);
-
-        //Rimanenze rimanenze = new Rimanenze();
-        //rimanenze.setIdFarmacia(idFarmacia);
-
-        //request.getSession().setAttribute("utenteLoggato", login);
 
         request.getSession().setAttribute("id-farmacia",idFarmacia);
         switch (ruolo) {
@@ -46,10 +42,10 @@ public class LoginController extends Action{
                 request.getSession().setAttribute("elenco-prodotti",prodotti);
                 return mapping.findForward("home-tf");
             case "ob":
-                ArrayList<Prodotti> venditaOB = dbManager.getOBMagazzino(idFarmacia);
-                ArrayList<Rimanenze> rimanenze = dbManager.getRimanenzeByIdFarmacia(idFarmacia);
-                request.getSession().setAttribute("vendita-prodotti-per-ob-qta", rimanenze);
-                request.getSession().setAttribute("vendita-prodotti-per-ob", venditaOB);
+                ArrayList<Prodotti> prodottiDentroAlMagazzino = dbManager.getProdottiInMagazzino(idFarmacia);
+                ArrayList<Rimanenze> magazzinoDellaFarmacia = dbManager.getRimanenzeByIdFarmacia(idFarmacia);
+                request.getSession().setAttribute("magazzino-della-farmacia", magazzinoDellaFarmacia);
+                request.getSession().setAttribute("prodotti-dentro-magazzino-farmacia", prodottiDentroAlMagazzino);
                 return mapping.findForward("home-ob");
             case "df":
                 return mapping.findForward("home-df");

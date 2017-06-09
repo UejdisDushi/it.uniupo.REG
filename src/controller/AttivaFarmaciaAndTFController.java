@@ -16,8 +16,10 @@ import java.util.Date;
 public class AttivaFarmaciaAndTFController extends Action {
 
     public ActionForward execute(ActionMapping mapping, ActionForm form, javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws Exception {
+
         Login loggato = (Login) request.getSession().getAttribute("login");
-        //if(loggato.getRule == REG) puoi inserire
+
+
         Farmacia farmacia = (Farmacia) form;
 
         Farmacia farmaciaDaInserire = new Farmacia();
@@ -28,6 +30,7 @@ public class AttivaFarmaciaAndTFController extends Action {
         farmaciaDaInserire.setProvincia(farmacia.getProvincia());
         farmaciaDaInserire.setVia(farmacia.getVia());
 
+        //recupero l'anagrafica del titolare creato
         Personale personaleDaInserire = new Personale();
         personaleDaInserire.setNomePersonale(farmacia.getNomePersonale());
         personaleDaInserire.setCognome(farmacia.getCognome());
@@ -35,12 +38,13 @@ public class AttivaFarmaciaAndTFController extends Action {
         personaleDaInserire.setDataNascita((java.sql.Date) farmacia.getDataNascita());
         personaleDaInserire.setRuolo(farmacia.getRuolo());
 
-        Login login = new Login();
-        login.setUser(farmacia.getUser());
-        login.setPassword(farmacia.getPassword());
+        //recupero le credenziali assegnate al tf creato
+        Login credenzialiDiLogin = new Login();
+        credenzialiDiLogin.setUser(farmacia.getUser());
+        credenzialiDiLogin.setPassword(farmacia.getPassword());
 
         DBManager dbManager = new DBManager();
-        if(dbManager.attivaFarmaciaAndTF(farmaciaDaInserire, personaleDaInserire, login)) {
+        if(dbManager.attivaFarmaciaAndTF(farmaciaDaInserire, personaleDaInserire, credenzialiDiLogin)) {
             return mapping.findForward("inserimento-farmacia-corretto");
         } else return mapping.findForward("inserimento-farmacia-errato");
 

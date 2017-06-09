@@ -38,9 +38,10 @@
             <th style="width:10%;">Vendita</th>
             <th style="width:5%;"></th>
         </tr>
-        <% ArrayList<Rimanenze> rimanenze = (ArrayList<Rimanenze>) request.getSession().getAttribute("vendita-prodotti-per-ob-qta");
-           ArrayList<Prodotti> prodotti = (ArrayList<Prodotti>) request.getSession().getAttribute("vendita-prodotti-per-ob");
-           for(int i = 0;i < rimanenze.size();i++) {
+        <% ArrayList<Rimanenze> rimanenze = (ArrayList<Rimanenze>) request.getSession().getAttribute("magazzino-della-farmacia");
+           ArrayList<Prodotti> prodotti = (ArrayList<Prodotti>) request.getSession().getAttribute("prodotti-dentro-magazzino-farmacia");
+           for(int i = 0;i < prodotti.size();i++) {
+               if(prodotti.get(i).isRicetta() == false){
         %>
 
 
@@ -67,7 +68,7 @@
                 <input img src="/assets/images/icona-carrello.png" type="image" value="submit">
             </td>
         </tr>
-        <% } %>
+        <% }} %>
 
     </table>
 

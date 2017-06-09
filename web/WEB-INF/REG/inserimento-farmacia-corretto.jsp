@@ -1,8 +1,1 @@
-<script>
-    alert("Inserimento avenuto con successo.");
-    window.op
-</script>
-
-<%
-    request.getRequestDispatcher("attiva-farmacia.jsp").forward(request,response);
-%>
+<jsp:forward page="/WEB-INF/REG/home-reg.jsp"></jsp:forward>

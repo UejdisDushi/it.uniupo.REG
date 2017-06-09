@@ -12,7 +12,6 @@
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <html:link action="/forwardToAttivaFarmacia">Attiva Farmacia</html:link>
-    <a href="#">Gestione messaggi</a>
     <html:link action="/logout">Log Out</html:link>
 </div>
 

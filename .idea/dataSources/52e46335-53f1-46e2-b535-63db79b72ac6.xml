@@ -9,8 +9,8 @@
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>22948</ObjectId>
-      <IntrospectionTimestamp>2017-06-06.21:18:32.697</IntrospectionTimestamp>
-      <IntrospectionStateNumber>3835</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2017-06-09.17:33:02.654</IntrospectionTimestamp>
+      <IntrospectionStateNumber>3897</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -30,118 +30,118 @@
       <ObjectId>12381</ObjectId>
     </schema>
     <sequence id="9" parent="3" name="farmacia_id_farmacia_seq">
-      <ObjectId>23127</ObjectId>
-      <StateNumber>3762</StateNumber>
+      <ObjectId>23348</ObjectId>
+      <StateNumber>3897</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
     <sequence id="10" parent="3" name="medico_codice_regionale_seq">
-      <ObjectId>23207</ObjectId>
-      <StateNumber>3768</StateNumber>
+      <ObjectId>23425</ObjectId>
+      <StateNumber>3897</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
     <sequence id="11" parent="3" name="messaggi_id_messaggio_seq">
-      <ObjectId>23278</ObjectId>
-      <StateNumber>3772</StateNumber>
+      <ObjectId>23493</ObjectId>
+      <StateNumber>3897</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
     <sequence id="12" parent="3" name="ordine_numero_ordine_seq">
-      <ObjectId>23178</ObjectId>
-      <StateNumber>3766</StateNumber>
+      <ObjectId>23399</ObjectId>
+      <StateNumber>3897</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
     <sequence id="13" parent="3" name="prodotti_id_seq">
-      <ObjectId>23138</ObjectId>
-      <StateNumber>3763</StateNumber>
+      <ObjectId>23359</ObjectId>
+      <StateNumber>3897</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
     <sequence id="14" parent="3" name="ricetta_numero_ricetta_seq">
-      <ObjectId>23220</ObjectId>
-      <StateNumber>3769</StateNumber>
+      <ObjectId>23438</ObjectId>
+      <StateNumber>3897</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
     <table id="15" parent="3" name="contiene">
-      <ObjectId>23262</ObjectId>
-      <StateNumber>3771</StateNumber>
+      <ObjectId>23477</ObjectId>
+      <StateNumber>3897</StateNumber>
     </table>
     <table id="16" parent="3" name="farmacia">
-      <ObjectId>23129</ObjectId>
-      <StateNumber>3770</StateNumber>
+      <ObjectId>23350</ObjectId>
+      <StateNumber>3897</StateNumber>
     </table>
     <table id="17" parent="3" name="login">
-      <ObjectId>23165</ObjectId>
-      <StateNumber>3772</StateNumber>
+      <ObjectId>23386</ObjectId>
+      <StateNumber>3897</StateNumber>
     </table>
     <table id="18" parent="3" name="medico">
-      <ObjectId>23209</ObjectId>
-      <StateNumber>3835</StateNumber>
+      <ObjectId>23427</ObjectId>
+      <StateNumber>3897</StateNumber>
     </table>
     <table id="19" parent="3" name="messaggi">
-      <ObjectId>23280</ObjectId>
-      <StateNumber>3772</StateNumber>
+      <ObjectId>23495</ObjectId>
+      <StateNumber>3897</StateNumber>
     </table>
     <table id="20" parent="3" name="ordine">
-      <ObjectId>23180</ObjectId>
-      <StateNumber>3814</StateNumber>
+      <ObjectId>23401</ObjectId>
+      <StateNumber>3897</StateNumber>
     </table>
     <table id="21" parent="3" name="paziente">
-      <ObjectId>23194</ObjectId>
-      <StateNumber>3769</StateNumber>
+      <ObjectId>23412</ObjectId>
+      <StateNumber>3897</StateNumber>
     </table>
     <table id="22" parent="3" name="personale">
-      <ObjectId>23152</ObjectId>
-      <StateNumber>3785</StateNumber>
+      <ObjectId>23373</ObjectId>
+      <StateNumber>3897</StateNumber>
     </table>
     <table id="23" parent="3" name="prodotti">
-      <ObjectId>23140</ObjectId>
-      <StateNumber>3793</StateNumber>
+      <ObjectId>23361</ObjectId>
+      <StateNumber>3897</StateNumber>
     </table>
     <table id="24" parent="3" name="ricetta">
-      <ObjectId>23222</ObjectId>
-      <StateNumber>3769</StateNumber>
+      <ObjectId>23440</ObjectId>
+      <StateNumber>3897</StateNumber>
     </table>
     <table id="25" parent="3" name="rimanenze">
-      <ObjectId>23246</ObjectId>
-      <StateNumber>3770</StateNumber>
+      <ObjectId>23461</ObjectId>
+      <StateNumber>3897</StateNumber>
     </table>
     <column id="26" parent="15" name="qta">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3771</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
     <column id="27" parent="15" name="numero_ordine">
       <Position>2</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3771</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
     <column id="28" parent="15" name="id_prodotto">
       <Position>3</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3771</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
     <index id="29" parent="15" name="contiene_pkey">
-      <ObjectId>23266</ObjectId>
+      <ObjectId>23481</ObjectId>
       <ColNames>numero_ordine
 id_prodotto</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="30" parent="15" name="contiene_pkey">
-      <ObjectId>23267</ObjectId>
+      <ObjectId>23482</ObjectId>
       <ColNames>numero_ordine
 id_prodotto</ColNames>
       <UnderlyingIndexName>contiene_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
     <foreign-key id="31" parent="15" name="contiene_numero_ordine_fkey">
-      <ObjectId>23268</ObjectId>
+      <ObjectId>23483</ObjectId>
       <ColNames>numero_ordine</ColNames>
       <RefTableName>ordine</RefTableName>
       <RefKeyName>ordine_pkey</RefKeyName>
@@ -150,7 +150,7 @@ id_prodotto</ColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
     <foreign-key id="32" parent="15" name="contiene_id_prodotto_fkey">
-      <ObjectId>23273</ObjectId>
+      <ObjectId>23488</ObjectId>
       <ColNames>id_prodotto</ColNames>
       <RefTableName>prodotti</RefTableName>
       <RefKeyName>prodotti_pkey</RefKeyName>
@@ -159,7 +159,7 @@ id_prodotto</ColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
     <check id="33" parent="15" name="contiene_qta_check">
-      <ObjectId>23265</ObjectId>
+      <ObjectId>23480</ObjectId>
       <ColNames>qta</ColNames>
       <Predicate>qta &gt; 0</Predicate>
     </check>
@@ -167,7 +167,7 @@ id_prodotto</ColNames>
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3762</StateNumber>
+      <StateNumber>3897</StateNumber>
       <SequenceName>farmacia_id_farmacia_seq</SequenceName>
       <DefaultExpression>nextval(&apos;farmacia_id_farmacia_seq&apos;::regclass)</DefaultExpression>
     </column>
@@ -175,45 +175,45 @@ id_prodotto</ColNames>
       <Position>2</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3762</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
     <column id="36" parent="16" name="cap">
       <Position>3</Position>
-      <DataType>char(5)|0</DataType>
+      <DataType>varchar(5)|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3762</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
     <column id="37" parent="16" name="citta">
       <Position>4</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3762</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
     <column id="38" parent="16" name="numero_telefono">
       <Position>5</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3762</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
     <column id="39" parent="16" name="provincia">
       <Position>6</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3762</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
     <column id="40" parent="16" name="via">
       <Position>7</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3762</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
     <index id="41" parent="16" name="farmacia_pkey">
-      <ObjectId>23136</ObjectId>
+      <ObjectId>23357</ObjectId>
       <ColNames>id_farmacia</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="42" parent="16" name="farmacia_pkey">
-      <ObjectId>23137</ObjectId>
+      <ObjectId>23358</ObjectId>
       <ColNames>id_farmacia</ColNames>
       <UnderlyingIndexName>farmacia_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
@@ -222,32 +222,32 @@ id_prodotto</ColNames>
       <Position>1</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3765</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
     <column id="44" parent="17" name="password">
       <Position>2</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3765</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
     <column id="45" parent="17" name="cf">
       <Position>3</Position>
-      <DataType>char(16)|0</DataType>
-      <StateNumber>3765</StateNumber>
+      <DataType>varchar(16)|0</DataType>
+      <StateNumber>3897</StateNumber>
     </column>
     <index id="46" parent="17" name="login_pkey">
-      <ObjectId>23171</ObjectId>
+      <ObjectId>23392</ObjectId>
       <ColNames>utente</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="47" parent="17" name="login_pkey">
-      <ObjectId>23172</ObjectId>
+      <ObjectId>23393</ObjectId>
       <ColNames>utente</ColNames>
       <UnderlyingIndexName>login_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
     <foreign-key id="48" parent="17" name="login_cf_fkey">
-      <ObjectId>23173</ObjectId>
+      <ObjectId>23394</ObjectId>
       <ColNames>cf</ColNames>
       <RefTableName>personale</RefTableName>
       <RefKeyName>personale_pkey</RefKeyName>
@@ -259,7 +259,7 @@ id_prodotto</ColNames>
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3768</StateNumber>
+      <StateNumber>3897</StateNumber>
       <SequenceName>medico_codice_regionale_seq</SequenceName>
       <DefaultExpression>nextval(&apos;medico_codice_regionale_seq&apos;::regclass)</DefaultExpression>
     </column>
@@ -267,44 +267,44 @@ id_prodotto</ColNames>
       <Position>2</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3768</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
     <column id="51" parent="18" name="cognome">
       <Position>3</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3768</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
     <column id="52" parent="18" name="cf">
       <Position>4</Position>
       <DataType>varchar(16)|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3835</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
     <column id="53" parent="18" name="data_nascita">
       <Position>5</Position>
       <DataType>date|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3768</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
     <index id="54" parent="18" name="medico_pkey">
-      <ObjectId>23216</ObjectId>
+      <ObjectId>23434</ObjectId>
       <ColNames>codice_regionale</ColNames>
       <Unique>1</Unique>
     </index>
     <index id="55" parent="18" name="medico_cf_key">
-      <ObjectId>23314</ObjectId>
+      <ObjectId>23436</ObjectId>
       <ColNames>cf</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="56" parent="18" name="medico_pkey">
-      <ObjectId>23217</ObjectId>
+      <ObjectId>23435</ObjectId>
       <ColNames>codice_regionale</ColNames>
       <UnderlyingIndexName>medico_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
     <key id="57" parent="18" name="medico_cf_key">
-      <ObjectId>23315</ObjectId>
+      <ObjectId>23437</ObjectId>
       <ColNames>cf</ColNames>
       <UnderlyingIndexName>medico_cf_key</UnderlyingIndexName>
     </key>
@@ -312,7 +312,7 @@ id_prodotto</ColNames>
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3772</StateNumber>
+      <StateNumber>3897</StateNumber>
       <SequenceName>messaggi_id_messaggio_seq</SequenceName>
       <DefaultExpression>nextval(&apos;messaggi_id_messaggio_seq&apos;::regclass)</DefaultExpression>
     </column>
@@ -320,38 +320,38 @@ id_prodotto</ColNames>
       <Position>2</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3772</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
     <column id="60" parent="19" name="ricevente">
       <Position>3</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3772</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
     <column id="61" parent="19" name="corpo">
       <Position>4</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3772</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
     <column id="62" parent="19" name="data">
       <Position>5</Position>
       <DataType>date|0</DataType>
-      <StateNumber>3772</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
     <index id="63" parent="19" name="messaggi_pkey">
-      <ObjectId>23287</ObjectId>
+      <ObjectId>23502</ObjectId>
       <ColNames>id_messaggio</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="64" parent="19" name="messaggi_pkey">
-      <ObjectId>23288</ObjectId>
+      <ObjectId>23503</ObjectId>
       <ColNames>id_messaggio</ColNames>
       <UnderlyingIndexName>messaggi_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
     <foreign-key id="65" parent="19" name="messaggi_mittente_fkey">
-      <ObjectId>23289</ObjectId>
+      <ObjectId>23504</ObjectId>
       <ColNames>mittente</ColNames>
       <RefTableName>login</RefTableName>
       <RefKeyName>login_pkey</RefKeyName>
@@ -360,7 +360,7 @@ id_prodotto</ColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
     <foreign-key id="66" parent="19" name="messaggi_ricevente_fkey">
-      <ObjectId>23294</ObjectId>
+      <ObjectId>23509</ObjectId>
       <ColNames>ricevente</ColNames>
       <RefTableName>login</RefTableName>
       <RefKeyName>login_pkey</RefKeyName>
@@ -372,34 +372,40 @@ id_prodotto</ColNames>
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3766</StateNumber>
+      <StateNumber>3897</StateNumber>
       <SequenceName>ordine_numero_ordine_seq</SequenceName>
       <DefaultExpression>nextval(&apos;ordine_numero_ordine_seq&apos;::regclass)</DefaultExpression>
     </column>
     <column id="68" parent="20" name="utente">
-      <Position>3</Position>
-      <DataType>text|0</DataType>
+      <Position>2</Position>
+      <DataType>varchar(16)|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3766</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
     <column id="69" parent="20" name="totale_ordine">
-      <Position>4</Position>
+      <Position>3</Position>
       <DataType>double precision|0</DataType>
-      <StateNumber>3814</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
-    <index id="70" parent="20" name="ordine_pkey">
-      <ObjectId>23187</ObjectId>
+    <column id="70" parent="20" name="data_ordine">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3897</StateNumber>
+    </column>
+    <index id="71" parent="20" name="ordine_pkey">
+      <ObjectId>23405</ObjectId>
       <ColNames>numero_ordine</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="71" parent="20" name="ordine_pkey">
-      <ObjectId>23188</ObjectId>
+    <key id="72" parent="20" name="ordine_pkey">
+      <ObjectId>23406</ObjectId>
       <ColNames>numero_ordine</ColNames>
       <UnderlyingIndexName>ordine_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="72" parent="20" name="ordine_utente_fkey">
-      <ObjectId>23189</ObjectId>
+    <foreign-key id="73" parent="20" name="ordine_utente_fkey">
+      <ObjectId>23407</ObjectId>
       <ColNames>utente</ColNames>
       <RefTableName>personale</RefTableName>
       <RefKeyName>personale_pkey</RefKeyName>
@@ -407,49 +413,48 @@ id_prodotto</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="73" parent="21" name="cf">
+    <column id="74" parent="21" name="cf">
       <Position>1</Position>
-      <DataType>char(16) []|0</DataType>
+      <DataType>varchar(16)|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3767</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
-    <column id="74" parent="21" name="nome">
+    <column id="75" parent="21" name="nome">
       <Position>2</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3767</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
-    <column id="75" parent="21" name="cognome">
+    <column id="76" parent="21" name="cognome">
       <Position>3</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3767</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
-    <column id="76" parent="21" name="data_nascita">
+    <column id="77" parent="21" name="data_nascita">
       <Position>4</Position>
       <DataType>date|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3767</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
-    <column id="77" parent="21" name="utente">
+    <column id="78" parent="21" name="utente">
       <Position>5</Position>
-      <DataType>text|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>3767</StateNumber>
+      <DataType>varchar(16)|0</DataType>
+      <StateNumber>3897</StateNumber>
     </column>
-    <index id="78" parent="21" name="paziente_pkey">
-      <ObjectId>23200</ObjectId>
+    <index id="79" parent="21" name="paziente_pkey">
+      <ObjectId>23418</ObjectId>
       <ColNames>cf</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="79" parent="21" name="paziente_pkey">
-      <ObjectId>23201</ObjectId>
+    <key id="80" parent="21" name="paziente_pkey">
+      <ObjectId>23419</ObjectId>
       <ColNames>cf</ColNames>
       <UnderlyingIndexName>paziente_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="80" parent="21" name="paziente_utente_fkey">
-      <ObjectId>23202</ObjectId>
+    <foreign-key id="81" parent="21" name="paziente_utente_fkey">
+      <ObjectId>23420</ObjectId>
       <ColNames>utente</ColNames>
       <RefTableName>personale</RefTableName>
       <RefKeyName>personale_pkey</RefKeyName>
@@ -457,54 +462,55 @@ id_prodotto</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="81" parent="22" name="nome">
+    <column id="82" parent="22" name="nome">
       <Position>1</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3764</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
-    <column id="82" parent="22" name="cognome">
+    <column id="83" parent="22" name="cognome">
       <Position>2</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3764</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
-    <column id="83" parent="22" name="cf">
+    <column id="84" parent="22" name="cf">
       <Position>3</Position>
-      <DataType>char(16)|0</DataType>
+      <DataType>varchar(16)|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3764</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
-    <column id="84" parent="22" name="data_nascita">
+    <column id="85" parent="22" name="data_nascita">
       <Position>4</Position>
       <DataType>date|0</DataType>
-      <StateNumber>3764</StateNumber>
+      <NotNull>1</NotNull>
+      <StateNumber>3897</StateNumber>
     </column>
-    <column id="85" parent="22" name="ruolo">
+    <column id="86" parent="22" name="ruolo">
       <Position>5</Position>
       <DataType>varchar(3)|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3785</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
-    <column id="86" parent="22" name="id_farmacia">
+    <column id="87" parent="22" name="id_farmacia">
       <Position>6</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3764</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
-    <index id="87" parent="22" name="personale_pkey">
-      <ObjectId>23158</ObjectId>
+    <index id="88" parent="22" name="personale_pkey">
+      <ObjectId>23379</ObjectId>
       <ColNames>cf</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="88" parent="22" name="personale_pkey">
-      <ObjectId>23159</ObjectId>
+    <key id="89" parent="22" name="personale_pkey">
+      <ObjectId>23380</ObjectId>
       <ColNames>cf</ColNames>
       <UnderlyingIndexName>personale_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="89" parent="22" name="personale_id_farmacia_fkey">
-      <ObjectId>23160</ObjectId>
+    <foreign-key id="90" parent="22" name="personale_id_farmacia_fkey">
+      <ObjectId>23381</ObjectId>
       <ColNames>id_farmacia</ColNames>
       <RefTableName>farmacia</RefTableName>
       <RefKeyName>farmacia_pkey</RefKeyName>
@@ -512,117 +518,117 @@ id_prodotto</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="90" parent="23" name="id">
+    <column id="91" parent="23" name="id">
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3763</StateNumber>
+      <StateNumber>3897</StateNumber>
       <SequenceName>prodotti_id_seq</SequenceName>
       <DefaultExpression>nextval(&apos;prodotti_id_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="91" parent="23" name="nome">
+    <column id="92" parent="23" name="nome">
       <Position>2</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3763</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
-    <column id="92" parent="23" name="categoria">
+    <column id="93" parent="23" name="categoria">
       <Position>3</Position>
       <DataType>varchar(16)|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3793</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
-    <column id="93" parent="23" name="costo">
+    <column id="94" parent="23" name="costo">
       <Position>4</Position>
       <DataType>numeric|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3763</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
-    <column id="94" parent="23" name="principio_attivo">
+    <column id="95" parent="23" name="principio_attivo">
       <Position>5</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3763</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
-    <column id="95" parent="23" name="qta">
+    <column id="96" parent="23" name="qta">
       <Position>6</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3794</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
-    <column id="96" parent="23" name="ricetta">
+    <column id="97" parent="23" name="ricetta">
       <Position>7</Position>
       <DataType>boolean|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3763</StateNumber>
+      <StateNumber>3897</StateNumber>
       <DefaultExpression>false</DefaultExpression>
     </column>
-    <index id="97" parent="23" name="prodotti_pkey">
-      <ObjectId>23150</ObjectId>
+    <index id="98" parent="23" name="prodotti_pkey">
+      <ObjectId>23371</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="98" parent="23" name="prodotti_pkey">
-      <ObjectId>23151</ObjectId>
+    <key id="99" parent="23" name="prodotti_pkey">
+      <ObjectId>23372</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>prodotti_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <check id="99" parent="23" name="prodotti_costo_check">
-      <ObjectId>23146</ObjectId>
+    <check id="100" parent="23" name="prodotti_costo_check">
+      <ObjectId>23366</ObjectId>
       <ColNames>costo</ColNames>
       <Predicate>costo &gt; (0)::numeric</Predicate>
     </check>
-    <check id="100" parent="23" name="prodotti_qta_disponibile_check">
-      <ObjectId>23145</ObjectId>
+    <check id="101" parent="23" name="prodotti_qta_check">
+      <ObjectId>23367</ObjectId>
       <ColNames>qta</ColNames>
-      <Predicate>qta_disponibile &gt; 0</Predicate>
+      <Predicate>qta &gt;= 0</Predicate>
     </check>
-    <column id="101" parent="24" name="numero_ricetta">
+    <column id="102" parent="24" name="numero_ricetta">
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3769</StateNumber>
+      <StateNumber>3897</StateNumber>
       <SequenceName>ricetta_numero_ricetta_seq</SequenceName>
       <DefaultExpression>nextval(&apos;ricetta_numero_ricetta_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="102" parent="24" name="data">
+    <column id="103" parent="24" name="data">
       <Position>2</Position>
       <DataType>date|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3769</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
-    <column id="103" parent="24" name="codice_regionale">
+    <column id="104" parent="24" name="codice_regionale">
       <Position>3</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3769</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
-    <column id="104" parent="24" name="cf">
+    <column id="105" parent="24" name="cf">
       <Position>4</Position>
-      <DataType>char(16) []|0</DataType>
+      <DataType>varchar(16)|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3769</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
-    <column id="105" parent="24" name="numero_ordine">
+    <column id="106" parent="24" name="numero_ordine">
       <Position>5</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3769</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
-    <index id="106" parent="24" name="ricetta_pkey">
-      <ObjectId>23229</ObjectId>
+    <index id="107" parent="24" name="ricetta_pkey">
+      <ObjectId>23444</ObjectId>
       <ColNames>numero_ricetta</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="107" parent="24" name="ricetta_pkey">
-      <ObjectId>23230</ObjectId>
+    <key id="108" parent="24" name="ricetta_pkey">
+      <ObjectId>23445</ObjectId>
       <ColNames>numero_ricetta</ColNames>
       <UnderlyingIndexName>ricetta_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="108" parent="24" name="ricetta_codice_regionale_fkey">
-      <ObjectId>23231</ObjectId>
+    <foreign-key id="109" parent="24" name="ricetta_codice_regionale_fkey">
+      <ObjectId>23446</ObjectId>
       <ColNames>codice_regionale</ColNames>
       <RefTableName>medico</RefTableName>
       <RefKeyName>medico_pkey</RefKeyName>
@@ -630,8 +636,8 @@ id_prodotto</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="109" parent="24" name="ricetta_cf_fkey">
-      <ObjectId>23236</ObjectId>
+    <foreign-key id="110" parent="24" name="ricetta_cf_fkey">
+      <ObjectId>23451</ObjectId>
       <ColNames>cf</ColNames>
       <RefTableName>paziente</RefTableName>
       <RefKeyName>paziente_pkey</RefKeyName>
@@ -639,8 +645,8 @@ id_prodotto</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="110" parent="24" name="ricetta_numero_ordine_fkey">
-      <ObjectId>23241</ObjectId>
+    <foreign-key id="111" parent="24" name="ricetta_numero_ordine_fkey">
+      <ObjectId>23456</ObjectId>
       <ColNames>numero_ordine</ColNames>
       <RefTableName>ordine</RefTableName>
       <RefKeyName>ordine_pkey</RefKeyName>
@@ -648,45 +654,45 @@ id_prodotto</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="111" parent="25" name="qta">
+    <column id="112" parent="25" name="qta">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3770</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
-    <column id="112" parent="25" name="data_reintegro">
+    <column id="113" parent="25" name="data_reintegro">
       <Position>2</Position>
       <DataType>date|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3770</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
-    <column id="113" parent="25" name="id_farmacia">
+    <column id="114" parent="25" name="id_farmacia">
       <Position>3</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3770</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
-    <column id="114" parent="25" name="id_prodotto">
+    <column id="115" parent="25" name="id_prodotto">
       <Position>4</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3770</StateNumber>
+      <StateNumber>3897</StateNumber>
     </column>
-    <index id="115" parent="25" name="rimanenze_pkey">
-      <ObjectId>23250</ObjectId>
+    <index id="116" parent="25" name="rimanenze_pkey">
+      <ObjectId>23465</ObjectId>
       <ColNames>id_farmacia
 id_prodotto</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="116" parent="25" name="rimanenze_pkey">
-      <ObjectId>23251</ObjectId>
+    <key id="117" parent="25" name="rimanenze_pkey">
+      <ObjectId>23466</ObjectId>
       <ColNames>id_farmacia
 id_prodotto</ColNames>
       <UnderlyingIndexName>rimanenze_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="117" parent="25" name="rimanenze_id_farmacia_fkey">
-      <ObjectId>23252</ObjectId>
+    <foreign-key id="118" parent="25" name="rimanenze_id_farmacia_fkey">
+      <ObjectId>23467</ObjectId>
       <ColNames>id_farmacia</ColNames>
       <RefTableName>farmacia</RefTableName>
       <RefKeyName>farmacia_pkey</RefKeyName>
@@ -694,8 +700,8 @@ id_prodotto</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="118" parent="25" name="rimanenze_id_prodotto_fkey">
-      <ObjectId>23257</ObjectId>
+    <foreign-key id="119" parent="25" name="rimanenze_id_prodotto_fkey">
+      <ObjectId>23472</ObjectId>
       <ColNames>id_prodotto</ColNames>
       <RefTableName>prodotti</RefTableName>
       <RefKeyName>prodotti_pkey</RefKeyName>
@@ -703,10 +709,10 @@ id_prodotto</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <check id="119" parent="25" name="rimanenze_qta_check">
-      <ObjectId>23249</ObjectId>
+    <check id="120" parent="25" name="rimanenze_qta_check">
+      <ObjectId>23464</ObjectId>
       <ColNames>qta</ColNames>
-      <Predicate>qta &gt; 0</Predicate>
+      <Predicate>qta &gt;= 0</Predicate>
     </check>
   </database-model>
 </dataSource>

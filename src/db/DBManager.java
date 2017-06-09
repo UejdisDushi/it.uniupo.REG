@@ -73,14 +73,14 @@ public class DBManager {
         return rimanenze;
     }
 
-    public ArrayList<Prodotti> getOBMagazzino(int id_farmacia) throws SQLException {
+    public ArrayList<Prodotti> getProdottiInMagazzino(int id_farmacia) throws SQLException {
         ArrayList<Prodotti> prodotti = new ArrayList<Prodotti>();
         Prodotti prodotto = new Prodotti();
 
         if(connection == null)
             this.connessione();
 
-        PreparedStatement preparedStatement = connection.prepareStatement("SELECT id_prodotto,nome,categoria, costo,principio_attivo from prodotti join rimanenze on prodotti.id = rimanenze.id_prodotto where ricetta='false' and id_farmacia=?");
+        PreparedStatement preparedStatement = connection.prepareStatement("SELECT id_prodotto,nome,categoria, costo,principio_attivo,ricetta from prodotti join rimanenze on prodotti.id = rimanenze.id_prodotto where id_farmacia=?");
         preparedStatement.setInt(1, id_farmacia);
         ResultSet risultato = preparedStatement.executeQuery();
 
@@ -90,6 +90,7 @@ public class DBManager {
             prodotto.setCategoria(risultato.getString("categoria"));
             prodotto.setCosto(risultato.getDouble("costo"));
             prodotto.setPrincipioAttivo(risultato.getString("principio_attivo"));
+            prodotto.setRicetta(risultato.getBoolean("ricetta"));
             prodotti.add(prodotto);
             prodotto = new Prodotti();
         }
@@ -108,9 +109,13 @@ public class DBManager {
         return out;
     }
 
-    public boolean setVendita(int id_farmacia, String[] qtaVenduta, ArrayList<Prodotti> prodotti, String userCheEffettuaVendita) throws SQLException {
+    public boolean setVenditaPerOB(int id_farmacia, String[] qtaVenduta, ArrayList<Prodotti> prodotti, String userCheEffettuaVendita) throws SQLException {
         if(connection == null)
             this.connessione();
+
+        for(int j = 0;j<prodotti.size();j++)
+            if(prodotti.get(j).isRicetta() == true)
+                prodotti.remove(j);
 
         PreparedStatement aggiornaRimanenze = null;
         double totaleAcquisto = 0;
@@ -128,9 +133,11 @@ public class DBManager {
                 aggiornaRimanenze = null;
             }
         }
-        PreparedStatement inserisciInOrdine = connection.prepareStatement("insert INTO ordine( utente, totale_ordine) VALUES (?,?)");
+        PreparedStatement inserisciInOrdine = connection.prepareStatement("insert INTO ordine( utente, totale_ordine,data_ordine) VALUES (?,?,?)");
         inserisciInOrdine.setString(1,this.getCFByUser(userCheEffettuaVendita));
         inserisciInOrdine.setDouble(2, totaleAcquisto);
+        Date data_locale = new Date(Calendar.getInstance().getTime().getTime());
+        inserisciInOrdine.setDate(3,data_locale);
         if(inserisciInOrdine.executeUpdate() > 0)
             return true;
         return false;
@@ -153,7 +160,7 @@ public class DBManager {
         String ruolo = "";
         if(connection == null)
             this.connessione();
-        if(utente.equals("REG") && password.equals("amministratore")) {
+        if(utente.equals("REG") && password.equals("Amministratore1")) {
             ruolo = "adm";
             return ruolo;
         }
@@ -192,55 +199,52 @@ public class DBManager {
 
     public boolean attivaFarmaciaAndTF(Farmacia farmacia, Personale personale, Login login) throws SQLException {
         long id = 0;
-        PreparedStatement preparedStatement1 = null;
-        PreparedStatement preparedStatement2 = null;
-        PreparedStatement preparedStatement3 = null;
-        PreparedStatement preparedStatement4 = null;
+
         if(connection == null)
             this.connessione();
-        PreparedStatement preparedStatement = connection.prepareStatement("INSERT into farmacia(nome, cap, citta, numero_telefono, provincia, via) VALUES (?,?,?,?,?,?)");
-        preparedStatement.setString(1,farmacia.getNomeFarmacia());
-        preparedStatement.setString(2,farmacia.getCap());
-        preparedStatement.setString(3,farmacia.getCitta());
-        preparedStatement.setString(4,farmacia.getNumeroTelefono());
-        preparedStatement.setString(5,farmacia.getProvincia());
-        preparedStatement.setString(6,farmacia.getVia());
 
-        if(preparedStatement.executeUpdate() > 0) {
+        PreparedStatement inserimentoFarmacia = connection.prepareStatement("INSERT into farmacia(nome, cap, citta, numero_telefono, provincia, via) VALUES (?,?,?,?,?,?)");
+        inserimentoFarmacia.setString(1,farmacia.getNomeFarmacia());
+        inserimentoFarmacia.setString(2,farmacia.getCap());
+        inserimentoFarmacia.setString(3,farmacia.getCitta());
+        inserimentoFarmacia.setString(4,farmacia.getNumeroTelefono());
+        inserimentoFarmacia.setString(5,farmacia.getProvincia());
+        inserimentoFarmacia.setString(6,farmacia.getVia());
 
-            preparedStatement1 = connection.prepareStatement("SELECT id_farmacia FROM farmacia where nome=?");
-            preparedStatement1.setString(1, farmacia.getNomeFarmacia());
-            ResultSet result = preparedStatement1.executeQuery();
+        if(inserimentoFarmacia.executeUpdate() > 0) {
+            PreparedStatement recuperoIdTramiteNomeFarmacia = connection.prepareStatement("SELECT id_farmacia FROM farmacia where nome=?");
+            recuperoIdTramiteNomeFarmacia.setString(1, farmacia.getNomeFarmacia());
+            ResultSet result = recuperoIdTramiteNomeFarmacia.executeQuery();
+
             while (result.next())
                 id = result.getLong(1);
 
             String role = "tf";
-            preparedStatement2 = connection.prepareStatement("INSERT into personale(nome, cognome, cf, data_nascita, ruolo, id_farmacia) VALUES (?,?,?,?,?,?)");
-            preparedStatement2.setString(1, personale.getNomePersonale());
-            preparedStatement2.setString(2, personale.getCognome());
-            preparedStatement2.setString(3, personale.getCf());
-            preparedStatement2.setDate(4, personale.getDataNascita());
-            preparedStatement2.setString(5, role);
-            preparedStatement2.setLong(6, id);
+            PreparedStatement inserimentoPersonale = connection.prepareStatement("INSERT into personale(nome, cognome, cf, data_nascita, ruolo, id_farmacia) VALUES (?,?,?,?,?,?)");
+            inserimentoPersonale.setString(1, personale.getNomePersonale());
+            inserimentoPersonale.setString(2, personale.getCognome());
+            inserimentoPersonale.setString(3, personale.getCf());
+            inserimentoPersonale.setDate(4, personale.getDataNascita());
+            inserimentoPersonale.setString(5, role);
+            inserimentoPersonale.setLong(6, id);
 
-            if (preparedStatement2.executeUpdate() > 0) {
+            if (inserimentoPersonale.executeUpdate() > 0) {
 
                 String cf = "";
-                preparedStatement3 = connection.prepareStatement("SELECT cf from personale where cf = ?");
-                preparedStatement3.setString(1, personale.getCf());
-                ResultSet result1 = preparedStatement3.executeQuery();
+                PreparedStatement recuperaCf = connection.prepareStatement("SELECT cf from personale where cf = ?");
+                recuperaCf.setString(1, personale.getCf());
+                ResultSet result1 = recuperaCf.executeQuery();
 
                 while (result1.next())
                     cf = result1.getString("cf");
 
-                preparedStatement4 = connection.prepareStatement("insert into login(utente, password, cf) VALUES (?,?,?)");
-                preparedStatement4.setString(1, login.getUser());
-                preparedStatement4.setString(2, login.getPassword());
-                preparedStatement4.setString(3, cf);
+                PreparedStatement inserimentoCredenziali = connection.prepareStatement("insert into login(utente, password, cf) VALUES (?,?,?)");
+                inserimentoCredenziali.setString(1, login.getUser());
+                inserimentoCredenziali.setString(2, login.getPassword());
+                inserimentoCredenziali.setString(3, cf);
 
-                if (preparedStatement4.executeUpdate() > 0)
+                if (inserimentoCredenziali.executeUpdate() > 0)
                     return true;
-
 
             }
         }
