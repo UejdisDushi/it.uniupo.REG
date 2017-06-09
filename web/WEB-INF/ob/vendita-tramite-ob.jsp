@@ -9,7 +9,7 @@
 <head>
     <script type="application/javascript" src="../../assets/javascripts/main.js"></script>
     <link rel="stylesheet" href="/assets/stylesheets/prova-tabella.css">
-    <title>Title</title>
+    <title>Vendita</title>
 </head>
 
 <script>

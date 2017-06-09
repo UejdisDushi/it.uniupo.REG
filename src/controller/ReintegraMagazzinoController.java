@@ -15,12 +15,13 @@ public class ReintegraMagazzinoController extends Action {
 
     public ActionForward execute(ActionMapping mapping, ActionForm form, javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws Exception {
 
-        Rimanenze rimanenze = (Rimanenze) form;
+        String[] quantita = request.getParameterValues("quantita");
+        int idFarmacia = (int)request.getSession().getAttribute("id-farmacia");
+        ArrayList<Prodotti> prodotti = (ArrayList<Prodotti>)request.getSession().getAttribute("tutti-i-prodotti");
 
         DBManager dbManager = new DBManager();
-        if(dbManager.reintegra(rimanenze.getQuantita(), (int)request.getSession().getAttribute("id-farmacia"), (ArrayList<Prodotti>)request.getSession().getAttribute("elenco-prodotti")))
+        if(dbManager.reintegra(quantita, idFarmacia, prodotti))
             return mapping.findForward("reintegra-ok");
-        else
-            return mapping.findForward("reintegra-no");
+        return null;
     }
 }

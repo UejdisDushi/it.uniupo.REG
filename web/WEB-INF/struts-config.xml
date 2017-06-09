@@ -32,8 +32,7 @@
         </action>
 
         <action path="/reintegra-magazzino" type="controller.ReintegraMagazzinoController" name="rimanenze">
-            <forward name="reintegra-ok" path="/WEB-INF/tf/reintegra-magazzino-ok.jsp"></forward>
-            <forward name="reintegra-no" path="/WEB-INF/tf/reintegra-magazzino-no.jsp"></forward>
+            <forward name="reintegra-ok" path="/WEB-INF/tf/home-tf.jsp"></forward>
         </action>
 
         <action path="/lista-farmacie" type="controller.ElencoFarmacieController">

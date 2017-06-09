@@ -38,10 +38,11 @@ public class DBManager {
         if(connection == null)
             this.connessione();
 
-        PreparedStatement preparedStatement = connection.prepareStatement("SELECT nome,categoria, costo,principio_attivo, ricetta from prodotti");
+        PreparedStatement preparedStatement = connection.prepareStatement("SELECT id,nome,categoria, costo,principio_attivo, ricetta from prodotti");
         ResultSet risultato = preparedStatement.executeQuery();
 
         while (risultato.next()) {
+            prodotto.setId(risultato.getInt("id"));
             prodotto.setNome(risultato.getString("nome"));
             prodotto.setCategoria(risultato.getString("categoria"));
             prodotto.setCosto(risultato.getDouble("costo"));
@@ -51,6 +52,22 @@ public class DBManager {
             prodotto = new Prodotti();
         }
         return prodotti;
+    }
+
+    public ArrayList<Integer> getIdProdottiFarmacia(int idFarmacia) throws SQLException{
+        ArrayList<Integer> lista = new ArrayList<Integer>();
+        int element;
+        if(connection == null)
+            this.connessione();
+
+        PreparedStatement preparedStatement = connection.prepareStatement("SELECT id_prodotto from rimanenze WHERE id_farmacia=?");
+        preparedStatement.setInt(1, idFarmacia);
+        ResultSet risultato = preparedStatement.executeQuery();
+        while (risultato.next()) {
+            element = risultato.getInt(1);
+            lista.add(element);
+        }
+        return lista;
     }
 
     public ArrayList<Rimanenze> getRimanenzeByIdFarmacia(int id_farmacia) throws SQLException {
@@ -285,23 +302,55 @@ public class DBManager {
         return cf;
     }
 
-    public boolean reintegra(int quantita, int idFarmacia, ArrayList<Prodotti> prodotti) throws SQLException {
-        if(connection == null)
+    public boolean reintegra(String[] quantita, int idFarmacia, ArrayList<Prodotti> prodotti) throws SQLException {
+        if (connection == null)
             this.connessione();
-        PreparedStatement preparedStatement = null;
-        for(int i = 0;i<prodotti.size();i++) {
-            preparedStatement = connection.prepareStatement("UPDATE rimanenze SET qta = qta + ? WHERE id_prodotto = ? and id_farmacia = ?");
-            preparedStatement.setInt(1, quantita);
-            preparedStatement.setInt(2, prodotti.get(i).getId());
-            preparedStatement.setInt(3, idFarmacia);
-            if(preparedStatement.executeUpdate() > 0)
-                preparedStatement = null;
-            else return false;
+        boolean status = true;
+        Date data_locale = new Date(Calendar.getInstance().getTime().getTime());
+
+        //elenco dei prodotti già presenti in magazzino
+        ArrayList<Integer> prodottiInMagazzino = getIdProdottiFarmacia(idFarmacia);
+
+        PreparedStatement aggiornaMagazzino;
+        for (int i = 0; i < prodotti.size(); i++) {
+
+            //se il prodotto è già in magazzino allora reintegro con update
+            if (prodottiInMagazzino.contains(prodotti.get(i).getId())) {
+                aggiornaMagazzino = connection.prepareStatement("UPDATE rimanenze SET qta = qta + ?,data_reintegro=? WHERE id_prodotto = ? and id_farmacia = ?");
+                if (quantita[i].equals(""))
+                    aggiornaMagazzino.setInt(1, 0);
+                else
+                    aggiornaMagazzino.setInt(1, Integer.parseInt(quantita[i].toString()));
+
+                aggiornaMagazzino.setDate(2, data_locale);
+                aggiornaMagazzino.setInt(3, prodotti.get(i).getId());
+                aggiornaMagazzino.setInt(4, idFarmacia);
+                if (aggiornaMagazzino.executeUpdate() > 0)
+                    aggiornaMagazzino = null;
+                else status = false;
+            }
+            //se non presente in magazzino allora lo aggiungo
+            else {
+                if(quantita[i].equals("")) {}
+                else if (inserisciInMagazzino(Integer.parseInt(quantita[i]), data_locale, idFarmacia, prodotti.get(i).getId()))
+                    status = true;
+                else status = false;
+            }
+
         }
-        return true;
-    }
+        return status;
 }
 
+    private boolean inserisciInMagazzino(int quantita, Date data, int idFarmacia,int idProdotto) throws SQLException {
+        PreparedStatement inserisci = connection.prepareStatement("INSERT into rimanenze VALUES (?,?,?,?)");
+        inserisci.setInt(1, quantita);
+        inserisci.setDate(2, data);
+        inserisci.setInt(3, idFarmacia);
+        inserisci.setInt(4, idProdotto);
+        if (inserisci.executeUpdate() > 0) return true;
+        return false;
+    }
+}
 
 
 

@@ -38,8 +38,8 @@ public class LoginController extends Action{
                 return mapping.findForward("home-adm");
             case "tf":
                 //request.getSession().setAttribute("rimanenze",rimanenze);
-                ArrayList<Prodotti> prodotti=  dbManager.getTuttiProdotti();
-                request.getSession().setAttribute("elenco-prodotti",prodotti);
+                ArrayList<Prodotti> tuttiIProdotti=  dbManager.getTuttiProdotti();
+                request.getSession().setAttribute("tutti-i-prodotti",tuttiIProdotti);
                 return mapping.findForward("home-tf");
             case "ob":
                 ArrayList<Prodotti> prodottiDentroAlMagazzino = dbManager.getProdottiInMagazzino(idFarmacia);
