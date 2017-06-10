@@ -1,6 +1,7 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="model.Prodotti" %>
 <%@ page import="model.Rimanenze" %>
+<%@ page import="db.DBManager" %>
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
@@ -38,10 +39,14 @@
             <th style="width:10%;">Vendita</th>
             <th style="width:5%;"></th>
         </tr>
-        <% ArrayList<Rimanenze> rimanenze = (ArrayList<Rimanenze>) request.getSession().getAttribute("magazzino-della-farmacia");
-           ArrayList<Prodotti> prodotti = (ArrayList<Prodotti>) request.getSession().getAttribute("prodotti-dentro-magazzino-farmacia");
-           for(int i = 0;i < prodotti.size();i++) {
-               if(prodotti.get(i).isRicetta() == false){
+        <%
+            DBManager dbManager = new DBManager();
+            int idFarmacia = (int)request.getSession().getAttribute("id-farmacia");
+            ArrayList<Rimanenze> magazzinoDellaFarmacia = dbManager.getRimanenzeByIdFarmacia(idFarmacia);
+            ArrayList<Prodotti> prodotti = dbManager.getProdottiInMagazzino(idFarmacia);
+
+            for(int i = 0;i < prodotti.size();i++) {
+                if(prodotti.get(i).isRicetta() == false){
         %>
 
 
@@ -59,7 +64,7 @@
                 <%=prodotti.get(i).getPrincipioAttivo()%>
             </td>
             <td>
-                <%=rimanenze.get(i).getQuantita()%>
+                <%=magazzinoDellaFarmacia.get(i).getQuantita()%>
             </td>
             <td>
                 <input type="number" min="0" name="quantita">

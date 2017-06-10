@@ -29,23 +29,19 @@ public class LoginController extends Action{
         //recupero cf per repcuperare personale e poi id farmacia, per permettere inserimento collaboratore
         String cf = dbManager.getCF(utente);
 
-        //recupero id farmacia dove lavora il personale tramite cf
+        //recupero id farmacia dove lavora il personale tramite cf e lo metto in sessione, in quanto viene usato quasi ovunque
         int idFarmacia = dbManager.getIdFarmacia(cf);
-
         request.getSession().setAttribute("id-farmacia",idFarmacia);
+
         switch (ruolo) {
             case "adm":
                 return mapping.findForward("home-adm");
             case "tf":
-                //request.getSession().setAttribute("rimanenze",rimanenze);
+
                 ArrayList<Prodotti> tuttiIProdotti=  dbManager.getTuttiProdotti();
                 request.getSession().setAttribute("tutti-i-prodotti",tuttiIProdotti);
                 return mapping.findForward("home-tf");
             case "ob":
-                ArrayList<Prodotti> prodottiDentroAlMagazzino = dbManager.getProdottiInMagazzino(idFarmacia);
-                ArrayList<Rimanenze> magazzinoDellaFarmacia = dbManager.getRimanenzeByIdFarmacia(idFarmacia);
-                request.getSession().setAttribute("magazzino-della-farmacia", magazzinoDellaFarmacia);
-                request.getSession().setAttribute("prodotti-dentro-magazzino-farmacia", prodottiDentroAlMagazzino);
                 return mapping.findForward("home-ob");
             case "df":
                 return mapping.findForward("home-df");
