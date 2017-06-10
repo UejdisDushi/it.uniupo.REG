@@ -17,9 +17,9 @@ public class ReintegraMagazzinoController extends Action {
 
         String[] quantita = request.getParameterValues("quantita");
         int idFarmacia = (int)request.getSession().getAttribute("id-farmacia");
-        ArrayList<Prodotti> prodotti = (ArrayList<Prodotti>)request.getSession().getAttribute("tutti-i-prodotti");
-
         DBManager dbManager = new DBManager();
+        ArrayList<Prodotti> prodotti = dbManager.getTuttiProdotti();
+
         if(dbManager.reintegra(quantita, idFarmacia, prodotti))
             return mapping.findForward("reintegra-ok");
         return null;

@@ -1,6 +1,8 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="model.Prodotti" %>
+<%@ page import="db.DBManager" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="html" uri="http://struts.apache.org/tags-html" %>
 <html>
 <head>
     <script type="application/javascript" src="../../assets/javascripts/main.js"></script>
@@ -30,8 +32,9 @@
             <th style="width:5%;"></th>
         </tr>
             <%
-        ArrayList<Prodotti> catalogoProdotti = (ArrayList<Prodotti>) request.getSession().getAttribute("tutti-i-prodotti");
-        for(Prodotti prodotto : catalogoProdotti) {
+                DBManager dbManager = new DBManager();
+                ArrayList<Prodotti> catalogoProdotti = dbManager.getTuttiProdotti();
+                for(Prodotti prodotto : catalogoProdotti) {
             %>
     <tr>
         <td>

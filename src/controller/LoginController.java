@@ -37,9 +37,6 @@ public class LoginController extends Action{
             case "adm":
                 return mapping.findForward("home-adm");
             case "tf":
-
-                ArrayList<Prodotti> tuttiIProdotti=  dbManager.getTuttiProdotti();
-                request.getSession().setAttribute("tutti-i-prodotti",tuttiIProdotti);
                 return mapping.findForward("home-tf");
             case "ob":
                 return mapping.findForward("home-ob");

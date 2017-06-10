@@ -2,23 +2,700 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="725fbaa1-ea8d-4bf4-a6fc-3c6f34d201dc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/tf/reintegra-magazzino-no.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/tf/reintegra-magazzino-ok.jsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6/_metadata_/metadata.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/controller/LoginController.class" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/controller/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/db/DBManager.class" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/db/DBManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProgettoREG/controller/LoginController.class" afterPath="$PROJECT_DIR$/out/production/ProgettoREG/controller/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProgettoREG/db/DBManager.class" afterPath="$PROJECT_DIR$/out/production/ProgettoREG/db/DBManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/META-INF/context.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/WrongLogin.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/NOTICE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/RELEASE-NOTES" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/RUNNING.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/bootstrap.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/catalina-tasks.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/catalina.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/catalina.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/commons-daemon-native.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/commons-daemon.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/configtest.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/configtest.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/daemon.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/digest.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/digest.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/setclasspath.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/setclasspath.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/shutdown.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/shutdown.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/startup.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/startup.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/tomcat-juli.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/tomcat-native.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/tool-wrapper.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/tool-wrapper.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/version.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/bin/version.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/catalina.policy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/catalina.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/context.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/jaspic-providers.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/jaspic-providers.xsd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/logging.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/server.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/tomcat-users.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/tomcat-users.xsd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/conf/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/controller/ElencoFarmacieController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/controller/LoginController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/db/DBManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/annotations-api.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/catalina-ant.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/catalina-ha.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/catalina-storeconfig.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/catalina-tribes.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/catalina.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/ecj-4.6.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/el-api.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/jasper-el.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/jasper.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/jaspic-api.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/jsp-api.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/servlet-api.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/tomcat-api.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/tomcat-coyote.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/tomcat-dbcp.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/tomcat-i18n-es.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/tomcat-i18n-fr.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/tomcat-i18n-ja.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/tomcat-jdbc.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/tomcat-jni.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/tomcat-util-scan.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/tomcat-util.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/tomcat-websocket.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/lib/websocket-api.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/logs/catalina.2017-04-07.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/logs/catalina.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/logs/host-manager.2017-04-07.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/logs/localhost.2017-04-07.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/logs/localhost_access_log.2017-04-07.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/logs/manager.2017-04-07.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/model/Farmacia.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/model/Login.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/temp/safeToDelete.tmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/RELEASE-NOTES.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/asf-logo-wide.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/bg-button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/bg-middle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/bg-nav-item.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/bg-nav.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/bg-upper.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/tomcat-power.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/tomcat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/tomcat.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/tomcat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/ROOT/tomcat.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/BUILDING.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/RELEASE-NOTES.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/RUNNING.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/aio.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/api/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/build.xml.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/deployment.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/installation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/introduction.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/processes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/sample/build.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/sample/docs/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/sample/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/sample/sample.war" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/sample/src/mypackage/Hello.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/sample/web/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/sample/web/hello.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/sample/web/images/tomcat.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/sample/web/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/source.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/appdev/web.xml.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/apr.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/architecture/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/architecture/overview.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/architecture/requestProcess.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/architecture/requestProcess/authentication-process.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/architecture/requestProcess/request-process.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/architecture/startup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/architecture/startup/serverStartup.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/architecture/startup/serverStartup.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/balancer-howto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/building.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/cgi-howto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/changelog.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/class-loader-howto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/cluster-howto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/comments.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/ajp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/automatic-deployment.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-channel.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-deployer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-interceptor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-listener.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-manager.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-membership.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-receiver.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-sender.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster-valve.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cluster.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/context.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/cookie-processor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/credentialhandler.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/engine.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/executor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/filter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/globalresources.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/host.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/http.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/http2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/jar-scan-filter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/jar-scanner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/jaspic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/listeners.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/loader.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/manager.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/realm.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/resources.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/server.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/service.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/sessionidgenerator.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/systemprops.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/config/valve.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/connectors.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/default-servlet.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/deployer-howto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/developers.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/elapi/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/extras.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/fs-admin-apps.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/fs-admin-objects.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/fs-admin-opers.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/fs-default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/fs-jdbc-realm.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/fs-jndi-realm.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/fs-memory-realm.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/funcspecs/mbean-names.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/html-manager-howto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/add.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/asf-logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/code.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/cors-flowchart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/design.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/docs-stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/docs.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/fix.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/fonts/OpenSans400.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/fonts/OpenSans400italic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/fonts/OpenSans600.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/fonts/OpenSans600italic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/fonts/OpenSans700.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/fonts/OpenSans700italic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/fonts/fonts.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/printer.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/tomcat.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/tomcat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/tomcat.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/update.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/images/void.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/introduction.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/jasper-howto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/jdbc-pool.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/jndi-datasource-examples-howto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/jndi-resources-howto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/jspapi/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/logging.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/manager-howto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/maven-jars.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/mbeans-descriptors-howto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/monitoring.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/proxy-howto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/realm-howto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/rewrite.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/security-howto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/security-manager-howto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/servletapi/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/setup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/ssi-howto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/ssl-howto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/tribes/developers.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/tribes/faq.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/tribes/interceptors.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/tribes/introduction.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/tribes/membership.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/tribes/setup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/tribes/status.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/tribes/transport.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/virtual-hosting-howto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/web-socket-howto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/websocketapi/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/windows-auth-howto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/docs/windows-service-howto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/CookieExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/CookieExample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/HelloWorldExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/HelloWorldExample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/LocalStrings.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/LocalStrings_en.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/LocalStrings_es.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/LocalStrings_fr.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/LocalStrings_pt.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/RequestHeaderExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/RequestHeaderExample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/RequestInfoExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/RequestInfoExample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/RequestParamExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/RequestParamExample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/ServletToJsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/ServletToJsp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/SessionExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/SessionExample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Async0$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Async0.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Async0.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Async1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Async1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Async1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Async2$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Async2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Async2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Async3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Async3.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/AsyncStockServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/AsyncStockServlet.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Stockticker$Stock.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Stockticker$TickListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Stockticker.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/async/Stockticker.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/cal/Entries.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/cal/Entries.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/cal/Entry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/cal/Entry.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/cal/JspCalendar.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/cal/JspCalendar.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/cal/TableBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/cal/TableBean.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/checkbox/CheckTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/checkbox/CheckTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/colors/ColorGameBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/colors/ColorGameBean.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/compressionFilters/CompressionFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/compressionFilters/CompressionFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/compressionFilters/CompressionFilterTestServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/compressionFilters/CompressionFilterTestServlet.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/compressionFilters/CompressionResponseStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/compressionFilters/CompressionResponseStream.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/compressionFilters/CompressionServletResponseWrapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/compressionFilters/CompressionServletResponseWrapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/dates/JspCalendar.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/dates/JspCalendar.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/error/Smart.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/error/Smart.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/examples/ExampleTagBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/examples/ExampleTagBase.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/examples/FooTag.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/examples/FooTag.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/examples/FooTagExtraInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/examples/FooTagExtraInfo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/examples/LogTag.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/examples/LogTag.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/examples/ShowSource.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/examples/ShowSource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/examples/ValuesTag.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/examples/ValuesTag.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/filters/ExampleFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/filters/ExampleFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/http2/SimpleImagePush.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/http2/SimpleImagePush.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/BookBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/BookBean.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/FooBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/FooBean.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/ValuesBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/ValuesBean.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/el/Functions.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/el/Functions.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/EchoAttributesTag.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/EchoAttributesTag.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/FindBookSimpleTag.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/FindBookSimpleTag.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/HelloWorldSimpleTag.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/HelloWorldSimpleTag.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/RepeatSimpleTag.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/RepeatSimpleTag.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/ShuffleSimpleTag.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/ShuffleSimpleTag.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/TileSimpleTag.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/TileSimpleTag.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/listeners/ContextListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/listeners/ContextListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/listeners/SessionListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/listeners/SessionListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/nonblocking/ByteCounter$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/nonblocking/ByteCounter$CounterListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/nonblocking/ByteCounter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/nonblocking/ByteCounter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/nonblocking/NumberWriter$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/nonblocking/NumberWriter$NumberWriterListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/nonblocking/NumberWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/nonblocking/NumberWriter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/num/NumberGuessBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/num/NumberGuessBean.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/sessions/DummyCart.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/sessions/DummyCart.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/util/CookieFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/util/CookieFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/util/HTMLFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/util/HTMLFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/validators/DebugValidator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/validators/DebugValidator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/ExamplesConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/ExamplesConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/chat/ChatAnnotation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/chat/ChatAnnotation.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/Client$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/Client.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/Client.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawMessage$ParseException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawMessage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardContextListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardContextListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/Room$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/Room$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/Room$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/Room$MessageType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/Room$Player.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/Room.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/Room.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/AbstractWebsocketMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/AbstractWebsocketMessage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/BinaryWebsocketMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/BinaryWebsocketMessage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/CloseWebsocketMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/CloseWebsocketMessage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/StringWebsocketMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/StringWebsocketMessage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/echo/EchoAnnotation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/echo/EchoAnnotation.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/echo/EchoAsyncAnnotation$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/echo/EchoAsyncAnnotation$CompletedFuture.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/echo/EchoAsyncAnnotation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/echo/EchoAsyncAnnotation.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/echo/EchoEndpoint$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/echo/EchoEndpoint$EchoMessageHandlerBinary.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/echo/EchoEndpoint$EchoMessageHandlerText.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/echo/EchoEndpoint.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/echo/EchoEndpoint.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/echo/EchoStreamAnnotation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/echo/EchoStreamAnnotation.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/echo/servers.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/snake/Direction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/snake/Direction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/snake/Location$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/snake/Location.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/snake/Location.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/snake/Snake.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/snake/Snake.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/snake/SnakeAnnotation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/snake/SnakeAnnotation.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/snake/SnakeTimer$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/snake/SnakeTimer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/classes/websocket/snake/SnakeTimer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/jsp/applet/Clock2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/jsp/debug-taglib.tld" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/jsp/example-taglib.tld" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/jsp2/jsp2-example-taglib.tld" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/tags/displayProducts.tag" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/tags/helloWorld.tag" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/tags/panel.tag" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/async/async1.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/async/async1.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/async/async3.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/async/async3.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/async/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/async/index.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/Entries.java.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/Entry.java.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/JspCalendar.java.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/TableBean.java.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/cal1.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/cal1.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/cal2.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/cal2.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/calendar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/cal/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/checkbox/CheckTest.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/checkbox/check.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/checkbox/checkresult.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/checkbox/checkresult.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/checkbox/cresult.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/colors/ColorGameBean.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/colors/clr.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/colors/colors.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/colors/colrs.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/colors/colrs.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/dates/date.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/dates/date.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/dates/date.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/error/er.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/error/err.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/error/err.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/error/error.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/error/errorpge.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/error/errorpge.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/forward/forward.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/forward/forward.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/forward/fwd.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/forward/one.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/forward/one.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/forward/two.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/images/code.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/images/execute.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/images/read.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/images/return.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/include/foo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/include/foo.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/include/foo.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/include/inc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/include/include.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/include/include.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/Functions.java.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/ValuesBean.java.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/ValuesTag.java.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/basic-arithmetic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/basic-arithmetic.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/basic-arithmetic.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/basic-comparisons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/basic-comparisons.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/basic-comparisons.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/composite.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/composite.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/composite.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/functions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/functions.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/functions.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/implicit-objects.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/implicit-objects.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/el/implicit-objects.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/FooBean.java.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/HelloWorldSimpleTag.java.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/ShuffleSimpleTag.java.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/TileSimpleTag.java.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/jspattribute.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/jspattribute.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/jspattribute.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/shuffle.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/shuffle.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspattribute/shuffle.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspx/basic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspx/basic.jspx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspx/basic.jspx.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspx/svgexample.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspx/textRotate.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspx/textRotate.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspx/textRotate.jspx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/jspx/textRotate.jspx.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/EchoAttributesTag.java.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/coda.jspf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/coda.jspf.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/config.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/config.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/config.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/dynamicattrs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/dynamicattrs.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/dynamicattrs.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/prelude.jspf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/misc/prelude.jspf.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/BookBean.java.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/FindBookSimpleTag.java.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/Functions.java.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/HelloWorldSimpleTag.java.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/RepeatSimpleTag.java.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/book.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/book.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/book.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/hello.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/hello.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/hello.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/repeat.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/repeat.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/simpletag/repeat.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/displayProducts.tag.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/hello.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/hello.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/hello.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/helloWorld.tag.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/panel.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/panel.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/panel.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/panel.tag.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/products.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/products.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsp2/tagfiles/products.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsptoserv/ServletToJsp.java.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsptoserv/hello.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsptoserv/hello.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsptoserv/jsptoservlet.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsptoserv/jsptoservlet.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/jsptoserv/jts.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/num/numguess.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/num/numguess.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/num/numguess.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/plugin/applet/Clock2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/plugin/applet/Clock2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/plugin/plugin.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/plugin/plugin.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/plugin/plugin.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/security/protected/error.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/security/protected/error.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/security/protected/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/security/protected/index.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/security/protected/login.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/security/protected/login.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/sessions/DummyCart.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/sessions/carts.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/sessions/carts.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/sessions/carts.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/sessions/crt.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/simpletag/foo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/simpletag/foo.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/simpletag/foo.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/snp/snoop.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/snp/snoop.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/snp/snoop.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/source.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/source.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/choose.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/choose.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/choose.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/foreach.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/foreach.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/foreach.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/howto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/if.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/if.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/if.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/tagplugin/notes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/xml/xml.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/xml/xml.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/jsp/xml/xml.jsp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/cookies.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/helloworld.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/images/code.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/images/execute.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/images/return.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/nonblocking/bytecounter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/reqheaders.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/reqinfo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/reqparams.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/servlets/sessions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/websocket/chat.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/websocket/drawboard.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/websocket/echo.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/websocket/index.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/examples/websocket/snake.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/META-INF/context.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/WEB-INF/jsp/401.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/WEB-INF/jsp/403.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/WEB-INF/jsp/404.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/images/add.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/images/asf-logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/images/code.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/images/design.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/images/docs.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/images/fix.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/images/tomcat.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/images/update.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/images/void.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/host-manager/manager.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/META-INF/context.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/WEB-INF/jsp/401.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/WEB-INF/jsp/403.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/WEB-INF/jsp/404.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/WEB-INF/jsp/connectorCiphers.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/WEB-INF/jsp/sessionDetail.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/WEB-INF/jsp/sessionsList.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/images/add.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/images/asf-logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/images/code.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/images/design.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/images/docs.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/images/fix.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/images/tomcat.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/images/update.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/images/void.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/status.xsd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/webapps/manager/xform.xsl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/work/Catalina/localhost/ROOT/org/apache/jsp/index_jsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/work/Catalina/localhost/ROOT/org/apache/jsp/index_jsp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/work/Catalina/localhost/examples/SESSIONS.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/work/Catalina/localhost/examples/org/apache/jsp/jsp/async/async3_jsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/work/Catalina/localhost/examples/org/apache/jsp/jsp/async/async3_jsp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/work/Catalina/localhost/examples/org/apache/jsp/jsp/jsp2/el/basic_002darithmetic_jsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/work/Catalina/localhost/examples/org/apache/jsp/jsp/jsp2/el/basic_002darithmetic_jsp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/work/Catalina/localhost/manager/SESSIONS.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/work/Catalina/localhost/manager/org/apache/jsp/WEB_002dINF/jsp/_401_jsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/classes/work/Catalina/localhost/manager/org/apache/jsp/WEB_002dINF/jsp/_401_jsp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/farmacie.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/lib/antlr.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/lib/commons-beanutils.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/lib/commons-chain.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/lib/commons-digester.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/lib/commons-fileupload.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/lib/commons-io.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/lib/commons-logging.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/lib/commons-validator.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/lib/jakarta-oro.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/lib/oro.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/lib/postgresql-42.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/lib/struts-core.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/lib/struts.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/struts-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/assets/images/edi-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/assets/images/edi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/assets/images/f175e5cf-43ca-4efd-8202-43823a698ee8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/assets/javascripts/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/assets/stylesheets/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/assets/stylesheets/main2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/assets/stylesheets/main3.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/login.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/prova-menu.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ProgettoREG/controller/ElencoFarmacieController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ProgettoREG/controller/LoginController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ProgettoREG/db/DBManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ProgettoREG/model/Farmacia.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ProgettoREG/model/Login.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/struts-config.xml" afterPath="$PROJECT_DIR$/out/artifacts/ProgettoREG_war_exploded/WEB-INF/struts-config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/controller/LoginController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/ReintegraMagazzinoController.java" afterPath="$PROJECT_DIR$/src/controller/ReintegraMagazzinoController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db/DBManager.java" afterPath="$PROJECT_DIR$/src/db/DBManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/ob/vendita-tramite-ob.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/ob/vendita-tramite-ob.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/tf/reintegra-magazzino.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/tf/reintegra-magazzino.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -92,25 +769,33 @@
     <window id="1">
       <content type="file-editors">
         <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="vendita-tramite-ob.jsp" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/web/WEB-INF/ob/vendita-tramite-ob.jsp">
+          <leaf>
+            <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/controller/LoginController.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="539">
-                    <caret line="55" column="47" lean-forward="false" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
+                  <state relative-caret-position="435">
+                    <caret line="38" column="22" lean-forward="false" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
                     <folding />
                   </state>
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="VenditaTramiteOB.java" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/controller/VenditaTramiteOB.java">
+            <file leaf-file-name="vendita-tramite-ob.jsp" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/web/WEB-INF/ob/vendita-tramite-ob.jsp">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="195">
-                    <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-                    <folding>
-                      <element signature="imports" expanded="false" />
-                    </folding>
+                  <state relative-caret-position="568">
+                    <caret line="48" column="16" lean-forward="false" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="reintegra-magazzino.jsp" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/reintegra-magazzino.jsp">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="-44">
+                    <caret line="4" column="64" lean-forward="false" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
+                    <folding />
                   </state>
                 </provider>
               </entry>
@@ -123,11 +808,26 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/LoginController.java">
+      <file leaf-file-name="REG.public.login" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.login">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VenditaTramiteOB.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/VenditaTramiteOB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="45" column="96" lean-forward="false" selection-start-line="45" selection-start-column="72" selection-end-line="45" selection-end-column="96" />
+            <state relative-caret-position="195">
+              <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -136,76 +836,42 @@
       <file leaf-file-name="DBManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/db/DBManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="307" column="29" lean-forward="false" selection-start-line="307" selection-start-column="29" selection-end-line="307" selection-end-column="29" />
+            <state relative-caret-position="302">
+              <caret line="314" column="25" lean-forward="false" selection-start-line="314" selection-start-column="25" selection-end-line="314" selection-end-column="25" />
               <folding>
                 <element signature="method#connessione#0;class#DBManager#0" expanded="false" />
                 <element signature="method#getTuttiProdotti#0;class#DBManager#0" expanded="false" />
-                <element signature="e#1024#1034#0" expanded="true" />
                 <element signature="method#getIdProdottiFarmacia#0;class#DBManager#0" expanded="false" />
-                <element signature="e#2040#2049#0" expanded="true" />
-                <element signature="e#2682#2693#0" expanded="true" />
-                <element signature="e#3477#3487#0" expanded="true" />
                 <element signature="method#getIdFarmacia#0;class#DBManager#0" expanded="false" />
                 <element signature="method#elencoFarmacie#0;class#DBManager#0" expanded="false" />
                 <element signature="method#attivaCollaboratore#0;class#DBManager#0" expanded="false" />
-                <marker date="1497043178000" expanded="true" signature="1222:1293" ph="SELECT nome,... prodotti" />
-                <marker date="1497043178000" expanded="true" signature="2213:2266" ph="SELECT id_pr... rimanenze" />
-                <marker date="1497043178000" expanded="true" signature="2884:2942" ph="SELECT qta, rimanenze" />
-                <marker date="1497043178000" expanded="true" signature="3675:3828" ph="SELECT id_pr... prodotti" />
-                <marker date="1497043178000" expanded="true" signature="4723:4758" ph="SELECT cf fr... login" />
-                <marker date="1497043178000" expanded="true" signature="5515:5591" ph="UPDATE riman... " />
-                <marker date="1497043178000" expanded="true" signature="6248:6317" ph="insert INTO ordine... " />
-                <marker date="1497043178000" expanded="true" signature="6923:6969" ph="SELECT id_fa... personale" />
-                <marker date="1497043178000" expanded="true" signature="7608:7703" ph="select ruolo... login" />
-                <marker date="1497043178000" expanded="true" signature="8267:8289" ph="select * fro... farmacia" />
-                <marker date="1497043178000" expanded="true" signature="9255:9347" ph="INSERT into farmacia... " />
-                <marker date="1497043178000" expanded="true" signature="9885:9930" ph="SELECT id_fa... farmacia" />
-                <marker date="1497043178000" expanded="true" signature="10285:10380" ph="INSERT into personale... " />
-                <marker date="1497043178000" expanded="true" signature="10943:10980" ph="SELECT cf fr... personale" />
-                <marker date="1497043178000" expanded="true" signature="11286:11340" ph="insert into login... " />
-                <marker date="1497043178000" expanded="true" signature="12010:12105" ph="INSERT INTO personale... " />
-                <marker date="1497043178000" expanded="true" signature="12662:12716" ph="INSERT INTO login... " />
-                <marker date="1497043178000" expanded="true" signature="13269:13306" ph="select cf fr... login" />
-                <marker date="1497043178000" expanded="true" signature="14271:14364" ph="UPDATE riman... " />
-                <marker date="1497043178000" expanded="true" signature="15483:15521" ph="INSERT into rimanenze... " />
+                <marker date="1497085245000" expanded="true" signature="1222:1293" ph="SELECT nome,... prodotti" />
+                <marker date="1497085245000" expanded="true" signature="2213:2266" ph="SELECT id_pr... rimanenze" />
+                <marker date="1497085245000" expanded="true" signature="2884:2942" ph="SELECT qta, rimanenze" />
+                <marker date="1497085245000" expanded="true" signature="3675:3828" ph="SELECT id_pr... prodotti" />
+                <marker date="1497085245000" expanded="true" signature="4723:4758" ph="SELECT cf fr... login" />
+                <marker date="1497085245000" expanded="true" signature="5515:5591" ph="UPDATE riman... " />
+                <marker date="1497085245000" expanded="true" signature="6248:6317" ph="insert INTO ordine... " />
+                <marker date="1497085245000" expanded="true" signature="6923:6969" ph="SELECT id_fa... personale" />
+                <marker date="1497085245000" expanded="true" signature="7608:7703" ph="select ruolo... login" />
+                <marker date="1497085245000" expanded="true" signature="8267:8289" ph="select * fro... farmacia" />
+                <marker date="1497085245000" expanded="true" signature="9255:9347" ph="INSERT into farmacia... " />
+                <marker date="1497085245000" expanded="true" signature="9885:9930" ph="SELECT id_fa... farmacia" />
+                <marker date="1497085245000" expanded="true" signature="10285:10380" ph="INSERT into personale... " />
+                <marker date="1497085245000" expanded="true" signature="10943:10980" ph="SELECT cf fr... personale" />
+                <marker date="1497085245000" expanded="true" signature="11286:11340" ph="insert into login... " />
+                <marker date="1497085245000" expanded="true" signature="12010:12105" ph="INSERT INTO personale... " />
+                <marker date="1497085245000" expanded="true" signature="12662:12716" ph="INSERT INTO login... " />
+                <marker date="1497085245000" expanded="true" signature="13269:13306" ph="select cf fr... login" />
+                <marker date="1497085245000" expanded="true" signature="14271:14364" ph="UPDATE riman... " />
+                <marker date="1497085245000" expanded="true" signature="15483:15521" ph="INSERT into rimanenze... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AttivaFarmaciaAndTFController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/AttivaFarmaciaAndTFController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AttivaPersonaleController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/AttivaPersonaleController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ElencoFarmacieController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/ElencoFarmacieController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="REG.public.prodotti" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.prodotti">
+      <file leaf-file-name="REG.public.personale" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.personale">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -234,36 +900,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="struts-config.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/struts-config.xml">
-          <provider editor-type-id="com.intellij.struts.diagram.DiagramEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="68" lean-forward="false" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
-              <folding>
-                <element signature="n#action#6;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-                <element signature="n#action#7;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-                <element signature="n#action#8;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-                <element signature="n#action#9;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReintegraMagazzinoController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/ReintegraMagazzinoController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="REG.public.personale" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.personale">
+      <file leaf-file-name="REG.public.prodotti" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.prodotti">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -272,6 +910,16 @@
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReintegraMagazzinoController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/ReintegraMagazzinoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -357,12 +1005,12 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/REG/inserimento-farmacia-corretto.jsp" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/52e46335-53f1-46e2-b535-63db79b72ac6/console.sql" />
         <option value="$PROJECT_DIR$/src/controller/VenditaTramiteOB.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" />
+        <option value="$PROJECT_DIR$/src/db/DBManager.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/ob/vendita-tramite-ob.jsp" />
         <option value="$PROJECT_DIR$/src/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/tf/reintegra-magazzino.jsp" />
         <option value="$PROJECT_DIR$/src/controller/ReintegraMagazzinoController.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" />
-        <option value="$PROJECT_DIR$/src/db/DBManager.java" />
       </list>
     </option>
   </component>
@@ -380,10 +1028,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="24" />
-    <option name="y" value="25" />
-    <option name="width" value="1331" />
-    <option name="height" value="797" />
+    <option name="x" value="7" />
+    <option name="y" value="22" />
+    <option name="width" value="1440" />
+    <option name="height" value="801" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -403,6 +1051,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -479,95 +1129,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ob" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="it.uniupo.REG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="it.uniupo.REG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="it.uniupo.REG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="it.uniupo.REG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="it.uniupo.REG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="it.uniupo.REG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="it.uniupo.REG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="it.uniupo.REG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -607,25 +1169,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="it.uniupo.REG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="it.uniupo.REG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1161,6 +1707,7 @@
       <workItem from="1497017494638" duration="2033000" />
       <workItem from="1497019921110" duration="10615000" />
       <workItem from="1497041660882" duration="1597000" />
+      <workItem from="1497085262490" duration="2966000" />
     </task>
     <task id="LOCAL-00001" summary="Sistemare inserimento farmacia e username, in particolare non funziona il recupero dell'id_farmacia tramite quel metodo">
       <created>1496175910137</created>
@@ -1204,15 +1751,21 @@
       <option name="project" value="LOCAL" />
       <updated>1497025365889</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Perfezionata la vendita tramite-ob. &#10;Prima mettevo l'elenco dei prodotti e il magazzino in sessione, ma questo non permetteva di riaggiornare la vista dei prodotti anche dopo una vendita. Per risolverlo ho spostato i dati messi in sessione(dalla login) nella sola pagina in cui utilizzo le informazioni. Se ora entro su venditra tramite-ob e vendo un prodotto, poi torno su menu e torno in vendita la quantità è aggiornata correttamente.">
+      <created>1497086597157</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1497086597157</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104857000" />
+    <option name="totallyTimeSpent" value="107823000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="24" y="25" width="1331" height="797" extended-state="0" />
-    <editor active="true" />
+    <frame x="7" y="22" width="1440" height="801" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1224,7 +1777,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Struts Assistant" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298639" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14041893" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14020029" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24979983" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1235,10 +1788,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32907802" sideWeight="0.4939952" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32863188" sideWeight="0.4939952" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904148" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24592708" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24892704" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26180944" sideWeight="0.5074946" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1327,7 +1880,9 @@
     <MESSAGE value="Aggiunto su vendita per OB il menu, anche se è ancora da sistemare" />
     <MESSAGE value="- Aggiunto menu su vendita tramite OB, ma bisogna sistemaro&#10;- Quando si vende tramite ob nel db si inserisce anche il totale dell'ordine" />
     <MESSAGE value="Tutte le funzionalità implementate funzionano di nuovo, era ora" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tutte le funzionalità implementate funzionano di nuovo, era ora" />
+    <MESSAGE value="Perfezionata la vendita tramite-ob. &#10;Prima mettevo l'elenco dei prodotti e il magazzino in sessione, ma questo non permetteva di riaggiornare la vista dei prodotti anche dopo una vendita. Per risolverlo ho spostato i dati messi in sessione(dalla login) nella sola pagina in cui utilizzo le informazioni. Se ora entro su venditra tramite-ob e vendo un prodotto, poi torno su menu e torno in vendita la quantità è aggiornata correttamente." />
+    <MESSAGE value="Sistemato anche reintegra magazzino, tolto elenco prodotti dalla sessione, li richiedo solo nella pagina che necessita delle informazioni." />
+    <option name="LAST_COMMIT_MESSAGE" value="Sistemato anche reintegra magazzino, tolto elenco prodotti dalla sessione, li richiedo solo nella pagina che necessita delle informazioni." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1454,7 +2009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1484,20 +2038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="1" />
-          <folding>
-            <element signature="e#206#207#0" expanded="false" />
-            <element signature="e#231#232#0" expanded="false" />
-            <element signature="e#267#268#0" expanded="false" />
-            <element signature="e#295#296#0" expanded="false" />
-            <element signature="e#326#327#0" expanded="false" />
-            <element signature="e#353#354#0" expanded="false" />
-            <element signature="e#393#394#0" expanded="false" />
-            <element signature="e#425#426#0" expanded="false" />
-            <element signature="e#460#461#0" expanded="false" />
-            <element signature="e#491#492#0" expanded="false" />
-            <element signature="e#539#540#0" expanded="false" />
-            <element signature="e#579#580#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1586,7 +2126,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1635,18 +2174,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.login">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/home-tf.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1657,27 +2184,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/reintegra-magazzino-ok.jsp" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/reintegra-magazzino-no.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/reintegra-magazzino.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/struts-config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="435">
+          <caret line="29" column="68" lean-forward="false" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
+          <folding>
+            <marker date="1497085245000" expanded="true" signature="3612:3694" ph="..." />
+          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/struts-config.xml">
       <provider editor-type-id="com.intellij.struts.diagram.DiagramEditorProvider">
         <state />
       </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/commons-chain.jar!/org/apache/commons/chain/impl/ChainBase.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="68" lean-forward="false" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
+        <state relative-caret-position="108">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/AttivaPersonaleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
-            <element signature="n#action#6;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-            <element signature="n#action#7;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-            <element signature="n#action#8;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-            <element signature="n#action#9;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/AttivaFarmaciaAndTFController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ElencoFarmacieController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1690,71 +2241,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/commons-chain.jar!/org/apache/commons/chain/impl/ChainBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/ob/vendita-tramite-ob.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="55" column="47" lean-forward="false" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/VenditaTramiteOB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/AttivaPersonaleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ElencoFarmacieController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="45" column="96" lean-forward="false" selection-start-line="45" selection-start-column="72" selection-end-line="45" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/AttivaFarmaciaAndTFController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ReintegraMagazzinoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1772,42 +2258,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/ob/vendita-tramite-ob.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="48" column="16" lean-forward="false" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.login">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/reintegra-magazzino.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="4" column="64" lean-forward="false" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/db/DBManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="307" column="29" lean-forward="false" selection-start-line="307" selection-start-column="29" selection-end-line="307" selection-end-column="29" />
+        <state relative-caret-position="302">
+          <caret line="314" column="25" lean-forward="false" selection-start-line="314" selection-start-column="25" selection-end-line="314" selection-end-column="25" />
           <folding>
             <element signature="method#connessione#0;class#DBManager#0" expanded="false" />
             <element signature="method#getTuttiProdotti#0;class#DBManager#0" expanded="false" />
-            <element signature="e#1024#1034#0" expanded="true" />
             <element signature="method#getIdProdottiFarmacia#0;class#DBManager#0" expanded="false" />
-            <element signature="e#2040#2049#0" expanded="true" />
-            <element signature="e#2682#2693#0" expanded="true" />
-            <element signature="e#3477#3487#0" expanded="true" />
             <element signature="method#getIdFarmacia#0;class#DBManager#0" expanded="false" />
             <element signature="method#elencoFarmacie#0;class#DBManager#0" expanded="false" />
             <element signature="method#attivaCollaboratore#0;class#DBManager#0" expanded="false" />
-            <marker date="1497043178000" expanded="true" signature="1222:1293" ph="SELECT nome,... prodotti" />
-            <marker date="1497043178000" expanded="true" signature="2213:2266" ph="SELECT id_pr... rimanenze" />
-            <marker date="1497043178000" expanded="true" signature="2884:2942" ph="SELECT qta, rimanenze" />
-            <marker date="1497043178000" expanded="true" signature="3675:3828" ph="SELECT id_pr... prodotti" />
-            <marker date="1497043178000" expanded="true" signature="4723:4758" ph="SELECT cf fr... login" />
-            <marker date="1497043178000" expanded="true" signature="5515:5591" ph="UPDATE riman... " />
-            <marker date="1497043178000" expanded="true" signature="6248:6317" ph="insert INTO ordine... " />
-            <marker date="1497043178000" expanded="true" signature="6923:6969" ph="SELECT id_fa... personale" />
-            <marker date="1497043178000" expanded="true" signature="7608:7703" ph="select ruolo... login" />
-            <marker date="1497043178000" expanded="true" signature="8267:8289" ph="select * fro... farmacia" />
-            <marker date="1497043178000" expanded="true" signature="9255:9347" ph="INSERT into farmacia... " />
-            <marker date="1497043178000" expanded="true" signature="9885:9930" ph="SELECT id_fa... farmacia" />
-            <marker date="1497043178000" expanded="true" signature="10285:10380" ph="INSERT into personale... " />
-            <marker date="1497043178000" expanded="true" signature="10943:10980" ph="SELECT cf fr... personale" />
-            <marker date="1497043178000" expanded="true" signature="11286:11340" ph="insert into login... " />
-            <marker date="1497043178000" expanded="true" signature="12010:12105" ph="INSERT INTO personale... " />
-            <marker date="1497043178000" expanded="true" signature="12662:12716" ph="INSERT INTO login... " />
-            <marker date="1497043178000" expanded="true" signature="13269:13306" ph="select cf fr... login" />
-            <marker date="1497043178000" expanded="true" signature="14271:14364" ph="UPDATE riman... " />
-            <marker date="1497043178000" expanded="true" signature="15483:15521" ph="INSERT into rimanenze... " />
+            <marker date="1497085245000" expanded="true" signature="1222:1293" ph="SELECT nome,... prodotti" />
+            <marker date="1497085245000" expanded="true" signature="2213:2266" ph="SELECT id_pr... rimanenze" />
+            <marker date="1497085245000" expanded="true" signature="2884:2942" ph="SELECT qta, rimanenze" />
+            <marker date="1497085245000" expanded="true" signature="3675:3828" ph="SELECT id_pr... prodotti" />
+            <marker date="1497085245000" expanded="true" signature="4723:4758" ph="SELECT cf fr... login" />
+            <marker date="1497085245000" expanded="true" signature="5515:5591" ph="UPDATE riman... " />
+            <marker date="1497085245000" expanded="true" signature="6248:6317" ph="insert INTO ordine... " />
+            <marker date="1497085245000" expanded="true" signature="6923:6969" ph="SELECT id_fa... personale" />
+            <marker date="1497085245000" expanded="true" signature="7608:7703" ph="select ruolo... login" />
+            <marker date="1497085245000" expanded="true" signature="8267:8289" ph="select * fro... farmacia" />
+            <marker date="1497085245000" expanded="true" signature="9255:9347" ph="INSERT into farmacia... " />
+            <marker date="1497085245000" expanded="true" signature="9885:9930" ph="SELECT id_fa... farmacia" />
+            <marker date="1497085245000" expanded="true" signature="10285:10380" ph="INSERT into personale... " />
+            <marker date="1497085245000" expanded="true" signature="10943:10980" ph="SELECT cf fr... personale" />
+            <marker date="1497085245000" expanded="true" signature="11286:11340" ph="insert into login... " />
+            <marker date="1497085245000" expanded="true" signature="12010:12105" ph="INSERT INTO personale... " />
+            <marker date="1497085245000" expanded="true" signature="12662:12716" ph="INSERT INTO login... " />
+            <marker date="1497085245000" expanded="true" signature="13269:13306" ph="select cf fr... login" />
+            <marker date="1497085245000" expanded="true" signature="14271:14364" ph="UPDATE riman... " />
+            <marker date="1497085245000" expanded="true" signature="15483:15521" ph="INSERT into rimanenze... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/VenditaTramiteOB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ReintegraMagazzinoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1820,6 +2347,14 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="38" column="22" lean-forward="false" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
           <folding />
         </state>
       </provider>
