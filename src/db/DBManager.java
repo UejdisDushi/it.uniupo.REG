@@ -126,13 +126,16 @@ public class DBManager {
         return out;
     }
 
-    public boolean setVenditaPerOB(int id_farmacia, String[] qtaVenduta, ArrayList<Prodotti> prodotti, String userCheEffettuaVendita) throws SQLException {
+
+    public boolean setVendita(int id_farmacia, String[] qtaVenduta, ArrayList<Prodotti> prodotti, String userCheEffettuaVendita, boolean controlloPerRicetta) throws SQLException {
         if(connection == null)
             this.connessione();
 
-        for(int j = 0;j<prodotti.size();j++)
-            if(prodotti.get(j).isRicetta() == true)
-                prodotti.remove(j);
+        if(controlloPerRicetta) {
+            for (int j = 0; j < prodotti.size(); j++)
+                if (prodotti.get(j).isRicetta() == true)
+                    prodotti.remove(j);
+        }
 
         PreparedStatement aggiornaRimanenze = null;
         double totaleAcquisto = 0;
@@ -159,6 +162,7 @@ public class DBManager {
             return true;
         return false;
     }
+
 
     public int getIdFarmacia(String cf) throws SQLException {
         int id_farmacia = 0;
@@ -349,6 +353,44 @@ public class DBManager {
         inserisci.setInt(4, idProdotto);
         if (inserisci.executeUpdate() > 0) return true;
         return false;
+    }
+
+    public ArrayList<Paziente> getPazienti() throws SQLException {
+        if(connection == null)
+            this.connessione();
+
+        ArrayList<Paziente> elencoPazienti = new ArrayList<>();
+        Paziente paziente = new Paziente();
+
+        PreparedStatement query = connection.prepareStatement("SELECT FROM paziente");
+        ResultSet risultatoQuery = query.executeQuery();
+        while (risultatoQuery.next()) {
+            paziente.setCf(risultatoQuery.getString("cf"));
+            paziente.setNome(risultatoQuery.getString("nome"));
+            paziente.setCognome(risultatoQuery.getString("cognome"));
+            paziente.setDataDiNAscita(risultatoQuery.getDate("data_nascita"));
+            paziente.setPersonale(risultatoQuery.getString("utente"));
+            elencoPazienti.add(paziente);
+            paziente = null;
+        }
+        return elencoPazienti;
+    }
+
+
+    public int getQTAInMagazzino(int idFarmacia,int idProdotto) throws SQLException {
+        if(connection == null)
+            this.connessione();
+
+        int quantita = 0;
+
+        PreparedStatement query = connection.prepareStatement("SELECT qta FROM rimanenze WHERE id_farmacia=? and id_prodotto=?");
+        query.setInt(1, idFarmacia);
+        query.setInt(2, idProdotto);
+        ResultSet risultato = query.executeQuery();
+        while (risultato.next())
+            quantita = risultato.getInt(1);
+
+        return quantita;
     }
 }
 

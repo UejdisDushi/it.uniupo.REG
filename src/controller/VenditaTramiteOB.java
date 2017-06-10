@@ -16,8 +16,11 @@ public class VenditaTramiteOB extends Action {
         //ottengo le quantita dal form
         String[] quantita = request.getParameterValues("quantita");
 
+        int idFarmacia = (int)request.getSession().getAttribute("id-farmacia");
+
         DBManager dbManager = new DBManager();
-        if(dbManager.setVenditaPerOB((int) request.getSession().getAttribute("id-farmacia"), quantita, (ArrayList< Prodotti>) request.getSession().getAttribute("prodotti-dentro-magazzino-farmacia"),((Login)request.getSession().getAttribute("login")).getUser()))
+        ArrayList<Prodotti> prodotti = dbManager.getProdottiInMagazzino(idFarmacia);
+        if(dbManager.setVendita(idFarmacia, quantita, prodotti,((Login)request.getSession().getAttribute("login")).getUser(),true))
             return mapping.findForward("vendita-tramite-ob-ok");
         return null;
     }

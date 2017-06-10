@@ -13,6 +13,7 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <html:link action="/forwardToAttivaCollaboratore">Attiva collaboratore</html:link>
     <html:link action="/forwardToReintegraMagazzino">Reintegra magazzino</html:link>
+    <html:link action="/forwardToVendita">Vendita</html:link>
     <html:link action="/logout">Log Out</html:link>
 </div>
 

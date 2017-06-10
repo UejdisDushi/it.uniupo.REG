@@ -27,6 +27,11 @@
             <forward name="vendita-tramite-ob-ok" path="/WEB-INF/ob/home-ob.jsp"></forward>
         </action>
 
+        <action path="/vendita" type="controller.VenditaController" name="rimanenze">
+            <forward name="acquisto-senza-ricetta" path="/WEB-INF/tf/home-tf.jsp"></forward>
+            <forward name="acquisto-con-ricetta" path="/WEB-INF/tf/elenco-pazienti.jsp"></forward>
+        </action>
+
         <action path="/attiva-collaboratore" type="controller.AttivaPersonaleController" name="attiva-collaboratore">
             <forward name="attiva-collaboratore-ok" path="/WEB-INF/tf/attiva-collaboratore-ok.jsp"></forward>
         </action>
@@ -57,6 +62,9 @@
         </action>
         <action path="/forwardToVenditaTramiteOB" type="controller.forward.ForwardToVenditaTramiteOB">
             <forward name="vendita-tramite-ob" path="/WEB-INF/ob/vendita-tramite-ob.jsp"></forward>
+        </action>
+        <action path="/forwardToVendita" type="controller.forward.ForwardToVendita">
+            <forward name="vendita" path="/WEB-INF/tf/vendita.jsp"></forward>
         </action>
 
 
