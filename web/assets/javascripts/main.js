@@ -29,14 +29,13 @@ function cercaPerNome() {
     }
 }
 
+function nascondiAltreScelte() {
+    $("#cliente").hide();
+}
+
 function nuovaRiga() {
     var tabella = document.getElementById("tabella");
-    //var x = document.getElementById("intestazione");
-    //x.insertCell(4);
-    //x.innerHTML = "Dottore che ha emesso la ricetta"
-    var intestazione = tabella.rows[1].cells[2];
     var numerodiRighe = tabella.rows.length;
-    alert(intestazione);
     var riga = tabella.insertRow(numerodiRighe);
     var cella1 = riga.insertCell(0);
     var t1 = document.createElement("input");
@@ -56,9 +55,14 @@ function nuovaRiga() {
         cella4.appendChild(t4);
     var cella5 = riga.insertCell(4);
     var t5 = document.createElement("select");
-        t5.options = new Option('Si', 'Si');
-        t5.name= "cliente";
-        cella5.appendChild(t5);
+    var option1 = document.createElement( "option" );
+    option1.text = "";
+    t5.appendChild(option1);
+    var option2 = document.createElement( "option" );
+    option2.text = "Si";
+    t5.appendChild(option2);
+    t5.name = "cliente";
+    cella5.appendChild(t5);
 
     $("#nuovoPaziente").hide();
 

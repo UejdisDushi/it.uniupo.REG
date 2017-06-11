@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="725fbaa1-ea8d-4bf4-a6fc-3c6f34d201dc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/TerminaOperazioneVenditaController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Medico.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/tf/elenco-medici.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/controller/forward/ForwardToHometf.java" afterPath="$PROJECT_DIR$/src/controller/CheckMedicoController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/VenditaController.java" afterPath="$PROJECT_DIR$/src/controller/VenditaController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/VenditaTramiteOB.java" afterPath="$PROJECT_DIR$/src/controller/VenditaTramiteOB.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/CheckMedicoController.java" afterPath="$PROJECT_DIR$/src/controller/CheckMedicoController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/TerminaOperazioneVenditaController.java" afterPath="$PROJECT_DIR$/src/controller/TerminaOperazioneVenditaController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db/DBManager.java" afterPath="$PROJECT_DIR$/src/db/DBManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Paziente.java" afterPath="$PROJECT_DIR$/src/model/Paziente.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/tf/elenco-pazienti.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/tf/elenco-pazienti.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/javascripts/main.js" afterPath="$PROJECT_DIR$/web/assets/javascripts/main.js" />
     </list>
@@ -82,122 +76,36 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
       </PATH_ELEMENT>
     </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="REG@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="REG" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="public" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="ricetta" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="REG@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="REG" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="public" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="paziente" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="REG@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="REG" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="public" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="ordine" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="REG@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="REG" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="public" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="medico" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TerminaOperazioneVenditaController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/controller/TerminaOperazioneVenditaController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+      <file leaf-file-name="REG.public.ricetta" pinned="false" current-in-tab="true">
+        <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.ricetta">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="REG.public.paziente" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.paziente">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -244,6 +152,7 @@
       <find>getPazi</find>
       <find>getPa</find>
       <find>setVe</find>
+      <find>setv</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -297,17 +206,17 @@
         <option value="$PROJECT_DIR$/src/controller/forward/ForwardToHometf.java" />
         <option value="$PROJECT_DIR$/src/controller/InserisciPazienteController.java" />
         <option value="$PROJECT_DIR$/src/model/Paziente.java" />
-        <option value="$PROJECT_DIR$/web/assets/javascripts/main.js" />
-        <option value="$PROJECT_DIR$/src/controller/CheckMedicoController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/52e46335-53f1-46e2-b535-63db79b72ac6/console.sql" />
         <option value="$PROJECT_DIR$/src/controller/VenditaTramiteOB.java" />
         <option value="$PROJECT_DIR$/src/controller/VenditaController.java" />
         <option value="$PROJECT_DIR$/src/model/Medico.java" />
-        <option value="$PROJECT_DIR$/src/db/DBManager.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/tf/elenco-medici.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/tf/elenco-pazienti.jsp" />
         <option value="$PROJECT_DIR$/src/controller/TerminaOperazioneVenditaController.java" />
+        <option value="$PROJECT_DIR$/web/assets/javascripts/main.js" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/tf/elenco-pazienti.jsp" />
+        <option value="$PROJECT_DIR$/src/db/DBManager.java" />
+        <option value="$PROJECT_DIR$/src/controller/CheckMedicoController.java" />
       </list>
     </option>
   </component>
@@ -1072,7 +981,7 @@
       <workItem from="1497041660882" duration="1597000" />
       <workItem from="1497085262490" duration="9600000" />
       <workItem from="1497103114468" duration="13868000" />
-      <workItem from="1497192376745" duration="6574000" />
+      <workItem from="1497192376745" duration="9447000" />
     </task>
     <task id="LOCAL-00001" summary="Sistemare inserimento farmacia e username, in particolare non funziona il recupero dell'id_farmacia tramite quel metodo">
       <created>1496175910137</created>
@@ -1144,11 +1053,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497170996721</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Sistemata la vendita per TF, funziona con creazione ricetta e tutto quanto. Manca da gestire l'inserimento di un nuovo paziente, bazzeccole.">
+      <created>1497199072288</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1497199072288</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134899000" />
+    <option name="totallyTimeSpent" value="137772000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="22" width="1440" height="794" extended-state="6" />
@@ -1234,7 +1150,8 @@
     <MESSAGE value="Sistemato anche reintegra magazzino, tolto elenco prodotti dalla sessione, li richiedo solo nella pagina che necessita delle informazioni." />
     <MESSAGE value="Aggiustamenti vari. Funzionalità precedenti ottimizzate. &#10;Iniziata vendita per TF, ma sistemare il controller. BAsta che un solo prodotto abbia ricetta true e mi reindirizza su verifica paziente, se paziente è presente, cercando tramite CF su quelli già esistenti, pulsante ok (quindi confermo la sua presenza) e ritorno su home, se non presente tastino più per aggiungere il nuovo paziente e nel db aggiungere tutte le informazioni" />
     <MESSAGE value="introdotto per vendita tf:&#10;- se un ordine non possiede prodotti con obbligo di ricetta si viene rimandati alla home&#10;- se un ordine contiene ALMENO un prodotto con obbligo di ricetta si viene reindirizzati ad una pagina che contiene i pazienti già registrati, se questo paziente che ha effettuato l'ordine è già presente clicco su già presente e vengo rimandato alla home.&#10;&#10;Bisogna aggiungere in &quot;elenco-pazienti.jsp&quot; la possibilità di aggiungere un nuovo paziente, magari tramite pulsante, richiedere le sue informazioni e inserire anche il medico che ha emesso la ricetta e caricare tutto a DB." />
-    <option name="LAST_COMMIT_MESSAGE" value="introdotto per vendita tf:&#10;- se un ordine non possiede prodotti con obbligo di ricetta si viene rimandati alla home&#10;- se un ordine contiene ALMENO un prodotto con obbligo di ricetta si viene reindirizzati ad una pagina che contiene i pazienti già registrati, se questo paziente che ha effettuato l'ordine è già presente clicco su già presente e vengo rimandato alla home.&#10;&#10;Bisogna aggiungere in &quot;elenco-pazienti.jsp&quot; la possibilità di aggiungere un nuovo paziente, magari tramite pulsante, richiedere le sue informazioni e inserire anche il medico che ha emesso la ricetta e caricare tutto a DB." />
+    <MESSAGE value="Sistemata la vendita per TF, funziona con creazione ricetta e tutto quanto. Manca da gestire l'inserimento di un nuovo paziente, bazzeccole." />
+    <option name="LAST_COMMIT_MESSAGE" value="Sistemata la vendita per TF, funziona con creazione ricetta e tutto quanto. Manca da gestire l'inserimento di un nuovo paziente, bazzeccole." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1251,8 +1168,14 @@
           <properties />
           <option name="timeStamp" value="92" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controller/CheckMedicoController.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="104" />
+      <option name="time" value="105" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
@@ -1443,28 +1366,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/InserisciPazienteController.java" />
-    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.paziente">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/struts-core.jar!/org/apache/struts/chain/commands/servlet/PerformForward.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -1489,22 +1391,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/vendita.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-283">
-          <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/javascripts/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="58" column="18" lean-forward="false" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Paziente.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
@@ -1515,73 +1401,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/VenditaController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="33" column="43" lean-forward="true" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Medico.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/db/DBManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="422" column="18" lean-forward="false" selection-start-line="422" selection-start-column="18" selection-end-line="422" selection-end-column="18" />
-          <folding>
-            <element signature="method#connessione#0;class#DBManager#0" expanded="false" />
-            <element signature="method#getTuttiProdotti#0;class#DBManager#0" expanded="false" />
-            <element signature="method#getIdProdottiFarmacia#0;class#DBManager#0" expanded="false" />
-            <element signature="method#getIdFarmacia#0;class#DBManager#0" expanded="false" />
-            <element signature="method#elencoFarmacie#0;class#DBManager#0" expanded="false" />
-            <element signature="method#attivaCollaboratore#0;class#DBManager#0" expanded="false" />
-            <marker date="1497197957000" expanded="true" signature="1222:1293" ph="SELECT nome,... prodotti" />
-            <marker date="1497197957000" expanded="true" signature="2213:2266" ph="SELECT id_pr... rimanenze" />
-            <marker date="1497197957000" expanded="true" signature="2884:2942" ph="SELECT qta, rimanenze" />
-            <marker date="1497197957000" expanded="true" signature="3675:3828" ph="SELECT id_pr... prodotti" />
-            <marker date="1497197957000" expanded="true" signature="4723:4758" ph="SELECT cf fr... login" />
-            <marker date="1497197957000" expanded="true" signature="5679:5755" ph="UPDATE riman... " />
-            <marker date="1497197957000" expanded="true" signature="6412:6481" ph="insert INTO ordine... " />
-            <marker date="1497197957000" expanded="true" signature="6865:6895" ph="SELECT numer... " />
-            <marker date="1497197957000" expanded="true" signature="6865:6902" ph="SELECT MAX(n... ordine" />
-            <marker date="1497197957000" expanded="true" signature="7339:7385" ph="SELECT id_fa... personale" />
-            <marker date="1497197957000" expanded="true" signature="8024:8119" ph="select ruolo... login" />
-            <marker date="1497197957000" expanded="true" signature="8683:8705" ph="select * fro... farmacia" />
-            <marker date="1497197957000" expanded="true" signature="9671:9763" ph="INSERT into farmacia... " />
-            <marker date="1497197957000" expanded="true" signature="10301:10346" ph="SELECT id_fa... farmacia" />
-            <marker date="1497197957000" expanded="true" signature="10701:10796" ph="INSERT into personale... " />
-            <marker date="1497197957000" expanded="true" signature="11359:11396" ph="SELECT cf fr... personale" />
-            <marker date="1497197957000" expanded="true" signature="11702:11756" ph="insert into login... " />
-            <marker date="1497197957000" expanded="true" signature="12426:12521" ph="INSERT INTO personale... " />
-            <marker date="1497197957000" expanded="true" signature="13078:13132" ph="INSERT INTO login... " />
-            <marker date="1497197957000" expanded="true" signature="13685:13722" ph="select cf fr... login" />
-            <marker date="1497197957000" expanded="true" signature="14687:14780" ph="UPDATE riman... " />
-            <marker date="1497197957000" expanded="true" signature="15899:15937" ph="INSERT into rimanenze... " />
-            <marker date="1497197957000" expanded="true" signature="16486:16508" ph="SELECT FROM paziente... " />
-            <marker date="1497197957000" expanded="true" signature="17323:17386" ph="SELECT qta F... rimanenze" />
-            <marker date="1497197957000" expanded="true" signature="17915:17935" ph="SELECT * FRO... medico" />
-            <marker date="1497197957000" expanded="true" signature="18826:18906" ph="insert into ricetta... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.ricetta">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1633,14 +1457,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/elenco-pazienti.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="19" column="44" lean-forward="false" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/struts-config.xml">
       <provider editor-type-id="com.intellij.struts.diagram.DiagramEditorProvider">
         <state />
@@ -1648,24 +1464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
           <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/CheckMedicoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/struts-core.jar!/org/apache/struts/chain/commands/servlet/ExecuteAction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1710,6 +1508,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/javascripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/elenco-pazienti.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="49" column="38" lean-forward="false" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/vendita.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/VenditaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="32" column="73" lean-forward="true" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="134" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db/DBManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="439" column="30" lean-forward="true" selection-start-line="439" selection-start-column="30" selection-end-line="439" selection-end-column="30" />
+          <folding>
+            <element signature="method#connessione#0;class#DBManager#0" expanded="false" />
+            <element signature="method#getTuttiProdotti#0;class#DBManager#0" expanded="false" />
+            <element signature="method#getIdProdottiFarmacia#0;class#DBManager#0" expanded="false" />
+            <element signature="method#getIdFarmacia#0;class#DBManager#0" expanded="false" />
+            <element signature="method#elencoFarmacie#0;class#DBManager#0" expanded="false" />
+            <element signature="method#attivaCollaboratore#0;class#DBManager#0" expanded="false" />
+            <marker date="1497206732000" expanded="true" signature="1222:1293" ph="SELECT nome,... prodotti" />
+            <marker date="1497206732000" expanded="true" signature="2213:2266" ph="SELECT id_pr... rimanenze" />
+            <marker date="1497206732000" expanded="true" signature="2884:2942" ph="SELECT qta, rimanenze" />
+            <marker date="1497206732000" expanded="true" signature="3675:3828" ph="SELECT id_pr... prodotti" />
+            <marker date="1497206732000" expanded="true" signature="4723:4758" ph="SELECT cf fr... login" />
+            <marker date="1497206732000" expanded="true" signature="5679:5755" ph="UPDATE riman... " />
+            <marker date="1497206732000" expanded="true" signature="6412:6481" ph="insert INTO ordine... " />
+            <marker date="1497206732000" expanded="true" signature="6865:6895" ph="SELECT numer... " />
+            <marker date="1497206732000" expanded="true" signature="6865:6902" ph="SELECT MAX(n... ordine" />
+            <marker date="1497206732000" expanded="true" signature="7339:7385" ph="SELECT id_fa... personale" />
+            <marker date="1497206732000" expanded="true" signature="8024:8119" ph="select ruolo... login" />
+            <marker date="1497206732000" expanded="true" signature="8683:8705" ph="select * fro... farmacia" />
+            <marker date="1497206732000" expanded="true" signature="9671:9763" ph="INSERT into farmacia... " />
+            <marker date="1497206732000" expanded="true" signature="10301:10346" ph="SELECT id_fa... farmacia" />
+            <marker date="1497206732000" expanded="true" signature="10701:10796" ph="INSERT into personale... " />
+            <marker date="1497206732000" expanded="true" signature="11359:11396" ph="SELECT cf fr... personale" />
+            <marker date="1497206732000" expanded="true" signature="11702:11756" ph="insert into login... " />
+            <marker date="1497206732000" expanded="true" signature="12426:12521" ph="INSERT INTO personale... " />
+            <marker date="1497206732000" expanded="true" signature="13078:13132" ph="INSERT INTO login... " />
+            <marker date="1497206732000" expanded="true" signature="13685:13722" ph="select cf fr... login" />
+            <marker date="1497206732000" expanded="true" signature="14687:14780" ph="UPDATE riman... " />
+            <marker date="1497206732000" expanded="true" signature="15899:15937" ph="INSERT into rimanenze... " />
+            <marker date="1497206732000" expanded="true" signature="16486:16508" ph="SELECT FROM paziente... " />
+            <marker date="1497206732000" expanded="true" signature="17323:17386" ph="SELECT qta F... rimanenze" />
+            <marker date="1497206732000" expanded="true" signature="17915:17935" ph="SELECT * FRO... medico" />
+            <marker date="1497206732000" expanded="true" signature="18826:18906" ph="insert into ricetta... " />
+            <marker date="1497206732000" expanded="true" signature="19501:19581" ph="INSERT INTO paziente... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/TerminaOperazioneVenditaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/CheckMedicoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/struts-core.jar!/org/apache/struts/chain/commands/servlet/ExecuteAction.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.ordine">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1723,13 +1631,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/TerminaOperazioneVenditaController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.paziente">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.ricetta">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>

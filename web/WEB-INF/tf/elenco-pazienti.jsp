@@ -47,7 +47,7 @@
                 <%=elencoPazienti.get(i).getDataDiNAscita()%>
             </td>
             <td>
-                <select name="cliente">
+                <select name="cliente"">
                     <option selected></option>
                     <option>Si</option>
                 </select>

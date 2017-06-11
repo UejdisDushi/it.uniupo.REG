@@ -435,6 +435,21 @@ public class DBManager {
             return true;
         return false;
     }
+
+    public boolean inserisciNuovoPaziente(String cf, String nome, String cognome, Date dataDiNAscita, String userCheRegistraPaziente) throws SQLException{
+        if(connection == null)
+            this.connessione();
+
+        PreparedStatement nuovoPaziente = connection.prepareStatement("INSERT INTO paziente(cf, nome, cognome, data_nascita, utente) VALUES (?,?,?,?,?)");
+        nuovoPaziente.setString(1,cf);
+        nuovoPaziente.setString(2, nome);
+        nuovoPaziente.setString(3,cognome);
+        nuovoPaziente.setDate(4,dataDiNAscita);
+        nuovoPaziente.setString(5,userCheRegistraPaziente);
+        if(nuovoPaziente.executeUpdate() > 0)
+            return true;
+        return false;
+    }
 }
 
 

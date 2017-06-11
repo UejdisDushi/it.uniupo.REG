@@ -23,7 +23,7 @@ public class TerminaOperazioneVenditaController extends Action {
         for(int i = 0;i<medici.length;i++)
             if(medici[i].equals("Si"))
                 if(dbManager.setRicetta(elencoMedici.get(i).getCodiceRegionale(),cfPaziente,idOrdine)){}
-                
+
         return mapping.findForward("termina-operazione-ok");
     }
 }
