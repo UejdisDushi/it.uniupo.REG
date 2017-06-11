@@ -20,8 +20,8 @@ public class VenditaTramiteOB extends Action {
 
         DBManager dbManager = new DBManager();
         ArrayList<Prodotti> prodotti = dbManager.getProdottiInMagazzino(idFarmacia);
-        if(dbManager.setVendita(idFarmacia, quantita, prodotti,((Login)request.getSession().getAttribute("login")).getUser(),true))
-            return mapping.findForward("vendita-tramite-ob-ok");
-        return null;
+        int idOrdine = dbManager.setVendita(idFarmacia, quantita, prodotti,((Login)request.getSession().getAttribute("login")).getUser(),true);
+
+        return mapping.findForward("vendita-tramite-ob-ok");
     }
 }

@@ -24,18 +24,19 @@ public class VenditaController extends Action {
 
         DBManager dbManager = new DBManager();
         ArrayList<Prodotti> prodotti = dbManager.getProdottiInMagazzino(idFarmacia);
-        
+
         for(int i = 0;i<prodotti.size();i++)
             if (!quantita[i].equals(""))
                 if (prodotti.get(i).isRicetta())
                     rimandaARicetta = true;
 
-        if(dbManager.setVendita(idFarmacia,quantita,prodotti,((Login)request.getSession().getAttribute("login")).getUser(),false))
-            if(rimandaARicetta)
-                return mapping.findForward("acquisto-con-ricetta");
-            else
-                return mapping.findForward("acquisto-senza-ricetta");
+        int idOrdine = dbManager.setVendita(idFarmacia,quantita,prodotti,((Login)request.getSession().getAttribute("login")).getUser(),false);
+        request.getSession().setAttribute("id-ordine",idOrdine);
 
-        return null;
+        if(rimandaARicetta)
+            return mapping.findForward("acquisto-con-ricetta");
+        else
+            return mapping.findForward("acquisto-senza-ricetta");
+
     }
 }

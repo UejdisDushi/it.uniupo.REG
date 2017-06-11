@@ -1,16 +1,26 @@
 package model;
 
 
+import org.apache.struts.action.ActionForm;
+
 import java.sql.Date;
 
-public class Paziente {
+public class Paziente extends ActionForm {
 
     String cf;
     String nome;
     String cognome;
     Date dataDiNAscita;
     String personale;
+    boolean cliente;
 
+    public boolean isCliente() {
+        return cliente;
+    }
+
+    public void setCliente(boolean cliente) {
+        this.cliente = cliente;
+    }
 
     public String getPersonale() {
         return personale;

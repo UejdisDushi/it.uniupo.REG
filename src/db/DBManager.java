@@ -127,7 +127,7 @@ public class DBManager {
     }
 
 
-    public boolean setVendita(int id_farmacia, String[] qtaVenduta, ArrayList<Prodotti> prodotti, String userCheEffettuaVendita, boolean controlloPerRicetta) throws SQLException {
+    public int setVendita(int id_farmacia, String[] qtaVenduta, ArrayList<Prodotti> prodotti, String userCheEffettuaVendita, boolean controlloPerRicetta) throws SQLException {
         if(connection == null)
             this.connessione();
 
@@ -137,7 +137,9 @@ public class DBManager {
                     prodotti.remove(j);
         }
 
+        int numeroOrdine = 0;
         PreparedStatement aggiornaRimanenze = null;
+        PreparedStatement recuperaIdOrdine = null;
         double totaleAcquisto = 0;
         for(int i = 0;i<prodotti.size();i++) {
             aggiornaRimanenze = connection.prepareStatement("UPDATE rimanenze SET qta = qta - ? WHERE id_prodotto = ? and id_farmacia = ?");
@@ -158,9 +160,13 @@ public class DBManager {
         inserisciInOrdine.setDouble(2, totaleAcquisto);
         Date data_locale = new Date(Calendar.getInstance().getTime().getTime());
         inserisciInOrdine.setDate(3,data_locale);
-        if(inserisciInOrdine.executeUpdate() > 0)
-            return true;
-        return false;
+        if(inserisciInOrdine.executeUpdate() > 0) {
+            recuperaIdOrdine = connection.prepareStatement("SELECT MAX(numero_ordine) FROM ordine");
+            ResultSet resultSet = recuperaIdOrdine.executeQuery();
+            while (resultSet.next())
+                numeroOrdine = resultSet.getInt(1);
+        }
+        return numeroOrdine;
     }
 
 
@@ -371,7 +377,7 @@ public class DBManager {
             paziente.setDataDiNAscita(risultatoQuery.getDate("data_nascita"));
             paziente.setPersonale(risultatoQuery.getString("utente"));
             elencoPazienti.add(paziente);
-            paziente = null;
+            paziente = new Paziente();
         }
         return elencoPazienti;
     }
@@ -391,6 +397,43 @@ public class DBManager {
             quantita = risultato.getInt(1);
 
         return quantita;
+    }
+
+    public ArrayList<Medico> getMedici() throws SQLException {
+        if(connection == null)
+            this.connessione();
+
+        ArrayList<Medico> elencoMedici = new ArrayList<>();
+        Medico medico = new Medico();
+
+        PreparedStatement query = connection.prepareStatement("SELECT * FROM medico");
+        ResultSet risultatoQuery = query.executeQuery();
+        while (risultatoQuery.next()) {
+            medico.setCodiceRegionale(risultatoQuery.getInt("codice_regionale"));
+            medico.setNome(risultatoQuery.getString("nome"));
+            medico.setCognome(risultatoQuery.getString("cognome"));
+            medico.setDataNascita(risultatoQuery.getDate("data_nascita"));
+            medico.setCf(risultatoQuery.getString("cf"));
+            elencoMedici.add(medico);
+            medico = new Medico();
+        }
+        return elencoMedici;
+    }
+
+    public boolean setRicetta(int codiceRegionale, String cfPaziente, int idOrdine) throws SQLException {
+        if(connection == null)
+            this.connessione();
+
+        Date data_locale = new Date(Calendar.getInstance().getTime().getTime());
+
+        PreparedStatement inserisciRicetta = connection.prepareStatement("insert into ricetta (data, codice_regionale, cf, numero_ordine) values (?,?,?,?)");
+        inserisciRicetta.setDate(1,data_locale);
+        inserisciRicetta.setInt(2,codiceRegionale);
+        inserisciRicetta.setString(3, cfPaziente);
+        inserisciRicetta.setInt(4, idOrdine);
+        if(inserisciRicetta.executeUpdate() > 0)
+            return true;
+        return false;
     }
 }
 

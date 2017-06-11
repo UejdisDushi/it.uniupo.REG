@@ -9,8 +9,8 @@
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>22948</ObjectId>
-      <IntrospectionTimestamp>2017-06-09.23:20:39.402</IntrospectionTimestamp>
-      <IntrospectionStateNumber>3897</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2017-06-11.16:54:22.849</IntrospectionTimestamp>
+      <IntrospectionStateNumber>3998</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -613,8 +613,7 @@ id_prodotto</ColNames>
     <column id="106" parent="24" name="numero_ordine">
       <Position>5</Position>
       <DataType>bigint|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>3897</StateNumber>
+      <StateNumber>3998</StateNumber>
     </column>
     <index id="107" parent="24" name="ricetta_pkey">
       <ObjectId>23444</ObjectId>

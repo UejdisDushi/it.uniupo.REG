@@ -11,6 +11,7 @@
         <form-bean name="inserimentoFarmaciaAndTF" type="model.Farmacia"></form-bean>
         <form-bean name="attiva-collaboratore" type="model.Farmacia"></form-bean>
         <form-bean name="rimanenze" type="model.Rimanenze"></form-bean>
+        <form-bean name="paziente" type="model.Paziente"></form-bean>
     </form-beans>
 
     <!--gestisco i controller, nel primo path non ho bisogno di specificare il tipo della pagina!-->
@@ -27,8 +28,12 @@
             <forward name="vendita-tramite-ob-ok" path="/WEB-INF/ob/home-ob.jsp"></forward>
         </action>
 
-        <action path="/paziente-presente" type="controller.forward.ForwardToHometf">
-            <forward name="paziente-presente-ok" path="/WEB-INF/tf/home-tf.jsp"></forward>
+        <action path="/check-medico" type="controller.CheckMedicoController" name="paziente">
+            <forward name="elenco-medici" path="/WEB-INF/tf/elenco-medici.jsp"></forward>
+        </action>
+
+        <action path="/termina-operazione" type="controller.TerminaOperazioneVenditaController">
+            <forward name="termina-operazione-ok" path="/WEB-INF/tf/home-tf.jsp"></forward>
         </action>
 
         <action path="/vendita" type="controller.VenditaController" name="rimanenze">
