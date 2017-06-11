@@ -16,16 +16,8 @@
 
 <body>
 
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <html:link action="/forwardToAttivaCollaboratore">Attiva collaboratore</html:link>
-    <html:link action="/forwardToReintegraMagazzino">Reintegra magazzino</html:link>
-    <html:link action="/forwardToVendita">Vendita</html:link>
-    <html:link action="/logout">Log Out</html:link>
-</div>
-<span style="font-size:25px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span>
 
-<input type="text" id="cercaPerNome" onkeyup="cercaPerNome()" placeholder="Cerca per nome.." title="Type in a name">
+<input type="text" id="cercaPerNome" onkeyup="cercaPerNome()" placeholder="Cerca per codice fiscale.." title="Type in a name">
 <form action="/vendita.do" method="post">
     <table id="tabella">
         <tr class="header">
@@ -67,7 +59,7 @@
 
 </form>
 <!--questo pulsante serve per reindirizzare se il CF, quindi paziente è già presente!-->
-<form action="/già-presente.do">
+<form action="paziente-presente.do">
     <input value="Già presente" type="submit">
 </form>
 </body>

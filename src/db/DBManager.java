@@ -362,7 +362,7 @@ public class DBManager {
         ArrayList<Paziente> elencoPazienti = new ArrayList<>();
         Paziente paziente = new Paziente();
 
-        PreparedStatement query = connection.prepareStatement("SELECT FROM paziente");
+        PreparedStatement query = connection.prepareStatement("SELECT * FROM paziente");
         ResultSet risultatoQuery = query.executeQuery();
         while (risultatoQuery.next()) {
             paziente.setCf(risultatoQuery.getString("cf"));

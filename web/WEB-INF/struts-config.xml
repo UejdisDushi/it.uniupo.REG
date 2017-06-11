@@ -27,6 +27,10 @@
             <forward name="vendita-tramite-ob-ok" path="/WEB-INF/ob/home-ob.jsp"></forward>
         </action>
 
+        <action path="/paziente-presente" type="controller.forward.ForwardToHometf">
+            <forward name="paziente-presente-ok" path="/WEB-INF/tf/home-tf.jsp"></forward>
+        </action>
+
         <action path="/vendita" type="controller.VenditaController" name="rimanenze">
             <forward name="acquisto-senza-ricetta" path="/WEB-INF/tf/home-tf.jsp"></forward>
             <forward name="acquisto-con-ricetta" path="/WEB-INF/tf/elenco-pazienti.jsp"></forward>
