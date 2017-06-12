@@ -465,6 +465,43 @@ public class DBManager {
             return true;
         return false;
     }
+
+    public ArrayList<String> getElencoPazientiPerMessaggi(String ilTuoRuolo, int idFarmacia, String CFDiChiSpedisce) throws SQLException{
+        if(connection == null)
+            this.connessione();
+
+        ArrayList<String> elenco = new ArrayList<>();
+
+        //se ruolo uguale a vuoto, allora è reg, essendo reg può mandare ad una singola farmacia, oppure a tutte le farmacie
+        if(ilTuoRuolo.equals("")) {
+            PreparedStatement elencoFarmacie = connection.prepareStatement("SELECT DISTINCT farmacia.nome from farmacia JOIN personale ON farmacia.id_farmacia = personale.id_farmacia");
+            ResultSet risultato = elencoFarmacie.executeQuery();
+            while (risultato.next())
+                elenco.add(risultato.getString(1));
+            elenco.add("Tutte le farmacie");
+            return elenco;
+        }
+
+
+        if(ilTuoRuolo.equals("df") || ilTuoRuolo.equals("ob") || ilTuoRuolo.equals("tf")) {
+            if(ilTuoRuolo.equals("tf"))
+                elenco.add("REG");
+            PreparedStatement elencoPersone = connection.prepareStatement("SELECT nome,cognome from personale WHERE id_farmacia=? and cf<>?");
+            StringBuilder nomeECognome = new StringBuilder();
+            elencoPersone.setInt(1,idFarmacia);
+            elencoPersone.setString(2, CFDiChiSpedisce);
+            ResultSet risultato = elencoPersone.executeQuery();
+            while (risultato.next()) {
+                nomeECognome.append(risultato.getString("nome"));
+                nomeECognome.append(" ");
+                nomeECognome.append(risultato.getString("cognome"));
+                elenco.add(nomeECognome.toString());
+            }
+            elenco.add("Tutti i collaboratori");
+            return elenco;
+        }
+        return elenco;
+    }
 }
 
 

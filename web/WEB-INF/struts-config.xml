@@ -77,6 +77,9 @@
         <action path="/forwardToVendita" type="controller.forward.ForwardToVendita">
             <forward name="vendita" path="/WEB-INF/tf/vendita.jsp"></forward>
         </action>
+        <action path="/forwardToNuovoMessaggio" type="controller.forward.ForwardToNuovoMessaggio">
+            <forward name="nuovo-messaggio" path="/WEB-INF/REG/nuovo-messaggio.jsp"></forward>
+        </action>
 
 
         <action path="/prova" type="org.apache.struts.actions.ForwardAction" parameter="/attiva-farmacia.jsp"></action>

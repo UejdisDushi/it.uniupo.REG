@@ -11,6 +11,7 @@
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <html:link action="/forwardToVenditaTramiteOB">Vendita</html:link>
+    <html:link action="/forwardToNuovoMessaggio">Nuovo messaggio</html:link>
     <html:link action="/logout">Log Out</html:link>
 </div>
 
