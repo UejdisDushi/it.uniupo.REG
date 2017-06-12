@@ -27,8 +27,9 @@ public class AttivaPersonaleController extends Action {
 
         DBManager dbManager = new DBManager();
         if(dbManager.attivaCollaboratore(personaleDaInserire, login,(int) request.getSession().getAttribute("id-farmacia"))) {
-            return mapping.findForward("inserimento-farmacia-corretto");
-        } else return mapping.findForward("inserimento-farmacia-errato");
+            return mapping.findForward("attiva-collaboratore-ok");
+        }
+        return null;
 
     }
 }

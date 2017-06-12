@@ -312,6 +312,21 @@ public class DBManager {
         return cf;
     }
 
+    public String getRuoloByCF(String CF) throws SQLException {
+        if(connection == null)
+            this.connessione();
+        String ruolo = "";
+
+        PreparedStatement ottieneRuolo = connection.prepareStatement("SELECT ruolo from personale where cf=?");
+        ottieneRuolo.setString(1, CF);
+        ResultSet risultato = ottieneRuolo.executeQuery();
+        while (risultato.next()) {
+            ruolo = risultato.getString(1);
+        }
+        return ruolo;
+
+    }
+
     public boolean reintegra(String[] quantita, int idFarmacia, ArrayList<Prodotti> prodotti) throws SQLException {
         if (connection == null)
             this.connessione();

@@ -1,6 +1,7 @@
 package controller;
 
 import db.DBManager;
+import model.Login;
 import model.Medico;
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
@@ -24,6 +25,11 @@ public class TerminaOperazioneVenditaController extends Action {
             if(medici[i].equals("Si"))
                 if(dbManager.setRicetta(elencoMedici.get(i).getCodiceRegionale(),cfPaziente,idOrdine)){}
 
-        return mapping.findForward("termina-operazione-ok");
+
+        String cf = dbManager.getCFByUser(((Login) request.getSession().getAttribute("login")).getUser());
+        String ruolo = dbManager.getRuoloByCF(cf);
+        if(ruolo.equals("tf"))
+            return mapping.findForward("termina-operazione-tf");
+        else return mapping.findForward("termina-operazione-df");
     }
 }

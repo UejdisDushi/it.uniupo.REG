@@ -21,7 +21,7 @@
             <forward name="home-adm" path="/WEB-INF/REG/home-reg.jsp" ></forward>
             <forward name="home-tf" path="/WEB-INF/tf/home-tf.jsp"></forward>
             <forward name="home-ob" path="/WEB-INF/ob/home-ob.jsp"></forward>
-            <forward name="home-df" path="/WEB-INF/home-df.jsp"></forward>
+            <forward name="home-df" path="/WEB-INF/df/home-df.jsp"></forward>
         </action>
 
         <action path="/vendita-prodotti-per-ob" type="controller.VenditaTramiteOB" name="rimanenze">
@@ -33,16 +33,18 @@
         </action>
 
         <action path="/termina-operazione" type="controller.TerminaOperazioneVenditaController">
-            <forward name="termina-operazione-ok" path="/WEB-INF/tf/home-tf.jsp"></forward>
+            <forward name="termina-operazione-tf" path="/WEB-INF/tf/home-tf.jsp"></forward>
+            <forward name="termina-operazione-df" path="/WEB-INF/df/home-df.jsp"></forward>
         </action>
 
         <action path="/vendita" type="controller.VenditaController" name="rimanenze">
-            <forward name="acquisto-senza-ricetta" path="/WEB-INF/tf/home-tf.jsp"></forward>
+            <forward name="acquisto-senza-ricetta-tf" path="/WEB-INF/tf/home-tf.jsp"></forward>
+            <forward name="acquisto-senza-ricetta-df" path="/WEB-INF/df/home-df.jsp"></forward>
             <forward name="acquisto-con-ricetta" path="/WEB-INF/tf/elenco-pazienti.jsp"></forward>
         </action>
 
         <action path="/attiva-collaboratore" type="controller.AttivaPersonaleController" name="attiva-collaboratore">
-            <forward name="attiva-collaboratore-ok" path="/WEB-INF/tf/attiva-collaboratore-ok.jsp"></forward>
+            <forward name="attiva-collaboratore-ok" path="/WEB-INF/tf/home-tf.jsp"></forward>
         </action>
 
         <action path="/reintegra-magazzino" type="controller.ReintegraMagazzinoController" name="rimanenze">
