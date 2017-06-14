@@ -1,5 +1,6 @@
 package db;
 
+import com.sun.org.apache.regexp.internal.RE;
 import model.*;
 
 import java.sql.*;
@@ -474,10 +475,10 @@ public class DBManager {
 
         //se ruolo uguale a vuoto, allora è reg, essendo reg può mandare ad una singola farmacia, oppure a tutte le farmacie
         if(ilTuoRuolo.equals("")) {
-            PreparedStatement elencoFarmacie = connection.prepareStatement("SELECT DISTINCT farmacia.nome from farmacia JOIN personale ON farmacia.id_farmacia = personale.id_farmacia");
+            PreparedStatement elencoFarmacie = connection.prepareStatement("SELECT DISTINCT farmacia.nome,farmacia.id_farmacia from farmacia JOIN personale ON farmacia.id_farmacia = personale.id_farmacia");
             ResultSet risultato = elencoFarmacie.executeQuery();
             while (risultato.next())
-                elenco.add(risultato.getString(1));
+                elenco.add(risultato.getInt(2) + " - " + risultato.getString(1));
             elenco.add("Tutte le farmacie");
             return elenco;
         }
@@ -486,21 +487,111 @@ public class DBManager {
         if(ilTuoRuolo.equals("df") || ilTuoRuolo.equals("ob") || ilTuoRuolo.equals("tf")) {
             if(ilTuoRuolo.equals("tf"))
                 elenco.add("REG");
-            PreparedStatement elencoPersone = connection.prepareStatement("SELECT nome,cognome from personale WHERE id_farmacia=? and cf<>?");
-            StringBuilder nomeECognome = new StringBuilder();
+            PreparedStatement elencoPersone = connection.prepareStatement("SELECT cf from personale WHERE id_farmacia=? and cf<>?");
+            String utente = "";
             elencoPersone.setInt(1,idFarmacia);
             elencoPersone.setString(2, CFDiChiSpedisce);
             ResultSet risultato = elencoPersone.executeQuery();
             while (risultato.next()) {
-                nomeECognome.append(risultato.getString("nome"));
-                nomeECognome.append(" ");
-                nomeECognome.append(risultato.getString("cognome"));
-                elenco.add(nomeECognome.toString());
+                utente = this.getUserByCF(risultato.getString(1));
+                if(!utente.equals(""))
+                    elenco.add(utente);
+
             }
             elenco.add("Tutti i collaboratori");
             return elenco;
         }
         return elenco;
+    }
+
+    public String getUserByCF(String cf) throws SQLException{
+        String user = "";
+        PreparedStatement ottieniUser = connection.prepareStatement("select utente from login WHERE cf=?");
+        ottieniUser.setString(1,cf);
+        ResultSet risultato = ottieniUser.executeQuery();
+        while (risultato.next())
+            user = risultato.getString(1);
+        return user;
+    }
+
+    public boolean nuovoMessaggio(String mittente, String destinatario, String corpo, int idFarmacia) throws SQLException {
+        if(connection == null)
+            this.connessione();
+
+        boolean mandato = false;
+
+        if(destinatario.startsWith("Tutti")) {
+            ArrayList<String> elenco = new ArrayList<>();
+            PreparedStatement elencoUtenti = connection.prepareStatement("SELECT utente FROM login JOIN personale on login.cf = personale.cf WHERE id_farmacia=? and utente<>?");
+            elencoUtenti.setInt(1, idFarmacia);
+            elencoUtenti.setString(2,mittente);
+            ResultSet risultato = elencoUtenti.executeQuery();
+            while (risultato.next())
+                elenco.add(risultato.getString(1));
+            for(String s : elenco) {
+                PreparedStatement mandaATutti = connection.prepareStatement("INSERT INTO messaggi(mittente, ricevente, corpo, data) VALUES (?,?,?,?)");
+                mandaATutti.setString(1,mittente);
+                mandaATutti.setString(2,s);
+                mandaATutti.setString(3,corpo);
+                Date data_locale = new Date(Calendar.getInstance().getTime().getTime());
+                mandaATutti.setDate(4,data_locale);
+                if(mandaATutti.executeUpdate() > 0) mandato = true;
+            }
+        }
+
+        if(destinatario.startsWith("Tutte")) {
+            ArrayList<String> elenco = new ArrayList<>();
+            PreparedStatement elencoUtenti = connection.prepareStatement("SELECT cf FROM personale WHERE ruolo='tf'");
+            ResultSet risultato = elencoUtenti.executeQuery();
+            while (risultato.next())
+                elenco.add(risultato.getString(1));
+            for (String s : elenco) {
+                PreparedStatement mandaATutti = connection.prepareStatement("INSERT INTO messaggi(mittente, ricevente, corpo, data) VALUES (?,?,?,?)");
+                mandaATutti.setString(1, mittente);
+                mandaATutti.setString(2, this.getUserByCF(s));
+                mandaATutti.setString(3, corpo);
+                Date data_locale = new Date(Calendar.getInstance().getTime().getTime());
+                mandaATutti.setDate(4, data_locale);
+                if (mandaATutti.executeUpdate() > 0) mandato = true;
+            }
+
+        }
+
+        int idFarmaciaPerTF;
+        String temp = destinatario;
+        temp = temp.replaceAll("\\s+","");
+
+        for(int i=0;i<temp.length();i++) {
+            if (temp.charAt(i) == '-')
+            {
+                String CFdiTF = "";
+                idFarmaciaPerTF = Integer.parseInt(destinatario.substring(0, i));
+                PreparedStatement trovaTfDiFarmacia = connection.prepareStatement("SELECT cf from personale WHERE ruolo='tf' and id_farmacia=?");
+                trovaTfDiFarmacia.setInt(1, idFarmaciaPerTF);
+                ResultSet risultato = trovaTfDiFarmacia.executeQuery();
+                while (risultato.next())
+                    CFdiTF = risultato.getString(1);
+
+                PreparedStatement mandaATF = connection.prepareStatement("INSERT INTO messaggi(mittente, ricevente, corpo, data) VALUES (?,?,?,?)");
+                mandaATF.setString(1, mittente);
+                mandaATF.setString(2, this.getUserByCF(CFdiTF));
+                mandaATF.setString(3, corpo);
+                Date data_locale = new Date(Calendar.getInstance().getTime().getTime());
+                mandaATF.setDate(4, data_locale);
+                if(mandaATF.executeUpdate() > 0) mandato = true;
+            }
+        }
+
+        if(!mandato) {
+            PreparedStatement manda = connection.prepareStatement("INSERT INTO messaggi(mittente, ricevente, corpo, data) VALUES (?,?,?,?)");
+            manda.setString(1,mittente);
+            manda.setString(2,destinatario);
+            manda.setString(3,corpo);
+            Date data_locale = new Date(Calendar.getInstance().getTime().getTime());
+            manda.setDate(4,data_locale);
+            if(manda.executeUpdate() > 0) mandato = true;
+        }
+        return mandato;
     }
 }
 

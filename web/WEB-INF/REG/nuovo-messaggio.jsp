@@ -14,16 +14,21 @@
         int idFarmacia = (int)request.getSession().getAttribute("id-farmacia");
         ArrayList<String> elencoNominativi = dbManager.getElencoPazientiPerMessaggi(ruolo,idFarmacia,cf);
     %>
-
-    <select name="destinatario">
+    <form action="invia-messaggio.do" method="post">
+        <select name="destinatario">
+            <br>
+            <%
+                for(String s : elencoNominativi) {
+            %>
+            <option name=<%=s%>><%=s%></option>
+            <%
+                }
+            %>
+        </select>
+        <textarea name="corpo"></textarea>
         <br>
-        <%
-            for(String s : elencoNominativi) {
-        %>
-        <option name=<%=s%>><%=s%></option>
-        <%
-            }
-        %>
-    </select>
+        <br>
+        <input type="submit" value="Invia messaggio"/>
+    </form>
 </body>
 </html>
