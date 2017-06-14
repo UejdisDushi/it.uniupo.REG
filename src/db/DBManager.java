@@ -529,12 +529,13 @@ public class DBManager {
             while (risultato.next())
                 elenco.add(risultato.getString(1));
             for(String s : elenco) {
-                PreparedStatement mandaATutti = connection.prepareStatement("INSERT INTO messaggi(mittente, ricevente, corpo, data) VALUES (?,?,?,?)");
+                PreparedStatement mandaATutti = connection.prepareStatement("INSERT INTO messaggi(mittente, ricevente, corpo, data, visualizzato) VALUES (?,?,?,?,?)");
                 mandaATutti.setString(1,mittente);
                 mandaATutti.setString(2,s);
                 mandaATutti.setString(3,corpo);
                 Date data_locale = new Date(Calendar.getInstance().getTime().getTime());
                 mandaATutti.setDate(4,data_locale);
+                mandaATutti.setBoolean(5, false);
                 if(mandaATutti.executeUpdate() > 0) mandato = true;
             }
         }
@@ -546,12 +547,13 @@ public class DBManager {
             while (risultato.next())
                 elenco.add(risultato.getString(1));
             for (String s : elenco) {
-                PreparedStatement mandaATutti = connection.prepareStatement("INSERT INTO messaggi(mittente, ricevente, corpo, data) VALUES (?,?,?,?)");
+                PreparedStatement mandaATutti = connection.prepareStatement("INSERT INTO messaggi(mittente, ricevente, corpo, data,visualizzato) VALUES (?,?,?,?,?)");
                 mandaATutti.setString(1, mittente);
                 mandaATutti.setString(2, this.getUserByCF(s));
                 mandaATutti.setString(3, corpo);
                 Date data_locale = new Date(Calendar.getInstance().getTime().getTime());
                 mandaATutti.setDate(4, data_locale);
+                mandaATutti.setBoolean(5, false);
                 if (mandaATutti.executeUpdate() > 0) mandato = true;
             }
 
@@ -572,26 +574,50 @@ public class DBManager {
                 while (risultato.next())
                     CFdiTF = risultato.getString(1);
 
-                PreparedStatement mandaATF = connection.prepareStatement("INSERT INTO messaggi(mittente, ricevente, corpo, data) VALUES (?,?,?,?)");
+                PreparedStatement mandaATF = connection.prepareStatement("INSERT INTO messaggi(mittente, ricevente, corpo, data,visualizzato) VALUES (?,?,?,?,?)");
                 mandaATF.setString(1, mittente);
                 mandaATF.setString(2, this.getUserByCF(CFdiTF));
                 mandaATF.setString(3, corpo);
                 Date data_locale = new Date(Calendar.getInstance().getTime().getTime());
                 mandaATF.setDate(4, data_locale);
+                mandaATF.setBoolean(5, false);
                 if(mandaATF.executeUpdate() > 0) mandato = true;
             }
         }
 
         if(!mandato) {
-            PreparedStatement manda = connection.prepareStatement("INSERT INTO messaggi(mittente, ricevente, corpo, data) VALUES (?,?,?,?)");
+            PreparedStatement manda = connection.prepareStatement("INSERT INTO messaggi(mittente, ricevente, corpo, data,visualizzato) VALUES (?,?,?,?,?)");
             manda.setString(1,mittente);
             manda.setString(2,destinatario);
             manda.setString(3,corpo);
             Date data_locale = new Date(Calendar.getInstance().getTime().getTime());
             manda.setDate(4,data_locale);
+            manda.setBoolean(5, false);
             if(manda.executeUpdate() > 0) mandato = true;
         }
         return mandato;
+    }
+
+    public ArrayList<Messaggio> getMessaggiDaLeggere(String username) throws SQLException {
+        if(connection == null)
+            this.connessione();
+
+        ArrayList<Messaggio> daLeggere = new ArrayList<>();
+        Messaggio messaggio;
+        PreparedStatement query = connection.prepareStatement("SELECT mittente,ricevente, corpo, data, visualizzato from messaggi where ricevente=?");
+        query.setString(1,username);
+        ResultSet resultSet = query.executeQuery();
+        while(resultSet.next()) {
+            messaggio = new Messaggio();
+            messaggio.setMittente(resultSet.getString(1));
+            messaggio.setDestinatario(resultSet.getString(2));
+            messaggio.setCorpo(resultSet.getString(3));
+            messaggio.setData(resultSet.getDate(4));
+            messaggio.setVisualizzato(resultSet.getBoolean(5));
+            daLeggere.add(messaggio);
+        }
+
+        return daLeggere;
     }
 }
 

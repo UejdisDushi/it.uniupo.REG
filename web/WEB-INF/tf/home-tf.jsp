@@ -1,4 +1,7 @@
-
+<%@ page import="db.DBManager" %>
+<%@ page import="model.Login" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="model.Messaggio" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
 <html>
@@ -19,6 +22,20 @@
 </div>
 
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<article>
+    <%
+        DBManager dbManager = new DBManager();
+        ArrayList<Messaggio> elencoMessaggi = dbManager.getMessaggiDaLeggere(((Login)request.getSession().getAttribute("login")).getUser());
+        if(elencoMessaggi.size() != 0) {
+    %>
+    <p>---------------------------------------------------------------------------------------------</p>
+    <br><br>
+    <a2>Hai <%=elencoMessaggi.size()%> da leggere!</a2>
+    <%
+        }
+    %>
+</article>
 
 </body>
 </html>
