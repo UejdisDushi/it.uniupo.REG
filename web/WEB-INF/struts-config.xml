@@ -88,6 +88,9 @@
         <action path="/forwardToNuovoMessaggio" type="controller.forward.ForwardToNuovoMessaggio">
             <forward name="nuovo-messaggio" path="/WEB-INF/REG/nuovo-messaggio.jsp"></forward>
         </action>
+        <action path="/forwardToVisualizzaMessaggi" type="controller.forward.ForwardToVisualizzaMessaggi">
+            <forward name="visualizza-messaggi" path="/WEB-INF/storico-messaggi.jsp"></forward>
+        </action>
 
 
         <action path="/logout" type="controller.LogoutController">

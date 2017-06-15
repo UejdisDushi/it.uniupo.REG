@@ -598,7 +598,7 @@ public class DBManager {
         return mandato;
     }
 
-    public ArrayList<Messaggio> getMessaggiDaLeggere(String username) throws SQLException {
+    public ArrayList<Messaggio> getMessaggiDaLeggere(String username, boolean conVisualizzato) throws SQLException {
         if(connection == null)
             this.connessione();
 
@@ -607,6 +607,7 @@ public class DBManager {
         PreparedStatement query = connection.prepareStatement("SELECT mittente,ricevente, corpo, data, visualizzato from messaggi where ricevente=?");
         query.setString(1,username);
         ResultSet resultSet = query.executeQuery();
+
         while(resultSet.next()) {
             messaggio = new Messaggio();
             messaggio.setMittente(resultSet.getString(1));
@@ -615,6 +616,12 @@ public class DBManager {
             messaggio.setData(resultSet.getDate(4));
             messaggio.setVisualizzato(resultSet.getBoolean(5));
             daLeggere.add(messaggio);
+        }
+
+        if(conVisualizzato) {
+            PreparedStatement update = connection.prepareStatement("UPDATE messaggi SET visualizzato = true WHERE ricevente=?");
+            update.setString(1, username);
+            update.executeUpdate();
         }
 
         return daLeggere;

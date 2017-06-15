@@ -18,6 +18,7 @@
     <html:link action="/forwardToReintegraMagazzino">Reintegra magazzino</html:link>
     <html:link action="/forwardToVendita">Vendita</html:link>
     <html:link action="/forwardToNuovoMessaggio">Nuovo messaggio</html:link>
+    <html:link action="/forwardToVisualizzaMessaggi">Visualizza messaggi</html:link>
     <html:link action="/logout">Log Out</html:link>
 </div>
 
@@ -26,7 +27,7 @@
 <article>
     <%
         DBManager dbManager = new DBManager();
-        ArrayList<Messaggio> elencoMessaggi = dbManager.getMessaggiDaLeggere(((Login)request.getSession().getAttribute("login")).getUser());
+        ArrayList<Messaggio> elencoMessaggi = dbManager.getMessaggiDaLeggere(((Login)request.getSession().getAttribute("login")).getUser(),false);
         if(elencoMessaggi.size() != 0) {
     %>
     <p>---------------------------------------------------------------------------------------------</p>
