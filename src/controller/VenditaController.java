@@ -3,7 +3,6 @@ package controller;
 import db.DBManager;
 import model.Login;
 import model.Prodotti;
-import model.Rimanenze;
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
@@ -46,7 +45,7 @@ public class VenditaController extends Action {
         }
 
         else {
-            cf = dbManager.getCFByUser(((Login) request.getSession().getAttribute("login")).getUser());
+            cf = dbManager.getCFByUsername(((Login) request.getSession().getAttribute("login")).getUser());
             ruolo = dbManager.getRuoloByCF(cf);
             if(ruolo.equals("tf"))
                 return mapping.findForward("acquisto-senza-ricetta-tf");

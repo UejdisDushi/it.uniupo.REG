@@ -17,10 +17,10 @@ public class AttivaPersonaleController extends Action {
         personaleDaInserire.setNomePersonale(farmacia.getNomePersonale());
         personaleDaInserire.setCognome(farmacia.getCognome());
         personaleDaInserire.setCf(farmacia.getCf());
-        personaleDaInserire.setDataNascita((java.sql.Date) farmacia.getDataNascita());
+        personaleDaInserire.setDataNascita(farmacia.getDataNascita());
         personaleDaInserire.setRuolo(farmacia.getRuolo());
 
-        //login che recupero dal form
+        //login che recupero dal form, quindi le credenziali assegnata al collaboratore
         Login login = new Login();
         login.setUser(farmacia.getUser());
         login.setPassword(farmacia.getPassword());

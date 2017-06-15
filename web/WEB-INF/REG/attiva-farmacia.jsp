@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <title>Attiva farmacia</title>
     <link rel="stylesheet" href="/assets/stylesheets/main2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 <header id="main">
@@ -87,35 +90,125 @@
 
 
 <!--
-<form id="attiva-farmacia-form" class="attiva-farmacia-form" action="/attivaFarmacia.jsp" method="post">
-    <!--<section class="user-account">
-        <p>
-            <label>Nome</label>
-            <input id="nome" placeholder="Nome farmacia" type="text">
-        </p>
-        <p class="indirizzo">
-            <label>Indirizzo</label>
-            <input id="indirizzo" placeholder="Inserire indirizzo" type="text">
-        </p>
-        <p class="citta">
-            <label>Citta'</label>
-            <input id="citta" placeholder="Inserire città" type="text">
-        </p>
-        <p class="provincia">
-            <label>Provincia</label>
-            <input id="provincia" placeholder="Inserire provincia" type="text" size="20">
-        </p>
-        <p class="numeroDiTelefono">
-            <label>Numero di telefono</label>
-            <input id="numeroDiTelefono" placeholder="Inserire numero di telefono" type="text">
-        </p>
-        <p class="nomeTitolareFarmacista">
-            <label>Nome titolare farmacista (TF)</label>
-            <input id="nomeTitolareFarmacista" placeholder="Inserire nome titolare farmacista" type="text">
-        </p>
-        <p class="submitFarm">
-            <input value="Registra farmacia" type="submit">
-        </p>
+<form class="form-horizontal">
+<fieldset>
+
+
+<!-- change col-sm-N to reflect how you would like your column spacing (http://getbootstrap.com/css/#forms-control-sizes) -->
+
+
+<!-- Form Name -->
+<legend>Form Name</legend>
+
+<!-- Text input http://getbootstrap.com/css/#forms -->
+<div class="form-group">
+    <label for="nomeFarmacia" class="control-label col-sm-2">Nome farmacia</label>
+    <div class="col-sm-10">
+        <input class="form-control" id="nomeFarmacia" placeholder="Nome della farmacia" required="" type="text">
+
+    </div>
+</div>
+<!-- Text input http://getbootstrap.com/css/#forms -->
+<div class="form-group">
+    <label for="via" class="control-label col-sm-2">Indirizzo</label>
+    <div class="col-sm-10">
+        <input class="form-control" id="via" placeholder="Indirizzo della farmaccia" required="" type="text">
+
+    </div>
+</div>
+<!-- Text input http://getbootstrap.com/css/#forms -->
+<div class="form-group">
+    <label for="citta" class="control-label col-sm-2">Città</label>
+    <div class="col-sm-10">
+        <input class="form-control" id="citta" placeholder="Città della farmacia" required="" type="text">
+
+    </div>
+</div>
+<!-- Text input http://getbootstrap.com/css/#forms -->
+<div class="form-group form-group-sm">
+    <label for="cap" class="control-label col-sm-2">CAP</label>
+    <div class="col-sm-10">
+        <input class="form-control" id="cap" placeholder="Cap" required="" type="text">
+
+    </div>
+</div>
+<!-- Text input http://getbootstrap.com/css/#forms -->
+<div class="form-group">
+    <label for="pro" class="control-label col-sm-2">Provincia</label>
+    <div class="col-sm-10">
+        <input class="form-control" id="pro" placeholder="Provincia della farmacia" required="" type="text">
+
+    </div>
+</div>
+<!-- Text input http://getbootstrap.com/css/#forms -->
+<div class="form-group">
+    <label for="numeroTelefono" class="control-label col-sm-2">Numero di telefono</label>
+    <div class="col-sm-10">
+        <input class="form-control" id="numeroTelefono" placeholder="Telefono della farmacia" required="" type="number">
+
+    </div>
+</div>
+<!-- Text input http://getbootstrap.com/css/#forms -->
+<div class="form-group">
+    <label for="nomePersonale" class="control-label col-sm-2">Nome del titolare</label>
+    <div class="col-sm-10">
+        <input class="form-control" id="nomePersonale" placeholder="Nome del titolare" required="" type="text">
+
+    </div>
+</div>
+<!-- Text input http://getbootstrap.com/css/#forms -->
+<div class="form-group">
+    <label for="cognome" class="control-label col-sm-2">Cognome del titolare</label>
+    <div class="col-sm-10">
+        <input class="form-control" id="cognome" placeholder="Cognome del titolare" required="" type="text">
+
+    </div>
+</div>
+<!-- Text input http://getbootstrap.com/css/#forms -->
+<div class="form-group">
+    <label for="cf" class="control-label col-sm-2">Codice fiscale</label>
+    <div class="col-sm-10">
+        <input class="form-control" id="cf" placeholder="CF" required="" type="text">
+
+    </div>
+</div>
+<!-- Text input http://getbootstrap.com/css/#forms -->
+<div class="form-group">
+    <label for="dataNascita" class="control-label col-sm-2">Data di nascita</label>
+    <div class="col-sm-10">
+        <input class="form-control" id="dataNascita" placeholder="Data di nascita" required="" type="date">
+
+    </div>
+</div>
+<!-- Text input http://getbootstrap.com/css/#forms -->
+<div class="form-group">
+    <label for="user" class="control-label col-sm-2">Username</label>
+    <div class="col-sm-10">
+        <input class="form-control" id="user" placeholder="Username" required="" type="text">
+
+    </div>
+</div>
+<!-- Text input http://getbootstrap.com/css/#forms -->
+<div class="form-group">
+    <label for="password" class="control-label col-sm-2">Password</label>
+    <div class="col-sm-10">
+        <input class="form-control" id="password" placeholder="Password" required="" type="password">
+
+    </div>
+</div>
+<!-- Button http://getbootstrap.com/css/#buttons -->
+<div class="form-group">
+    <label class="control-label col-sm-2" for="attivaFarmacia"></label>
+    <div class="text-right col-sm-10">
+        <button type="submit" id="attivaFarmacia" name="attivaFarmacia" class="btn btn-primary" aria-label="">Attiva farmacia &amp; TF</button>
+
+    </div>
+</div>
+
+
+</fieldset>
+</form>
+
     <!--</section>!-->
 </form>
 <footer id="footer">

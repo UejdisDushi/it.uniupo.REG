@@ -19,7 +19,7 @@ public class CheckMedicoController extends Action {
         DBManager dbManager = new DBManager();
 
         //ottengo il cf del personale che registra il nuovo paziente
-        String userCheRegistraPaziente = dbManager.getCFByUser((String)((Login)request.getSession().getAttribute("login")).getUser());
+        String userCheRegistraPaziente = dbManager.getCFByUsername((String)((Login)request.getSession().getAttribute("login")).getUser());
         ArrayList<Paziente> elencoPazienti = dbManager.getPazienti();
 
         String[] clienti = request.getParameterValues("cliente");

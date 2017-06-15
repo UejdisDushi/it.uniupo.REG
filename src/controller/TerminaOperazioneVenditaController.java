@@ -26,7 +26,7 @@ public class TerminaOperazioneVenditaController extends Action {
                 if(dbManager.setRicetta(elencoMedici.get(i).getCodiceRegionale(),cfPaziente,idOrdine)){}
 
 
-        String cf = dbManager.getCFByUser(((Login) request.getSession().getAttribute("login")).getUser());
+        String cf = dbManager.getCFByUsername(((Login) request.getSession().getAttribute("login")).getUser());
         String ruolo = dbManager.getRuoloByCF(cf);
         if(ruolo.equals("tf"))
             return mapping.findForward("termina-operazione-tf");

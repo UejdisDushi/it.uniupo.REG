@@ -9,7 +9,7 @@
 <body>
     <%
         DBManager dbManager = new DBManager();
-        String cf = dbManager.getCF(((Login)request.getSession().getAttribute("login")).getUser());
+        String cf = dbManager.getCFByUsername(((Login)request.getSession().getAttribute("login")).getUser());
         String ruolo = dbManager.getRuoloByCF(cf);
         int idFarmacia = (int)request.getSession().getAttribute("id-farmacia");
         ArrayList<String> elencoNominativi = dbManager.getElencoPazientiPerMessaggi(ruolo,idFarmacia,cf);

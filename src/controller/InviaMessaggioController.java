@@ -18,7 +18,7 @@ public class InviaMessaggioController extends Action {
         String mittente = ((Login)request.getSession().getAttribute("login")).getUser();
         int idFarmacia = (int)request.getSession().getAttribute("id-farmacia");
         if(dbManager.nuovoMessaggio(mittente, messaggio.getDestinatario(), messaggio.getCorpo(), idFarmacia)){
-            String cf = dbManager.getCF(mittente);
+            String cf = dbManager.getCFByUsername(mittente);
             String ruolo = dbManager.getRuoloByCF(cf);
             switch (ruolo) {
                 case "tf":

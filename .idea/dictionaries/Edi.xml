@@ -1,13 +1,34 @@
 <component name="ProjectDictionaryState">
   <dictionary name="Edi">
     <words>
+      <w>attiva</w>
+      <w>attivo</w>
+      <w>categoria</w>
+      <w>collaboratore</w>
+      <w>costo</w>
+      <w>credenziali</w>
       <w>elenco</w>
+      <w>farmacia</w>
+      <w>inserire</w>
+      <w>inserisci</w>
+      <w>magazzino</w>
+      <w>nuovo</w>
       <w>ottiene</w>
+      <w>paziente</w>
       <w>pazienti</w>
+      <w>personale</w>
+      <w>principio</w>
       <w>prodotti</w>
+      <w>prodotto</w>
+      <w>quantita</w>
+      <w>reintegra</w>
+      <w>ricetta</w>
+      <w>rimanenza</w>
       <w>rimanenze</w>
       <w>risultato</w>
       <w>ruolo</w>
+      <w>totale</w>
+      <w>utente</w>
     </words>
   </dictionary>
 </component>

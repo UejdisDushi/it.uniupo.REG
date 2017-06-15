@@ -4,8 +4,6 @@ import com.sun.org.apache.regexp.internal.RE;
 import model.*;
 
 import java.sql.*;
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -33,7 +31,7 @@ public class DBManager {
     }
 
     public ArrayList<Prodotti> getTuttiProdotti() throws SQLException {
-        ArrayList<Prodotti> prodotti = new ArrayList<Prodotti>();
+        ArrayList<Prodotti> prodotti = new ArrayList<>();
         Prodotti prodotto = new Prodotti();
 
         if(connection == null)
@@ -55,8 +53,11 @@ public class DBManager {
         return prodotti;
     }
 
+    /**
+     * Ottiene l'elenco di ID prodotti che stanno nel magazzino della farmacia in input
+     */
     public ArrayList<Integer> getIdProdottiFarmacia(int idFarmacia) throws SQLException{
-        ArrayList<Integer> lista = new ArrayList<Integer>();
+        ArrayList<Integer> lista = new ArrayList<>();
         int element;
         if(connection == null)
             this.connessione();
@@ -71,12 +72,15 @@ public class DBManager {
         return lista;
     }
 
+    /**
+     * Ottiene quantità e id dei prodotti in magazzino per la farmacia in input
+     */
     public ArrayList<Rimanenze> getRimanenzeByIdFarmacia(int id_farmacia) throws SQLException {
-        ArrayList<Rimanenze> rimanenze = new ArrayList<Rimanenze>();
-        Rimanenze rimanenza = new Rimanenze();
-
         if(connection == null)
             this.connessione();
+
+        ArrayList<Rimanenze> rimanenze = new ArrayList<>();
+        Rimanenze rimanenza = new Rimanenze();
 
         PreparedStatement preparedStatement = connection.prepareStatement("SELECT qta, id_prodotto from rimanenze WHERE id_farmacia=?");
         preparedStatement.setInt(1, id_farmacia);
@@ -91,8 +95,11 @@ public class DBManager {
         return rimanenze;
     }
 
+    /**
+     * Ottiene anagrafica dei prodotti in magazzino per la farmacia in input
+     */
     public ArrayList<Prodotti> getProdottiInMagazzino(int id_farmacia) throws SQLException {
-        ArrayList<Prodotti> prodotti = new ArrayList<Prodotti>();
+        ArrayList<Prodotti> prodotti = new ArrayList<>();
         Prodotti prodotto = new Prodotti();
 
         if(connection == null)
@@ -115,7 +122,10 @@ public class DBManager {
         return prodotti;
     }
 
-    public String getCFByUser(String username) throws SQLException {
+    /**
+     * Ottiene il CF partendo dallo username
+     */
+    public String getCFByUsername(String username) throws SQLException {
         if(connection == null)
             this.connessione();
         String out = "";
@@ -127,20 +137,21 @@ public class DBManager {
         return out;
     }
 
-
     public int setVendita(int id_farmacia, String[] qtaVenduta, ArrayList<Prodotti> prodotti, String userCheEffettuaVendita, boolean controlloPerRicetta) throws SQLException {
         if(connection == null)
             this.connessione();
 
+        //se controllo per ricetta = true significa che sto impostando una vendita per OB, quindi
+        //rimuovo tutti i prodotti con obbligo di ricetta
         if(controlloPerRicetta) {
-            for (int j = 0; j < prodotti.size(); j++)
-                if (prodotti.get(j).isRicetta() == true)
+            for (int j = 0; j < prodotti.size(); j++) {
+                if (prodotti.get(j).isRicetta() == true) {
                     prodotti.remove(j);
+                }
+            }
         }
 
-        int numeroOrdine = 0;
-        PreparedStatement aggiornaRimanenze = null;
-        PreparedStatement recuperaIdOrdine = null;
+        PreparedStatement aggiornaRimanenze;
         double totaleAcquisto = 0;
         for(int i = 0;i<prodotti.size();i++) {
             aggiornaRimanenze = connection.prepareStatement("UPDATE rimanenze SET qta = qta - ? WHERE id_prodotto = ? and id_farmacia = ?");
@@ -152,24 +163,20 @@ public class DBManager {
             }
             aggiornaRimanenze.setInt(2, prodotti.get(i).getId());
             aggiornaRimanenze.setInt(3, id_farmacia);
-            if(aggiornaRimanenze.executeUpdate() > 0) {
-                aggiornaRimanenze = null;
-            }
+            aggiornaRimanenze.executeUpdate();
         }
-        PreparedStatement inserisciInOrdine = connection.prepareStatement("insert INTO ordine( utente, totale_ordine,data_ordine) VALUES (?,?,?)");
-        inserisciInOrdine.setString(1,this.getCFByUser(userCheEffettuaVendita));
+        PreparedStatement inserisciInOrdine = connection.prepareStatement("insert INTO ordine( utente, totale_ordine,data_ordine) VALUES (?,?,?) RETURNING numero_ordine", PreparedStatement.RETURN_GENERATED_KEYS);
+        inserisciInOrdine.setString(1,this.getCFByUsername(userCheEffettuaVendita));
         inserisciInOrdine.setDouble(2, totaleAcquisto);
         Date data_locale = new Date(Calendar.getInstance().getTime().getTime());
         inserisciInOrdine.setDate(3,data_locale);
-        if(inserisciInOrdine.executeUpdate() > 0) {
-            recuperaIdOrdine = connection.prepareStatement("SELECT MAX(numero_ordine) FROM ordine");
-            ResultSet resultSet = recuperaIdOrdine.executeQuery();
-            while (resultSet.next())
-                numeroOrdine = resultSet.getInt(1);
-        }
-        return numeroOrdine;
-    }
+        inserisciInOrdine.executeUpdate();
 
+        //recupero l'id generato dall'inserimento dell'ordine
+        ResultSet resultSet = inserisciInOrdine.getGeneratedKeys();
+        resultSet.next();
+        return resultSet.getInt("numero_ordine");
+    }
 
     public int getIdFarmacia(String cf) throws SQLException {
         int id_farmacia = 0;
@@ -205,10 +212,11 @@ public class DBManager {
     }
 
     public List<Farmacia> elencoFarmacie() throws SQLException {
-        List<Farmacia> listaFarmacie = new ArrayList<>();
-        Farmacia farmacia;
         if(connection == null)
             this.connessione();
+
+        List<Farmacia> listaFarmacie = new ArrayList<>();
+        Farmacia farmacia;
         PreparedStatement preparedStatement = connection.prepareStatement("select * from farmacia");
         ResultSet resultSet = preparedStatement.executeQuery();
         while(resultSet.next()) {
@@ -231,7 +239,7 @@ public class DBManager {
         if(connection == null)
             this.connessione();
 
-        PreparedStatement inserimentoFarmacia = connection.prepareStatement("INSERT into farmacia(nome, cap, citta, numero_telefono, provincia, via) VALUES (?,?,?,?,?,?)");
+        PreparedStatement inserimentoFarmacia = connection.prepareStatement("INSERT into farmacia(nome, cap, citta, numero_telefono, provincia, via) VALUES (?,?,?,?,?,?) returning id_farmacia", PreparedStatement.RETURN_GENERATED_KEYS);
         inserimentoFarmacia.setString(1,farmacia.getNomeFarmacia());
         inserimentoFarmacia.setString(2,farmacia.getCap());
         inserimentoFarmacia.setString(3,farmacia.getCitta());
@@ -240,13 +248,10 @@ public class DBManager {
         inserimentoFarmacia.setString(6,farmacia.getVia());
 
         if(inserimentoFarmacia.executeUpdate() > 0) {
-            PreparedStatement recuperoIdTramiteNomeFarmacia = connection.prepareStatement("SELECT id_farmacia FROM farmacia where nome=?");
-            recuperoIdTramiteNomeFarmacia.setString(1, farmacia.getNomeFarmacia());
-            ResultSet result = recuperoIdTramiteNomeFarmacia.executeQuery();
-
-            while (result.next())
-                id = result.getLong(1);
-
+            //recupero l'id generato con la creazione della farmacia
+            ResultSet resultSet = inserimentoFarmacia.getGeneratedKeys();
+            resultSet.next();
+            id = resultSet.getInt("id_farmacia");
             String role = "tf";
             PreparedStatement inserimentoPersonale = connection.prepareStatement("INSERT into personale(nome, cognome, cf, data_nascita, ruolo, id_farmacia) VALUES (?,?,?,?,?,?)");
             inserimentoPersonale.setString(1, personale.getNomePersonale());
@@ -258,18 +263,10 @@ public class DBManager {
 
             if (inserimentoPersonale.executeUpdate() > 0) {
 
-                String cf = "";
-                PreparedStatement recuperaCf = connection.prepareStatement("SELECT cf from personale where cf = ?");
-                recuperaCf.setString(1, personale.getCf());
-                ResultSet result1 = recuperaCf.executeQuery();
-
-                while (result1.next())
-                    cf = result1.getString("cf");
-
                 PreparedStatement inserimentoCredenziali = connection.prepareStatement("insert into login(utente, password, cf) VALUES (?,?,?)");
                 inserimentoCredenziali.setString(1, login.getUser());
                 inserimentoCredenziali.setString(2, login.getPassword());
-                inserimentoCredenziali.setString(3, cf);
+                inserimentoCredenziali.setString(3, personale.getCf());
 
                 if (inserimentoCredenziali.executeUpdate() > 0)
                     return true;
@@ -282,12 +279,12 @@ public class DBManager {
     public boolean attivaCollaboratore(Farmacia personaleDaInserire, Login login, long id_farmacia) throws SQLException {
         if(connection == null)
             this.connessione();
-        PreparedStatement preparedStatement1 = null;
+        PreparedStatement preparedStatement1;
         PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO personale(nome, cognome, cf, data_nascita, ruolo, id_farmacia) VALUES (?,?,?,?,?,?)");
         preparedStatement.setString(1, personaleDaInserire.getNomePersonale());
         preparedStatement.setString(2, personaleDaInserire.getCognome());
         preparedStatement.setString(3, personaleDaInserire.getCf());
-        preparedStatement.setDate(4, (java.sql.Date) personaleDaInserire.getDataNascita());
+        preparedStatement.setDate(4, personaleDaInserire.getDataNascita());
         preparedStatement.setString(5, personaleDaInserire.getRuolo());
         preparedStatement.setLong(6, id_farmacia);
         if (preparedStatement.executeUpdate() > 0) {
@@ -299,18 +296,6 @@ public class DBManager {
                 return true;
         }
         return false;
-    }
-
-    public String getCF(String utente) throws SQLException {
-        String cf = "";
-        if(connection == null)
-            this.connessione();
-        PreparedStatement preparedStatement = connection.prepareStatement("select cf from login where utente = ?");
-        preparedStatement.setString(1, utente);
-        ResultSet risultato = preparedStatement.executeQuery();
-        while (risultato.next())
-            cf = risultato.getString("cf");
-        return cf;
     }
 
     public String getRuoloByCF(String CF) throws SQLException {
@@ -325,7 +310,6 @@ public class DBManager {
             ruolo = risultato.getString(1);
         }
         return ruolo;
-
     }
 
     public boolean reintegra(String[] quantita, int idFarmacia, ArrayList<Prodotti> prodotti) throws SQLException {
@@ -351,8 +335,7 @@ public class DBManager {
                 aggiornaMagazzino.setDate(2, data_locale);
                 aggiornaMagazzino.setInt(3, prodotti.get(i).getId());
                 aggiornaMagazzino.setInt(4, idFarmacia);
-                if (aggiornaMagazzino.executeUpdate() > 0)
-                    aggiornaMagazzino = null;
+                if (aggiornaMagazzino.executeUpdate() > 0) status = true;
                 else status = false;
             }
             //se non presente in magazzino allora lo aggiungo
@@ -398,23 +381,6 @@ public class DBManager {
         return elencoPazienti;
     }
 
-
-    public int getQTAInMagazzino(int idFarmacia,int idProdotto) throws SQLException {
-        if(connection == null)
-            this.connessione();
-
-        int quantita = 0;
-
-        PreparedStatement query = connection.prepareStatement("SELECT qta FROM rimanenze WHERE id_farmacia=? and id_prodotto=?");
-        query.setInt(1, idFarmacia);
-        query.setInt(2, idProdotto);
-        ResultSet risultato = query.executeQuery();
-        while (risultato.next())
-            quantita = risultato.getInt(1);
-
-        return quantita;
-    }
-
     public ArrayList<Medico> getMedici() throws SQLException {
         if(connection == null)
             this.connessione();
@@ -434,6 +400,18 @@ public class DBManager {
             medico = new Medico();
         }
         return elencoMedici;
+    }
+
+    public int getQTAInMagazzino(int idFarmacia,int idProdotto) throws SQLException {
+        if(connection == null)
+            this.connessione();
+
+        PreparedStatement query = connection.prepareStatement("SELECT qta FROM rimanenze WHERE id_farmacia=? and id_prodotto=?");
+        query.setInt(1, idFarmacia);
+        query.setInt(2, idProdotto);
+        ResultSet risultato = query.executeQuery();
+        risultato.next();
+        return risultato.getInt(1);
     }
 
     public boolean setRicetta(int codiceRegionale, String cfPaziente, int idOrdine) throws SQLException {
@@ -483,7 +461,6 @@ public class DBManager {
             return elenco;
         }
 
-
         if(ilTuoRuolo.equals("df") || ilTuoRuolo.equals("ob") || ilTuoRuolo.equals("tf")) {
             if(ilTuoRuolo.equals("tf"))
                 elenco.add("REG");
@@ -496,7 +473,6 @@ public class DBManager {
                 utente = this.getUserByCF(risultato.getString(1));
                 if(!utente.equals(""))
                     elenco.add(utente);
-
             }
             elenco.add("Tutti i collaboratori");
             return elenco;
@@ -505,13 +481,11 @@ public class DBManager {
     }
 
     public String getUserByCF(String cf) throws SQLException{
-        String user = "";
         PreparedStatement ottieniUser = connection.prepareStatement("select utente from login WHERE cf=?");
         ottieniUser.setString(1,cf);
         ResultSet risultato = ottieniUser.executeQuery();
-        while (risultato.next())
-            user = risultato.getString(1);
-        return user;
+        risultato.next();
+        return risultato.getString(1);
     }
 
     public boolean nuovoMessaggio(String mittente, String destinatario, String corpo, int idFarmacia) throws SQLException {

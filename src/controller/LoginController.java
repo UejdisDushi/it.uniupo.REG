@@ -27,7 +27,7 @@ public class LoginController extends Action{
         String ruolo = dbManager.validate(utente,password);
 
         //recupero cf per repcuperare personale e poi id farmacia, per permettere inserimento collaboratore
-        String cf = dbManager.getCF(utente);
+        String cf = dbManager.getCFByUsername(utente);
 
         //recupero id farmacia dove lavora il personale tramite cf e lo metto in sessione, in quanto viene usato quasi ovunque
         int idFarmacia = dbManager.getIdFarmacia(cf);
