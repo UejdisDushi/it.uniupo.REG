@@ -9,7 +9,7 @@
 
 <head>
     <script type="application/javascript" src="../../assets/javascripts/main.js"></script>
-    <link rel="stylesheet" href="/assets/stylesheets/prova-tabella.css">
+    <link rel="stylesheet" href="/assets/stylesheets/css.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Elenco medici</title>
 </head>

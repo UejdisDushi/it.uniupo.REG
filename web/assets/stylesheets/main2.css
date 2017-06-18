@@ -21,36 +21,6 @@ h2 {
     font-size: 2em;
 }
 
-header#main {
-    border-bottom: 1px solid black;
-    margin: 2.618em 0;
-    position: relative;		/*da testare*/
-}
-
-header#main nav {
-    padding-right: 1em;
-    /*padding-top: 1em;*/
-}
-
-header#main nav ul {
-    margin: 0;
-    padding: 0;
-    text-align: right;
-}
-
-header#main nav ul li {
-    display: inline-block;
-    margin: 0 0.98em;
-    padding:0;
-}
-
-header#main nav ul li a{
-    color: #333;
-    font-style: italic;
-    text-decoration: none;
-    font-size: 17px;
-}
-
 h1.login {
     font-size: 3em;
     line-height: 1.1;

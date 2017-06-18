@@ -18,15 +18,15 @@
     <!--gestisco i controller, nel primo path non ho bisogno di specificare il tipo della pagina!-->
     <action-mappings>
         <action path="/login" type="controller.LoginController" name="login" scope="session">
-            <forward name="dati-errati" path="/WEB-INF/WrongLogin.jsp"></forward>
-            <forward name="home-adm" path="/WEB-INF/REG/home-reg.jsp" ></forward>
-            <forward name="home-tf" path="/WEB-INF/tf/home-tf.jsp"></forward>
-            <forward name="home-ob" path="/WEB-INF/ob/home-ob.jsp"></forward>
-            <forward name="home-df" path="/WEB-INF/df/home-df.jsp"></forward>
+            <forward name="dati-errati" path="/login.jsp"></forward>
+            <forward name="home-adm" path="/WEB-INF/pagine-in-comune/home/home-reg.jsp" ></forward>
+            <forward name="home-tf" path="/WEB-INF/pagine-in-comune/home/home-tf.jsp"></forward>
+            <forward name="home-ob" path="/WEB-INF/pagine-in-comune/home/home-ob.jsp"></forward>
+            <forward name="home-df" path="/WEB-INF/pagine-in-comune/home/home-df.jsp"></forward>
         </action>
 
         <action path="/vendita-prodotti-per-ob" type="controller.VenditaTramiteOB" name="rimanenze">
-            <forward name="vendita-tramite-ob-ok" path="/WEB-INF/ob/home-ob.jsp"></forward>
+            <forward name="vendita-tramite-ob-ok" path="/WEB-INF/pagine-in-comune/home/home-ob.jsp"></forward>
         </action>
 
         <action path="/check-medico" type="controller.CheckMedicoController" name="paziente">
@@ -34,38 +34,33 @@
         </action>
 
         <action path="/invia-messaggio" type="controller.InviaMessaggioController" name="messaggio">
-            <forward name="messaggio-inviato-REG" path="/WEB-INF/REG/home-reg.jsp"></forward>
-            <forward name="messaggio-inviato-tf" path="/WEB-INF/tf/home-tf.jsp"></forward>
-            <forward name="messaggio-inviato-ob" path="/WEB-INF/ob/home-ob.jsp"></forward>
-            <forward name="messaggio-inviato-df" path="/WEB-INF/df/home-df.jsp"></forward>
+            <forward name="messaggio-inviato-REG" path="/WEB-INF/pagine-in-comune/home/home-reg.jsp"></forward>
+            <forward name="messaggio-inviato-tf" path="/WEB-INF/pagine-in-comune/home/home-tf.jsp"></forward>
+            <forward name="messaggio-inviato-ob" path="/WEB-INF/pagine-in-comune/home/home-ob.jsp"></forward>
+            <forward name="messaggio-inviato-df" path="/WEB-INF/pagine-in-comune/home/home-df.jsp"></forward>
         </action>
 
         <action path="/termina-operazione" type="controller.TerminaOperazioneVenditaController">
-            <forward name="termina-operazione-tf" path="/WEB-INF/tf/home-tf.jsp"></forward>
-            <forward name="termina-operazione-df" path="/WEB-INF/df/home-df.jsp"></forward>
+            <forward name="termina-operazione-tf" path="/WEB-INF/pagine-in-comune/home/home-tf.jsp"></forward>
+            <forward name="termina-operazione-df" path="/WEB-INF/pagine-in-comune/home/home-df.jsp"></forward>
         </action>
 
         <action path="/vendita" type="controller.VenditaController" name="rimanenze">
-            <forward name="acquisto-senza-ricetta-tf" path="/WEB-INF/tf/home-tf.jsp"></forward>
-            <forward name="acquisto-senza-ricetta-df" path="/WEB-INF/df/home-df.jsp"></forward>
+            <forward name="acquisto-senza-ricetta-tf" path="/WEB-INF/pagine-in-comune/home/home-tf.jsp"></forward>
+            <forward name="acquisto-senza-ricetta-df" path="/WEB-INF/pagine-in-comune/home/home-df.jsp"></forward>
             <forward name="acquisto-con-ricetta" path="/WEB-INF/tf/elenco-pazienti.jsp"></forward>
         </action>
 
         <action path="/attiva-collaboratore" type="controller.AttivaPersonaleController" name="attiva-collaboratore">
-            <forward name="attiva-collaboratore-ok" path="/WEB-INF/tf/home-tf.jsp"></forward>
+            <forward name="attiva-collaboratore-ok" path="/WEB-INF/pagine-in-comune/home/home-tf.jsp"></forward>
         </action>
 
         <action path="/reintegra-magazzino" type="controller.ReintegraMagazzinoController" name="rimanenze">
-            <forward name="reintegra-ok" path="/WEB-INF/tf/home-tf.jsp"></forward>
-        </action>
-
-        <action path="/lista-farmacie" type="controller.ElencoFarmacieController">
-            <forward name="farmacie" path="/WEB-INF/farmacie.jsp"></forward>
+            <forward name="reintegra-ok" path="/WEB-INF/pagine-in-comune/home/home-tf.jsp"></forward>
         </action>
 
         <action path="/attiva-farmacia" type="controller.AttivaFarmaciaAndTFController" name="inserimentoFarmaciaAndTF">
-            <forward name="inserimento-farmacia-corretto" path="/WEB-INF/REG/inserimento-farmacia-corretto.jsp"></forward>
-            <forward name="inserimento-farmacia-errato" path="/WEB-INF/REG/inserimento-farmacia-errato.jsp"></forward>
+            <forward name="redirect" path="/WEB-INF/REG/attiva-farmacia.jsp"></forward>
         </action>
 
 
@@ -86,10 +81,16 @@
             <forward name="vendita" path="/WEB-INF/tf/vendita.jsp"></forward>
         </action>
         <action path="/forwardToNuovoMessaggio" type="controller.forward.ForwardToNuovoMessaggio">
-            <forward name="nuovo-messaggio" path="/WEB-INF/REG/nuovo-messaggio.jsp"></forward>
+            <forward name="nuovo-messaggio" path="/WEB-INF/pagine-in-comune/messaggi/nuovo-messaggio.jsp"></forward>
         </action>
         <action path="/forwardToVisualizzaMessaggi" type="controller.forward.ForwardToVisualizzaMessaggi">
-            <forward name="visualizza-messaggi" path="/WEB-INF/storico-messaggi.jsp"></forward>
+            <forward name="visualizza-messaggi" path="/WEB-INF/pagine-in-comune/messaggi/storico-messaggi.jsp"></forward>
+        </action>
+        <action path="/forwardToHome" type="controller.forward.ForwardToHome">
+            <forward name="home-tf" path="/WEB-INF/pagine-in-comune/home/home-tf.jsp"></forward>
+            <forward name="home-REG" path="/WEB-INF/pagine-in-comune/home/home-reg.jsp"></forward>
+            <forward name="home-ob" path="/WEB-INF/pagine-in-comune/home/home-ob.jsp"></forward>
+            <forward name="home-df" path="/WEB-INF/pagine-in-comune/home/home-df.jsp"></forward>
         </action>
 
 

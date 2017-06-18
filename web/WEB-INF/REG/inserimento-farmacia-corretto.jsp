@@ -1,1 +1,0 @@
-<jsp:forward page="/WEB-INF/REG/home-reg.jsp"></jsp:forward>

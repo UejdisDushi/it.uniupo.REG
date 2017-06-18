@@ -43,6 +43,7 @@ public class LoginController extends Action{
             case "df":
                 return mapping.findForward("home-df");
             default:
+                request.setAttribute("redirect", "dati-errati");
                 return mapping.findForward("dati-errati");
         }
 

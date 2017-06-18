@@ -6,7 +6,7 @@
 <html>
 <head>
     <script type="application/javascript" src="../../assets/javascripts/main.js"></script>
-    <link rel="stylesheet" href="/assets/stylesheets/prova-tabella.css">
+    <link rel="stylesheet" href="/assets/stylesheets/css.css">
     <title>Reintegra magazzino</title>
 </head>
 <body>

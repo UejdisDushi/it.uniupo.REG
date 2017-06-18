@@ -1,6 +1,5 @@
 package db;
 
-import com.sun.org.apache.regexp.internal.RE;
 import model.*;
 
 import java.sql.*;
@@ -175,7 +174,24 @@ public class DBManager {
         //recupero l'id generato dall'inserimento dell'ordine
         ResultSet resultSet = inserisciInOrdine.getGeneratedKeys();
         resultSet.next();
-        return resultSet.getInt("numero_ordine");
+        int numeroOrdine = resultSet.getInt("numero_ordine");
+
+        //ora inserisco tutto nella tabella contiene
+        inserisciInOrdine(numeroOrdine,prodotti,qtaVenduta);
+
+        return numeroOrdine;
+    }
+
+    private void inserisciInOrdine (int numeroOrdine, List<Prodotti> elencoProdotti, String[] qtaVenduta) throws SQLException {
+        for(int i = 0;i<elencoProdotti.size();i++) {
+            if(!qtaVenduta[i].equals("")) {
+                PreparedStatement inserisci = connection.prepareStatement("insert INTO contiene(qta, numero_ordine, id_prodotto) VALUES (?,?,?)");
+                inserisci.setInt(1, Integer.parseInt(qtaVenduta[i]));
+                inserisci.setInt(2, numeroOrdine);
+                inserisci.setInt(3, elencoProdotti.get(i).getId());
+                inserisci.executeUpdate();
+            }
+        }
     }
 
     public int getIdFarmacia(String cf) throws SQLException {
@@ -211,11 +227,11 @@ public class DBManager {
         return ruolo;
     }
 
-    public List<Farmacia> elencoFarmacie() throws SQLException {
+    public ArrayList<Farmacia> elencoFarmacie() throws SQLException {
         if(connection == null)
             this.connessione();
 
-        List<Farmacia> listaFarmacie = new ArrayList<>();
+        ArrayList<Farmacia> listaFarmacie = new ArrayList<>();
         Farmacia farmacia;
         PreparedStatement preparedStatement = connection.prepareStatement("select * from farmacia");
         ResultSet resultSet = preparedStatement.executeQuery();
@@ -235,45 +251,50 @@ public class DBManager {
 
     public boolean attivaFarmaciaAndTF(Farmacia farmacia, Personale personale, Login login) throws SQLException {
         long id = 0;
+        boolean status = false;
 
         if(connection == null)
             this.connessione();
 
-        PreparedStatement inserimentoFarmacia = connection.prepareStatement("INSERT into farmacia(nome, cap, citta, numero_telefono, provincia, via) VALUES (?,?,?,?,?,?) returning id_farmacia", PreparedStatement.RETURN_GENERATED_KEYS);
-        inserimentoFarmacia.setString(1,farmacia.getNomeFarmacia());
-        inserimentoFarmacia.setString(2,farmacia.getCap());
-        inserimentoFarmacia.setString(3,farmacia.getCitta());
-        inserimentoFarmacia.setString(4,farmacia.getNumeroTelefono());
-        inserimentoFarmacia.setString(5,farmacia.getProvincia());
-        inserimentoFarmacia.setString(6,farmacia.getVia());
+        try {
+            PreparedStatement inserimentoFarmacia = connection.prepareStatement("INSERT into farmacia(nome, cap, citta, numero_telefono, provincia, via) VALUES (?,?,?,?,?,?) returning id_farmacia", PreparedStatement.RETURN_GENERATED_KEYS);
+            inserimentoFarmacia.setString(1, farmacia.getNomeFarmacia());
+            inserimentoFarmacia.setString(2, farmacia.getCap());
+            inserimentoFarmacia.setString(3, farmacia.getCitta());
+            inserimentoFarmacia.setString(4, farmacia.getNumeroTelefono());
+            inserimentoFarmacia.setString(5, farmacia.getProvincia());
+            inserimentoFarmacia.setString(6, farmacia.getVia());
 
-        if(inserimentoFarmacia.executeUpdate() > 0) {
-            //recupero l'id generato con la creazione della farmacia
-            ResultSet resultSet = inserimentoFarmacia.getGeneratedKeys();
-            resultSet.next();
-            id = resultSet.getInt("id_farmacia");
-            String role = "tf";
-            PreparedStatement inserimentoPersonale = connection.prepareStatement("INSERT into personale(nome, cognome, cf, data_nascita, ruolo, id_farmacia) VALUES (?,?,?,?,?,?)");
-            inserimentoPersonale.setString(1, personale.getNomePersonale());
-            inserimentoPersonale.setString(2, personale.getCognome());
-            inserimentoPersonale.setString(3, personale.getCf());
-            inserimentoPersonale.setDate(4, personale.getDataNascita());
-            inserimentoPersonale.setString(5, role);
-            inserimentoPersonale.setLong(6, id);
+            if (inserimentoFarmacia.executeUpdate() > 0) {
+                //recupero l'id generato con la creazione della farmacia
+                ResultSet resultSet = inserimentoFarmacia.getGeneratedKeys();
+                resultSet.next();
+                id = resultSet.getInt("id_farmacia");
+                String role = "tf";
+                PreparedStatement inserimentoPersonale = connection.prepareStatement("INSERT into personale(nome, cognome, cf, data_nascita, ruolo, id_farmacia) VALUES (?,?,?,?,?,?)");
+                inserimentoPersonale.setString(1, personale.getNomePersonale());
+                inserimentoPersonale.setString(2, personale.getCognome());
+                inserimentoPersonale.setString(3, personale.getCf());
+                inserimentoPersonale.setDate(4, personale.getDataNascita());
+                inserimentoPersonale.setString(5, role);
+                inserimentoPersonale.setLong(6, id);
 
-            if (inserimentoPersonale.executeUpdate() > 0) {
+                if (inserimentoPersonale.executeUpdate() > 0) {
 
-                PreparedStatement inserimentoCredenziali = connection.prepareStatement("insert into login(utente, password, cf) VALUES (?,?,?)");
-                inserimentoCredenziali.setString(1, login.getUser());
-                inserimentoCredenziali.setString(2, login.getPassword());
-                inserimentoCredenziali.setString(3, personale.getCf());
+                    PreparedStatement inserimentoCredenziali = connection.prepareStatement("insert into login(utente, password, cf) VALUES (?,?,?)");
+                    inserimentoCredenziali.setString(1, login.getUser());
+                    inserimentoCredenziali.setString(2, login.getPassword());
+                    inserimentoCredenziali.setString(3, personale.getCf());
 
-                if (inserimentoCredenziali.executeUpdate() > 0)
-                    return true;
+                    if (inserimentoCredenziali.executeUpdate() > 0)
+                        status = true;
 
+                }
             }
+        } catch (SQLException e) {
+            status = false;
         }
-        return false;
+        return status;
     }
 
     public boolean attivaCollaboratore(Farmacia personaleDaInserire, Login login, long id_farmacia) throws SQLException {
@@ -486,6 +507,17 @@ public class DBManager {
         ResultSet risultato = ottieniUser.executeQuery();
         risultato.next();
         return risultato.getString(1);
+    }
+
+    public String getNomeECognomeByCf(String cf) throws SQLException {
+        if(connection == null)
+            this.connessione();
+
+        PreparedStatement query = connection.prepareStatement("SELECT nome,cognome from personale WHERE cf=?");
+        query.setString(1, cf);
+        ResultSet risultato = query.executeQuery();
+        risultato.next();
+        return risultato.getString("nome") + " " + risultato.getString("cognome");
     }
 
     public boolean nuovoMessaggio(String mittente, String destinatario, String corpo, int idFarmacia) throws SQLException {

@@ -4,215 +4,106 @@
 <head>
     <meta charset="utf-8">
     <title>Attiva farmacia</title>
-    <link rel="stylesheet" href="/assets/stylesheets/main2.css">
+    <link rel="stylesheet" href="/assets/stylesheets/css.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<header id="main">
-    <nav>
-        <ul>
-            <html:link action="/prova.do">Prova</html:link>
-            <li><a href="/creaAccountIndividuale">Crea account individuale</a></li>
-            <li><a href="/attivaFarmacia">Attività farmacia</a></li>
-            <li><a href="/vendita">Vendita</a></li>
-            <li><a href="/reintegra">Reintegra magazzino</a></li>
-            <li><a href="/verificaCliente">Verifica cliente</a></li>
-
-            <li>Log Out<a href="#">
-                <span class="log-out"></span>
-            </a></li>
-        </ul>
-    </nav>
-</header>
-<h2>
-    Attiva farmacia
-</h2>
-
-<form action="/attiva-farmacia.do" method="post">
-    <p>
-        <label>Nome</label>
-        <input type="text" name="nomeFarmacia" />
-    </p>
-    <p>
-        <label>Indirizzo</label>
-        <input type="text" name="via" />
-    </p>
-    <p>
-        <label>Citta</label>
-        <input type="text" name="citta" />
-    </p>
-    <p>
-        <label>CAP</label>
-        <input type="text" name="cap" />
-    </p>
-    <p>
-        <label>Provincia</label>
-        <input type="text" name="provincia" />
-    </p>
-    <p>
-        <label>Numero di telefono</label>
-        <input type="text" name="numeroTelefono" />
-    </p>
-    <br>
-    <br>
-    <p>
-        <label>Nome del personale da attivare</label>
-        <input type="text" name="nomePersonale" />
-    </p>
-    <p>
-        <label>Cognome del personale da attivare</label>
-        <input type="text" name="cognome"/>
-    </p>
-    <p>
-        <label>CF del personale da attivare</label>
-        <input type="text" name="cf" pattern="^[a-zA-Z]{6}[0-9]{2}[a-zA-Z][0-9]{2}[a-zA-Z][0-9]{3}[a-zA-Z]$" required="required"/>
-    </p>
-    <p>
-        <label>Data di nascita del personale da attivare</label>
-        <input type="date" name="dataNascita" min="1950-01-01" max="2017-06-01"/>
-    </p>
-    <br>
-    <br>
-    <p>
-        <label>Nome login da assegnare al personale creato</label>
-        <input type="text" name="user"/>
-    </p>
-    <p>
-    <label>Password da assegnare al personale creato</label>
-    <input type="text" name="password"/>
-    </p>
-
-    <input type="submit" value="Registra farmacia"/>
-</form>
-
-
-
-<!--
-<form class="form-horizontal">
-<fieldset>
-
-
-<!-- change col-sm-N to reflect how you would like your column spacing (http://getbootstrap.com/css/#forms-control-sizes) -->
-
-
-<!-- Form Name -->
-<legend>Form Name</legend>
-
-<!-- Text input http://getbootstrap.com/css/#forms -->
-<div class="form-group">
-    <label for="nomeFarmacia" class="control-label col-sm-2">Nome farmacia</label>
-    <div class="col-sm-10">
-        <input class="form-control" id="nomeFarmacia" placeholder="Nome della farmacia" required="" type="text">
-
-    </div>
+<%
+    String message = (String)request.getAttribute("redirect");
+    if(message != null) {
+        if(message.equals("inserimento-corretto")) { %>
+        <script>
+            window.alert('Inserimento avvenuto con successo');
+        </script>
+    <% }else { %>
+            <script>
+                window.alert('Attenzione, alcuni dati non sono corretti. Riprova.');
+            </script>
+<%}}
+%>
+<div class="head">
+    <img src="/assets/images/logo.png">
 </div>
-<!-- Text input http://getbootstrap.com/css/#forms -->
-<div class="form-group">
-    <label for="via" class="control-label col-sm-2">Indirizzo</label>
-    <div class="col-sm-10">
-        <input class="form-control" id="via" placeholder="Indirizzo della farmaccia" required="" type="text">
-
-    </div>
+<div id="mySidenav" class="sidenav">
+    <html:link action="/forwardToHome" styleId="uno">Home</html:link>
+    <html:link action="/forwardToNuovoMessaggio" styleId="due">Nuovo messaggio</html:link>
+    <html:link action="/forwardToVisualizzaMessaggi" styleId="tre">Messaggi ricevuti</html:link>
+    <a href="mailto: uejdis.dushi@gmail.com" id="quattro">Contattaci</a>
+    <html:link action="/logout" styleId="cinque">Log Out</html:link>
 </div>
-<!-- Text input http://getbootstrap.com/css/#forms -->
-<div class="form-group">
-    <label for="citta" class="control-label col-sm-2">Città</label>
-    <div class="col-sm-10">
-        <input class="form-control" id="citta" placeholder="Città della farmacia" required="" type="text">
-
-    </div>
-</div>
-<!-- Text input http://getbootstrap.com/css/#forms -->
-<div class="form-group form-group-sm">
-    <label for="cap" class="control-label col-sm-2">CAP</label>
-    <div class="col-sm-10">
-        <input class="form-control" id="cap" placeholder="Cap" required="" type="text">
-
-    </div>
-</div>
-<!-- Text input http://getbootstrap.com/css/#forms -->
-<div class="form-group">
-    <label for="pro" class="control-label col-sm-2">Provincia</label>
-    <div class="col-sm-10">
-        <input class="form-control" id="pro" placeholder="Provincia della farmacia" required="" type="text">
-
-    </div>
-</div>
-<!-- Text input http://getbootstrap.com/css/#forms -->
-<div class="form-group">
-    <label for="numeroTelefono" class="control-label col-sm-2">Numero di telefono</label>
-    <div class="col-sm-10">
-        <input class="form-control" id="numeroTelefono" placeholder="Telefono della farmacia" required="" type="number">
-
-    </div>
-</div>
-<!-- Text input http://getbootstrap.com/css/#forms -->
-<div class="form-group">
-    <label for="nomePersonale" class="control-label col-sm-2">Nome del titolare</label>
-    <div class="col-sm-10">
-        <input class="form-control" id="nomePersonale" placeholder="Nome del titolare" required="" type="text">
-
-    </div>
-</div>
-<!-- Text input http://getbootstrap.com/css/#forms -->
-<div class="form-group">
-    <label for="cognome" class="control-label col-sm-2">Cognome del titolare</label>
-    <div class="col-sm-10">
-        <input class="form-control" id="cognome" placeholder="Cognome del titolare" required="" type="text">
-
-    </div>
-</div>
-<!-- Text input http://getbootstrap.com/css/#forms -->
-<div class="form-group">
-    <label for="cf" class="control-label col-sm-2">Codice fiscale</label>
-    <div class="col-sm-10">
-        <input class="form-control" id="cf" placeholder="CF" required="" type="text">
-
-    </div>
-</div>
-<!-- Text input http://getbootstrap.com/css/#forms -->
-<div class="form-group">
-    <label for="dataNascita" class="control-label col-sm-2">Data di nascita</label>
-    <div class="col-sm-10">
-        <input class="form-control" id="dataNascita" placeholder="Data di nascita" required="" type="date">
-
-    </div>
-</div>
-<!-- Text input http://getbootstrap.com/css/#forms -->
-<div class="form-group">
-    <label for="user" class="control-label col-sm-2">Username</label>
-    <div class="col-sm-10">
-        <input class="form-control" id="user" placeholder="Username" required="" type="text">
-
-    </div>
-</div>
-<!-- Text input http://getbootstrap.com/css/#forms -->
-<div class="form-group">
-    <label for="password" class="control-label col-sm-2">Password</label>
-    <div class="col-sm-10">
-        <input class="form-control" id="password" placeholder="Password" required="" type="password">
-
-    </div>
-</div>
-<!-- Button http://getbootstrap.com/css/#buttons -->
-<div class="form-group">
-    <label class="control-label col-sm-2" for="attivaFarmacia"></label>
-    <div class="text-right col-sm-10">
-        <button type="submit" id="attivaFarmacia" name="attivaFarmacia" class="btn btn-primary" aria-label="">Attiva farmacia &amp; TF</button>
-
-    </div>
-</div>
-
-
-</fieldset>
-</form>
-
-    <!--</section>!-->
-</form>
+<article class="attivaFarmacia">
+    <form action="/attiva-farmacia.do" method="post">
+        <div class="left">
+            <h3>
+                Anagrafica farmacia
+            </h3>
+            <br>
+            <p>
+                <label>Nome</label>
+                <input type="text" name="nomeFarmacia" placeholder="Nome farmacia" required/>
+            </p>
+            <p>
+                <label>Indirizzo</label>
+                <input type="text" name="via" placeholder="Indirizzo" required/>
+            </p>
+            <p>
+                <label>Citta</label>
+                <input type="text" name="citta" placeholder="Città" required/>
+            </p>
+            <p>
+                <label>CAP</label>
+                <input type="text" name="cap" placeholder="CAP" required pattern="[0-9]{5}"/>
+            </p>
+            <p>
+                <label>Provincia</label>
+                <input type="text" name="provincia" placeholder="Provincia" required pattern="[a-zA-Z]{2}"/>
+            </p>
+            <p>
+                <label>Numero di telefono</label>
+                <input type="text" name="numeroTelefono" placeholder="Numero di telefono" required/>
+            </p>
+            <br>
+            <br>
+        </div>
+        <div class="right">
+            <h3>
+                Anagrafica titolare
+            </h3>
+            <br>
+            <p>
+                <label>Nome</label>
+                <input type="text" name="nomePersonale" placeholder="Nome titolare farmacia" required/>
+            </p>
+            <p>
+                <label>Cognome</label>
+                <input type="text" name="cognome" placeholder="Cognome titolare farmacia" required/>
+            </p>
+            <p>
+                <label>CF</label>
+                <input type="text" name="cf" pattern="^[a-zA-Z]{6}[0-9]{2}[a-zA-Z][0-9]{2}[a-zA-Z][0-9]{3}[a-zA-Z]$" required="required" placeholder="CF del titolare"/>
+            </p>
+            <p>
+                <label>Data di nascita</label>
+                <input type="text" name="dataNascita" min="1950-01-01" max="2017-06-01" required placeholder="aaaa-MM-dd" pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])"/>
+            </p>
+            <p>
+                <label>User</label>
+                <input type="text" name="user" required placeholder="Username da associare al titolare"/>
+            </p>
+            <p>
+                <label>Password</label>
+                <input type="text" name="password" required placeholder="Password da assegnare al titolare"/>
+            </p>
+            <br>
+            <br>
+        </div>
+        <input type="submit" value="Registra farmacia"/>
+    </form>
+</article>
+<div id="wrapper"></div>
 <footer id="footer">
-    <hr>
     <section class="text">
         <p>
             Design & production Copyright 2017 by Uejdis Dushi.

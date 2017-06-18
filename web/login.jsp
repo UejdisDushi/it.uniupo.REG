@@ -3,9 +3,8 @@
 
 <html>
 <head>
-    <link rel="stylesheet" href="/assets/stylesheets/main3.css">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link rel="stylesheet" href="/assets/stylesheets/main2.css">
+    <link rel="stylesheet" href="/assets/stylesheets/css.css">
     <script type="application/javascript" src="assets/javascripts/main.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -14,32 +13,28 @@
 </head>
 
 <body>
-<header >
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">Attiva farmacia</a>
-    <a href="#">Gestione messaggi</a>
+
+<%
+    String message = (String)request.getAttribute("redirect");
+    if(message != null) {
+        if(message.equals("dati-errati")) { %>
+<script>
+    window.alert('Attenzione, alcuni dati non sono corretti. Riprova.');
+</script>
+<% }}
+%>
+
+<div class="head">
+    <img src="/assets/images/logo.png">
 </div>
-</header>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
 
 
-
-    <header id="main">
-        <nav>
-            <ul>
-                <li>
-                    <html:link action="/lista-farmacie">Farmacie</html:link>
-                </li>
-                <li>
-                    <a href="/login.jsp">Area Riservata</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+<div id="mySidenav" class="sidenav">
+    <a href="/index.jsp" id="uno">Elenco farmacie</a>
+    <a href="mailto: uejdis.dushi@gmail.com" id="due">Contattaci</a>
+</div>
 
 
-<div class="body">
     <form action="login.do" method="post" class="login">
         <h1 class="login">Log In</h1>
         <div class="input-group">
@@ -56,15 +51,14 @@
            <input value="Log In" type="submit">
        </p>
     </form>
-    <footer id="footer">
-        <hr>
-        <section class="text">
-            <p>
-                Design & production Copyright 2017 by Uejdis Dushi.
-            </p>
-        </section>
-        <br>
-    </footer>
-</div>
+<div id="wrapper"></div>
+<footer id="footer">
+    <section class="text">
+        <p>
+            Design & production Copyright 2017 by Uejdis Dushi.
+        </p>
+    </section>
+    <br>
+</footer>
 </body>
 </html>

@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "League Spartan";
+}
+
+
+#mySidenav {
+    left: 0px;
+    position: fixed;
+    top: 15%;
+    width: 18%;
+    bottom: auto;
+}
+
+#mySidenav a {
+    position: absolute;
+    left: -170px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 200px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#uno {
+    top: 20px;
+    background-color: #4CAF50;
+}
+
+#due {
+    top:80px;
+    background-color: #2196F3;
+}
+
+#tre {
+    top: 140px;
+    background-color: #f44336;
+}
+
+#quattro {
+    top: 200px;
+    background-color: #555
+}
+
+#cinque {
+    top:260px;
+    background-color: #6666ff;
+}
+
+
+
+#cercaPerNome {
+    background-image: url('/assets/images/icona-ricerca.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+#tabella {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+}
+
+#tabella th, #tabella td {
+    text-align: left;
+    padding: 12px;
+}
+
+#tabella tr {
+    border-bottom: 1px solid #ddd;
+}
+
+#tabella tr.header, #tabella tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+#wrapper {
+    min-height: calc(100% - 350px);
+}
+
+
+#footer{
+    border-top: #818181 solid thin;
+    text-align: center;
+    padding: 15px;
+    background-color: white;
+    color: silver;
+    font-size: 11px;
+    font-family:"Lucida Grande";
+    width: 1364px;
+    margin: auto;
+}
+
+.elencoFarmacie {
+    width: 700px;
+    margin-top: auto;
+    position: relative;
+    font-size: 18px;
+    margin-left: 20px;
+    border: rgba(193,233,255,1) solid thin;
+    border-radius: 6px;
+    margin: auto;
+}
+
+.head {
+    width: 1364px;
+    text-align: right;
+    border-bottom: #818181 solid thin;
+    margin: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+ul {
+    list-style-type: none;
+}
+.nome{
+    color: #2c72af;
+    font-weight: bold;
+}
+
+li {
+    list-style-type: none;
+}
+
+article {
+    text-align: center;
+    width: 70%;
+    margin: 30px auto;
+    border: 1px #4CAF50 solid;
+    border-radius: 5px;
+}
+
+form.login{
+    max-width: 445.65217px;				/*larghezza form*/
+    padding: 1rem;						/*creo spazio attorno al contenuto*/
+    border: 1px solid #e8e8e8;			/*aggiungo il bordo color binacastro*/
+    margin: 8em auto;					/*centro i margini*/
+    text-align: center;					/*centro il contenuto*/
+    border-radius: 5px;
+}
+
+form.login h1{
+    font-family:"League Spartan";
+    margin:1em auto;
+}
+
+form.login input {
+    margin: auto;
+}
+
+input[type=text],input[type=password]{
+    font-family:"Lucida Grande";
+    color:#5c6f56;
+    /*padding:12px 200px 12px 18px;*/
+    border:1px solid rgba(0,0,0,0.12);
+    height: 30px;
+    width: 250px;
+    display: block;
+    background:white;
+    margin: auto;
+}
+
+input[type="submit"]{
+    font-family:"League Spartan";
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;		/*testarlo*/
+    color:white;
+    padding:12px 18px 8px 18px;
+    background:#5c6f56;
+    border-radius: 5px;
+}
+
+.submitFarm{
+    font-family:"League Spartan";
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color:white;
+    padding:auto;
+    margin:auto;	/*testarlo**/
+    background:#5c6f56;
+    border-radius: 5px;
+    width: 25%;
+}
+
+.attivaFarmacia {
+    text-align: left;
+}
+
+input {
+    border-radius: 5px;
+}
+
+h2,h3 {
+    text-align: center;
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+label {
+    margin-left: 25px;
+}
+
+.left {
+    width: 50%;
+    float:left;
+}
+.right {
+    width: 50%;
+    float:left;
+}
+
+.attivaFarmacia input[type="submit"] {
+    text-align: center;
+    margin-left: 392.3915px;
+}

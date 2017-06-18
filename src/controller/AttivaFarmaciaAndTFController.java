@@ -16,10 +16,6 @@ import java.util.Date;
 public class AttivaFarmaciaAndTFController extends Action {
 
     public ActionForward execute(ActionMapping mapping, ActionForm form, javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws Exception {
-
-        Login loggato = (Login) request.getSession().getAttribute("login");
-
-
         Farmacia farmacia = (Farmacia) form;
 
         Farmacia farmaciaDaInserire = new Farmacia();
@@ -45,8 +41,12 @@ public class AttivaFarmaciaAndTFController extends Action {
 
         DBManager dbManager = new DBManager();
         if(dbManager.attivaFarmaciaAndTF(farmaciaDaInserire, personaleDaInserire, credenzialiDiLogin)) {
-            return mapping.findForward("inserimento-farmacia-corretto");
-        } else return mapping.findForward("inserimento-farmacia-errato");
+            request.setAttribute("redirect", "inserimento-corretto");
+            return mapping.findForward("redirect");
+        } else {
+            request.setAttribute("redirect", "inserimento-errato");
+            return mapping.findForward("redirect");
+        }
 
     }
 }
