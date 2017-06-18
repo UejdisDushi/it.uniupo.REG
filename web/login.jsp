@@ -4,7 +4,6 @@
 <head>
     <link rel="stylesheet" href="/assets/stylesheets/css.css">
     <script type="application/javascript" src="assets/javascripts/main.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>Login</title>
 </head>
 
@@ -33,14 +32,10 @@
 
     <form action="login.do" method="post" class="login">
         <h1 class="login">Log In</h1>
-        <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-            <input id="user" type="text" class="form-control" name="user" placeholder="Username" required>
+            <input id="user" type="text" name="user" placeholder="Username" class="form-control"required>
         </div>
         <br>
-        <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-            <input id="password" type="password" class="form-control" name="password" placeholder="Password" required>
+        <input id="password" type="password"  name="password" placeholder="Password" class="form-control" required>
         </div>
         <br><br>
        <p>

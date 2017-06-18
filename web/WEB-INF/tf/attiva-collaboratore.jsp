@@ -5,7 +5,6 @@
 <head>
     <title>Attiva Collaboratore</title>
     <link rel="stylesheet" href="/assets/stylesheets/css.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
 

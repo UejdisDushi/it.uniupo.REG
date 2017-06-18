@@ -164,7 +164,7 @@ article {
 }
 
 form.login{
-    max-width: 445.65217px;				/*larghezza form*/
+    max-width: 700px;				/*larghezza form*/
     padding: 1rem;						/*creo spazio attorno al contenuto*/
     border: 1px solid #e8e8e8;			/*aggiungo il bordo color binacastro*/
     margin: 8em auto;					/*centro i margini*/
@@ -197,6 +197,7 @@ input[type="submit"]{
     font-family:"League Spartan";
     font-weight: bold;
     letter-spacing: 2px;
+    font-size: 16px;
     text-transform: uppercase;
     border: none;		/*testarlo*/
     color:white;
@@ -263,4 +264,29 @@ label {
 #contenitore-messaggio {
     margin-top: 120px;
     margin-left: 200px;
+}
+
+input:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 10px rgba(102, 175, 233, 0.6);
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background: #fff none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
