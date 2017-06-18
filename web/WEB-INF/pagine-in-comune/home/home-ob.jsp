@@ -24,33 +24,11 @@
     <html:link action="/logout" styleId="cinque">Log Out</html:link>
 </div>
 
-<article>
-    <%
-        DBManager dbManager = new DBManager();
-    %>
-    <h1>Bentornato <span><%=dbManager.getNomeECognomeByCf(dbManager.getCFByUsername(((Login)request.getSession().getAttribute("login")).getUser()))%></span></h1>
-    <br>
-    Sei l'amministratore del sito, hai le seguenti funzionalità:
-    <ul>
-        <li>Attivare le varie farmacie. Il processo prevede anche la creazione del titolare farmacista;</li>
-    </ul>
-</article>
-
-<article>
-    <%
-
-        ArrayList<Messaggio> elencoMessaggi = dbManager.getMessaggiDaLeggere(((Login)request.getSession().getAttribute("login")).getUser(),false);
-        if(elencoMessaggi.size() != 0) {
-    %>
-    <p>---------------------------------------------------------------------------------------------</p>
-    <br><br>
-    <a2>Hai <%=elencoMessaggi.size()%> da leggere!</a2>
-    <%
-        }
-    %>
-</article>
-
-<div id="wrapper"></div>
+<%
+    DBManager dbManager = new DBManager();
+    String anagrafica = dbManager.getNomeECognomeByCf(dbManager.getCFByUsername(((Login)request.getSession().getAttribute("login")).getUser()));
+%>
+<h1 class="bentornato">Bentornato <%=anagrafica%></h1>
 <footer id="footer">
     <section class="text">
         <p>

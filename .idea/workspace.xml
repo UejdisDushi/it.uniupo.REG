@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="725fbaa1-ea8d-4bf4-a6fc-3c6f34d201dc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6/_metadata_/metadata.values.at" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/REG/attiva-farmacia.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/REG/attiva-farmacia.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-reg.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-reg.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-tf.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-tf.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/messaggi/nuovo-messaggio.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/messaggi/nuovo-messaggio.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/messaggi/storico-messaggi.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/messaggi/storico-messaggi.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/stylesheets/css.css" afterPath="$PROJECT_DIR$/web/assets/stylesheets/css.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/login.jsp" afterPath="$PROJECT_DIR$/web/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-df.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-df.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-ob.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-ob.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,8 +81,8 @@
             <file leaf-file-name="home-reg.jsp" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-reg.jsp">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="345">
-                    <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="59" />
+                  <state relative-caret-position="375">
+                    <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="32" selection-end-column="9" />
                     <folding />
                   </state>
                 </provider>
@@ -114,11 +106,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home-tf.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home-tf.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-tf.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+            <state relative-caret-position="257">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="31" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home-df.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-df.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="412">
+              <caret line="41" column="9" lean-forward="false" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home-ob.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-ob.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="30" column="54" lean-forward="false" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -175,75 +187,6 @@
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DBManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/db/DBManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8940">
-              <caret line="601" column="34" lean-forward="false" selection-start-line="601" selection-start-column="34" selection-end-line="601" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <marker date="1497798680000" expanded="true" signature="1151:1222" ph="SELECT nome,... prodotti" />
-                <marker date="1497798680000" expanded="true" signature="2239:2292" ph="SELECT id_pr... rimanenze" />
-                <marker date="1497798680000" expanded="true" signature="2997:3055" ph="SELECT qta, rimanenze" />
-                <marker date="1497798680000" expanded="true" signature="3873:4026" ph="SELECT id_pr... prodotti" />
-                <marker date="1497798680000" expanded="true" signature="4986:5021" ph="SELECT cf fr... login" />
-                <marker date="1497798680000" expanded="true" signature="6045:6121" ph="UPDATE riman... " />
-                <marker date="1497798680000" expanded="true" signature="6713:6782" ph="insert INTO ordine... " />
-                <marker date="1497798680000" expanded="true" signature="6713:6783" ph="insert INTO ordine... " />
-                <marker date="1497798680000" expanded="true" signature="6713:6799" ph="insert INTO ordine... " />
-                <marker date="1497798680000" expanded="true" signature="6713:6806" ph="insert INTO ordine... " />
-                <marker date="1497798680000" expanded="true" signature="7837:7905" ph="insert INTO contiene... " />
-                <marker date="1497798680000" expanded="true" signature="8402:8448" ph="SELECT id_fa... personale" />
-                <marker date="1497798680000" expanded="true" signature="9087:9182" ph="select ruolo... login" />
-                <marker date="1497798680000" expanded="true" signature="9757:9779" ph="select * fro... farmacia" />
-                <marker date="1497798680000" expanded="true" signature="10795:10887" ph="INSERT into farmacia... " />
-                <marker date="1497798680000" expanded="true" signature="10795:10909" ph="INSERT into farmacia... " />
-                <marker date="1497798680000" expanded="true" signature="11793:11888" ph="INSERT into personale... " />
-                <marker date="1497798680000" expanded="true" signature="12463:12517" ph="insert into login... " />
-                <marker date="1497798680000" expanded="true" signature="13299:13394" ph="INSERT INTO personale... " />
-                <marker date="1497798680000" expanded="true" signature="13935:13989" ph="INSERT INTO login... " />
-                <marker date="1497798680000" expanded="true" signature="14544:14582" ph="SELECT ruolo... personale" />
-                <marker date="1497798680000" expanded="true" signature="15548:15641" ph="UPDATE riman... " />
-                <marker date="1497798680000" expanded="true" signature="16729:16767" ph="INSERT into rimanenze... " />
-                <marker date="1497798680000" expanded="true" signature="17316:17338" ph="SELECT FROM paziente... " />
-                <marker date="1497798680000" expanded="true" signature="18201:18221" ph="SELECT * FRO... medico" />
-                <marker date="1497798680000" expanded="true" signature="18999:19062" ph="SELECT qta F... rimanenze" />
-                <marker date="1497798680000" expanded="true" signature="19587:19667" ph="insert into ricetta... " />
-                <marker date="1497798680000" expanded="true" signature="20262:20342" ph="INSERT INTO paziente... " />
-                <marker date="1497798680000" expanded="true" signature="21173:21300" ph="SELECT nome farmacia" />
-                <marker date="1497798680000" expanded="true" signature="21813:21867" ph="SELECT nome,... personale" />
-                <marker date="1497798680000" expanded="true" signature="22518:22553" ph="select utent... login" />
-                <marker date="1497798680000" expanded="true" signature="22922:22967" ph="SELECT nome,... personale" />
-                <marker date="1497798680000" expanded="true" signature="23599:23623" ph="SELECT utent... login" />
-                <marker date="1497798680000" expanded="true" signature="23599:23699" ph="SELECT utent... login" />
-                <marker date="1497798680000" expanded="true" signature="24095:24182" ph="INSERT INTO messaggi... " />
-                <marker date="1497798680000" expanded="true" signature="24846:24887" ph="SELECT cf FR... personale" />
-                <marker date="1497798680000" expanded="true" signature="25178:25264" ph="INSERT INTO messaggi... " />
-                <marker date="1497798680000" expanded="true" signature="26189:26226" ph="SELECT cf fr... personale" />
-                <marker date="1497798680000" expanded="true" signature="26189:26248" ph="SELECT cf fr... personale" />
-                <marker date="1497798680000" expanded="true" signature="26575:26658" ph="INSERT INTO messaggi... " />
-                <marker date="1497798680000" expanded="true" signature="26575:26661" ph="INSERT INTO messaggi... " />
-                <marker date="1497798680000" expanded="true" signature="27237:27323" ph="INSERT INTO messaggi... " />
-                <marker date="1497798680000" expanded="true" signature="28161:28187" ph="SELECT mitte... " />
-                <marker date="1497798680000" expanded="true" signature="28161:28245" ph="SELECT mitte... messaggi" />
-                <marker date="1497798680000" expanded="true" signature="28856:28913" ph="UPDATE messa... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InviaMessaggioController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/InviaMessaggioController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -342,8 +285,6 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/REG/home-reg.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/tf/home-tf.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/farmacie.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-ob.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-df.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/WrongLogin.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/credenziali-errate.jsp" />
         <option value="$PROJECT_DIR$/web/assets/stylesheets/main2.css" />
@@ -361,6 +302,8 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-reg.jsp" />
         <option value="$PROJECT_DIR$/web/assets/stylesheets/css.css" />
         <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-tf.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-ob.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-df.jsp" />
       </list>
     </option>
   </component>
@@ -1248,7 +1191,7 @@
       <workItem from="1497467046022" duration="36427000" />
       <workItem from="1497731858506" duration="1667000" />
       <workItem from="1497739649558" duration="19596000" />
-      <workItem from="1497803768220" duration="2154000" />
+      <workItem from="1497803768220" duration="2503000" />
     </task>
     <task id="LOCAL-00001" summary="Sistemare inserimento farmacia e username, in particolare non funziona il recupero dell'id_farmacia tramite quel metodo">
       <created>1496175910137</created>
@@ -1390,11 +1333,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497798806815</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Sistemato home per TF">
+      <created>1497806022060</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1497806022060</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="220193000" />
+    <option name="totallyTimeSpent" value="220542000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="791" extended-state="6" />
@@ -1491,7 +1441,8 @@
     <MESSAGE value="- Aggiorna contenuto in tabella “Contiene” dopo vendita;&#10;- Quando si invia il messaggio aggiunta la possibilità di tornare sulla home;&#10;- Sistemato organizzazione package;&#10;- La pagina iniziale ora contiene l’elenco delle farmacie;&#10;- Sistemazione layout generico, cambiato header e footer, ma ancora da ottimizzare;&#10;- Aggiustato layout attiva farmacia e tf, inseriti i pattern e se tutto ok pop con conferma, altrimenti pop up errore e non inserisce nulla nel db;&#10;- Sistemato anche gestione log in con dati errati." />
     <MESSAGE value="Sistemato design &quot;nuovo-messaggio&quot;" />
     <MESSAGE value="Inserito pop up quando si invia messagio: con avvenuto invio o destinatario non valido" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inserito pop up quando si invia messagio: con avvenuto invio o destinatario non valido" />
+    <MESSAGE value="Sistemato home per TF" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sistemato home per TF" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1598,23 +1549,7 @@
     <entry file="file://$PROJECT_DIR$/web/assets/images/edi-2.png" />
     <entry file="file://$PROJECT_DIR$/web/assets/images/edi.png" />
     <entry file="file://$PROJECT_DIR$/web/assets/images/f175e5cf-43ca-4efd-8202-43823a698ee8.png" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-ob.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/farmacie.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-df.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/stylesheets/main3.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1926,18 +1861,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-reg.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-tf.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="59" />
+        <state relative-caret-position="257">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="31" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-tf.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-ob.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+        <state relative-caret-position="324">
+          <caret line="30" column="54" lean-forward="false" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-reg.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="32" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-df.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="41" column="9" lean-forward="false" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
           <folding />
         </state>
       </provider>
