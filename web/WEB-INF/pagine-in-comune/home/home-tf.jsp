@@ -7,36 +7,37 @@
 <html>
 <head>
     <title>Home <%= ((Login)request.getSession().getAttribute("login")).getUser()%></title> <!--bentornato ....!-->
-    <link rel="stylesheet" href="/assets/stylesheets/main3.css">
+    <link rel="stylesheet" href="/assets/stylesheets/css.css">
     <script type="application/javascript" src="assets/javascripts/main.js"></script>
 </head>
 <body>
 
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <html:link action="/forwardToAttivaCollaboratore">Attiva collaboratore</html:link>
-    <html:link action="/forwardToReintegraMagazzino">Reintegra magazzino</html:link>
-    <html:link action="/forwardToVendita">Vendita</html:link>
-    <html:link action="/forwardToNuovoMessaggio">Nuovo messaggio</html:link>
-    <html:link action="/forwardToVisualizzaMessaggi">Visualizza messaggi</html:link>
-    <html:link action="/logout">Log Out</html:link>
+<div class="head">
+    <img src="/assets/images/logo.png">
 </div>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+<div id="mySidenav" class="sidenav">
+    <html:link action="/forwardToAttivaCollaboratore" styleId="uno">Attiva</html:link>
+    <html:link action="/forwardToReintegraMagazzino" styleId="due">Reintegra</html:link>
+    <html:link action="/forwardToVendita" styleId="tre">Vendita</html:link>
+    <html:link action="/forwardToNuovoMessaggio" styleId="quattro">Nuovo messaggio</html:link>
+    <html:link action="/forwardToVisualizzaMessaggi" styleId="cinque">Messaggi ricevuti</html:link>
+    <a href="mailto: uejdis.dushi@gmail.com" id="sei">Contattaci</a>
+    <html:link action="/logout" styleId="sette">Log Out</html:link>
+</div>
+<%
+    DBManager dbManager = new DBManager();
+    String anagrafica = dbManager.getNomeECognomeByCf(dbManager.getCFByUsername(((Login)request.getSession().getAttribute("login")).getUser()));
+%>
+<h1 class="bentornato">Bentornato <%=anagrafica%></h1>
 
-<article>
-    <%
-        DBManager dbManager = new DBManager();
-        ArrayList<Messaggio> elencoMessaggi = dbManager.getMessaggiDaLeggere(((Login)request.getSession().getAttribute("login")).getUser(),false);
-        if(elencoMessaggi.size() != 0) {
-    %>
-    <p>---------------------------------------------------------------------------------------------</p>
-    <br><br>
-    <a2>Hai <%=elencoMessaggi.size()%> da leggere!</a2>
-    <%
-        }
-    %>
-</article>
-
+<footer id="footer">
+    <section class="text">
+        <p>
+            Design & production Copyright 2017 by Uejdis Dushi.
+        </p>
+    </section>
+    <br>
+</footer>
 </body>
 </html>

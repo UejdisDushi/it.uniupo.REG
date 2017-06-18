@@ -1,12 +1,9 @@
-<%@ page import="db.DBManager" %>
-<%@ page import="model.Messaggio" %>
-<%@ page import="java.util.ArrayList" %>
-<%@ page import="model.Login" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
 <html>
 <head>
-    <title>Home REG></title>
+    <title>Home REG</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="/assets/stylesheets/css.css">
     <script type="application/javascript" src="assets/javascripts/main.js"></script>
 </head>
@@ -24,29 +21,8 @@
     <html:link action="/logout" styleId="cinque">Log Out</html:link>
 </div>
 
-<article>
-    <h1>Bentornato <span>REG</span></h1>
-    <br>
-    Sei l'amministratore del sito, hai le seguenti funzionalità:
-    <ul>
-        <li>- Attivare le varie farmacie. Il processo prevede anche la creazione del titolare farmacista;</li>
-        <li>- Inviare messaggi ad un singolo titolare farmacista (scegliendo la farmacia) oppure a tutti;</li>
-        <li>- Visualizzare i messaggi ricevuti.</li>
-    </ul>
-</article>
+    <h1 class="bentornato">Bentornato <span>REG</span></h1>
 
-<%
-    DBManager dbManager = new DBManager();
-    ArrayList<Messaggio> elencoMessaggi = dbManager.getMessaggiDaLeggere(((Login)request.getSession().getAttribute("login")).getUser(),false);
-    if(elencoMessaggi.size() != 0) {
-%>
-<article>
-    <a2>Hai <%=elencoMessaggi.size()%> da leggere!</a2>
-</article>
-<%
-    }
-%>
-<div id="wrapper"></div>
 <footer id="footer">
     <section class="text">
         <p>

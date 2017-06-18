@@ -5,19 +5,18 @@
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Nuovo messaggio</title>
     <link rel="stylesheet" href="/assets/stylesheets/css.css">
     <script type="application/javascript" src="assets/javascripts/main.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-
 <%
     String message = (String)request.getAttribute("redirect");
     if(message != null) {
         if(message.equals("inserimento-corretto")) { %>
 <script>
-    window.alert('Messaggio inviato correttamente');
+    window.alert('Messaggio inviato correttamente.');
 </script>
 <% }else { %>
 <script>
@@ -25,29 +24,25 @@
 </script>
 <%}}
 %>
-
-
 <div class="head">
     <img src="/assets/images/logo.png">
 </div>
-
 <div id="mySidenav" class="sidenav">
     <html:link action="/forwardToHome" styleId="uno">Home</html:link>
-    <a href="mailto: uejdis.dushi@gmail.com" id="due">Contattaci</a>
-    <html:link action="/logout" styleId="tre">Log Out</html:link>
+    <html:link action="/forwardToVisualizzaMessaggi" styleId="due">Messaggi ricevuti</html:link>
+    <a href="mailto: uejdis.dushi@gmail.com" id="tre">Contattaci</a>
+    <html:link action="/logout" styleId="quattro">Log Out</html:link>
 </div>
-
-    <%
-        DBManager dbManager = new DBManager();
-        String cf = dbManager.getCFByUsername(((Login)request.getSession().getAttribute("login")).getUser());
-        String ruolo = dbManager.getRuoloByCF(cf);
-        int idFarmacia = (int)request.getSession().getAttribute("id-farmacia");
-        ArrayList<String> elencoNominativi = dbManager.getElencoPazientiPerMessaggi(ruolo,idFarmacia,cf);
-    %>
-
+<%
+    DBManager dbManager = new DBManager();
+    String cf = dbManager.getCFByUsername(((Login)request.getSession().getAttribute("login")).getUser());
+    String ruolo = dbManager.getRuoloByCF(cf);
+    int idFarmacia = (int)request.getSession().getAttribute("id-farmacia");
+    ArrayList<String> elencoNominativi = dbManager.getElencoPazientiPerMessaggi(ruolo,idFarmacia,cf);
+%>
 <div class="container">
     <div class="row">
-        <div class="col-sm-4 col-md-10">
+        <div class="col-md-10">
             <div class="panel panel-default" id="contenitore-messaggio">
                 <div class="panel-body">
                     <form accept-charset="UTF-8" action="invia-messaggio.do" method="POST">
@@ -71,8 +66,6 @@
         </div>
     </div>
 </div>
-
-
 <footer id="footer">
     <section class="text">
         <p>

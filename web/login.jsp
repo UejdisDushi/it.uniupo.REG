@@ -1,14 +1,10 @@
-<%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
 
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" href="/assets/stylesheets/css.css">
     <script type="application/javascript" src="assets/javascripts/main.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Login</title>
 </head>
 
@@ -24,15 +20,15 @@
 <% }}
 %>
 
-<div class="head">
-    <img src="/assets/images/logo.png">
-</div>
+    <div class="head">
+        <img src="/assets/images/logo.png">
+    </div>
 
 
-<div id="mySidenav" class="sidenav">
-    <a href="/index.jsp" id="uno">Elenco farmacie</a>
-    <a href="mailto: uejdis.dushi@gmail.com" id="due">Contattaci</a>
-</div>
+    <div id="mySidenav" class="sidenav">
+        <a href="/index.jsp" id="uno">Elenco farmacie</a>
+        <a href="mailto: uejdis.dushi@gmail.com" id="due">Contattaci</a>
+    </div>
 
 
     <form action="login.do" method="post" class="login">

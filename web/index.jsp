@@ -5,6 +5,7 @@
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
 <html>
 <head>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="application/javascript" src="assets/javascripts/main.js"></script>
     <link rel="stylesheet" href="/assets/stylesheets/css.css">
 </head>
@@ -39,7 +40,6 @@
     <%}%>
 </div>
 
-<div id="wrapper"></div>
 <footer id="footer">
     <section class="text">
         <p>
