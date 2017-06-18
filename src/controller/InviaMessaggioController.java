@@ -18,19 +18,12 @@ public class InviaMessaggioController extends Action {
         String mittente = ((Login)request.getSession().getAttribute("login")).getUser();
         int idFarmacia = (int)request.getSession().getAttribute("id-farmacia");
         if(dbManager.nuovoMessaggio(mittente, messaggio.getDestinatario(), messaggio.getCorpo(), idFarmacia)){
-            String cf = dbManager.getCFByUsername(mittente);
-            String ruolo = dbManager.getRuoloByCF(cf);
-            switch (ruolo) {
-                case "tf":
-                    return mapping.findForward("messaggio-inviato-tf");
-                case "ob":
-                    return mapping.findForward("messaggio-inviato-ob");
-                case "df":
-                    return mapping.findForward("messaggio-inviato-df");
-                default:
-                    return mapping.findForward("messaggio-inviato-REG");
-            }
+            request.setAttribute("redirect", "inserimento-corretto");
+            return mapping.findForward("redirect");
         }
-        return null;
+        else {
+            request.setAttribute("redirect", "inserimento-errato");
+            return mapping.findForward("redirect");
+        }
     }
 }

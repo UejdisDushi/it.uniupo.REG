@@ -6,7 +6,7 @@
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
 <html>
 <head>
-    <title>Home <%= ((Login)request.getSession().getAttribute("login")).getUser()%></title>
+    <title>Home REG></title>
     <link rel="stylesheet" href="/assets/stylesheets/css.css">
     <script type="application/javascript" src="assets/javascripts/main.js"></script>
 </head>
@@ -29,23 +29,23 @@
     <br>
     Sei l'amministratore del sito, hai le seguenti funzionalità:
     <ul>
-        <li>Attivare le varie farmacie. Il processo prevede anche la creazione del titolare farmacista;</li>
+        <li>- Attivare le varie farmacie. Il processo prevede anche la creazione del titolare farmacista;</li>
+        <li>- Inviare messaggi ad un singolo titolare farmacista (scegliendo la farmacia) oppure a tutti;</li>
+        <li>- Visualizzare i messaggi ricevuti.</li>
     </ul>
 </article>
 
-
+<%
+    DBManager dbManager = new DBManager();
+    ArrayList<Messaggio> elencoMessaggi = dbManager.getMessaggiDaLeggere(((Login)request.getSession().getAttribute("login")).getUser(),false);
+    if(elencoMessaggi.size() != 0) {
+%>
 <article>
-    <%
-        DBManager dbManager = new DBManager();
-        ArrayList<Messaggio> elencoMessaggi = dbManager.getMessaggiDaLeggere(((Login)request.getSession().getAttribute("login")).getUser(),false);
-        if(elencoMessaggi.size() != 0) {
-    %>
     <a2>Hai <%=elencoMessaggi.size()%> da leggere!</a2>
-    <%
-        }
-    %>
 </article>
-
+<%
+    }
+%>
 <div id="wrapper"></div>
 <footer id="footer">
     <section class="text">

@@ -89,42 +89,41 @@ html {
     background-color: #f1f1f1;
 }
 
-
-#wrapper {
-    min-height: calc(100% - 350px);
-}
-
-
 #footer{
+    width: 1364px;
+    height: 50px;
     border-top: #818181 solid thin;
     text-align: center;
+    position: fixed;
+    bottom: 0;
     padding: 15px;
     background-color: white;
     color: silver;
     font-size: 11px;
     font-family:"Lucida Grande";
-    width: 1364px;
-    margin: auto;
+    margin-left: 38px;
 }
 
 .elencoFarmacie {
     width: 700px;
-    margin-top: auto;
-    position: relative;
     font-size: 18px;
-    margin-left: 20px;
-    border: rgba(193,233,255,1) solid thin;
-    border-radius: 6px;
-    margin: auto;
+    margin:auto;
+    top: 200px;
+    border: 1px #4CAF50 solid;
+    border-radius: 5px;
+    padding-top: 60px;
 }
 
 .head {
+    top:0px;
     width: 1364px;
     text-align: right;
     border-bottom: #818181 solid thin;
-    margin: auto;
+    margin-left: 38px;
     padding-top: 8px;
     padding-bottom: 8px;
+    position: fixed;
+    background-color: white;
 }
 
 ul {
@@ -140,6 +139,7 @@ li {
 }
 
 article {
+    margin-top:38px;
     text-align: center;
     width: 70%;
     margin: 30px auto;
@@ -234,4 +234,9 @@ label {
 .attivaFarmacia input[type="submit"] {
     text-align: center;
     margin-left: 392.3915px;
+}
+
+#contenitore-messaggio {
+    margin-top: 120px;
+    margin-left: 200px;
 }

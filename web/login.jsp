@@ -51,7 +51,6 @@
            <input value="Log In" type="submit">
        </p>
     </form>
-<div id="wrapper"></div>
 <footer id="footer">
     <section class="text">
         <p>

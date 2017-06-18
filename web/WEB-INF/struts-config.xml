@@ -34,10 +34,7 @@
         </action>
 
         <action path="/invia-messaggio" type="controller.InviaMessaggioController" name="messaggio">
-            <forward name="messaggio-inviato-REG" path="/WEB-INF/pagine-in-comune/home/home-reg.jsp"></forward>
-            <forward name="messaggio-inviato-tf" path="/WEB-INF/pagine-in-comune/home/home-tf.jsp"></forward>
-            <forward name="messaggio-inviato-ob" path="/WEB-INF/pagine-in-comune/home/home-ob.jsp"></forward>
-            <forward name="messaggio-inviato-df" path="/WEB-INF/pagine-in-comune/home/home-df.jsp"></forward>
+            <forward name="redirect" path="/WEB-INF/pagine-in-comune/messaggi/nuovo-messaggio.jsp"></forward>
         </action>
 
         <action path="/termina-operazione" type="controller.TerminaOperazioneVenditaController">
