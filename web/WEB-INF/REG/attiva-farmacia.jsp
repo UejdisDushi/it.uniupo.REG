@@ -33,7 +33,7 @@
     <html:link action="/logout" styleId="cinque">Log Out</html:link>
 </div>
 
-<article class="attivaFarmacia">
+<article class="attiva">
     <form action="/attiva-farmacia.do" method="post">
         <div class="left">
             <h3>

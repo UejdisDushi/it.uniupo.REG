@@ -4,30 +4,45 @@
 <html>
 <head>
     <title>Attiva Collaboratore</title>
-    <link rel="stylesheet" href="/assets/stylesheets/main2.css">
+    <link rel="stylesheet" href="/assets/stylesheets/css.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
 
-<h2>
-    Inserisci collaboratore
-</h2>
+<div class="head">
+    <img src="/assets/images/logo.png">
+</div>
 
+<div id="mySidenav" class="sidenav">
+    <html:link action="/forwardToHome" styleId="uno">Home</html:link>
+    <html:link action="/forwardToReintegraMagazzino" styleId="due">Reintegra</html:link>
+    <html:link action="/forwardToVendita" styleId="tre">Vendita</html:link>
+    <html:link action="/forwardToNuovoMessaggio" styleId="quattro">Nuovo messaggio</html:link>
+    <html:link action="/forwardToVisualizzaMessaggi" styleId="cinque">Messaggi ricevuti</html:link>
+    <a href="mailto: uejdis.dushi@gmail.com" id="sei">Contattaci</a>
+    <html:link action="/logout" styleId="sette">Log Out</html:link>
+</div>
+
+<article class="attiva">
 <form action="/attiva-collaboratore.do" method="post">
+    <h3>
+        Inserisci collaboratore
+    </h3>
     <p>
-        <label>Nome collaboratore</label>
-        <input type="text" name="nomePersonale" />
+        <label>Nome</label>
+        <input type="text" name="nomePersonale" class="form-control" required placeholder="Nome collaboratore"/>
     </p>
     <p>
-        <label>Cognome collaboratore</label>
-        <input type="text" name="cognome"/>
+        <label>Cognome</label>
+        <input type="text" name="cognome" class="form-control" required placeholder="Cognome collaboratore"/>
     </p>
     <p>
-        <label>CF collaboratore</label>
-        <input type="text" name="cf" pattern="^[a-zA-Z]{6}[0-9]{2}[a-zA-Z][0-9]{2}[a-zA-Z][0-9]{3}[a-zA-Z]$" required="required"/>
+        <label>CF</label>
+        <input type="text" name="cf" pattern="^[a-zA-Z]{6}[0-9]{2}[a-zA-Z][0-9]{2}[a-zA-Z][0-9]{3}[a-zA-Z]$" required class="form-control" placeholder="CF collaboratore"/>
     </p>
     <p>
-        <label>Data di nascita collaboratore</label>
-        <input type="date" name="dataNascita" min="1950-01-01" max="2017-06-01"/>
+        <label>Data di nascita</label>
+        <input type="text" name="dataNascita" min="1950-01-01" max="2017-06-01" class="form-control" required placeholder="aaaa-MM-dd" pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])"/>
     </p>
     <p>
         <label>Ruolo collaboratore</label>
@@ -38,56 +53,20 @@
         </select>
 
     </p>
-    <br>
-    <br>
     <p>
-        <label>Nome login per collaboratore</label>
-        <input type="text" name="user"/>
+        <label>User</label>
+        <input type="text" name="user" class="form-control" required placeholder="Username del collaboratore"/>
     </p>
     <p>
-        <label>Password per collaboratore</label>
-        <input type="text" name="password"/>
+        <label>Password</label>
+        <input type="text" name="password" class="form-control" required placeholder="Password del collaboratore"/>
     </p>
 
     <input type="submit" value="Registra collaboratore"/>
 </form>
+</article>
 
-
-
-<!--
-<form id="attiva-farmacia-form" class="attiva-farmacia-form" action="/attivaFarmacia.jsp" method="post">
-    <!--<section class="user-account">
-        <p>
-            <label>Nome</label>
-            <input id="nome" placeholder="Nome farmacia" type="text">
-        </p>
-        <p class="indirizzo">
-            <label>Indirizzo</label>
-            <input id="indirizzo" placeholder="Inserire indirizzo" type="text">
-        </p>
-        <p class="citta">
-            <label>Citta'</label>
-            <input id="citta" placeholder="Inserire città" type="text">
-        </p>
-        <p class="provincia">
-            <label>Provincia</label>
-            <input id="provincia" placeholder="Inserire provincia" type="text" size="20">
-        </p>
-        <p class="numeroDiTelefono">
-            <label>Numero di telefono</label>
-            <input id="numeroDiTelefono" placeholder="Inserire numero di telefono" type="text">
-        </p>
-        <p class="nomeTitolareFarmacista">
-            <label>Nome titolare farmacista (TF)</label>
-            <input id="nomeTitolareFarmacista" placeholder="Inserire nome titolare farmacista" type="text">
-        </p>
-        <p class="submitFarm">
-            <input value="Registra farmacia" type="submit">
-        </p>
-    <!--</section>!-->
-</form>
 <footer id="footer">
-    <hr>
     <section class="text">
         <p>
             Design & production Copyright 2017 by Uejdis Dushi.

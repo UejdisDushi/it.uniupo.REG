@@ -4,12 +4,12 @@
 
 html {
     font-family: "League Spartan";
+
 }
 
 body {
     margin: auto;
 }
-
 
 #mySidenav {
     left: 0px;
@@ -131,7 +131,7 @@ body {
 }
 
 .head {
-    top:0px;
+    top:0;
     width: 1364px;
     text-align: right;
     border-bottom: #818181 solid thin;
@@ -218,7 +218,7 @@ input[type="submit"]{
     width: 25%;
 }
 
-.attivaFarmacia {
+.attiva {
     text-align: left;
     margin-top: 60px;
 }
@@ -255,7 +255,7 @@ label {
     float:left;
 }
 
-.attivaFarmacia input[type="submit"] {
+.attiva input[type="submit"] {
     text-align: center;
     margin-left: 392.3915px;
 }
