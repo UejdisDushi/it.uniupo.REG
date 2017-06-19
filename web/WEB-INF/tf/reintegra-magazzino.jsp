@@ -11,14 +11,19 @@
 </head>
 <body>
 
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <html:link action="/forwardToAttivaCollaboratore">Attiva collaboratore</html:link>
-    <html:link action="/forwardToReintegraMagazzino">Reintegra magazzino</html:link>
-    <html:link action="/logout">Log Out</html:link>
+<div class="head">
+    <img src="/assets/images/logo.png">
 </div>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+<div id="mySidenav" class="sidenav">
+    <html:link action="/forwardToHome" styleId="uno">Home</html:link>
+    <html:link action="/forwardToAttivaCollaboratore" styleId="due">Attiva</html:link>
+    <html:link action="/forwardToVendita" styleId="tre">Vendita</html:link>
+    <html:link action="/forwardToNuovoMessaggio" styleId="quattro">Nuovo messaggio</html:link>
+    <html:link action="/forwardToVisualizzaMessaggi" styleId="cinque">Messaggi ricevuti</html:link>
+    <a href="mailto: uejdis.dushi@gmail.com" id="sei">Contattaci</a>
+    <html:link action="/logout" styleId="sette">Log Out</html:link>
+</div>
 
 <input type="text" id="cercaPerNome" onkeyup="cercaPerNome()" placeholder="Cerca per nome.." title="Type in a name">
 <form action="/reintegra-magazzino.do" method="post">
@@ -36,33 +41,42 @@
                 ArrayList<Prodotti> catalogoProdotti = dbManager.getTuttiProdotti();
                 for(Prodotti prodotto : catalogoProdotti) {
             %>
-    <tr>
-        <td>
-            <%=prodotto.getNome()%>
-        </td>
-        <td>
-            <%=prodotto.getCategoria()%>
-        </td>
-        <td>
-            <%=prodotto.getCosto()%>
-        </td>
-        <td>
-            <%if(prodotto.isRicetta()){%>
-            Si
-            <%} else {%>
-            No<%}%>
-        </td>
-        <td>
-            <input type="number" min="0" name="quantita">
-        </td>
-        <td>
-            <input img src="/assets/images/icona-carrello.png" type="image" value="submit">
-        </td>
-    </tr>
-    <% } %>
+        <tr>
+            <td>
+                <%=prodotto.getNome()%>
+            </td>
+            <td>
+                <%=prodotto.getCategoria()%>
+            </td>
+            <td>
+                <%=prodotto.getCosto()%>
+            </td>
+            <td>
+                <%if(prodotto.isRicetta()){%>
+                    Si
+                <%} else {%>
+                    No<%}%>
+            </td>
+            <td>
+                <input type="number" min="0" name="quantita">
+            </td>
+            <td>
+                <input img src="/assets/images/icona-carrello.png" type="image" value="submit">
+            </td>
+        </tr>
+        <% } %>
     </table>
 </form>
 </div>
+
+<footer id="footer">
+    <section class="text">
+        <p>
+            Design & production Copyright 2017 by Uejdis Dushi.
+        </p>
+    </section>
+    <br>
+</footer>
 
 </body>
 </html>

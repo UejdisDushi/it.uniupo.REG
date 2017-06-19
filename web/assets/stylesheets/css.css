@@ -77,16 +77,18 @@ body {
     background-image: url('/assets/images/icona-ricerca.png');
     background-position: 10px 10px;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 1300px;
     font-size: 16px;
     padding: 12px 20px 12px 40px;
     border: 1px solid #ddd;
-    margin-bottom: 12px;
+    margin-top: 75px;
+    height: auto;
 }
 
 #tabella {
     border-collapse: collapse;
-    width: 100%;
+    width: 1300px;
+    margin:auto;
     border: 1px solid #ddd;
     font-size: 18px;
 }
@@ -94,10 +96,12 @@ body {
 #tabella th, #tabella td {
     text-align: left;
     padding: 12px;
+
 }
 
 #tabella tr {
     border-bottom: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 #tabella tr.header, #tabella tr:hover {
