@@ -97,6 +97,7 @@
 
 <%
     String message = (String)request.getAttribute("redirect");
+    String totale = (String) request.getAttribute("totale");
     if(message != null) {
         if(message.equals("valore-non-consentito")) { %>
 <script>
@@ -107,6 +108,12 @@
     window.alert('Attenzione, nessuna quantità selezionata. Riprova.');
 </script>
 <%}}
+    if(totale != null) {%>
+<script>
+    window.alert('Totale vendita: ' + <%=totale%> + '€');
+</script>
+<%
+    }
 %>
 </body>
 

@@ -635,6 +635,16 @@ public class DBManager {
 
         return daLeggere;
     }
+
+    public double getTotaleByIdOrdine(int idOrdine) throws SQLException {
+        if(connection == null)
+            this.connessione();
+        PreparedStatement totale = connection.prepareStatement("SELECT totale_ordine from ordine WHERE numero_ordine=?");
+        totale.setInt(1, idOrdine);
+        ResultSet risultato = totale.executeQuery();
+        risultato.next();
+        return risultato.getDouble(1);
+    }
 }
 
 

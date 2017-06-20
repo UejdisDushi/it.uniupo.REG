@@ -4,6 +4,7 @@
     <list default="true" id="725fbaa1-ea8d-4bf4-a6fc-3c6f34d201dc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/VenditaTramiteOB.java" afterPath="$PROJECT_DIR$/src/controller/VenditaTramiteOB.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db/DBManager.java" afterPath="$PROJECT_DIR$/src/db/DBManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/ob/vendita-tramite-ob.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/ob/vendita-tramite-ob.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" />
     </list>
@@ -76,175 +77,28 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.65597147">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/login.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="514">
-                  <caret line="53" column="6" lean-forward="false" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="vendita-tramite-ob.jsp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/WEB-INF/ob/vendita-tramite-ob.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="394">
-                  <caret line="104" column="28" lean-forward="true" selection-start-line="104" selection-start-column="28" selection-end-line="104" selection-end-column="44" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="VenditaTramiteOB.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/controller/VenditaTramiteOB.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="184">
-                  <caret line="30" column="73" lean-forward="false" selection-start-line="30" selection-start-column="73" selection-end-line="30" selection-end-column="73" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DBManager.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/db/DBManager.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="185">
-                  <caret line="145" column="12" lean-forward="true" selection-start-line="145" selection-start-column="12" selection-end-line="149" selection-end-column="13" />
-                  <folding>
-                    <marker date="1497979119000" expanded="true" signature="1151:1222" ph="SELECT nome,... prodotti" />
-                    <marker date="1497979119000" expanded="true" signature="2239:2292" ph="SELECT id_pr... rimanenze" />
-                    <marker date="1497979119000" expanded="true" signature="2997:3055" ph="SELECT qta, rimanenze" />
-                    <marker date="1497979119000" expanded="true" signature="3873:4026" ph="SELECT id_pr... prodotti" />
-                    <marker date="1497979119000" expanded="true" signature="4986:5021" ph="SELECT cf fr... login" />
-                    <marker date="1497979119000" expanded="true" signature="6045:6121" ph="UPDATE riman... " />
-                    <marker date="1497979119000" expanded="true" signature="6713:6782" ph="insert INTO ordine... " />
-                    <marker date="1497979119000" expanded="true" signature="6713:6783" ph="insert INTO ordine... " />
-                    <marker date="1497979119000" expanded="true" signature="6713:6799" ph="insert INTO ordine... " />
-                    <marker date="1497979119000" expanded="true" signature="6713:6806" ph="insert INTO ordine... " />
-                    <marker date="1497979119000" expanded="true" signature="7837:7905" ph="insert INTO contiene... " />
-                    <marker date="1497979119000" expanded="true" signature="8402:8448" ph="SELECT id_fa... personale" />
-                    <marker date="1497979119000" expanded="true" signature="9087:9182" ph="select ruolo... login" />
-                    <marker date="1497979119000" expanded="true" signature="9757:9779" ph="select * fro... farmacia" />
-                    <marker date="1497979119000" expanded="true" signature="10795:10887" ph="INSERT into farmacia... " />
-                    <marker date="1497979119000" expanded="true" signature="10795:10909" ph="INSERT into farmacia... " />
-                    <marker date="1497979119000" expanded="true" signature="11793:11888" ph="INSERT into personale... " />
-                    <marker date="1497979119000" expanded="true" signature="12463:12517" ph="insert into login... " />
-                    <marker date="1497979119000" expanded="true" signature="13299:13394" ph="INSERT INTO personale... " />
-                    <marker date="1497979119000" expanded="true" signature="13935:13989" ph="INSERT INTO login... " />
-                    <marker date="1497979119000" expanded="true" signature="14544:14582" ph="SELECT ruolo... personale" />
-                    <marker date="1497979119000" expanded="true" signature="15548:15641" ph="UPDATE riman... " />
-                    <marker date="1497979119000" expanded="true" signature="16729:16767" ph="INSERT into rimanenze... " />
-                    <marker date="1497979119000" expanded="true" signature="17316:17338" ph="SELECT FROM paziente... " />
-                    <marker date="1497979119000" expanded="true" signature="18201:18221" ph="SELECT * FRO... medico" />
-                    <marker date="1497979119000" expanded="true" signature="18999:19062" ph="SELECT qta F... rimanenze" />
-                    <marker date="1497979119000" expanded="true" signature="19587:19667" ph="insert into ricetta... " />
-                    <marker date="1497979119000" expanded="true" signature="20262:20342" ph="INSERT INTO paziente... " />
-                    <marker date="1497979119000" expanded="true" signature="21173:21300" ph="SELECT nome farmacia" />
-                    <marker date="1497979119000" expanded="true" signature="21813:21867" ph="SELECT nome,... personale" />
-                    <marker date="1497979119000" expanded="true" signature="22518:22553" ph="select utent... login" />
-                    <marker date="1497979119000" expanded="true" signature="22922:22967" ph="SELECT nome,... personale" />
-                    <marker date="1497979119000" expanded="true" signature="23599:23623" ph="SELECT utent... login" />
-                    <marker date="1497979119000" expanded="true" signature="23599:23699" ph="SELECT utent... login" />
-                    <marker date="1497979119000" expanded="true" signature="24095:24182" ph="INSERT INTO messaggi... " />
-                    <marker date="1497979119000" expanded="true" signature="24846:24887" ph="SELECT cf FR... personale" />
-                    <marker date="1497979119000" expanded="true" signature="25178:25264" ph="INSERT INTO messaggi... " />
-                    <marker date="1497979119000" expanded="true" signature="26189:26226" ph="SELECT cf fr... personale" />
-                    <marker date="1497979119000" expanded="true" signature="26189:26248" ph="SELECT cf fr... personale" />
-                    <marker date="1497979119000" expanded="true" signature="26575:26658" ph="INSERT INTO messaggi... " />
-                    <marker date="1497979119000" expanded="true" signature="26575:26661" ph="INSERT INTO messaggi... " />
-                    <marker date="1497979119000" expanded="true" signature="27237:27323" ph="INSERT INTO messaggi... " />
-                    <marker date="1497979119000" expanded="true" signature="28161:28187" ph="SELECT mitte... " />
-                    <marker date="1497979119000" expanded="true" signature="28161:28245" ph="SELECT mitte... messaggi" />
-                    <marker date="1497979119000" expanded="true" signature="28856:28913" ph="UPDATE messa... " />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="attiva-collaboratore.jsp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/attiva-collaboratore.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="645">
-                  <caret line="43" column="85" lean-forward="false" selection-start-line="43" selection-start-column="85" selection-end-line="43" selection-end-column="85" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="reintegra-magazzino.jsp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/reintegra-magazzino.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="293">
-                  <caret line="85" column="41" lean-forward="false" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ReintegraMagazzinoController.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/controller/ReintegraMagazzinoController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="29" selection-end-column="9" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="struts-config.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/WEB-INF/struts-config.xml">
-              <provider editor-type-id="com.intellij.struts.diagram.DiagramEditorProvider">
-                <state />
-              </provider>
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="201">
-                  <caret line="28" column="35" lean-forward="false" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="attiva-farmacia.jsp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/WEB-INF/REG/attiva-farmacia.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1151">
-                  <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="attiva-collaboratore-ok.jsp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/attiva-collaboratore-ok.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="home-ob.jsp" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-ob.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="287">
-                  <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="vendita-tramite-ob.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/ob/vendita-tramite-ob.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VenditaTramiteOB.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/VenditaTramiteOB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -335,15 +189,15 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-df.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/tf/attiva-collaboratore.jsp" />
         <option value="$PROJECT_DIR$/web/assets/stylesheets/css.css" />
-        <option value="$PROJECT_DIR$/src/db/DBManager.java" />
         <option value="$PROJECT_DIR$/src/controller/ReintegraMagazzinoController.java" />
         <option value="$PROJECT_DIR$/web/assets/javascripts/main.js" />
         <option value="$PROJECT_DIR$/web/WEB-INF/REG/attiva-farmacia.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/tf/reintegra-magazzino.jsp" />
         <option value="$PROJECT_DIR$/web/login.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/ob/vendita-tramite-ob.jsp" />
+        <option value="$PROJECT_DIR$/src/db/DBManager.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" />
         <option value="$PROJECT_DIR$/src/controller/VenditaTramiteOB.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/ob/vendita-tramite-ob.jsp" />
       </list>
     </option>
   </component>
@@ -1432,11 +1286,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497987713017</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Su vendita tramite ob check per verificare se almeno una quantità è stata selezionata, altrimenti stampa errore">
+      <created>1497988195843</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1497988195843</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229744000" />
+    <option name="totallyTimeSpent" value="232472000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="791" extended-state="6" />
@@ -1506,6 +1367,43 @@
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32763532" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3319027" sideWeight="0.5060048" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Struts Assistant" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22246066" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33475783" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32763532" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904148" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14735337" sideWeight="0.4939952" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32763532" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32188842" sideWeight="0.48407644" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25250357" sideWeight="0.51592356" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.325811" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -1540,7 +1438,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- Aggiunto menu su vendita tramite OB, ma bisogna sistemaro&#10;- Quando si vende tramite ob nel db si inserisce anche il totale dell'ordine" />
     <MESSAGE value="Tutte le funzionalità implementate funzionano di nuovo, era ora" />
     <MESSAGE value="Perfezionata la vendita tramite-ob. &#10;Prima mettevo l'elenco dei prodotti e il magazzino in sessione, ma questo non permetteva di riaggiornare la vista dei prodotti anche dopo una vendita. Per risolverlo ho spostato i dati messi in sessione(dalla login) nella sola pagina in cui utilizzo le informazioni. Se ora entro su venditra tramite-ob e vendo un prodotto, poi torno su menu e torno in vendita la quantità è aggiornata correttamente." />
     <MESSAGE value="Sistemato anche reintegra magazzino, tolto elenco prodotti dalla sessione, li richiedo solo nella pagina che necessita delle informazioni." />
@@ -1565,11 +1462,12 @@
     <MESSAGE value="Sistemato layout vendita per ob" />
     <MESSAGE value="Aggiunto su controller vendita ob il check che verifica se la quantità selezionata è concessa, quindi se ci sono abbastanza prodotti di quel tipo in magazzino" />
     <MESSAGE value="Sistemato pop up, spostato alla fine dalla pagine, così carica la pagina e il messaggio viene visualizzato sopra il contenuto della pagina" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sistemato pop up, spostato alla fine dalla pagine, così carica la pagina e il messaggio viene visualizzato sopra il contenuto della pagina" />
+    <MESSAGE value="Su vendita tramite ob check per verificare se almeno una quantità è stata selezionata, altrimenti stampa errore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Su vendita tramite ob check per verificare se almeno una quantità è stata selezionata, altrimenti stampa errore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="124" />
+      <option name="time" value="128" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
@@ -1617,13 +1515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/struts-core.jar!/org/apache/struts/chain/commands/servlet/ExecuteAction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/struts-core.jar!/org/apache/struts/chain/contexts/ContextWrapper.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -1635,48 +1526,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/struts-core.jar!/org/apache/struts/chain/commands/AbstractExecuteAction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/struts-core.jar!/org/apache/struts/chain/commands/ActionCommandBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/commons-chain.jar!/org/apache/commons/chain/generic/LookupCommand.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/commons-chain.jar!/org/apache/commons/chain/impl/ChainBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/struts-core.jar!/org/apache/struts/action/ActionServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="175" column="0" lean-forward="true" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/struts-core.jar!/org/apache/struts/chain/ComposableRequestProcessor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="131" column="31" lean-forward="false" selection-start-line="131" selection-start-column="31" selection-end-line="131" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1810,6 +1659,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="40" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1924,57 +1774,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/reintegra-magazzino.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="85" column="41" lean-forward="false" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/db/DBManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="145" column="12" lean-forward="true" selection-start-line="145" selection-start-column="12" selection-end-line="149" selection-end-column="13" />
+        <state relative-caret-position="231">
+          <caret line="645" column="38" lean-forward="false" selection-start-line="645" selection-start-column="38" selection-end-line="645" selection-end-column="38" />
           <folding>
-            <marker date="1497979119000" expanded="true" signature="1151:1222" ph="SELECT nome,... prodotti" />
-            <marker date="1497979119000" expanded="true" signature="2239:2292" ph="SELECT id_pr... rimanenze" />
-            <marker date="1497979119000" expanded="true" signature="2997:3055" ph="SELECT qta, rimanenze" />
-            <marker date="1497979119000" expanded="true" signature="3873:4026" ph="SELECT id_pr... prodotti" />
-            <marker date="1497979119000" expanded="true" signature="4986:5021" ph="SELECT cf fr... login" />
-            <marker date="1497979119000" expanded="true" signature="6045:6121" ph="UPDATE riman... " />
-            <marker date="1497979119000" expanded="true" signature="6713:6782" ph="insert INTO ordine... " />
-            <marker date="1497979119000" expanded="true" signature="6713:6783" ph="insert INTO ordine... " />
-            <marker date="1497979119000" expanded="true" signature="6713:6799" ph="insert INTO ordine... " />
-            <marker date="1497979119000" expanded="true" signature="6713:6806" ph="insert INTO ordine... " />
-            <marker date="1497979119000" expanded="true" signature="7837:7905" ph="insert INTO contiene... " />
-            <marker date="1497979119000" expanded="true" signature="8402:8448" ph="SELECT id_fa... personale" />
-            <marker date="1497979119000" expanded="true" signature="9087:9182" ph="select ruolo... login" />
-            <marker date="1497979119000" expanded="true" signature="9757:9779" ph="select * fro... farmacia" />
-            <marker date="1497979119000" expanded="true" signature="10795:10887" ph="INSERT into farmacia... " />
-            <marker date="1497979119000" expanded="true" signature="10795:10909" ph="INSERT into farmacia... " />
-            <marker date="1497979119000" expanded="true" signature="11793:11888" ph="INSERT into personale... " />
-            <marker date="1497979119000" expanded="true" signature="12463:12517" ph="insert into login... " />
-            <marker date="1497979119000" expanded="true" signature="13299:13394" ph="INSERT INTO personale... " />
-            <marker date="1497979119000" expanded="true" signature="13935:13989" ph="INSERT INTO login... " />
-            <marker date="1497979119000" expanded="true" signature="14544:14582" ph="SELECT ruolo... personale" />
-            <marker date="1497979119000" expanded="true" signature="15548:15641" ph="UPDATE riman... " />
-            <marker date="1497979119000" expanded="true" signature="16729:16767" ph="INSERT into rimanenze... " />
-            <marker date="1497979119000" expanded="true" signature="17316:17338" ph="SELECT FROM paziente... " />
-            <marker date="1497979119000" expanded="true" signature="18201:18221" ph="SELECT * FRO... medico" />
-            <marker date="1497979119000" expanded="true" signature="18999:19062" ph="SELECT qta F... rimanenze" />
-            <marker date="1497979119000" expanded="true" signature="19587:19667" ph="insert into ricetta... " />
-            <marker date="1497979119000" expanded="true" signature="20262:20342" ph="INSERT INTO paziente... " />
-            <marker date="1497979119000" expanded="true" signature="21173:21300" ph="SELECT nome farmacia" />
-            <marker date="1497979119000" expanded="true" signature="21813:21867" ph="SELECT nome,... personale" />
-            <marker date="1497979119000" expanded="true" signature="22518:22553" ph="select utent... login" />
-            <marker date="1497979119000" expanded="true" signature="22922:22967" ph="SELECT nome,... personale" />
-            <marker date="1497979119000" expanded="true" signature="23599:23623" ph="SELECT utent... login" />
-            <marker date="1497979119000" expanded="true" signature="23599:23699" ph="SELECT utent... login" />
-            <marker date="1497979119000" expanded="true" signature="24095:24182" ph="INSERT INTO messaggi... " />
-            <marker date="1497979119000" expanded="true" signature="24846:24887" ph="SELECT cf FR... personale" />
-            <marker date="1497979119000" expanded="true" signature="25178:25264" ph="INSERT INTO messaggi... " />
-            <marker date="1497979119000" expanded="true" signature="26189:26226" ph="SELECT cf fr... personale" />
-            <marker date="1497979119000" expanded="true" signature="26189:26248" ph="SELECT cf fr... personale" />
-            <marker date="1497979119000" expanded="true" signature="26575:26658" ph="INSERT INTO messaggi... " />
-            <marker date="1497979119000" expanded="true" signature="26575:26661" ph="INSERT INTO messaggi... " />
-            <marker date="1497979119000" expanded="true" signature="27237:27323" ph="INSERT INTO messaggi... " />
-            <marker date="1497979119000" expanded="true" signature="28161:28187" ph="SELECT mitte... " />
-            <marker date="1497979119000" expanded="true" signature="28161:28245" ph="SELECT mitte... messaggi" />
-            <marker date="1497979119000" expanded="true" signature="28856:28913" ph="UPDATE messa... " />
+            <marker date="1497988542000" expanded="true" signature="1151:1222" ph="SELECT nome,... prodotti" />
+            <marker date="1497988542000" expanded="true" signature="2239:2292" ph="SELECT id_pr... rimanenze" />
+            <marker date="1497988542000" expanded="true" signature="2997:3055" ph="SELECT qta, rimanenze" />
+            <marker date="1497988542000" expanded="true" signature="3873:4026" ph="SELECT id_pr... prodotti" />
+            <marker date="1497988542000" expanded="true" signature="4986:5021" ph="SELECT cf fr... login" />
+            <marker date="1497988542000" expanded="true" signature="6045:6121" ph="UPDATE riman... " />
+            <marker date="1497988542000" expanded="true" signature="6713:6782" ph="insert INTO ordine... " />
+            <marker date="1497988542000" expanded="true" signature="6713:6783" ph="insert INTO ordine... " />
+            <marker date="1497988542000" expanded="true" signature="6713:6799" ph="insert INTO ordine... " />
+            <marker date="1497988542000" expanded="true" signature="6713:6806" ph="insert INTO ordine... " />
+            <marker date="1497988542000" expanded="true" signature="7837:7905" ph="insert INTO contiene... " />
+            <marker date="1497988542000" expanded="true" signature="8402:8448" ph="SELECT id_fa... personale" />
+            <marker date="1497988542000" expanded="true" signature="9087:9182" ph="select ruolo... login" />
+            <marker date="1497988542000" expanded="true" signature="9757:9779" ph="select * fro... farmacia" />
+            <marker date="1497988542000" expanded="true" signature="10795:10887" ph="INSERT into farmacia... " />
+            <marker date="1497988542000" expanded="true" signature="10795:10909" ph="INSERT into farmacia... " />
+            <marker date="1497988542000" expanded="true" signature="11793:11888" ph="INSERT into personale... " />
+            <marker date="1497988542000" expanded="true" signature="12463:12517" ph="insert into login... " />
+            <marker date="1497988542000" expanded="true" signature="13299:13394" ph="INSERT INTO personale... " />
+            <marker date="1497988542000" expanded="true" signature="13935:13989" ph="INSERT INTO login... " />
+            <marker date="1497988542000" expanded="true" signature="14544:14582" ph="SELECT ruolo... personale" />
+            <marker date="1497988542000" expanded="true" signature="15548:15641" ph="UPDATE riman... " />
+            <marker date="1497988542000" expanded="true" signature="16729:16767" ph="INSERT into rimanenze... " />
+            <marker date="1497988542000" expanded="true" signature="17316:17338" ph="SELECT FROM paziente... " />
+            <marker date="1497988542000" expanded="true" signature="18201:18221" ph="SELECT * FRO... medico" />
+            <marker date="1497988542000" expanded="true" signature="18999:19062" ph="SELECT qta F... rimanenze" />
+            <marker date="1497988542000" expanded="true" signature="19587:19667" ph="insert into ricetta... " />
+            <marker date="1497988542000" expanded="true" signature="20262:20342" ph="INSERT INTO paziente... " />
+            <marker date="1497988542000" expanded="true" signature="21173:21300" ph="SELECT nome farmacia" />
+            <marker date="1497988542000" expanded="true" signature="21813:21867" ph="SELECT nome,... personale" />
+            <marker date="1497988542000" expanded="true" signature="22518:22553" ph="select utent... login" />
+            <marker date="1497988542000" expanded="true" signature="22922:22967" ph="SELECT nome,... personale" />
+            <marker date="1497988542000" expanded="true" signature="23599:23623" ph="SELECT utent... login" />
+            <marker date="1497988542000" expanded="true" signature="23599:23699" ph="SELECT utent... login" />
+            <marker date="1497988542000" expanded="true" signature="24095:24182" ph="INSERT INTO messaggi... " />
+            <marker date="1497988542000" expanded="true" signature="24846:24887" ph="SELECT cf FR... personale" />
+            <marker date="1497988542000" expanded="true" signature="25178:25264" ph="INSERT INTO messaggi... " />
+            <marker date="1497988542000" expanded="true" signature="26189:26226" ph="SELECT cf fr... personale" />
+            <marker date="1497988542000" expanded="true" signature="26189:26248" ph="SELECT cf fr... personale" />
+            <marker date="1497988542000" expanded="true" signature="26575:26658" ph="INSERT INTO messaggi... " />
+            <marker date="1497988542000" expanded="true" signature="26575:26661" ph="INSERT INTO messaggi... " />
+            <marker date="1497988542000" expanded="true" signature="27237:27323" ph="INSERT INTO messaggi... " />
+            <marker date="1497988542000" expanded="true" signature="28161:28187" ph="SELECT mitte... " />
+            <marker date="1497988542000" expanded="true" signature="28161:28245" ph="SELECT mitte... messaggi" />
+            <marker date="1497988542000" expanded="true" signature="28856:28913" ph="UPDATE messa... " />
+            <marker date="1497988542000" expanded="true" signature="29241:29295" ph="SELECT total... ordine" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/struts-config.xml">
+      <provider editor-type-id="com.intellij.struts.diagram.DiagramEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="28" column="89" lean-forward="false" selection-start-line="28" selection-start-column="89" selection-end-line="28" selection-end-column="89" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1986,37 +1856,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/ob/vendita-tramite-ob.jsp">
+    <entry file="jar://$PROJECT_DIR$/lib/struts-core.jar!/org/apache/struts/chain/commands/servlet/ExecuteAction.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="104" column="28" lean-forward="true" selection-start-line="104" selection-start-column="28" selection-end-line="104" selection-end-column="44" />
+        <state relative-caret-position="180">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/struts-config.xml">
-      <provider editor-type-id="com.intellij.struts.diagram.DiagramEditorProvider">
-        <state />
-      </provider>
+    <entry file="jar://$PROJECT_DIR$/lib/struts-core.jar!/org/apache/struts/chain/commands/AbstractExecuteAction.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="28" column="35" lean-forward="false" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+        <state relative-caret-position="315">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/reintegra-magazzino.jsp">
+    <entry file="jar://$PROJECT_DIR$/lib/struts-core.jar!/org/apache/struts/chain/commands/ActionCommandBase.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="85" column="41" lean-forward="false" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
+        <state relative-caret-position="285">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/commons-chain.jar!/org/apache/commons/chain/generic/LookupCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/commons-chain.jar!/org/apache/commons/chain/impl/ChainBase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/struts-core.jar!/org/apache/struts/chain/ComposableRequestProcessor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/struts-core.jar!/org/apache/struts/action/ActionServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="167" column="0" lean-forward="false" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/VenditaTramiteOB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="30" column="73" lean-forward="false" selection-start-line="30" selection-start-column="73" selection-end-line="30" selection-end-column="73" />
+        <state relative-caret-position="303">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/ob/vendita-tramite-ob.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>

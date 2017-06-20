@@ -48,7 +48,8 @@ public class VenditaTramiteOB extends Action {
             }
 
         int idOrdine = dbManager.setVendita(idFarmacia, quantita, prodotti,((Login)request.getSession().getAttribute("login")).getUser(),true);
-
-        return mapping.findForward("vendita-tramite-ob-ok");
+        Double totale = dbManager.getTotaleByIdOrdine(idOrdine);
+        request.setAttribute("totale", totale.toString());
+        return mapping.findForward("redirect");
     }
 }
