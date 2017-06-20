@@ -102,6 +102,10 @@
 <script>
     window.alert('Attenzione, è stata selezionata una quantità non ammessa.');
 </script>
+<%} else if(message.equals("nessuna-quantità")) { %>
+<script>
+    window.alert('Attenzione, nessuna quantità selezionata. Riprova.');
+</script>
 <%}}
 %>
 </body>
