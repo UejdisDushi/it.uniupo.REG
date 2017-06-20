@@ -1,9 +1,7 @@
 package controller;
 
 import db.DBManager;
-import model.Login;
 import model.Prodotti;
-import model.Rimanenze;
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
@@ -20,8 +18,21 @@ public class ReintegraMagazzinoController extends Action {
         DBManager dbManager = new DBManager();
         ArrayList<Prodotti> prodotti = dbManager.getTuttiProdotti();
 
-        if(dbManager.reintegra(quantita, idFarmacia, prodotti))
-            return mapping.findForward("reintegra-ok");
+        boolean nessunaQta = true;
+        for(int i =0; i<quantita.length;i++) {
+            if (quantita[i].equals("")) {}
+            else nessunaQta = false;
+        }
+
+        if(nessunaQta) {
+            request.setAttribute("redirect", "reintegra-no");
+            return mapping.findForward("redirect");
+        }
+
+        if(dbManager.reintegra(quantita, idFarmacia, prodotti)) {
+            request.setAttribute("redirect", "reintegra-ok");
+            return mapping.findForward("redirect");
+        }
         return null;
     }
 }
