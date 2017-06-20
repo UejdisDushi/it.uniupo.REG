@@ -14,11 +14,20 @@
 </head>
 
 
-<script>
-    window.alert("Manca il controllo con js sulla quantità di vendità ammessa, manca il messaggio con il totale della spesa e manca anche il menu")
-</script>
+
 
 <body>
+
+<%
+    String message = (String)request.getAttribute("redirect");
+    if(message != null) {
+        if(message.equals("valore-non-consentito")) { %>
+<script>
+    window.alert('Attenzione, è stata selezionata una quantità non ammessa.');
+</script>
+<%}}
+%>
+
 <div class="head">
     <img src="/assets/images/logo.png">
 </div>
