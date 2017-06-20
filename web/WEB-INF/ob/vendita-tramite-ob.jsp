@@ -13,21 +13,24 @@
     <title>Vendita</title>
 </head>
 
+
 <script>
     window.alert("Manca il controllo con js sulla quantità di vendità ammessa, manca il messaggio con il totale della spesa e manca anche il menu")
 </script>
 
 <body>
-
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <html:link action="/forwardToAttivaCollaboratore">Attiva collaboratore</html:link>
-    <html:link action="/forwardToReintegraMagazzino">Reintegra magazzino</html:link>
-    <html:link action="/forwardToVendita">Vendita</html:link>
-    <html:link action="/logout">Log Out</html:link>
+<div class="head">
+    <img src="/assets/images/logo.png">
 </div>
 
-<span style="font-size:25px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span>
+<div id="mySidenav" class="sidenav">
+    <html:link action="/forwardToHome" styleId="uno">Home</html:link>
+    <html:link action="/forwardToNuovoMessaggio" styleId="due">Nuovo messaggio</html:link>
+    <html:link action="/forwardToVisualizzaMessaggi" styleId="tre">Messaggi ricevuti</html:link>
+    <a href="mailto: uejdis.dushi@gmail.com" id="quattro">Contattaci</a>
+    <html:link action="/logout" styleId="cinque">Log Out</html:link>
+</div>
+
 
 <input type="text" id="cercaPerNome" onkeyup="cercaPerNome()" placeholder="Cerca per nome.." title="Type in a name">
 <form action="/vendita-prodotti-per-ob.do" method="post">
@@ -80,6 +83,15 @@
     </table>
 
 </form>
+
+<footer id="footer">
+    <section class="text">
+        <p>
+            Design & production Copyright 2017 by Uejdis Dushi.
+        </p>
+    </section>
+    <br>
+</footer>
 </body>
 
 </html>
