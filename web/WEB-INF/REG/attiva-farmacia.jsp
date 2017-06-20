@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <title>Attiva farmacia</title>
     <link rel="stylesheet" href="/assets/stylesheets/css.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 <body>
 
@@ -24,68 +23,64 @@
 <article class="attiva">
     <form action="/attiva-farmacia.do" method="post">
         <div class="left">
-            <h3>
+            <h3 style="font-size: 23px;">
                 Anagrafica farmacia
             </h3>
             <br>
             <p>
-                <label>Nome</label>
+                <label style="font-weight: bold;font-size: 17px;">Nome</label>
                 <input type="text" name="nomeFarmacia" placeholder="Nome farmacia" class="form-control" required/>
             </p>
             <p>
-                <label>Indirizzo</label>
+                <label style="font-weight: bold;font-size: 17px;">Indirizzo</label>
                 <input type="text" name="via" placeholder="Indirizzo" class="form-control" required/>
             </p>
             <p>
-                <label>Citta</label>
+                <label style="font-weight: bold;font-size: 17px;">Citta</label>
                 <input type="text" name="citta" placeholder="Città" class="form-control" required/>
             </p>
             <p>
-                <label>CAP</label>
+                <label style="font-weight: bold;font-size: 17px;">CAP</label>
                 <input type="text" name="cap" placeholder="CAP" class="form-control" required pattern="[0-9]{5}"/>
             </p>
             <p>
-                <label>Provincia</label>
+                <label style="font-weight: bold;font-size: 17px;">Provincia</label>
                 <input type="text" name="provincia" placeholder="Provincia" class="form-control" required pattern="[a-zA-Z]{2}"/>
             </p>
             <p>
-                <label>Numero di telefono</label>
+                <label style="font-weight: bold;font-size: 17px;">Numero di telefono</label>
                 <input type="text" name="numeroTelefono" placeholder="Numero di telefono" class="form-control" required/>
             </p>
-            <br>
-            <br>
         </div>
         <div class="right">
-            <h3>
+            <h3 style="font-size: 23px;">
                 Anagrafica titolare
             </h3>
             <br>
             <p>
-                <label>Nome</label>
+                <label style="font-weight: bold;font-size: 17px;">Nome</label>
                 <input type="text" name="nomePersonale" class="form-control" placeholder="Nome titolare farmacia" required/>
             </p>
             <p>
-                <label>Cognome</label>
+                <label style="font-weight: bold;font-size: 17px;">Cognome</label>
                 <input type="text" name="cognome" class="form-control" placeholder="Cognome titolare farmacia" required/>
             </p>
             <p>
-                <label>CF</label>
+                <label style="font-weight: bold;font-size: 17px;">CF</label>
                 <input type="text" name="cf" class="form-control" pattern="^[a-zA-Z]{6}[0-9]{2}[a-zA-Z][0-9]{2}[a-zA-Z][0-9]{3}[a-zA-Z]$" required="required" placeholder="CF del titolare"/>
             </p>
             <p>
-                <label>Data di nascita</label>
+                <label style="font-weight: bold;font-size: 17px;">Data di nascita</label>
                 <input type="text" name="dataNascita" min="1950-01-01" max="2017-06-01" class="form-control" required placeholder="aaaa-MM-dd" pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])"/>
             </p>
             <p>
-                <label>User</label>
+                <label style="font-weight: bold;font-size: 17px;">User</label>
                 <input type="text" name="user" class="form-control" required placeholder="Username del titolare"/>
             </p>
             <p>
-                <label>Password</label>
+                <label style="font-weight: bold;font-size: 17px;">Password</label>
                 <input type="text" name="password" class="form-control" required placeholder="Password del titolare"/>
             </p>
-            <br>
-            <br>
         </div>
         <input type="submit" value="Registra farmacia"/>
     </form>
