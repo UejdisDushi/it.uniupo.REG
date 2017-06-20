@@ -18,15 +18,7 @@
 
 <body>
 
-<%
-    String message = (String)request.getAttribute("redirect");
-    if(message != null) {
-        if(message.equals("valore-non-consentito")) { %>
-<script>
-    window.alert('Attenzione, è stata selezionata una quantità non ammessa.');
-</script>
-<%}}
-%>
+
 
 <div class="head">
     <img src="/assets/images/logo.png">
@@ -101,6 +93,17 @@
     </section>
     <br>
 </footer>
+
+
+<%
+    String message = (String)request.getAttribute("redirect");
+    if(message != null) {
+        if(message.equals("valore-non-consentito")) { %>
+<script>
+    window.alert('Attenzione, è stata selezionata una quantità non ammessa.');
+</script>
+<%}}
+%>
 </body>
 
 </html>

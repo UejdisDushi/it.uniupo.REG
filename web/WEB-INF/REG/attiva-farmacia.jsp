@@ -9,19 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-<%
-    String message = (String)request.getAttribute("redirect");
-    if(message != null) {
-        if(message.equals("inserimento-corretto")) { %>
-        <script>
-            window.alert('Inserimento avvenuto con successo');
-        </script>
-    <% }else { %>
-            <script>
-                window.alert('Attenzione, alcuni dati non sono corretti. Riprova.');
-            </script>
-<%}}
-%>
+
 <div class="head">
     <img src="/assets/images/logo.png">
 </div>
@@ -111,5 +99,20 @@
     </section>
     <br>
 </footer>
+
+<%
+    String message = (String)request.getAttribute("redirect");
+    if(message != null) {
+        if(message.equals("inserimento-corretto")) { %>
+<script>
+    window.alert('Inserimento avvenuto con successo');
+</script>
+<% }else { %>
+<script>
+    window.alert('Attenzione, alcuni dati non sono corretti. Riprova.');
+</script>
+<%}}
+%>
+
 </body>
 </html>

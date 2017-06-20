@@ -9,15 +9,7 @@
 
 <body>
 
-<%
-    String message = (String)request.getAttribute("redirect");
-    if(message != null) {
-        if(message.equals("dati-errati")) { %>
-<script>
-    window.alert('Attenzione, alcuni dati non sono corretti. Riprova.');
-</script>
-<% }}
-%>
+
 
     <div class="head">
         <img src="/assets/images/logo.png">
@@ -50,5 +42,15 @@
     </section>
     <br>
 </footer>
+
+    <%
+        String message = (String)request.getAttribute("redirect");
+        if(message != null) {
+            if(message.equals("dati-errati")) { %>
+    <script>
+        window.alert('Attenzione, alcuni dati non sono corretti. Riprova.');
+    </script>
+    <% }}
+    %>
 </body>
 </html>

@@ -11,19 +11,6 @@
 </head>
 <body>
 
-<%
-    String message = (String)request.getAttribute("redirect");
-    if(message != null) {
-        if(message.equals("reintegra-ok")) { %>
-<script>
-    window.alert('Reintegro effettuato correttamente.');
-</script>
-<% }else { %>
-<script>
-    window.alert('Attenzione, nessuna quantità selezionata. Riprova.');
-</script>
-<%}}
-%>
 
 
 <div class="head">
@@ -92,6 +79,21 @@
     </section>
     <br>
 </footer>
+
+<%
+    String message = (String)request.getAttribute("redirect");
+    if(message != null) {
+        if(message.equals("reintegra-ok")) { %>
+<script>
+    window.alert('Reintegro effettuato correttamente.');
+</script>
+<% }else { %>
+<script>
+    window.alert('Attenzione, nessuna quantità selezionata. Riprova.');
+</script>
+<%}}
+%>
+
 
 </body>
 </html>
