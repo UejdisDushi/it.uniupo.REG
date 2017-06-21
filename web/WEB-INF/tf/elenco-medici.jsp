@@ -63,6 +63,16 @@
     <input value="Termina operazione" type="submit">
 </form>
 
+<%
+    String message = (String)request.getAttribute("redirect");
+    if(message != null) {
+        if(message.equals("medico-non-selezionato")) { %>
+<script>
+    window.alert('Attenzione, nessuna medico selezionato. Riprova.');
+</script>
+<%}}
+%>
+
 </body>
 
 </html>

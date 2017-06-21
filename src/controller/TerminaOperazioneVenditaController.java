@@ -20,16 +20,21 @@ public class TerminaOperazioneVenditaController extends Action {
         String cfPaziente = (String)request.getSession().getAttribute("cf-paziente");
         int idOrdine = (int)request.getSession().getAttribute("id-ordine");
 
+        boolean nonSelezionato = true;
         String[] medici = request.getParameterValues("medico");
         for(int i = 0;i<medici.length;i++)
-            if(medici[i].equals("Si"))
+            if(medici[i].equals("Si")) {
+                nonSelezionato = false;
                 if(dbManager.setRicetta(elencoMedici.get(i).getCodiceRegionale(),cfPaziente,idOrdine)){}
+            }
 
+        if(nonSelezionato) {
+            request.setAttribute("redirect", "medico-non-selezionato");
+            return mapping.findForward("redirect");
+        }
 
-        String cf = dbManager.getCFByUsername(((Login) request.getSession().getAttribute("login")).getUser());
-        String ruolo = dbManager.getRuoloByCF(cf);
-        if(ruolo.equals("tf"))
-            return mapping.findForward("termina-operazione-tf");
-        else return mapping.findForward("termina-operazione-df");
+        Double totale = dbManager.getTotaleByIdOrdine(idOrdine);
+        request.setAttribute("totale", totale.toString());
+        return mapping.findForward("termina-vendita");
     }
 }

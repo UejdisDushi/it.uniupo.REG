@@ -36,12 +36,15 @@ public class CheckMedicoController extends Action {
 
         }
 
+        
         //check per vedere se paziente esiste già
-        for(int i = 0;i<elencoPazienti.size();i++)
-            if(elencoPazienti.get(i).getCf().equals(paziente.getCf().trim())) {
-                request.setAttribute("redirect", "paziente-già-registrato");
-                return mapping.findForward("redirect");
-            }
+        if(paziente.getCf()!=null) {
+            for (int i = 0; i < elencoPazienti.size(); i++)
+                if (elencoPazienti.get(i).getCf().equals(paziente.getCf().trim())) {
+                    request.setAttribute("redirect", "paziente-già-registrato");
+                    return mapping.findForward("redirect");
+                }
+        }
 
         //la varibile clienti, sarà pari al numero di clienti nella PAGINA jsp, quindi se nel db ho 3 clienti, ma nella pagina genero un nuovo cliente allora la variabile clienti sarà maggiore di 1 rispetto
         //al numero di clienti nel db, per risolvere il problema inserisco subito il paziente al db e riottengo il numero dei pazienti
