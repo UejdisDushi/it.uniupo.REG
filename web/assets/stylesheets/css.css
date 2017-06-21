@@ -126,12 +126,15 @@ body {
 
 
 .elencoFarmacie {
-    margin:60px auto;
+    margin:48px auto;
     width: 700px;
+    height: 100%;
     font-size: 18px;
-    border: 1px #4CAF50 solid;
-    border-radius: 5px;
+    border: 3px #4CAF50 solid;
+    border-bottom: none;
     padding-top: 60px;
+    box-shadow: 0 0 25px #4CAF50;
+
 }
 
 .head {

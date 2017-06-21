@@ -36,7 +36,7 @@ public class CheckMedicoController extends Action {
 
         }
 
-        
+
         //check per vedere se paziente esiste già
         if(paziente.getCf()!=null) {
             for (int i = 0; i < elencoPazienti.size(); i++)
