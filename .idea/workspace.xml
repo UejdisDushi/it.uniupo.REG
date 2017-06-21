@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="725fbaa1-ea8d-4bf4-a6fc-3c6f34d201dc" name="Default" comment="Inserito anche pop up che mostra il totale della vendita, se tutti i controlli vengono superati.">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/WEB-INF/tf/vendita.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/vendita/vendita.jsp" />
+    <list default="true" id="725fbaa1-ea8d-4bf4-a6fc-3c6f34d201dc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/VenditaController.java" afterPath="$PROJECT_DIR$/src/controller/VenditaController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/REG/attiva-farmacia.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/REG/attiva-farmacia.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -160,7 +158,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="vendita.jsp" pinned="false" current-in-tab="true">
+          <file leaf-file-name="vendita.jsp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/vendita/vendita.jsp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="331">
@@ -173,8 +171,8 @@
           <file leaf-file-name="VenditaTramiteOB.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/controller/VenditaTramiteOB.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="244">
-                  <caret line="41" column="8" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="47" selection-end-column="13" />
+                <state relative-caret-position="379">
+                  <caret line="50" column="8" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="51" selection-end-column="58" />
                   <folding />
                 </state>
               </provider>
@@ -200,14 +198,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="struts-config.xml" pinned="false" current-in-tab="false">
+          <file leaf-file-name="struts-config.xml" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/WEB-INF/struts-config.xml">
               <provider editor-type-id="com.intellij.struts.diagram.DiagramEditorProvider">
                 <state />
               </provider>
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="302">
-                  <caret line="48" column="90" lean-forward="false" selection-start-line="48" selection-start-column="90" selection-end-line="48" selection-end-column="90" />
+                <state relative-caret-position="267">
+                  <caret line="45" column="11" lean-forward="false" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
                   <folding>
                     <element signature="n#action#9;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
                     <element signature="n#action#10;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
@@ -259,8 +257,8 @@
           <file leaf-file-name="VenditaController.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/controller/VenditaController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="494">
-                  <caret line="52" column="36" lean-forward="false" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+                <state relative-caret-position="274">
+                  <caret line="59" column="64" lean-forward="false" selection-start-line="59" selection-start-column="64" selection-end-line="59" selection-end-column="64" />
                   <folding />
                 </state>
               </provider>
@@ -366,9 +364,9 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/ob/vendita-tramite-ob.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/REG/attiva-farmacia.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-df.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/vendita/vendita.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" />
         <option value="$PROJECT_DIR$/src/controller/VenditaController.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/vendita/vendita.jsp" />
       </list>
     </option>
   </component>
@@ -1287,7 +1285,7 @@
       <workItem from="1497808035572" duration="171000" />
       <workItem from="1497815392879" duration="1650000" />
       <workItem from="1497851871583" duration="1389000" />
-      <workItem from="1498024146485" duration="1257000" />
+      <workItem from="1498024146485" duration="1664000" />
     </task>
     <task id="LOCAL-00001" summary="Sistemare inserimento farmacia e username, in particolare non funziona il recupero dell'id_farmacia tramite quel metodo">
       <created>1496175910137</created>
@@ -1513,11 +1511,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497992334247</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Aggiunti controlli quantità ammessa e se è stata selezionata almeno una quantità su vendita generica.">
+      <created>1498025475844</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1498025475844</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="234977000" />
+    <option name="totallyTimeSpent" value="235384000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="791" extended-state="6" />
@@ -1630,7 +1635,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Sistemato anche reintegra magazzino, tolto elenco prodotti dalla sessione, li richiedo solo nella pagina che necessita delle informazioni." />
     <MESSAGE value="Aggiustamenti vari. Funzionalità precedenti ottimizzate. &#10;Iniziata vendita per TF, ma sistemare il controller. BAsta che un solo prodotto abbia ricetta true e mi reindirizza su verifica paziente, se paziente è presente, cercando tramite CF su quelli già esistenti, pulsante ok (quindi confermo la sua presenza) e ritorno su home, se non presente tastino più per aggiungere il nuovo paziente e nel db aggiungere tutte le informazioni" />
     <MESSAGE value="introdotto per vendita tf:&#10;- se un ordine non possiede prodotti con obbligo di ricetta si viene rimandati alla home&#10;- se un ordine contiene ALMENO un prodotto con obbligo di ricetta si viene reindirizzati ad una pagina che contiene i pazienti già registrati, se questo paziente che ha effettuato l'ordine è già presente clicco su già presente e vengo rimandato alla home.&#10;&#10;Bisogna aggiungere in &quot;elenco-pazienti.jsp&quot; la possibilità di aggiungere un nuovo paziente, magari tramite pulsante, richiedere le sue informazioni e inserire anche il medico che ha emesso la ricetta e caricare tutto a DB." />
     <MESSAGE value="Sistemata la vendita per TF, funziona con creazione ricetta e tutto quanto. Manca da gestire l'inserimento di un nuovo paziente, bazzeccole." />
@@ -1655,7 +1659,8 @@
     <MESSAGE value="Su vendita tramite ob check per verificare se almeno una quantità è stata selezionata, altrimenti stampa errore" />
     <MESSAGE value="Inserito anche pop up che mostra il totale della vendita, se tutti i controlli vengono superati." />
     <MESSAGE value="Sistemato layout su Attiva Farmacia, rimosso bootstrap" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sistemato layout su Attiva Farmacia, rimosso bootstrap" />
+    <MESSAGE value="Aggiunti controlli quantità ammessa e se è stata selezionata almeno una quantità su vendita generica." />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunti controlli quantità ammessa e se è stata selezionata almeno una quantità su vendita generica." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2035,14 +2040,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-reg.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="32" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-df.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
@@ -2055,42 +2052,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="386">
           <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/struts-config.xml">
-      <provider editor-type-id="com.intellij.struts.diagram.DiagramEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="48" column="90" lean-forward="false" selection-start-line="48" selection-start-column="90" selection-end-line="48" selection-end-column="90" />
-          <folding>
-            <element signature="n#action#9;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-            <element signature="n#action#10;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-            <element signature="n#action#11;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-            <element signature="n#action#12;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-            <element signature="n#action#13;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-            <element signature="n#action#14;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-            <element signature="n#action#15;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-            <element signature="n#action#16;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/VenditaController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="52" column="36" lean-forward="false" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/VenditaTramiteOB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="41" column="8" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="47" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -2115,6 +2076,50 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
           <caret line="108" column="9" lean-forward="true" selection-start-line="108" selection-start-column="9" selection-end-line="108" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/VenditaTramiteOB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-reg.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="32" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/struts-config.xml">
+      <provider editor-type-id="com.intellij.struts.diagram.DiagramEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="45" column="11" lean-forward="false" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
+          <folding>
+            <element signature="n#action#9;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+            <element signature="n#action#10;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+            <element signature="n#action#11;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+            <element signature="n#action#12;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+            <element signature="n#action#13;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+            <element signature="n#action#14;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+            <element signature="n#action#15;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+            <element signature="n#action#16;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/VenditaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="59" column="64" lean-forward="false" selection-start-line="59" selection-start-column="64" selection-end-line="59" selection-end-column="64" />
           <folding />
         </state>
       </provider>

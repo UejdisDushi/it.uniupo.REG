@@ -57,18 +57,15 @@ public class VenditaController extends Action {
         //recupero tramite l'ordine appena piazzato il suo id, in modo da creare la ricetta con le informazioni necessarie
         int idOrdine = dbManager.setVendita(idFarmacia,quantita,prodotti,((Login)request.getSession().getAttribute("login")).getUser(),false);
         request.getSession().setAttribute("id-ordine",idOrdine);
+        Double totale = dbManager.getTotaleByIdOrdine(idOrdine);
+        request.setAttribute("totale", totale.toString());
 
         //se l'ordine è con ricetta allora passo al controllo dei pazienti, altrimenti ritorno nella home
         if(rimandaARicetta) {
             return mapping.findForward("acquisto-con-ricetta");
         }
 
-        else {
-            cf = dbManager.getCFByUsername(((Login) request.getSession().getAttribute("login")).getUser());
-            ruolo = dbManager.getRuoloByCF(cf);
-            if(ruolo.equals("tf"))
-                return mapping.findForward("acquisto-senza-ricetta-tf");
-            else return mapping.findForward("acquisto-senza-ricetta-df");
-        }
+        else return mapping.findForward("redirect");
+
     }
 }

@@ -43,8 +43,6 @@
         </action>
 
         <action path="/vendita" type="controller.VenditaController" name="rimanenze">
-            <forward name="acquisto-senza-ricetta-tf" path="/WEB-INF/pagine-in-comune/home/home-tf.jsp"></forward>
-            <forward name="acquisto-senza-ricetta-df" path="/WEB-INF/pagine-in-comune/home/home-df.jsp"></forward>
             <forward name="acquisto-con-ricetta" path="/WEB-INF/tf/elenco-pazienti.jsp"></forward>
             <forward name="redirect" path="/WEB-INF/pagine-in-comune/vendita/vendita.jsp"></forward>
         </action>
