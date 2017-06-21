@@ -15,6 +15,10 @@
 
 <body>
 
+<div class="head">
+    <img src="/assets/images/logo.png">
+</div>
+
 
 <input type="text" id="cercaPerNome" onkeyup="cercaPerNome()" placeholder="Cerca per codice fiscale.." title="Type in a name">
 <form action="/check-medico.do" method="post">
@@ -63,6 +67,26 @@
 </form>
 
 <button onclick="nuovaRiga()" id="nuovoPaziente">Inserisci nuovo paziente</button>
+
+<footer id="footer">
+    <section class="text">
+        <p>
+            Design & production Copyright 2017 by Uejdis Dushi.
+        </p>
+    </section>
+    <br>
+</footer>
+
+<%
+    String message = (String)request.getAttribute("redirect");
+    if(message != null) {
+        if(message.equals("nessun-paziente")) { %>
+<script>
+    window.alert('Attenzione, nessuna paziente selezionato. Riprova.');
+</script>
+<%
+    }}
+%>
 
 </body>
 

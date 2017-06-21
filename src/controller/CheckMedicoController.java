@@ -24,6 +24,18 @@ public class CheckMedicoController extends Action {
 
         String[] clienti = request.getParameterValues("cliente");
 
+        //check per verificare se è stato selezionato almeno un paziente
+        boolean nessunPaziente = true;
+        for(int i = 0;i<clienti.length;i++)
+            if(clienti[i].equals("")) {}
+            else nessunPaziente = false;
+
+        if(nessunPaziente) {
+            request.setAttribute("redirect", "nessun-paziente");
+            return mapping.findForward("redirect");
+
+        }
+
         //la varibile clienti, sarà pari al numero di clienti nella PAGINA jsp, quindi se nel db ho 3 clienti, ma nella pagina genero un nuovo cliente allora la variabile clienti sarà maggiore di 1 rispetto
         //al numero di clienti nel db, per risolvere il problema inserisco subito il paziente al db e riottengo il numero dei pazienti
         //che ora sarà uguale in size alla variabile clienti
@@ -34,9 +46,9 @@ public class CheckMedicoController extends Action {
 
         //tengo traccia del cliente che ha effettuato l'ordine e metto in sessione il suo cf
         for(int i = 0;i<clienti.length;i++)
-            if(clienti[i].equals("Si"))
-                request.getSession().setAttribute("cf-paziente",elencoPazienti.get(i).getCf());
-
+            if(clienti[i].equals("Si")) {
+                request.getSession().setAttribute("cf-paziente", elencoPazienti.get(i).getCf());
+            }
 
         return mapping.findForward("elenco-medici");
     }
