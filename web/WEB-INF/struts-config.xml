@@ -46,6 +46,7 @@
             <forward name="acquisto-senza-ricetta-tf" path="/WEB-INF/pagine-in-comune/home/home-tf.jsp"></forward>
             <forward name="acquisto-senza-ricetta-df" path="/WEB-INF/pagine-in-comune/home/home-df.jsp"></forward>
             <forward name="acquisto-con-ricetta" path="/WEB-INF/tf/elenco-pazienti.jsp"></forward>
+            <forward name="redirect" path="/WEB-INF/pagine-in-comune/vendita/vendita.jsp"></forward>
         </action>
 
         <action path="/attiva-collaboratore" type="controller.AttivaPersonaleController" name="attiva-collaboratore">
@@ -75,7 +76,7 @@
             <forward name="vendita-tramite-ob" path="/WEB-INF/ob/vendita-tramite-ob.jsp"></forward>
         </action>
         <action path="/forwardToVendita" type="controller.forward.ForwardToVendita">
-            <forward name="vendita" path="/WEB-INF/tf/vendita.jsp"></forward>
+            <forward name="vendita" path="/WEB-INF/pagine-in-comune/vendita/vendita.jsp"></forward>
         </action>
         <action path="/forwardToNuovoMessaggio" type="controller.forward.ForwardToNuovoMessaggio">
             <forward name="nuovo-messaggio" path="/WEB-INF/pagine-in-comune/messaggi/nuovo-messaggio.jsp"></forward>

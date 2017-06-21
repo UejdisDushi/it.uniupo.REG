@@ -44,7 +44,7 @@
                 <input type="text" name="cap" placeholder="CAP" class="form-control" required pattern="[0-9]{5}"/>
             </p>
             <p>
-                <label style="font-weight: bold;font-size: 17px;">Provincia</label>
+                <label style="font-weight: bold;font-size: 17px; text-transform: uppercase;">Provincia</label>
                 <input type="text" name="provincia" placeholder="Provincia" class="form-control" required pattern="[a-zA-Z]{2}"/>
             </p>
             <p>
@@ -66,7 +66,7 @@
                 <input type="text" name="cognome" class="form-control" placeholder="Cognome titolare farmacia" required/>
             </p>
             <p>
-                <label style="font-weight: bold;font-size: 17px;">CF</label>
+                <label style="font-weight: bold;font-size: 17px;text-transform: uppercase; ">CF</label>
                 <input type="text" name="cf" class="form-control" pattern="^[a-zA-Z]{6}[0-9]{2}[a-zA-Z][0-9]{2}[a-zA-Z][0-9]{3}[a-zA-Z]$" required="required" placeholder="CF del titolare"/>
             </p>
             <p>

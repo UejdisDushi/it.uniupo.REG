@@ -35,6 +35,25 @@ public class VenditaController extends Action {
                 if (prodotti.get(i).isRicetta())
                     rimandaARicetta = true;
 
+        //check per verificare se è stata selezionato almeno una quantità
+        boolean nessunaQta = true;
+        for(int i =0; i<quantita.length;i++) {
+            if (quantita[i].equals("")) {}
+            else nessunaQta = false;
+        }
+        if(nessunaQta) {
+            request.setAttribute("redirect", "nessuna-quantità");
+            return mapping.findForward("redirect");
+        }
+
+        //serve per controllare se una quantità non è ammessa, perchè maggiore al magazzino
+        for(int i = 0;i<quantita.length;i++)
+            if(!quantita[i].equals(""))
+                if(Integer.parseInt(quantita[i]) > dbManager.getQTAInMagazzino(idFarmacia, prodotti.get(i).getId())) {
+                    request.setAttribute("redirect", "valore-non-consentito");
+                    return mapping.findForward("redirect");
+                }
+
         //recupero tramite l'ordine appena piazzato il suo id, in modo da creare la ricetta con le informazioni necessarie
         int idOrdine = dbManager.setVendita(idFarmacia,quantita,prodotti,((Login)request.getSession().getAttribute("login")).getUser(),false);
         request.getSession().setAttribute("id-ordine",idOrdine);

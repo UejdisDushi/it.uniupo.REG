@@ -8,21 +8,25 @@
 <html>
 
 <head>
-    <script type="application/javascript" src="../../assets/javascripts/main.js"></script>
+    <script type="application/javascript" src="../../../assets/javascripts/main.js"></script>
     <link rel="stylesheet" href="/assets/stylesheets/css.css">
     <title>Vendita</title>
 </head>
 
 <body>
 
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <html:link action="/forwardToAttivaCollaboratore">Attiva collaboratore</html:link>
-    <html:link action="/forwardToReintegraMagazzino">Reintegra magazzino</html:link>
-    <html:link action="/forwardToVendita">Vendita</html:link>
-    <html:link action="/logout">Log Out</html:link>
+<div class="head">
+    <img src="/assets/images/logo.png">
 </div>
-<span style="font-size:25px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span>
+
+<div id="mySidenav" class="sidenav">
+    <html:link action="/forwardToHome" styleId="uno">Home</html:link>
+    <html:link action="/forwardToNuovoMessaggio" styleId="due">Nuovo messaggio</html:link>
+    <html:link action="/forwardToVisualizzaMessaggi" styleId="tre">Messaggi ricevuti</html:link>
+    <a href="mailto: uejdis.dushi@gmail.com" id="quattro">Contattaci</a>
+    <html:link action="/logout" styleId="cinque">Log Out</html:link>
+</div>
+
 
 <input type="text" id="cercaPerNome" onkeyup="cercaPerNome()" placeholder="Cerca per nome.." title="Type in a name">
 <form action="/vendita.do" method="post">
@@ -81,6 +85,37 @@
     </table>
 
 </form>
+
+<footer id="footer">
+    <section class="text">
+        <p>
+            Design & production Copyright 2017 by Uejdis Dushi.
+        </p>
+    </section>
+    <br>
+</footer>
+
+<%
+    String message = (String)request.getAttribute("redirect");
+    String totale = (String) request.getAttribute("totale");
+    if(message != null) {
+        if(message.equals("valore-non-consentito")) { %>
+<script>
+    window.alert('Attenzione, è stata selezionata una quantità non ammessa.');
+</script>
+<%} else if(message.equals("nessuna-quantità")) { %>
+<script>
+    window.alert('Attenzione, nessuna quantità selezionata. Riprova.');
+</script>
+<%}}
+    if(totale != null) {%>
+<script>
+    window.alert('Totale vendita: ' + <%=totale%> + '€');
+</script>
+<%
+    }
+%>
+
 </body>
 
 </html>
