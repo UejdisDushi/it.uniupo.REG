@@ -84,10 +84,12 @@
 <script>
     window.alert('Attenzione, nessuna paziente selezionato. Riprova.');
 </script>
-<%
-    }}
+<%} else {
 %>
-
+<script>
+    window.alert('Attenzione, non è possibile inserire un paziente già presente.');
+</script>
+<% }}%>
 </body>
 
 </html>
