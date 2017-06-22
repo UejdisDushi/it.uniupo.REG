@@ -162,12 +162,14 @@ li {
 }
 
 article {
-    margin-top:38px;
+    margin-top:48px;
     text-align: center;
     width: 70%;
     margin: 30px auto;
-    border: 1px #4CAF50 solid;
+    border: 3px #4CAF50 solid;
     border-radius: 5px;
+    box-shadow: 0 0 25px #4CAF50;
+    height: 83%;
 }
 
 form.login{

@@ -26,7 +26,6 @@
             <h3 style="font-size: 23px;">
                 Anagrafica farmacia
             </h3>
-            <br>
             <p>
                 <label style="font-weight: bold;font-size: 17px;">Nome</label>
                 <input type="text" name="nomeFarmacia" placeholder="Nome farmacia" class="form-control" required/>
@@ -44,7 +43,7 @@
                 <input type="text" name="cap" placeholder="CAP" class="form-control" required pattern="[0-9]{5}"/>
             </p>
             <p>
-                <label style="font-weight: bold;font-size: 17px; text-transform: uppercase;">Provincia</label>
+                <label style="font-weight: bold;font-size: 17px;">Provincia</label>
                 <input type="text" name="provincia" placeholder="Provincia" class="form-control" required pattern="[a-zA-Z]{2}"/>
             </p>
             <p>
@@ -56,7 +55,6 @@
             <h3 style="font-size: 23px;">
                 Anagrafica titolare
             </h3>
-            <br>
             <p>
                 <label style="font-weight: bold;font-size: 17px;">Nome</label>
                 <input type="text" name="nomePersonale" class="form-control" placeholder="Nome titolare farmacia" required/>
