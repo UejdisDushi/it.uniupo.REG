@@ -171,12 +171,13 @@ article {
 }
 
 form.login{
-    max-width: 700px;				/*larghezza form*/
+    max-width: 500px;				/*larghezza form*/
     padding: 1rem;						/*creo spazio attorno al contenuto*/
-    border: 1px solid #e8e8e8;			/*aggiungo il bordo color binacastro*/
+    border: 3px #4CAF50 solid;			/*aggiungo il bordo color binacastro*/
     margin: 8em auto;					/*centro i margini*/
     text-align: center;					/*centro il contenuto*/
     border-radius: 5px;
+    box-shadow: 0 0 25px #4CAF50;
 }
 
 form.login h1{

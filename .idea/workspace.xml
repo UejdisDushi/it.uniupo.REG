@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="725fbaa1-ea8d-4bf4-a6fc-3c6f34d201dc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/CheckMedicoController.java" afterPath="$PROJECT_DIR$/src/controller/CheckMedicoController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/stylesheets/css.css" afterPath="$PROJECT_DIR$/web/assets/stylesheets/css.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -89,8 +88,8 @@
       <file leaf-file-name="css.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assets/stylesheets/css.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="135" column="22" lean-forward="false" selection-start-line="135" selection-start-column="22" selection-end-line="135" selection-end-column="22" />
+            <state relative-caret-position="209">
+              <caret line="175" column="30" lean-forward="false" selection-start-line="175" selection-start-column="30" selection-end-line="175" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -1222,7 +1221,7 @@
       <workItem from="1497808035572" duration="171000" />
       <workItem from="1497815392879" duration="1650000" />
       <workItem from="1497851871583" duration="1389000" />
-      <workItem from="1498024146485" duration="8277000" />
+      <workItem from="1498024146485" duration="9222000" />
     </task>
     <task id="LOCAL-00001" summary="Sistemare inserimento farmacia e username, in particolare non funziona il recupero dell'id_farmacia tramite quel metodo">
       <created>1496175910137</created>
@@ -1483,14 +1482,21 @@
       <option name="project" value="LOCAL" />
       <updated>1498069894200</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Sistemato layout elenco farmacie, di nuovo">
+      <created>1498072496373</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1498072496373</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="241997000" />
+    <option name="totallyTimeSpent" value="242942000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="791" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="791" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1600,7 +1606,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Vendita anche per df funziona correttamente" />
     <MESSAGE value="Iniziata la messaggistica. &#10;Permette di selezionare correttamente a chi spedirlo in base a dove lavora a in base al suo ruolo." />
     <MESSAGE value="Invio messaggio funziona correttamente, ora manca la lettura" />
     <MESSAGE value="Aggiunto notifica sulla home che indica se si hanno messaggi e la quantità oppure se nessun messaggio non mostra nulla" />
@@ -1625,7 +1630,8 @@
     <MESSAGE value="Aggiunto messaggio su elenco pazienti che riporta errore se non è stato selezionato nessun paziente" />
     <MESSAGE value="Aggiunto controllo e messaggio che verifica se si tenta di inserire un paziente già esistente." />
     <MESSAGE value="Sistemato errore su elenco pazienti, ritornava sempre messaggio che paziente esistesse già, ora funziona.&#10;Effettua controllo sul medico, cioè obbliga a selezionare un medico per terminare la vendita.&#10;Quindi terminata vendita in complessivo." />
-    <option name="LAST_COMMIT_MESSAGE" value="Sistemato errore su elenco pazienti, ritornava sempre messaggio che paziente esistesse già, ora funziona.&#10;Effettua controllo sul medico, cioè obbliga a selezionare un medico per terminare la vendita.&#10;Quindi terminata vendita in complessivo." />
+    <MESSAGE value="Sistemato layout elenco farmacie, di nuovo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sistemato layout elenco farmacie, di nuovo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2155,8 +2161,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/stylesheets/css.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="135" column="22" lean-forward="false" selection-start-line="135" selection-start-column="22" selection-end-line="135" selection-end-column="22" />
+        <state relative-caret-position="209">
+          <caret line="175" column="30" lean-forward="false" selection-start-line="175" selection-start-column="30" selection-end-line="175" selection-end-column="30" />
           <folding />
         </state>
       </provider>
