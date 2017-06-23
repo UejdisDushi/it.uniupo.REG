@@ -11,19 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-<%
-    String message = (String)request.getAttribute("redirect");
-    if(message != null) {
-        if(message.equals("inserimento-corretto")) { %>
-<script>
-    window.alert('Messaggio inviato correttamente.');
-</script>
-<% }else { %>
-<script>
-    window.alert('Attenzione, destinatario non valido.');
-</script>
-<%}}
-%>
+
 <div class="head">
     <img src="/assets/images/logo.png">
 </div>
@@ -74,5 +62,20 @@
     </section>
     <br>
 </footer>
+
+<%
+    String message = (String)request.getAttribute("redirect");
+    if(message != null) {
+        if(message.equals("inserimento-corretto")) { %>
+<script>
+    window.alert('Messaggio inviato correttamente.');
+</script>
+<% }else { %>
+<script>
+    window.alert('Attenzione, destinatario non valido.');
+</script>
+<%}}
+%>
+
 </body>
 </html>

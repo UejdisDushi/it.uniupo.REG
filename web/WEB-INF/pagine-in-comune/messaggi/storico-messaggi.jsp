@@ -9,7 +9,6 @@
     <title>Storico messaggi</title>
     <link rel="stylesheet" href="/assets/stylesheets/css.css">
     <script type="application/javascript" src="assets/javascripts/main.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
 
@@ -23,24 +22,22 @@
     <html:link action="/logout" styleId="quattro">Log Out</html:link>
 </div>
 
-<article>
 
+
+<div class="elencoMessaggi">
     <%
         DBManager dbManager = new DBManager();
         ArrayList<Messaggio> elencoMessaggi = dbManager.getMessaggiDaLeggere(((Login)request.getSession().getAttribute("login")).getUser(),true);
         for(Messaggio mex : elencoMessaggi) {
     %>
-    <br>
-    <p>From: <span><%=mex.getMittente()%></span></p>
-    <p>Date: <span><%=mex.getData()%></span></p>
-    <p>Body: <br><span><%=mex.getCorpo()%></span></p>
-    <p>-----------------------------------------------------------------------------------------------------</p>
-    <%
-        }
-    %>
-
-</article>
-
+<button class="accordion" onclick="mostraCorpo()"><span style="font-weight: bold;font-size: 16px;"> Da: </span><%=mex.getMittente()%><br><span style="font-weight: bold;font-size: 16px;"> Data: </span><%=mex.getData()%></button>
+<div class="corpo">
+    <p><%=mex.getCorpo()%></p>
+</div>
+<%
+    }
+%>
+</div>
 <footer id="footer">
     <section class="text">
         <p>
