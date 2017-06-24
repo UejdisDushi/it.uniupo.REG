@@ -1,4 +1,6 @@
 <%@ page import="db.DBManager" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="model.Farmacia" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
 <html>
@@ -7,8 +9,76 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="/assets/stylesheets/css.css">
     <script type="application/javascript" src="assets/javascripts/main.js"></script>
+    <script type="text/javascript" src="/assets/javascripts/canvasjs.min.js"></script>
+    <script type="text/javascript" src="/assets/javascripts/jquery.canvasjs.min.js"></script>
 </head>
 <body>
+
+<%
+    DBManager dbManager = new DBManager();
+    ArrayList<Farmacia> elencoNomiFarmacie = dbManager.getNomiFarmacie();
+%>
+
+<script type="text/javascript">
+    window.onload = function () {
+        var chart = new CanvasJS.Chart("TotVendite",
+            {
+                title:{
+                    text: "Numero di ordini"
+                },
+                animationEnabled: true,
+                legend:{
+                    verticalAlign: "bottom",
+                    horizontalAlign: "center"
+                },
+                data: [
+                    {
+                        type: "pie",
+                        showInLegend: true,
+                        toolTipContent: "{name}: <strong>{y}</strong>",
+                        indexLabel: "{name}: {y}",
+                        dataPoints: [
+                            <%
+                            for(Farmacia fa:elencoNomiFarmacie) {
+                            %>
+                            {  y: <%=dbManager.getNumeroComplessivoAcquisti(fa.getIdFarmacia())%>, name: "<%=dbManager.getNomeFarmacia(fa.getIdFarmacia())%>"},
+                            <%}%>
+                            ]
+                    }
+                ]
+            });
+        chart.render();
+
+        var chart = new CanvasJS.Chart("TotPezzi",
+            {
+                title:{
+                    text: "Pezzi venduti"
+                },
+                animationEnabled: true,
+                legend:{
+                    verticalAlign: "bottom",
+                    horizontalAlign: "center"
+                },
+                data: [
+                    {
+                        type: "pie",
+                        showInLegend: true,
+                        toolTipContent: "{name}: <strong>{y}</strong>",
+                        indexLabel: "{name}: {y}",
+                        dataPoints: [
+                            <%
+                                for(Farmacia fa:elencoNomiFarmacie) {
+                                %>
+                            {  y: <%=dbManager.getNumeroPezziVenduti(fa.getIdFarmacia())%>, name: "<%=dbManager.getNomeFarmacia(fa.getIdFarmacia())%>"},
+                            <%}%>
+                        ]
+                    }
+                ]
+            });
+        chart.render();
+
+    }
+</script>
 
 <div class="head">
     <img src="/assets/images/logo.png">
@@ -22,17 +92,15 @@
     <html:link action="/logout" styleId="cinque">Log Out</html:link>
 </div>
 
-    <h1 class="bentornato">Bentornato <span>REG</span></h1>
-<%
-    DBManager dbManager = new DBManager();
-    int idFarmacia = (int)request.getSession().getAttribute("id-farmacia");
-%>
-<br><br>
-    <h3>totale vendite <%=dbManager.getNumeroComplessivoAcquisti(idFarmacia)%></h3>
-    <h3>Numero pezzi venduti <%=dbManager.getNumeroPezziVenduti(idFarmacia)%></h3>
-    <h3>Numero di farmaci con ricetta <%=dbManager.getNumeroDiFarmaciConRicetta(idFarmacia)%></h3>
-<h3>Numero di ricette <%=dbManager.getNumeroDiRicette(idFarmacia)%></h3>
-<h3>Numero medio di farmaci prescritti per ricetta <%=dbManager.getMediaFarmaciPerRicetta(idFarmacia)%></h3>
+    <h1 class="bentornato-custom">Bentornato <span>REG</span></h1>
+
+<br>
+<div id="grafici">
+<div id="TotVendite" style="height: 300px; width: 70%;margin:auto"></div>
+<br><br><br>
+<div id="TotPezzi" style="height: 300px; width: 70%;margin:auto"></div>
+</div>
+<br><br><br><br><br>
 
 <footer id="footer">
     <section class="text">

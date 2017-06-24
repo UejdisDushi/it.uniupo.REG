@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="725fbaa1-ea8d-4bf4-a6fc-3c6f34d201dc" name="Default" comment="Aggiunte le statistiche richieste nei requisiti">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Edi.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Edi.xml" />
+    <list default="true" id="725fbaa1-ea8d-4bf4-a6fc-3c6f34d201dc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/javascripts/jquery.canvasjs.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db/DBManager.java" afterPath="$PROJECT_DIR$/src/db/DBManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-reg.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-reg.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-tf.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-tf.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/stylesheets/css.css" afterPath="$PROJECT_DIR$/web/assets/stylesheets/css.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,220 +78,251 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="css.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/assets/stylesheets/css.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-375">
-              <caret line="281" column="20" lean-forward="false" selection-start-line="281" selection-start-column="20" selection-end-line="281" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DBManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/db/DBManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13">
-              <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-              <folding>
-                <element signature="method#connessione#0;class#DBManager#0" expanded="false" />
-                <element signature="method#getTuttiProdotti#0;class#DBManager#0" expanded="false" />
-                <element signature="docComment;method#getIdProdottiFarmacia#0;class#DBManager#0" expanded="false" />
-                <element signature="method#getIdProdottiFarmacia#0;class#DBManager#0" expanded="false" />
-                <element signature="docComment;method#getRimanenzeByIdFarmacia#0;class#DBManager#0" expanded="false" />
-                <element signature="method#getRimanenzeByIdFarmacia#0;class#DBManager#0" expanded="false" />
-                <element signature="docComment;method#getProdottiInMagazzino#0;class#DBManager#0" expanded="false" />
-                <element signature="method#getProdottiInMagazzino#0;class#DBManager#0" expanded="false" />
-                <element signature="docComment;method#getCFByUsername#0;class#DBManager#0" expanded="false" />
-                <element signature="method#getCFByUsername#0;class#DBManager#0" expanded="false" />
-                <element signature="method#setVendita#0;class#DBManager#0" expanded="false" />
-                <element signature="method#inserisciInOrdine#0;class#DBManager#0" expanded="false" />
-                <element signature="method#getIdFarmacia#0;class#DBManager#0" expanded="false" />
-                <element signature="method#validate#0;class#DBManager#0" expanded="false" />
-                <element signature="method#elencoFarmacie#0;class#DBManager#0" expanded="false" />
-                <element signature="method#attivaFarmaciaAndTF#0;class#DBManager#0" expanded="false" />
-                <element signature="method#attivaCollaboratore#0;class#DBManager#0" expanded="false" />
-                <element signature="method#getRuoloByCF#0;class#DBManager#0" expanded="false" />
-                <element signature="method#reintegra#0;class#DBManager#0" expanded="false" />
-                <element signature="method#inserisciInMagazzino#0;class#DBManager#0" expanded="false" />
-                <element signature="method#getPazienti#0;class#DBManager#0" expanded="false" />
-                <element signature="method#getMedici#0;class#DBManager#0" expanded="false" />
-                <element signature="method#getQTAInMagazzino#0;class#DBManager#0" expanded="false" />
-                <element signature="method#setRicetta#0;class#DBManager#0" expanded="false" />
-                <element signature="method#inserisciNuovoPaziente#0;class#DBManager#0" expanded="false" />
-                <element signature="method#getElencoPazientiPerMessaggi#0;class#DBManager#0" expanded="false" />
-                <element signature="method#getUserByCF#0;class#DBManager#0" expanded="false" />
-                <element signature="method#getNomeECognomeByCf#0;class#DBManager#0" expanded="false" />
-                <element signature="method#nuovoMessaggio#0;class#DBManager#0" expanded="false" />
-                <element signature="method#getMessaggiDaLeggere#0;class#DBManager#0" expanded="false" />
-                <element signature="method#getTotaleByIdOrdine#0;class#DBManager#0" expanded="false" />
-                <element signature="method#getNumeroComplessivoAcquisti#0;class#DBManager#0" expanded="false" />
-                <element signature="method#getNumeroPezziVenduti#0;class#DBManager#0" expanded="false" />
-                <element signature="method#getNumeroDiFarmaciConRicetta#0;class#DBManager#0" expanded="false" />
-                <element signature="method#getNumeroDiRicette#0;class#DBManager#0" expanded="false" />
-                <element signature="method#getMediaFarmaciPerRicetta#0;class#DBManager#0" expanded="false" />
-                <marker date="1498294360000" expanded="true" signature="1150:1221" ph="SELECT nome,... prodotti" />
-                <marker date="1498294360000" expanded="true" signature="2238:2291" ph="SELECT id_pr... rimanenze" />
-                <marker date="1498294360000" expanded="true" signature="2996:3054" ph="SELECT qta, rimanenze" />
-                <marker date="1498294360000" expanded="true" signature="3872:4025" ph="SELECT id_pr... prodotti" />
-                <marker date="1498294360000" expanded="true" signature="4985:5020" ph="SELECT cf fr... login" />
-                <marker date="1498294360000" expanded="true" signature="6044:6120" ph="UPDATE riman... " />
-                <marker date="1498294360000" expanded="true" signature="6712:6781" ph="insert INTO ordine... " />
-                <marker date="1498294360000" expanded="true" signature="6712:6782" ph="insert INTO ordine... " />
-                <marker date="1498294360000" expanded="true" signature="6712:6798" ph="insert INTO ordine... " />
-                <marker date="1498294360000" expanded="true" signature="6712:6805" ph="insert INTO ordine... " />
-                <marker date="1498294360000" expanded="true" signature="7836:7904" ph="insert INTO contiene... " />
-                <marker date="1498294360000" expanded="true" signature="8401:8447" ph="SELECT id_fa... personale" />
-                <marker date="1498294360000" expanded="true" signature="9086:9181" ph="select ruolo... login" />
-                <marker date="1498294360000" expanded="true" signature="9756:9778" ph="select * fro... farmacia" />
-                <marker date="1498294360000" expanded="true" signature="10794:10886" ph="INSERT into farmacia... " />
-                <marker date="1498294360000" expanded="true" signature="10794:10908" ph="INSERT into farmacia... " />
-                <marker date="1498294360000" expanded="true" signature="11792:11887" ph="INSERT into personale... " />
-                <marker date="1498294360000" expanded="true" signature="12462:12516" ph="insert into login... " />
-                <marker date="1498294360000" expanded="true" signature="13298:13393" ph="INSERT INTO personale... " />
-                <marker date="1498294360000" expanded="true" signature="13934:13988" ph="INSERT INTO login... " />
-                <marker date="1498294360000" expanded="true" signature="14543:14581" ph="SELECT ruolo... personale" />
-                <marker date="1498294360000" expanded="true" signature="15547:15640" ph="UPDATE riman... " />
-                <marker date="1498294360000" expanded="true" signature="16728:16766" ph="INSERT into rimanenze... " />
-                <marker date="1498294360000" expanded="true" signature="17315:17337" ph="SELECT FROM paziente... " />
-                <marker date="1498294360000" expanded="true" signature="18200:18220" ph="SELECT * FRO... medico" />
-                <marker date="1498294360000" expanded="true" signature="18998:19061" ph="SELECT qta F... rimanenze" />
-                <marker date="1498294360000" expanded="true" signature="19586:19666" ph="insert into ricetta... " />
-                <marker date="1498294360000" expanded="true" signature="20261:20341" ph="INSERT INTO paziente... " />
-                <marker date="1498294360000" expanded="true" signature="21172:21299" ph="SELECT nome farmacia" />
-                <marker date="1498294360000" expanded="true" signature="21812:21866" ph="SELECT nome,... personale" />
-                <marker date="1498294360000" expanded="true" signature="22517:22552" ph="select utent... login" />
-                <marker date="1498294360000" expanded="true" signature="22921:22966" ph="SELECT nome,... personale" />
-                <marker date="1498294360000" expanded="true" signature="23598:23622" ph="SELECT utent... login" />
-                <marker date="1498294360000" expanded="true" signature="23598:23698" ph="SELECT utent... login" />
-                <marker date="1498294360000" expanded="true" signature="24094:24181" ph="INSERT INTO messaggi... " />
-                <marker date="1498294360000" expanded="true" signature="24845:24886" ph="SELECT cf FR... personale" />
-                <marker date="1498294360000" expanded="true" signature="25177:25263" ph="INSERT INTO messaggi... " />
-                <marker date="1498294360000" expanded="true" signature="26188:26225" ph="SELECT cf fr... personale" />
-                <marker date="1498294360000" expanded="true" signature="26188:26247" ph="SELECT cf fr... personale" />
-                <marker date="1498294360000" expanded="true" signature="26574:26657" ph="INSERT INTO messaggi... " />
-                <marker date="1498294360000" expanded="true" signature="26574:26660" ph="INSERT INTO messaggi... " />
-                <marker date="1498294360000" expanded="true" signature="27236:27322" ph="INSERT INTO messaggi... " />
-                <marker date="1498294360000" expanded="true" signature="28160:28186" ph="SELECT mitte... " />
-                <marker date="1498294360000" expanded="true" signature="28160:28244" ph="SELECT mitte... messaggi" />
-                <marker date="1498294360000" expanded="true" signature="28855:28912" ph="UPDATE messa... " />
-                <marker date="1498294360000" expanded="true" signature="29240:29294" ph="SELECT total... ordine" />
-                <marker date="1498294360000" expanded="true" signature="29719:29960" ph="SELECT COUNT... contiene" />
-                <marker date="1498294360000" expanded="true" signature="30188:30399" ph="SELECT COUNT... contiene" />
-                <marker date="1498294360000" expanded="true" signature="30778:31058" ph="SELECT sum(q... contiene" />
-                <marker date="1498294360000" expanded="true" signature="31287:31529" ph="SELECT sum(q... contiene" />
-                <marker date="1498294360000" expanded="true" signature="31915:32206" ph="SELECT sum (... contiene" />
-                <marker date="1498294360000" expanded="true" signature="32435:32698" ph="SELECT sum (... contiene" />
-                <marker date="1498294360000" expanded="true" signature="33024:33053" ph="select count... ricetta" />
-                <marker date="1498294360000" expanded="true" signature="33431:33723" ph="select avg(q... contiene" />
-                <marker date="1498294360000" expanded="true" signature="33993:34253" ph="select avg(q... contiene" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home-reg.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-reg.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="34" column="51" lean-forward="false" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home-tf.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-tf.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="45" column="61" lean-forward="false" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="REG.public.ordine" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.ordine">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="REG.public.contiene" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.contiene">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="REG.public.ricetta" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.ricetta">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="REG.public.prodotti" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.prodotti">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/52e46335-53f1-46e2-b535-63db79b72ac6/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="63" lean-forward="false" selection-start-line="1" selection-start-column="63" selection-end-line="1" selection-end-column="109" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="css.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/assets/stylesheets/css.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="488">
+                  <caret line="354" column="1" lean-forward="false" selection-start-line="354" selection-start-column="1" selection-end-line="354" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DBManager.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/db/DBManager.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="644">
+                  <caret line="777" column="69" lean-forward="false" selection-start-line="777" selection-start-column="69" selection-end-line="777" selection-end-column="69" />
+                  <folding>
+                    <element signature="method#connessione#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#getTuttiProdotti#0;class#DBManager#0" expanded="false" />
+                    <element signature="docComment;method#getIdProdottiFarmacia#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#getIdProdottiFarmacia#0;class#DBManager#0" expanded="false" />
+                    <element signature="docComment;method#getRimanenzeByIdFarmacia#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#getRimanenzeByIdFarmacia#0;class#DBManager#0" expanded="false" />
+                    <element signature="docComment;method#getProdottiInMagazzino#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#getProdottiInMagazzino#0;class#DBManager#0" expanded="false" />
+                    <element signature="docComment;method#getCFByUsername#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#getCFByUsername#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#setVendita#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#inserisciInOrdine#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#getIdFarmacia#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#validate#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#elencoFarmacie#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#attivaFarmaciaAndTF#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#attivaCollaboratore#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#getRuoloByCF#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#reintegra#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#inserisciInMagazzino#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#getPazienti#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#getMedici#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#getQTAInMagazzino#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#setRicetta#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#inserisciNuovoPaziente#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#getElencoPazientiPerMessaggi#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#getUserByCF#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#getNomeECognomeByCf#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#nuovoMessaggio#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#getMessaggiDaLeggere#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#getTotaleByIdOrdine#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#getNumeroComplessivoAcquisti#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#getNumeroPezziVenduti#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#getNumeroDiFarmaciConRicetta#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#getNumeroDiFarmaciSenzaRicetta#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#getNumeroDiRicette#0;class#DBManager#0" expanded="false" />
+                    <element signature="method#getNomiFarmacie#0;class#DBManager#0" expanded="false" />
+                    <marker date="1498314595000" expanded="true" signature="1196:1267" ph="SELECT nome,... prodotti" />
+                    <marker date="1498314595000" expanded="true" signature="2284:2337" ph="SELECT id_pr... rimanenze" />
+                    <marker date="1498314595000" expanded="true" signature="3042:3100" ph="SELECT qta, rimanenze" />
+                    <marker date="1498314595000" expanded="true" signature="3918:4071" ph="SELECT id_pr... prodotti" />
+                    <marker date="1498314595000" expanded="true" signature="5031:5066" ph="SELECT cf fr... login" />
+                    <marker date="1498314595000" expanded="true" signature="6090:6166" ph="UPDATE riman... " />
+                    <marker date="1498314595000" expanded="true" signature="6758:6827" ph="insert INTO ordine... " />
+                    <marker date="1498314595000" expanded="true" signature="6758:6828" ph="insert INTO ordine... " />
+                    <marker date="1498314595000" expanded="true" signature="6758:6844" ph="insert INTO ordine... " />
+                    <marker date="1498314595000" expanded="true" signature="6758:6851" ph="insert INTO ordine... " />
+                    <marker date="1498314595000" expanded="true" signature="7882:7950" ph="insert INTO contiene... " />
+                    <marker date="1498314595000" expanded="true" signature="8447:8493" ph="SELECT id_fa... personale" />
+                    <marker date="1498314595000" expanded="true" signature="9132:9227" ph="select ruolo... login" />
+                    <marker date="1498314595000" expanded="true" signature="9802:9824" ph="select * fro... farmacia" />
+                    <marker date="1498314595000" expanded="true" signature="10711:10756" ph="select nome farmacia" />
+                    <marker date="1498314595000" expanded="true" signature="11246:11338" ph="INSERT into farmacia... " />
+                    <marker date="1498314595000" expanded="true" signature="11246:11360" ph="INSERT into farmacia... " />
+                    <marker date="1498314595000" expanded="true" signature="12244:12339" ph="INSERT into personale... " />
+                    <marker date="1498314595000" expanded="true" signature="12914:12968" ph="insert into login... " />
+                    <marker date="1498314595000" expanded="true" signature="13750:13845" ph="INSERT INTO personale... " />
+                    <marker date="1498314595000" expanded="true" signature="14386:14440" ph="INSERT INTO login... " />
+                    <marker date="1498314595000" expanded="true" signature="14995:15033" ph="SELECT ruolo... personale" />
+                    <marker date="1498314595000" expanded="true" signature="15999:16092" ph="UPDATE riman... " />
+                    <marker date="1498314595000" expanded="true" signature="17180:17218" ph="INSERT into rimanenze... " />
+                    <marker date="1498314595000" expanded="true" signature="17767:17789" ph="SELECT FROM paziente... " />
+                    <marker date="1498314595000" expanded="true" signature="18652:18672" ph="SELECT * FRO... medico" />
+                    <marker date="1498314595000" expanded="true" signature="19450:19513" ph="SELECT qta F... rimanenze" />
+                    <marker date="1498314595000" expanded="true" signature="20038:20118" ph="insert into ricetta... " />
+                    <marker date="1498314595000" expanded="true" signature="20713:20793" ph="INSERT INTO paziente... " />
+                    <marker date="1498314595000" expanded="true" signature="21624:21751" ph="SELECT nome farmacia" />
+                    <marker date="1498314595000" expanded="true" signature="22264:22318" ph="SELECT nome,... personale" />
+                    <marker date="1498314595000" expanded="true" signature="22969:23004" ph="select utent... login" />
+                    <marker date="1498314595000" expanded="true" signature="23373:23418" ph="SELECT nome,... personale" />
+                    <marker date="1498314595000" expanded="true" signature="24050:24074" ph="SELECT utent... login" />
+                    <marker date="1498314595000" expanded="true" signature="24050:24150" ph="SELECT utent... login" />
+                    <marker date="1498314595000" expanded="true" signature="24546:24633" ph="INSERT INTO messaggi... " />
+                    <marker date="1498314595000" expanded="true" signature="25297:25338" ph="SELECT cf FR... personale" />
+                    <marker date="1498314595000" expanded="true" signature="25629:25715" ph="INSERT INTO messaggi... " />
+                    <marker date="1498314595000" expanded="true" signature="26640:26677" ph="SELECT cf fr... personale" />
+                    <marker date="1498314595000" expanded="true" signature="26640:26699" ph="SELECT cf fr... personale" />
+                    <marker date="1498314595000" expanded="true" signature="27026:27109" ph="INSERT INTO messaggi... " />
+                    <marker date="1498314595000" expanded="true" signature="27026:27112" ph="INSERT INTO messaggi... " />
+                    <marker date="1498314595000" expanded="true" signature="27688:27774" ph="INSERT INTO messaggi... " />
+                    <marker date="1498314595000" expanded="true" signature="28612:28638" ph="SELECT mitte... " />
+                    <marker date="1498314595000" expanded="true" signature="28612:28696" ph="SELECT mitte... messaggi" />
+                    <marker date="1498314595000" expanded="true" signature="29307:29364" ph="UPDATE messa... " />
+                    <marker date="1498314595000" expanded="true" signature="29692:29746" ph="SELECT total... ordine" />
+                    <marker date="1498314595000" expanded="true" signature="30171:30412" ph="SELECT COUNT... contiene" />
+                    <marker date="1498314595000" expanded="true" signature="30640:30851" ph="SELECT COUNT... contiene" />
+                    <marker date="1498314595000" expanded="true" signature="31230:31510" ph="SELECT sum(q... contiene" />
+                    <marker date="1498314595000" expanded="true" signature="31739:31981" ph="SELECT sum(q... contiene" />
+                    <marker date="1498314595000" expanded="true" signature="32367:32658" ph="SELECT sum (... contiene" />
+                    <marker date="1498314595000" expanded="true" signature="32887:33150" ph="SELECT sum (... contiene" />
+                    <marker date="1498314595000" expanded="true" signature="33505:33789" ph="SELECT sum (... contiene" />
+                    <marker date="1498314595000" expanded="true" signature="34154:34183" ph="select count... ricetta" />
+                    <marker date="1498314595000" expanded="true" signature="34561:34853" ph="select avg(q... contiene" />
+                    <marker date="1498314595000" expanded="true" signature="35123:35383" ph="select avg(q... contiene" />
+                    <marker date="1498314595000" expanded="true" signature="35804:35841" ph="SELECT id_fa... farmacia" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="REG.public.farmacia" pinned="false" current-in-tab="true">
+            <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.farmacia">
+              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+                <state>
+                  <filtering enabled="true" />
+                </state>
+              </provider>
+              <provider editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="REG.public.personale" pinned="false" current-in-tab="false">
+            <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.personale">
+              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+                <state>
+                  <filtering enabled="true" />
+                </state>
+              </provider>
+              <provider editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="REG.public.login" pinned="false" current-in-tab="false">
+            <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.login">
+              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+                <state>
+                  <filtering enabled="true" />
+                </state>
+              </provider>
+              <provider editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="home-reg.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-reg.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1051">
+                  <caret line="102" column="20" lean-forward="false" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="home-tf.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-tf.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-281">
+                  <caret line="91" column="127" lean-forward="false" selection-start-line="91" selection-start-column="124" selection-end-line="91" selection-end-column="127" />
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="canvasjs.min.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/assets/javascripts/canvasjs.min.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="218">
+                  <caret line="75" column="465" lean-forward="false" selection-start-line="75" selection-start-column="465" selection-end-line="75" selection-end-column="465" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="jquery.canvasjs.min.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/assets/javascripts/jquery.canvasjs.min.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="177">
+                  <caret line="75" column="465" lean-forward="false" selection-start-line="75" selection-start-column="465" selection-end-line="75" selection-end-column="465" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="REG.public.ordine" pinned="false" current-in-tab="false">
+            <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.ordine">
+              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+                <state>
+                  <filtering enabled="true" />
+                </state>
+              </provider>
+              <provider editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="home-tf.jsp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-tf.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="94">
+                  <caret line="116" column="4" lean-forward="true" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -327,6 +359,13 @@
       <find>setVe</find>
       <find>attivaFA</find>
       <find>attiva</find>
+      <find>.render</find>
+      <find>chart.render</find>
+      <find>render</find>
+      <find>CanvasJS.</find>
+      <find>CanvasJS</find>
+      <find>J.str={tv:[84,114,105,97,108,32,86,101,114,115,105,</find>
+      <find>str={tv</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -340,8 +379,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/controller/InserisciPazienteController.java" />
-        <option value="$PROJECT_DIR$/src/model/Paziente.java" />
         <option value="$PROJECT_DIR$/src/model/Medico.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/tf/nuovo-messaggio.jsp" />
         <option value="$PROJECT_DIR$/src/controller/forward/ForwardToNuovoMessaggio.java" />
@@ -385,12 +422,14 @@
         <option value="$PROJECT_DIR$/web/assets/javascripts/main.js" />
         <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/messaggi/storico-messaggi.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/REG/attiva-farmacia.jsp" />
-        <option value="$PROJECT_DIR$/web/assets/stylesheets/css.css" />
         <option value="$PROJECT_DIR$/web/WEB-INF/tf/elenco-pazienti.jsp" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/52e46335-53f1-46e2-b535-63db79b72ac6/console.sql" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-reg.jsp" />
+        <option value="$PROJECT_DIR$/web/assets/stylesheets/css.css" />
+        <option value="$PROJECT_DIR$/web/assets/javascripts/canvasjs.min.js" />
+        <option value="$PROJECT_DIR$/web/assets/javascripts/jquery.canvasjs.min.js" />
         <option value="$PROJECT_DIR$/src/db/DBManager.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-tf.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-reg.jsp" />
       </list>
     </option>
   </component>
@@ -1310,7 +1349,7 @@
       <workItem from="1497808035572" duration="171000" />
       <workItem from="1497815392879" duration="1650000" />
       <workItem from="1497851871583" duration="1389000" />
-      <workItem from="1498024146485" duration="24467000" />
+      <workItem from="1498024146485" duration="36867000" />
     </task>
     <task id="LOCAL-00001" summary="Sistemare inserimento farmacia e username, in particolare non funziona il recupero dell'id_farmacia tramite quel metodo">
       <created>1496175910137</created>
@@ -1606,11 +1645,18 @@
       <option name="project" value="LOCAL" />
       <updated>1498198293906</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Aggiunte le statistiche richieste nei requisiti">
+      <created>1498294486886</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1498294486886</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="258187000" />
+    <option name="totallyTimeSpent" value="270587000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="791" extended-state="0" />
@@ -1632,16 +1678,16 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3490701" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32761088" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761088" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904148" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14735337" sideWeight="0.4939952" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14735337" sideWeight="0.4939952" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761088" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2081545" sideWeight="0.48407644" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10014306" sideWeight="0.48407644" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25250357" sideWeight="0.51592356" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1736,20 +1782,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/controller/forward/ForwardToHome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/stylesheets/main2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="21" lean-forward="true" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/forward/ForwardToVisualizzaMessaggi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1880,33 +1912,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.login">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.medico">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.farmacia">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -2026,8 +2032,8 @@
         <state relative-caret-position="239">
           <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
           <folding>
-            <element signature="n#style#0;n#span#0;n#button#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#button#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#button#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#button#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2080,40 +2086,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.personale">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.rimanenze">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/stylesheets/css.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-375">
-          <caret line="281" column="20" lean-forward="false" selection-start-line="281" selection-start-column="20" selection-end-line="281" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.prodotti">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -2148,7 +2120,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.contiene">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/52e46335-53f1-46e2-b535-63db79b72ac6/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="63" lean-forward="false" selection-start-line="1" selection-start-column="63" selection-end-line="1" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.rimanenze">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -2161,10 +2141,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/52e46335-53f1-46e2-b535-63db79b72ac6/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="63" lean-forward="false" selection-start-line="1" selection-start-column="63" selection-end-line="1" selection-end-column="109" />
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.contiene">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2182,18 +2167,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-reg.jsp">
+    <entry file="file://$PROJECT_DIR$/web/assets/javascripts/canvasjs.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="34" column="51" lean-forward="false" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
+        <state relative-caret-position="218">
+          <caret line="75" column="465" lean-forward="false" selection-start-line="75" selection-start-column="465" selection-end-line="75" selection-end-column="465" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/javascripts/jquery.canvasjs.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="75" column="465" lean-forward="false" selection-start-line="75" selection-start-column="465" selection-end-line="75" selection-end-column="465" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.login">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/stylesheets/css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="354" column="1" lean-forward="false" selection-start-line="354" selection-start-column="1" selection-end-line="354" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.personale">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/db/DBManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        <state relative-caret-position="644">
+          <caret line="777" column="69" lean-forward="false" selection-start-line="777" selection-start-column="69" selection-end-line="777" selection-end-column="69" />
           <folding>
             <element signature="method#connessione#0;class#DBManager#0" expanded="false" />
             <element signature="method#getTuttiProdotti#0;class#DBManager#0" expanded="false" />
@@ -2229,71 +2258,99 @@
             <element signature="method#getNumeroComplessivoAcquisti#0;class#DBManager#0" expanded="false" />
             <element signature="method#getNumeroPezziVenduti#0;class#DBManager#0" expanded="false" />
             <element signature="method#getNumeroDiFarmaciConRicetta#0;class#DBManager#0" expanded="false" />
+            <element signature="method#getNumeroDiFarmaciSenzaRicetta#0;class#DBManager#0" expanded="false" />
             <element signature="method#getNumeroDiRicette#0;class#DBManager#0" expanded="false" />
-            <element signature="method#getMediaFarmaciPerRicetta#0;class#DBManager#0" expanded="false" />
-            <marker date="1498294360000" expanded="true" signature="1150:1221" ph="SELECT nome,... prodotti" />
-            <marker date="1498294360000" expanded="true" signature="2238:2291" ph="SELECT id_pr... rimanenze" />
-            <marker date="1498294360000" expanded="true" signature="2996:3054" ph="SELECT qta, rimanenze" />
-            <marker date="1498294360000" expanded="true" signature="3872:4025" ph="SELECT id_pr... prodotti" />
-            <marker date="1498294360000" expanded="true" signature="4985:5020" ph="SELECT cf fr... login" />
-            <marker date="1498294360000" expanded="true" signature="6044:6120" ph="UPDATE riman... " />
-            <marker date="1498294360000" expanded="true" signature="6712:6781" ph="insert INTO ordine... " />
-            <marker date="1498294360000" expanded="true" signature="6712:6782" ph="insert INTO ordine... " />
-            <marker date="1498294360000" expanded="true" signature="6712:6798" ph="insert INTO ordine... " />
-            <marker date="1498294360000" expanded="true" signature="6712:6805" ph="insert INTO ordine... " />
-            <marker date="1498294360000" expanded="true" signature="7836:7904" ph="insert INTO contiene... " />
-            <marker date="1498294360000" expanded="true" signature="8401:8447" ph="SELECT id_fa... personale" />
-            <marker date="1498294360000" expanded="true" signature="9086:9181" ph="select ruolo... login" />
-            <marker date="1498294360000" expanded="true" signature="9756:9778" ph="select * fro... farmacia" />
-            <marker date="1498294360000" expanded="true" signature="10794:10886" ph="INSERT into farmacia... " />
-            <marker date="1498294360000" expanded="true" signature="10794:10908" ph="INSERT into farmacia... " />
-            <marker date="1498294360000" expanded="true" signature="11792:11887" ph="INSERT into personale... " />
-            <marker date="1498294360000" expanded="true" signature="12462:12516" ph="insert into login... " />
-            <marker date="1498294360000" expanded="true" signature="13298:13393" ph="INSERT INTO personale... " />
-            <marker date="1498294360000" expanded="true" signature="13934:13988" ph="INSERT INTO login... " />
-            <marker date="1498294360000" expanded="true" signature="14543:14581" ph="SELECT ruolo... personale" />
-            <marker date="1498294360000" expanded="true" signature="15547:15640" ph="UPDATE riman... " />
-            <marker date="1498294360000" expanded="true" signature="16728:16766" ph="INSERT into rimanenze... " />
-            <marker date="1498294360000" expanded="true" signature="17315:17337" ph="SELECT FROM paziente... " />
-            <marker date="1498294360000" expanded="true" signature="18200:18220" ph="SELECT * FRO... medico" />
-            <marker date="1498294360000" expanded="true" signature="18998:19061" ph="SELECT qta F... rimanenze" />
-            <marker date="1498294360000" expanded="true" signature="19586:19666" ph="insert into ricetta... " />
-            <marker date="1498294360000" expanded="true" signature="20261:20341" ph="INSERT INTO paziente... " />
-            <marker date="1498294360000" expanded="true" signature="21172:21299" ph="SELECT nome farmacia" />
-            <marker date="1498294360000" expanded="true" signature="21812:21866" ph="SELECT nome,... personale" />
-            <marker date="1498294360000" expanded="true" signature="22517:22552" ph="select utent... login" />
-            <marker date="1498294360000" expanded="true" signature="22921:22966" ph="SELECT nome,... personale" />
-            <marker date="1498294360000" expanded="true" signature="23598:23622" ph="SELECT utent... login" />
-            <marker date="1498294360000" expanded="true" signature="23598:23698" ph="SELECT utent... login" />
-            <marker date="1498294360000" expanded="true" signature="24094:24181" ph="INSERT INTO messaggi... " />
-            <marker date="1498294360000" expanded="true" signature="24845:24886" ph="SELECT cf FR... personale" />
-            <marker date="1498294360000" expanded="true" signature="25177:25263" ph="INSERT INTO messaggi... " />
-            <marker date="1498294360000" expanded="true" signature="26188:26225" ph="SELECT cf fr... personale" />
-            <marker date="1498294360000" expanded="true" signature="26188:26247" ph="SELECT cf fr... personale" />
-            <marker date="1498294360000" expanded="true" signature="26574:26657" ph="INSERT INTO messaggi... " />
-            <marker date="1498294360000" expanded="true" signature="26574:26660" ph="INSERT INTO messaggi... " />
-            <marker date="1498294360000" expanded="true" signature="27236:27322" ph="INSERT INTO messaggi... " />
-            <marker date="1498294360000" expanded="true" signature="28160:28186" ph="SELECT mitte... " />
-            <marker date="1498294360000" expanded="true" signature="28160:28244" ph="SELECT mitte... messaggi" />
-            <marker date="1498294360000" expanded="true" signature="28855:28912" ph="UPDATE messa... " />
-            <marker date="1498294360000" expanded="true" signature="29240:29294" ph="SELECT total... ordine" />
-            <marker date="1498294360000" expanded="true" signature="29719:29960" ph="SELECT COUNT... contiene" />
-            <marker date="1498294360000" expanded="true" signature="30188:30399" ph="SELECT COUNT... contiene" />
-            <marker date="1498294360000" expanded="true" signature="30778:31058" ph="SELECT sum(q... contiene" />
-            <marker date="1498294360000" expanded="true" signature="31287:31529" ph="SELECT sum(q... contiene" />
-            <marker date="1498294360000" expanded="true" signature="31915:32206" ph="SELECT sum (... contiene" />
-            <marker date="1498294360000" expanded="true" signature="32435:32698" ph="SELECT sum (... contiene" />
-            <marker date="1498294360000" expanded="true" signature="33024:33053" ph="select count... ricetta" />
-            <marker date="1498294360000" expanded="true" signature="33431:33723" ph="select avg(q... contiene" />
-            <marker date="1498294360000" expanded="true" signature="33993:34253" ph="select avg(q... contiene" />
+            <element signature="method#getNomiFarmacie#0;class#DBManager#0" expanded="false" />
+            <marker date="1498314595000" expanded="true" signature="1196:1267" ph="SELECT nome,... prodotti" />
+            <marker date="1498314595000" expanded="true" signature="2284:2337" ph="SELECT id_pr... rimanenze" />
+            <marker date="1498314595000" expanded="true" signature="3042:3100" ph="SELECT qta, rimanenze" />
+            <marker date="1498314595000" expanded="true" signature="3918:4071" ph="SELECT id_pr... prodotti" />
+            <marker date="1498314595000" expanded="true" signature="5031:5066" ph="SELECT cf fr... login" />
+            <marker date="1498314595000" expanded="true" signature="6090:6166" ph="UPDATE riman... " />
+            <marker date="1498314595000" expanded="true" signature="6758:6827" ph="insert INTO ordine... " />
+            <marker date="1498314595000" expanded="true" signature="6758:6828" ph="insert INTO ordine... " />
+            <marker date="1498314595000" expanded="true" signature="6758:6844" ph="insert INTO ordine... " />
+            <marker date="1498314595000" expanded="true" signature="6758:6851" ph="insert INTO ordine... " />
+            <marker date="1498314595000" expanded="true" signature="7882:7950" ph="insert INTO contiene... " />
+            <marker date="1498314595000" expanded="true" signature="8447:8493" ph="SELECT id_fa... personale" />
+            <marker date="1498314595000" expanded="true" signature="9132:9227" ph="select ruolo... login" />
+            <marker date="1498314595000" expanded="true" signature="9802:9824" ph="select * fro... farmacia" />
+            <marker date="1498314595000" expanded="true" signature="10711:10756" ph="select nome farmacia" />
+            <marker date="1498314595000" expanded="true" signature="11246:11338" ph="INSERT into farmacia... " />
+            <marker date="1498314595000" expanded="true" signature="11246:11360" ph="INSERT into farmacia... " />
+            <marker date="1498314595000" expanded="true" signature="12244:12339" ph="INSERT into personale... " />
+            <marker date="1498314595000" expanded="true" signature="12914:12968" ph="insert into login... " />
+            <marker date="1498314595000" expanded="true" signature="13750:13845" ph="INSERT INTO personale... " />
+            <marker date="1498314595000" expanded="true" signature="14386:14440" ph="INSERT INTO login... " />
+            <marker date="1498314595000" expanded="true" signature="14995:15033" ph="SELECT ruolo... personale" />
+            <marker date="1498314595000" expanded="true" signature="15999:16092" ph="UPDATE riman... " />
+            <marker date="1498314595000" expanded="true" signature="17180:17218" ph="INSERT into rimanenze... " />
+            <marker date="1498314595000" expanded="true" signature="17767:17789" ph="SELECT FROM paziente... " />
+            <marker date="1498314595000" expanded="true" signature="18652:18672" ph="SELECT * FRO... medico" />
+            <marker date="1498314595000" expanded="true" signature="19450:19513" ph="SELECT qta F... rimanenze" />
+            <marker date="1498314595000" expanded="true" signature="20038:20118" ph="insert into ricetta... " />
+            <marker date="1498314595000" expanded="true" signature="20713:20793" ph="INSERT INTO paziente... " />
+            <marker date="1498314595000" expanded="true" signature="21624:21751" ph="SELECT nome farmacia" />
+            <marker date="1498314595000" expanded="true" signature="22264:22318" ph="SELECT nome,... personale" />
+            <marker date="1498314595000" expanded="true" signature="22969:23004" ph="select utent... login" />
+            <marker date="1498314595000" expanded="true" signature="23373:23418" ph="SELECT nome,... personale" />
+            <marker date="1498314595000" expanded="true" signature="24050:24074" ph="SELECT utent... login" />
+            <marker date="1498314595000" expanded="true" signature="24050:24150" ph="SELECT utent... login" />
+            <marker date="1498314595000" expanded="true" signature="24546:24633" ph="INSERT INTO messaggi... " />
+            <marker date="1498314595000" expanded="true" signature="25297:25338" ph="SELECT cf FR... personale" />
+            <marker date="1498314595000" expanded="true" signature="25629:25715" ph="INSERT INTO messaggi... " />
+            <marker date="1498314595000" expanded="true" signature="26640:26677" ph="SELECT cf fr... personale" />
+            <marker date="1498314595000" expanded="true" signature="26640:26699" ph="SELECT cf fr... personale" />
+            <marker date="1498314595000" expanded="true" signature="27026:27109" ph="INSERT INTO messaggi... " />
+            <marker date="1498314595000" expanded="true" signature="27026:27112" ph="INSERT INTO messaggi... " />
+            <marker date="1498314595000" expanded="true" signature="27688:27774" ph="INSERT INTO messaggi... " />
+            <marker date="1498314595000" expanded="true" signature="28612:28638" ph="SELECT mitte... " />
+            <marker date="1498314595000" expanded="true" signature="28612:28696" ph="SELECT mitte... messaggi" />
+            <marker date="1498314595000" expanded="true" signature="29307:29364" ph="UPDATE messa... " />
+            <marker date="1498314595000" expanded="true" signature="29692:29746" ph="SELECT total... ordine" />
+            <marker date="1498314595000" expanded="true" signature="30171:30412" ph="SELECT COUNT... contiene" />
+            <marker date="1498314595000" expanded="true" signature="30640:30851" ph="SELECT COUNT... contiene" />
+            <marker date="1498314595000" expanded="true" signature="31230:31510" ph="SELECT sum(q... contiene" />
+            <marker date="1498314595000" expanded="true" signature="31739:31981" ph="SELECT sum(q... contiene" />
+            <marker date="1498314595000" expanded="true" signature="32367:32658" ph="SELECT sum (... contiene" />
+            <marker date="1498314595000" expanded="true" signature="32887:33150" ph="SELECT sum (... contiene" />
+            <marker date="1498314595000" expanded="true" signature="33505:33789" ph="SELECT sum (... contiene" />
+            <marker date="1498314595000" expanded="true" signature="34154:34183" ph="select count... ricetta" />
+            <marker date="1498314595000" expanded="true" signature="34561:34853" ph="select avg(q... contiene" />
+            <marker date="1498314595000" expanded="true" signature="35123:35383" ph="select avg(q... contiene" />
+            <marker date="1498314595000" expanded="true" signature="35804:35841" ph="SELECT id_fa... farmacia" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-reg.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1051">
+          <caret line="102" column="20" lean-forward="false" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.farmacia">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-tf.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+        <state relative-caret-position="94">
+          <caret line="116" column="4" lean-forward="true" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
           <folding />
         </state>
       </provider>

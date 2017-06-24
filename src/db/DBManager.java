@@ -1,5 +1,6 @@
 package db;
 
+import com.sun.org.apache.regexp.internal.RE;
 import model.*;
 import java.sql.*;
 import java.util.ArrayList;
@@ -246,6 +247,17 @@ public class DBManager {
             listaFarmacie.add(farmacia);
         }
         return listaFarmacie;
+    }
+
+    public String getNomeFarmacia(int idFarmacia) throws SQLException {
+        if(connection == null)
+            this.connessione();
+
+        PreparedStatement nome = connection.prepareStatement("select nome from farmacia where id_farmacia=?");
+        nome.setInt(1, idFarmacia);
+        ResultSet resultSet = nome.executeQuery();
+        resultSet.next();
+        return resultSet.getString(1);
     }
 
     public boolean attivaFarmaciaAndTF(Farmacia farmacia, Personale personale, Login login) throws SQLException {
@@ -711,6 +723,21 @@ public class DBManager {
         return resultSet.getInt(1);
     }
 
+    public int getNumeroDiFarmaciSenzaRicetta(int idFarmacia) throws SQLException {
+        if (connection == null)
+            this.connessione();
+
+        PreparedStatement totale;
+        totale = connection.prepareStatement("SELECT sum ( contiene.qta) FROM contiene JOIN prodotti " +
+                "ON contiene.id_prodotto = prodotti.id JOIN ordine on contiene.numero_ordine = ordine.numero_ordine " +
+                "join personale ON ordine.utente = personale.cf where ricetta = FALSE and id_farmacia = ?");
+        totale.setInt(1, idFarmacia);
+        ResultSet resultSet = totale.executeQuery();
+        resultSet.next();
+        return resultSet.getInt(1);
+
+    }
+
     public int getNumeroDiRicette(int idFarmacia) throws SQLException {
         if(connection == null)
             this.connessione();
@@ -746,6 +773,23 @@ public class DBManager {
         resultSet.next();
         return ((int)Math.round(resultSet.getDouble(1) * 100)/(double)100);
 
+    }
+
+    public ArrayList<Farmacia> getNomiFarmacie() throws SQLException {
+        if(connection == null)
+            this.connessione();
+
+        ArrayList<Farmacia> elenco = new ArrayList<>();
+        PreparedStatement query = connection.prepareStatement("SELECT id_farmacia,nome from farmacia");
+        ResultSet resultSet = query.executeQuery();
+        while(resultSet.next()) {
+            Farmacia farmacia = new Farmacia();
+            farmacia.setIdFarmacia(resultSet.getInt(1));
+            farmacia.setNomeFarmacia(resultSet.getString(2));
+            elenco.add(farmacia);
+        }
+
+        return elenco;
     }
 }
 
