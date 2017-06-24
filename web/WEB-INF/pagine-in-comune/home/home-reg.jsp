@@ -1,3 +1,4 @@
+<%@ page import="db.DBManager" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
 <html>
@@ -22,6 +23,16 @@
 </div>
 
     <h1 class="bentornato">Bentornato <span>REG</span></h1>
+<%
+    DBManager dbManager = new DBManager();
+    int idFarmacia = (int)request.getSession().getAttribute("id-farmacia");
+%>
+<br><br>
+    <h3>totale vendite <%=dbManager.getNumeroComplessivoAcquisti(idFarmacia)%></h3>
+    <h3>Numero pezzi venduti <%=dbManager.getNumeroPezziVenduti(idFarmacia)%></h3>
+    <h3>Numero di farmaci con ricetta <%=dbManager.getNumeroDiFarmaciConRicetta(idFarmacia)%></h3>
+<h3>Numero di ricette <%=dbManager.getNumeroDiRicette(idFarmacia)%></h3>
+<h3>Numero medio di farmaci prescritti per ricetta <%=dbManager.getMediaFarmaciPerRicetta(idFarmacia)%></h3>
 
 <footer id="footer">
     <section class="text">

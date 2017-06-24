@@ -1,7 +1,5 @@
 <%@ page import="db.DBManager" %>
 <%@ page import="model.Login" %>
-<%@ page import="java.util.ArrayList" %>
-<%@ page import="model.Messaggio" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
 <html>
@@ -27,9 +25,18 @@
 </div>
 <%
     DBManager dbManager = new DBManager();
+    int idFarmacia = (int)request.getSession().getAttribute("id-farmacia");
     String anagrafica = dbManager.getNomeECognomeByCf(dbManager.getCFByUsername(((Login)request.getSession().getAttribute("login")).getUser()));
 %>
 <h1 class="bentornato">Bentornato <%=anagrafica%></h1>
+
+<br><br>
+<h3>Totale vendite <%=dbManager.getNumeroComplessivoAcquisti(idFarmacia)%></h3>
+<h3>Numero pezzi venduti <%=dbManager.getNumeroPezziVenduti(idFarmacia)%></h3>
+<h3>Numero di farmaci con ricetta <%=dbManager.getNumeroDiFarmaciConRicetta(idFarmacia)%></h3>
+<h3>Numero di ricette <%=dbManager.getNumeroDiRicette(idFarmacia)%></h3>
+<h3>Numero medio di farmaci prescritti per ricetta <%=dbManager.getMediaFarmaciPerRicetta(idFarmacia)%></h3>
+
 
 <footer id="footer">
     <section class="text">

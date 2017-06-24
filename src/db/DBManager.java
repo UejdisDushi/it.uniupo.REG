@@ -1,7 +1,6 @@
 package db;
 
 import model.*;
-
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -644,6 +643,109 @@ public class DBManager {
         ResultSet risultato = totale.executeQuery();
         risultato.next();
         return risultato.getDouble(1);
+    }
+
+    public int getNumeroComplessivoAcquisti(int idFarmacia) throws SQLException {
+        if(connection == null)
+            this.connessione();
+
+        PreparedStatement totale;
+        if(idFarmacia != 0) {
+            totale = connection.prepareStatement("SELECT COUNT ( DISTINCT contiene.numero_ordine) FROM contiene " +
+                    "JOIN ordine ON contiene.numero_ordine = ordine.numero_ordine " +
+                    "JOIN personale ON ordine.utente = personale.cf where id_farmacia = ?");
+            totale.setInt(1,idFarmacia);
+            ResultSet resultSet = totale.executeQuery();
+            resultSet.next();
+            return resultSet.getInt(1);
+        }
+        totale = connection.prepareStatement("SELECT COUNT ( DISTINCT contiene.numero_ordine) FROM contiene " +
+                "JOIN ordine ON contiene.numero_ordine = ordine.numero_ordine " +
+                "JOIN personale ON ordine.utente = personale.cf");
+        ResultSet resultSet = totale.executeQuery();
+        resultSet.next();
+        return resultSet.getInt(1);
+    }
+
+    public int getNumeroPezziVenduti(int idFarmacia) throws SQLException {
+        if(connection == null)
+            this.connessione();
+
+        PreparedStatement totale;
+        if(idFarmacia != 0) {
+            totale = connection.prepareStatement("SELECT sum(qta) from contiene join ordine ON " +
+                    "contiene.numero_ordine = ordine.numero_ordine join personale on ordine.utente = personale.cf  " +
+                    "join farmacia on personale.id_farmacia = farmacia.id_farmacia where personale.id_farmacia=?");
+            totale.setInt(1, idFarmacia);
+            ResultSet resultSet = totale.executeQuery();
+            resultSet.next();
+            return resultSet.getInt(1);
+        }
+        totale = connection.prepareStatement("SELECT sum(qta) from contiene join ordine ON " +
+                "contiene.numero_ordine = ordine.numero_ordine join personale on ordine.utente = personale.cf  " +
+                "join farmacia on personale.id_farmacia = farmacia.id_farmacia");
+        ResultSet resultSet = totale.executeQuery();
+        resultSet.next();
+        return resultSet.getInt(1);
+    }
+
+    public int getNumeroDiFarmaciConRicetta(int idFarmacia) throws SQLException {
+        if(connection == null)
+            this.connessione();
+
+        PreparedStatement totale;
+        if(idFarmacia != 0) {
+            totale = connection.prepareStatement("SELECT sum ( contiene.qta) FROM contiene JOIN prodotti " +
+                    "ON contiene.id_prodotto = prodotti.id JOIN ordine on contiene.numero_ordine = ordine.numero_ordine " +
+                    "join personale ON ordine.utente = personale.cf where ricetta = TRUE and id_farmacia = ?");
+            totale.setInt(1, idFarmacia);
+            ResultSet resultSet = totale.executeQuery();
+            resultSet.next();
+            return resultSet.getInt(1);
+        }
+        totale = connection.prepareStatement("SELECT sum ( contiene.qta) FROM contiene JOIN prodotti " +
+                "ON contiene.id_prodotto = prodotti.id JOIN ordine on contiene.numero_ordine = ordine.numero_ordine " +
+                "join personale ON ordine.utente = personale.cf where ricetta = TRUE");
+        ResultSet resultSet = totale.executeQuery();
+        resultSet.next();
+        return resultSet.getInt(1);
+    }
+
+    public int getNumeroDiRicette(int idFarmacia) throws SQLException {
+        if(connection == null)
+            this.connessione();
+
+        PreparedStatement totale = connection.prepareStatement("select count(*)  from ricetta");
+        ResultSet result = totale.executeQuery();
+        result.next();
+        return result.getInt(1);
+
+    }
+
+    public double getMediaFarmaciPerRicetta(int idFarmacia) throws SQLException {
+        if(connection == null)
+            this.connessione();
+
+        PreparedStatement totale;
+        if(idFarmacia != 0) {
+            totale = connection.prepareStatement("select avg(qta) from contiene join " +
+                    "ordine on contiene.numero_ordine=ordine.numero_ordine\n" +
+                    "join ricetta on ordine.numero_ordine = ricetta.numero_ordine " +
+                    "join personale on ordine.utente = personale.cf WHERE id_farmacia=?");
+            totale.setInt(1, idFarmacia);
+            ResultSet resultSet = totale.executeQuery();
+            resultSet.next();
+            return ((int)Math.round(resultSet.getDouble(1) * 100)/(double)100);
+        }
+
+        totale = connection.prepareStatement("select avg(qta) from contiene join " +
+                "ordine on contiene.numero_ordine=ordine.numero_ordine\n" +
+                "join ricetta on ordine.numero_ordine = ricetta.numero_ordine " +
+                "join personale on ordine.utente = personale.cf");
+        ResultSet resultSet = totale.executeQuery();
+        resultSet.next();
+        return ((int)Math.round(resultSet.getDouble(1) * 100)/(double)100);
+
     }
 }
 
