@@ -27,7 +27,7 @@
 <div class="elencoMessaggi">
     <%
         DBManager dbManager = new DBManager();
-        ArrayList<Messaggio> elencoMessaggi = dbManager.getMessaggiDaLeggere(((Login)request.getSession().getAttribute("login")).getUser(),true);
+        ArrayList<Messaggio> elencoMessaggi = dbManager.getMessaggiDaLeggere(((Login)request.getSession().getAttribute("login")).getUser());
         if(elencoMessaggi.size()==0) {%>
     <h3>Nessun messaggio presente</h3>
     <% }

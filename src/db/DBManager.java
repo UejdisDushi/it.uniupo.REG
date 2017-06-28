@@ -2,6 +2,9 @@ package db;
 
 import com.sun.org.apache.regexp.internal.RE;
 import model.*;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -618,7 +621,7 @@ public class DBManager {
         return mandato;
     }
 
-    public ArrayList<Messaggio> getMessaggiDaLeggere(String username, boolean conVisualizzato) throws SQLException {
+    public ArrayList<Messaggio> getMessaggiDaLeggere(String username) throws SQLException {
         if(connection == null)
             this.connessione();
 
@@ -638,12 +641,6 @@ public class DBManager {
             daLeggere.add(messaggio);
         }
 
-        if(conVisualizzato) {
-            PreparedStatement update = connection.prepareStatement("UPDATE messaggi SET visualizzato = true WHERE ricevente=?");
-            update.setString(1, username);
-            update.executeUpdate();
-        }
-
         return daLeggere;
     }
 
@@ -654,7 +651,8 @@ public class DBManager {
         totale.setInt(1, idOrdine);
         ResultSet risultato = totale.executeQuery();
         risultato.next();
-        return risultato.getDouble(1);
+        Double out = risultato.getDouble(1);
+        return (new BigDecimal(out.toString()).setScale(2, RoundingMode.HALF_UP).doubleValue());
     }
 
     public int getNumeroComplessivoAcquisti(int idFarmacia) throws SQLException {
