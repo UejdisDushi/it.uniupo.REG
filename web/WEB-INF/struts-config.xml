@@ -30,8 +30,8 @@
         </action>
 
         <action path="/check-medico" type="controller.CheckMedicoController" name="paziente">
-            <forward name="elenco-medici" path="/WEB-INF/tf/elenco-medici.jsp"></forward>
-            <forward name="redirect" path="/WEB-INF/tf/elenco-pazienti.jsp"></forward>
+            <forward name="elenco-medici" path="/WEB-INF/pagine-in-comune/vendita/elenco-medici.jsp"></forward>
+            <forward name="redirect" path="/WEB-INF/pagine-in-comune/vendita/elenco-pazienti.jsp"></forward>
         </action>
 
         <action path="/invia-messaggio" type="controller.InviaMessaggioController" name="messaggio">
@@ -39,12 +39,12 @@
         </action>
 
         <action path="/termina-operazione" type="controller.TerminaOperazioneVenditaController">
-            <forward name="redirect" path="/WEB-INF/tf/elenco-medici.jsp"></forward>
+            <forward name="redirect" path="/WEB-INF/pagine-in-comune/vendita/elenco-medici.jsp"></forward>
             <forward name="termina-vendita" path="/WEB-INF/pagine-in-comune/vendita/vendita.jsp"></forward>
         </action>
 
         <action path="/vendita" type="controller.VenditaController" name="rimanenze">
-            <forward name="acquisto-con-ricetta" path="/WEB-INF/tf/elenco-pazienti.jsp"></forward>
+            <forward name="acquisto-con-ricetta" path="/WEB-INF/pagine-in-comune/vendita/elenco-pazienti.jsp"></forward>
             <forward name="redirect" path="/WEB-INF/pagine-in-comune/vendita/vendita.jsp"></forward>
         </action>
 

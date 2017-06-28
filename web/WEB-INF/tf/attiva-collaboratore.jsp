@@ -28,23 +28,23 @@
         Inserisci collaboratore
     </h3>
     <p>
-        <label>Nome</label>
+        <label style="font-weight: bold;font-size: 17px;">Nome</label>
         <input type="text" name="nomePersonale" class="form-control" required placeholder="Nome collaboratore"/>
     </p>
     <p>
-        <label>Cognome</label>
+        <label style="font-weight: bold;font-size: 17px;">Cognome</label>
         <input type="text" name="cognome" class="form-control" required placeholder="Cognome collaboratore"/>
     </p>
     <p>
-        <label>CF</label>
+        <label style="font-weight: bold;font-size: 17px;">CF</label>
         <input type="text" name="cf" pattern="^[a-zA-Z]{6}[0-9]{2}[a-zA-Z][0-9]{2}[a-zA-Z][0-9]{3}[a-zA-Z]$" required class="form-control" placeholder="CF collaboratore"/>
     </p>
     <p>
-        <label>Data di nascita</label>
+        <label style="font-weight: bold;font-size: 17px;">Data di nascita</label>
         <input type="text" name="dataNascita" min="1950-01-01" max="2017-06-01" class="form-control" required placeholder="aaaa-MM-dd" pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])"/>
     </p>
     <p>
-        <label>Ruolo collaboratore</label>
+        <label style="font-weight: bold;font-size: 17px;">Ruolo collaboratore</label>
         <select id="ddt" name="ruolo" onmouseover="deleteSelectRole()">
             <option id="def" name="" selected on>Seleziona ruolo </option>
             <option name="df">df</option>
@@ -53,11 +53,11 @@
 
     </p>
     <p>
-        <label>User</label>
+        <label style="font-weight: bold;font-size: 17px;">User</label>
         <input type="text" name="user" class="form-control" required placeholder="Username del collaboratore"/>
     </p>
     <p>
-        <label>Password</label>
+        <label style="font-weight: bold;font-size: 17px;">Password</label>
         <input type="text" name="password" class="form-control" required placeholder="Password del collaboratore"/>
     </p>
 
