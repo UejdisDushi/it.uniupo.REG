@@ -5,7 +5,6 @@
         "http://struts.apache.org/dtds/struts-config_1_3.dtd">
 
 <struts-config>
-    <!--oggetti creati dai form, quindi entità !-->
     <form-beans>
         <form-bean name="login" type="model.Login"></form-bean>
         <form-bean name="inserimentoFarmaciaAndTF" type="model.Farmacia"></form-bean>
@@ -60,7 +59,6 @@
             <forward name="redirect" path="/WEB-INF/REG/attiva-farmacia.jsp"></forward>
         </action>
 
-
         <!--qui gestisco tutti i forward alle pagine dentro web-inf!-->
         <action path="/forwardToAttivaFarmacia" type="controller.forward.ForwardAttivaFarmacia">
             <forward name="attiva-farmacia" path="/WEB-INF/REG/attiva-farmacia.jsp" />
@@ -90,12 +88,9 @@
             <forward name="home-df" path="/WEB-INF/pagine-in-comune/home/home-df.jsp"></forward>
         </action>
 
-
         <action path="/logout" type="controller.LogoutController">
             <forward name="logout" path="/login.jsp"></forward>
         </action>
-
-
 
     </action-mappings>
 

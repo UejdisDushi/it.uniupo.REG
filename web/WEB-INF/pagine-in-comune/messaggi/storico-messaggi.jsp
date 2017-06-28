@@ -28,11 +28,14 @@
     <%
         DBManager dbManager = new DBManager();
         ArrayList<Messaggio> elencoMessaggi = dbManager.getMessaggiDaLeggere(((Login)request.getSession().getAttribute("login")).getUser(),true);
-        for(Messaggio mex : elencoMessaggi) {
+        if(elencoMessaggi.size()==0) {%>
+    <h3>Nessun messaggio presente</h3>
+    <% }
+        for(int i = 0;i<elencoMessaggi.size();i++) {
     %>
-<button class="accordion" onclick="mostraCorpo()"><span style="font-weight: bold;font-size: 16px;"> Da: </span><%=mex.getMittente()%><br><span style="font-weight: bold;font-size: 16px;"> Data: </span><%=mex.getData()%></button>
+<button class="accordion" onclick="mostraCorpo()"><span style="font-weight: bold;font-size: 16px;"> Da: </span><%=elencoMessaggi.get(i).getMittente()%><br><span style="font-weight: bold;font-size: 16px;"> Data: </span><%=elencoMessaggi.get(i).getData()%></button>
 <div class="corpo">
-    <p><%=mex.getCorpo()%></p>
+    <p><%=elencoMessaggi.get(i).getCorpo()%></p>
 </div>
 <%
     }

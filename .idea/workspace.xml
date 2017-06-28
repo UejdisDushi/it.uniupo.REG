@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="725fbaa1-ea8d-4bf4-a6fc-3c6f34d201dc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/javascripts/jquery.canvasjs.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6/_metadata_/metadata" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6/_metadata_/metadata.values.at" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db/DBManager.java" afterPath="$PROJECT_DIR$/src/db/DBManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-reg.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-reg.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-tf.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-tf.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/stylesheets/css.css" afterPath="$PROJECT_DIR$/web/assets/stylesheets/css.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/messaggi/storico-messaggi.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/messaggi/storico-messaggi.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,265 +78,41 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="css.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/assets/stylesheets/css.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="488">
-                  <caret line="354" column="1" lean-forward="false" selection-start-line="354" selection-start-column="1" selection-end-line="354" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DBManager.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/db/DBManager.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="644">
-                  <caret line="777" column="69" lean-forward="false" selection-start-line="777" selection-start-column="69" selection-end-line="777" selection-end-column="69" />
-                  <folding>
-                    <element signature="method#connessione#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#getTuttiProdotti#0;class#DBManager#0" expanded="false" />
-                    <element signature="docComment;method#getIdProdottiFarmacia#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#getIdProdottiFarmacia#0;class#DBManager#0" expanded="false" />
-                    <element signature="docComment;method#getRimanenzeByIdFarmacia#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#getRimanenzeByIdFarmacia#0;class#DBManager#0" expanded="false" />
-                    <element signature="docComment;method#getProdottiInMagazzino#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#getProdottiInMagazzino#0;class#DBManager#0" expanded="false" />
-                    <element signature="docComment;method#getCFByUsername#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#getCFByUsername#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#setVendita#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#inserisciInOrdine#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#getIdFarmacia#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#validate#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#elencoFarmacie#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#attivaFarmaciaAndTF#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#attivaCollaboratore#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#getRuoloByCF#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#reintegra#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#inserisciInMagazzino#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#getPazienti#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#getMedici#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#getQTAInMagazzino#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#setRicetta#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#inserisciNuovoPaziente#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#getElencoPazientiPerMessaggi#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#getUserByCF#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#getNomeECognomeByCf#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#nuovoMessaggio#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#getMessaggiDaLeggere#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#getTotaleByIdOrdine#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#getNumeroComplessivoAcquisti#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#getNumeroPezziVenduti#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#getNumeroDiFarmaciConRicetta#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#getNumeroDiFarmaciSenzaRicetta#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#getNumeroDiRicette#0;class#DBManager#0" expanded="false" />
-                    <element signature="method#getNomiFarmacie#0;class#DBManager#0" expanded="false" />
-                    <marker date="1498314595000" expanded="true" signature="1196:1267" ph="SELECT nome,... prodotti" />
-                    <marker date="1498314595000" expanded="true" signature="2284:2337" ph="SELECT id_pr... rimanenze" />
-                    <marker date="1498314595000" expanded="true" signature="3042:3100" ph="SELECT qta, rimanenze" />
-                    <marker date="1498314595000" expanded="true" signature="3918:4071" ph="SELECT id_pr... prodotti" />
-                    <marker date="1498314595000" expanded="true" signature="5031:5066" ph="SELECT cf fr... login" />
-                    <marker date="1498314595000" expanded="true" signature="6090:6166" ph="UPDATE riman... " />
-                    <marker date="1498314595000" expanded="true" signature="6758:6827" ph="insert INTO ordine... " />
-                    <marker date="1498314595000" expanded="true" signature="6758:6828" ph="insert INTO ordine... " />
-                    <marker date="1498314595000" expanded="true" signature="6758:6844" ph="insert INTO ordine... " />
-                    <marker date="1498314595000" expanded="true" signature="6758:6851" ph="insert INTO ordine... " />
-                    <marker date="1498314595000" expanded="true" signature="7882:7950" ph="insert INTO contiene... " />
-                    <marker date="1498314595000" expanded="true" signature="8447:8493" ph="SELECT id_fa... personale" />
-                    <marker date="1498314595000" expanded="true" signature="9132:9227" ph="select ruolo... login" />
-                    <marker date="1498314595000" expanded="true" signature="9802:9824" ph="select * fro... farmacia" />
-                    <marker date="1498314595000" expanded="true" signature="10711:10756" ph="select nome farmacia" />
-                    <marker date="1498314595000" expanded="true" signature="11246:11338" ph="INSERT into farmacia... " />
-                    <marker date="1498314595000" expanded="true" signature="11246:11360" ph="INSERT into farmacia... " />
-                    <marker date="1498314595000" expanded="true" signature="12244:12339" ph="INSERT into personale... " />
-                    <marker date="1498314595000" expanded="true" signature="12914:12968" ph="insert into login... " />
-                    <marker date="1498314595000" expanded="true" signature="13750:13845" ph="INSERT INTO personale... " />
-                    <marker date="1498314595000" expanded="true" signature="14386:14440" ph="INSERT INTO login... " />
-                    <marker date="1498314595000" expanded="true" signature="14995:15033" ph="SELECT ruolo... personale" />
-                    <marker date="1498314595000" expanded="true" signature="15999:16092" ph="UPDATE riman... " />
-                    <marker date="1498314595000" expanded="true" signature="17180:17218" ph="INSERT into rimanenze... " />
-                    <marker date="1498314595000" expanded="true" signature="17767:17789" ph="SELECT FROM paziente... " />
-                    <marker date="1498314595000" expanded="true" signature="18652:18672" ph="SELECT * FRO... medico" />
-                    <marker date="1498314595000" expanded="true" signature="19450:19513" ph="SELECT qta F... rimanenze" />
-                    <marker date="1498314595000" expanded="true" signature="20038:20118" ph="insert into ricetta... " />
-                    <marker date="1498314595000" expanded="true" signature="20713:20793" ph="INSERT INTO paziente... " />
-                    <marker date="1498314595000" expanded="true" signature="21624:21751" ph="SELECT nome farmacia" />
-                    <marker date="1498314595000" expanded="true" signature="22264:22318" ph="SELECT nome,... personale" />
-                    <marker date="1498314595000" expanded="true" signature="22969:23004" ph="select utent... login" />
-                    <marker date="1498314595000" expanded="true" signature="23373:23418" ph="SELECT nome,... personale" />
-                    <marker date="1498314595000" expanded="true" signature="24050:24074" ph="SELECT utent... login" />
-                    <marker date="1498314595000" expanded="true" signature="24050:24150" ph="SELECT utent... login" />
-                    <marker date="1498314595000" expanded="true" signature="24546:24633" ph="INSERT INTO messaggi... " />
-                    <marker date="1498314595000" expanded="true" signature="25297:25338" ph="SELECT cf FR... personale" />
-                    <marker date="1498314595000" expanded="true" signature="25629:25715" ph="INSERT INTO messaggi... " />
-                    <marker date="1498314595000" expanded="true" signature="26640:26677" ph="SELECT cf fr... personale" />
-                    <marker date="1498314595000" expanded="true" signature="26640:26699" ph="SELECT cf fr... personale" />
-                    <marker date="1498314595000" expanded="true" signature="27026:27109" ph="INSERT INTO messaggi... " />
-                    <marker date="1498314595000" expanded="true" signature="27026:27112" ph="INSERT INTO messaggi... " />
-                    <marker date="1498314595000" expanded="true" signature="27688:27774" ph="INSERT INTO messaggi... " />
-                    <marker date="1498314595000" expanded="true" signature="28612:28638" ph="SELECT mitte... " />
-                    <marker date="1498314595000" expanded="true" signature="28612:28696" ph="SELECT mitte... messaggi" />
-                    <marker date="1498314595000" expanded="true" signature="29307:29364" ph="UPDATE messa... " />
-                    <marker date="1498314595000" expanded="true" signature="29692:29746" ph="SELECT total... ordine" />
-                    <marker date="1498314595000" expanded="true" signature="30171:30412" ph="SELECT COUNT... contiene" />
-                    <marker date="1498314595000" expanded="true" signature="30640:30851" ph="SELECT COUNT... contiene" />
-                    <marker date="1498314595000" expanded="true" signature="31230:31510" ph="SELECT sum(q... contiene" />
-                    <marker date="1498314595000" expanded="true" signature="31739:31981" ph="SELECT sum(q... contiene" />
-                    <marker date="1498314595000" expanded="true" signature="32367:32658" ph="SELECT sum (... contiene" />
-                    <marker date="1498314595000" expanded="true" signature="32887:33150" ph="SELECT sum (... contiene" />
-                    <marker date="1498314595000" expanded="true" signature="33505:33789" ph="SELECT sum (... contiene" />
-                    <marker date="1498314595000" expanded="true" signature="34154:34183" ph="select count... ricetta" />
-                    <marker date="1498314595000" expanded="true" signature="34561:34853" ph="select avg(q... contiene" />
-                    <marker date="1498314595000" expanded="true" signature="35123:35383" ph="select avg(q... contiene" />
-                    <marker date="1498314595000" expanded="true" signature="35804:35841" ph="SELECT id_fa... farmacia" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="REG.public.farmacia" pinned="false" current-in-tab="true">
-            <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.farmacia">
-              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-                <state>
-                  <filtering enabled="true" />
-                </state>
-              </provider>
-              <provider editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="REG.public.personale" pinned="false" current-in-tab="false">
-            <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.personale">
-              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-                <state>
-                  <filtering enabled="true" />
-                </state>
-              </provider>
-              <provider editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="REG.public.login" pinned="false" current-in-tab="false">
-            <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.login">
-              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-                <state>
-                  <filtering enabled="true" />
-                </state>
-              </provider>
-              <provider editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="home-reg.jsp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-reg.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1051">
-                  <caret line="102" column="20" lean-forward="false" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="home-tf.jsp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-tf.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-281">
-                  <caret line="91" column="127" lean-forward="false" selection-start-line="91" selection-start-column="124" selection-end-line="91" selection-end-column="127" />
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="canvasjs.min.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/assets/javascripts/canvasjs.min.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="218">
-                  <caret line="75" column="465" lean-forward="false" selection-start-line="75" selection-start-column="465" selection-end-line="75" selection-end-column="465" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="jquery.canvasjs.min.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/assets/javascripts/jquery.canvasjs.min.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="177">
-                  <caret line="75" column="465" lean-forward="false" selection-start-line="75" selection-start-column="465" selection-end-line="75" selection-end-column="465" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="REG.public.ordine" pinned="false" current-in-tab="false">
-            <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.ordine">
-              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-                <state>
-                  <filtering enabled="true" />
-                </state>
-              </provider>
-              <provider editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="home-tf.jsp" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-tf.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="94">
-                  <caret line="116" column="4" lean-forward="true" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="storico-messaggi.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/messaggi/storico-messaggi.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="31" column="7" lean-forward="false" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home-df.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-df.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="36" column="11" lean-forward="true" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
         <option value="Jsp File" />
-        <option value="Jspx File" />
         <option value="Class" />
+        <option value="Jspx File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>valid</find>
       <find>getOB</find>
       <find>getRI</find>
       <find>getRima</find>
@@ -366,6 +142,7 @@
       <find>CanvasJS</find>
       <find>J.str={tv:[84,114,105,97,108,32,86,101,114,115,105,</find>
       <find>str={tv</find>
+      <find>footer</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -379,17 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/model/Medico.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/tf/nuovo-messaggio.jsp" />
-        <option value="$PROJECT_DIR$/src/controller/forward/ForwardToNuovoMessaggio.java" />
-        <option value="$PROJECT_DIR$/src/model/Messaggio.java" />
-        <option value="$PROJECT_DIR$/src/controller/forward/ForwardToVisualizzaMessaggi.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/storico-messaggi.jsp" />
-        <option value="$PROJECT_DIR$/src/controller/AttivaPersonaleController.java" />
-        <option value="$PROJECT_DIR$/web/prova-menu.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/home.jspx" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/df/home-df.jsp" />
-        <option value="$PROJECT_DIR$/web/assets/stylesheets/prova-tabella.css" />
         <option value="$PROJECT_DIR$/src/controller/forward/ForwardToHome.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/REG/nuovo-messaggio.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/ob/home-ob.jsp" />
@@ -405,7 +171,6 @@
         <option value="$PROJECT_DIR$/src/controller/InviaMessaggioController.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-ob.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/tf/attiva-collaboratore.jsp" />
         <option value="$PROJECT_DIR$/src/controller/ReintegraMagazzinoController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/tf/reintegra-magazzino.jsp" />
         <option value="$PROJECT_DIR$/web/login.jsp" />
@@ -416,11 +181,8 @@
         <option value="$PROJECT_DIR$/src/controller/VenditaController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/tf/elenco-medici.jsp" />
         <option value="$PROJECT_DIR$/src/controller/TerminaOperazioneVenditaController.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" />
         <option value="$PROJECT_DIR$/src/controller/CheckMedicoController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/messaggi/nuovo-messaggio.jsp" />
-        <option value="$PROJECT_DIR$/web/assets/javascripts/main.js" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/messaggi/storico-messaggi.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/REG/attiva-farmacia.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/tf/elenco-pazienti.jsp" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/52e46335-53f1-46e2-b535-63db79b72ac6/console.sql" />
@@ -430,6 +192,21 @@
         <option value="$PROJECT_DIR$/src/db/DBManager.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-tf.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-reg.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/tf/attiva-collaboratore.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/footer.jspx" />
+        <option value="dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.medico" />
+        <option value="dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.ricetta" />
+        <option value="dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.paziente" />
+        <option value="dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.rimanenze" />
+        <option value="dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.prodotti" />
+        <option value="dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.contiene" />
+        <option value="dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.personale" />
+        <option value="dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.ordine" />
+        <option value="dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.messaggi" />
+        <option value="dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.login" />
+        <option value="$PROJECT_DIR$/web/assets/javascripts/main.js" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/messaggi/storico-messaggi.jsp" />
       </list>
     </option>
   </component>
@@ -449,7 +226,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="791" />
+    <option name="height" value="794" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -469,6 +246,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -773,33 +551,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="it.uniupo.REG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="it.uniupo.REG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forward" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1349,7 +1104,8 @@
       <workItem from="1497808035572" duration="171000" />
       <workItem from="1497815392879" duration="1650000" />
       <workItem from="1497851871583" duration="1389000" />
-      <workItem from="1498024146485" duration="36867000" />
+      <workItem from="1498024146485" duration="38034000" />
+      <workItem from="1498675889906" duration="4523000" />
     </task>
     <task id="LOCAL-00001" summary="Sistemare inserimento farmacia e username, in particolare non funziona il recupero dell'id_farmacia tramite quel metodo">
       <created>1496175910137</created>
@@ -1652,14 +1408,28 @@
       <option name="project" value="LOCAL" />
       <updated>1498294486886</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Aggiunte statistiche a torta">
+      <created>1498316717102</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1498316717103</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Pulito il javascript dalle funzioni non utilizzate&#10;Cancellati i css vecchi&#10;Eliminato jsp credenziali errate, ora gestisco i messaggi tramite controller e pop up">
+      <created>1498679882102</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1498679882102</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270587000" />
+    <option name="totallyTimeSpent" value="276277000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="791" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="794" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1684,11 +1454,11 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904148" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14735337" sideWeight="0.4939952" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14672364" sideWeight="0.4939952" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761088" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10014306" sideWeight="0.48407644" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26108727" sideWeight="0.48407644" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25250357" sideWeight="0.51592356" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32478634" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1696,7 +1466,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.325811" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761088" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1732,8 +1502,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- Aggiorna contenuto in tabella “Contiene” dopo vendita;&#10;- Quando si invia il messaggio aggiunta la possibilità di tornare sulla home;&#10;- Sistemato organizzazione package;&#10;- La pagina iniziale ora contiene l’elenco delle farmacie;&#10;- Sistemazione layout generico, cambiato header e footer, ma ancora da ottimizzare;&#10;- Aggiustato layout attiva farmacia e tf, inseriti i pattern e se tutto ok pop con conferma, altrimenti pop up errore e non inserisce nulla nel db;&#10;- Sistemato anche gestione log in con dati errati." />
-    <MESSAGE value="Sistemato design &quot;nuovo-messaggio&quot;" />
     <MESSAGE value="Inserito pop up quando si invia messagio: con avvenuto invio o destinatario non valido" />
     <MESSAGE value="Sistemato home per TF" />
     <MESSAGE value="Sistemato home per DF e OB" />
@@ -1757,7 +1525,9 @@
     <MESSAGE value="Sistemato layout messaggi ricevuti" />
     <MESSAGE value="Sistemato posizione bottone per Attiva-Farmacia" />
     <MESSAGE value="Aggiunte le statistiche richieste nei requisiti" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunte le statistiche richieste nei requisiti" />
+    <MESSAGE value="Aggiunte statistiche a torta" />
+    <MESSAGE value="Pulito il javascript dalle funzioni non utilizzate&#10;Cancellati i css vecchi&#10;Eliminato jsp credenziali errate, ora gestisco i messaggi tramite controller e pop up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pulito il javascript dalle funzioni non utilizzate&#10;Cancellati i css vecchi&#10;Eliminato jsp credenziali errate, ora gestisco i messaggi tramite controller e pop up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1782,60 +1552,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/controller/forward/ForwardToVisualizzaMessaggi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="4" lean-forward="false" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-ob.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/attiva-collaboratore-ok.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="53" column="6" lean-forward="false" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ReintegraMagazzinoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="29" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/struts-core.jar!/org/apache/struts/chain/commands/AbstractExecuteAction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/struts-core.jar!/org/apache/struts/chain/commands/ActionCommandBase.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1868,15 +1584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="386">
           <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-df.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1884,7 +1591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1900,7 +1606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1908,46 +1613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
           <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.medico">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.messaggi">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.paziente">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1955,7 +1620,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="59" column="8" lean-forward="true" selection-start-line="59" selection-start-column="8" selection-end-line="60" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1963,27 +1627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="409">
           <caret line="37" column="54" lean-forward="false" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/struts-config.xml">
-      <provider editor-type-id="com.intellij.struts.diagram.DiagramEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="42" column="107" lean-forward="false" selection-start-line="42" selection-start-column="107" selection-end-line="42" selection-end-column="107" />
-          <folding>
-            <element signature="n#action#9;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-            <element signature="n#action#10;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-            <element signature="n#action#11;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-            <element signature="n#action#12;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-            <element signature="n#action#13;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-            <element signature="n#action#14;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-            <element signature="n#action#15;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-            <element signature="n#action#16;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1995,7 +1638,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/elenco-medici.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/vendita/elenco-medici.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
           <caret line="72" column="4" lean-forward="false" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
@@ -2011,46 +1654,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/attiva-collaboratore.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-214">
-          <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/LogoutController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/messaggi/storico-messaggi.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#button#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#1;n#button#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/javascripts/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/REG/attiva-farmacia.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1025">
-          <caret line="82" column="54" lean-forward="false" selection-start-line="82" selection-start-column="54" selection-end-line="82" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2058,14 +1665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
           <caret line="85" column="41" lean-forward="false" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/elenco-pazienti.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="71" column="26" lean-forward="true" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -2082,20 +1681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.prodotti">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2103,20 +1688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="45" column="61" lean-forward="false" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.ricetta">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2124,46 +1695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="63" lean-forward="false" selection-start-line="1" selection-start-column="63" selection-end-line="1" selection-end-column="109" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.rimanenze">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.contiene">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.ordine">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2171,9 +1702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
           <caret line="75" column="465" lean-forward="false" selection-start-line="75" selection-start-column="465" selection-end-line="75" selection-end-column="465" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2181,41 +1709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="75" column="465" lean-forward="false" selection-start-line="75" selection-start-column="465" selection-end-line="75" selection-end-column="465" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.login">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/stylesheets/css.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="354" column="1" lean-forward="false" selection-start-line="354" selection-start-column="1" selection-end-line="354" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.personale">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2327,30 +1820,378 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1051">
           <caret line="102" column="20" lean-forward="false" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.farmacia">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-tf.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="116" column="4" lean-forward="true" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
+        <state relative-caret-position="-281">
+          <caret line="91" column="127" lean-forward="false" selection-start-line="91" selection-start-column="124" selection-end-line="91" selection-end-column="127" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/REG/attiva-farmacia.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/footer.jspx" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/attiva-collaboratore.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="54" column="7" lean-forward="false" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/52e46335-53f1-46e2-b535-63db79b72ac6.SCHEMA:REG.public">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>52e46335-53f1-46e2-b535-63db79b72ac6.SCHEMA:REG.public</OriginalElement>
+          <nodes>
+            <node x="643.625" y="470.0">52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.paziente</node>
+            <node x="250.375" y="716.0">52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.contiene</node>
+            <node x="1131.125" y="683.0">52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.messaggi</node>
+            <node x="0.0" y="705.0">52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.rimanenze</node>
+            <node x="372.625" y="481.0">52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.ordine</node>
+            <node x="127.625" y="448.0">52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.prodotti</node>
+            <node x="257.9487179487179" y="0.0">52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.farmacia</node>
+            <node x="606.900641025641" y="694.0">52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.ricetta</node>
+            <node x="1189.625" y="492.0">52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.login</node>
+            <node x="884.625" y="470.0">52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.medico</node>
+            <node x="633.625" y="235.0">52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.personale</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.personale" target="52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.farmacia">
+              <point x="0.0" y="-81.5" />
+              <point x="754.125" y="210.0" />
+              <point x="475.4487179487179" y="210.0" />
+              <point x="72.5" y="92.5" />
+            </edge>
+            <edge source="52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.rimanenze" target="52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.prodotti">
+              <point x="57.5" y="-59.5" />
+              <point x="172.5" y="658.0" />
+              <point x="183.875" y="658.0" />
+              <point x="-56.25" y="92.5" />
+            </edge>
+            <edge source="52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.ricetta" target="52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.medico">
+              <point x="91.0" y="-70.5" />
+              <point x="834.400641025641" y="658.0" />
+              <point x="1027.125" y="658.0" />
+              <point x="0.0" y="70.5" />
+            </edge>
+            <edge source="52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.contiene" target="52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.prodotti">
+              <point x="-57.75" y="-48.5" />
+              <point x="308.125" y="658.0" />
+              <point x="296.375" y="658.0" />
+              <point x="56.25" y="92.5" />
+            </edge>
+            <edge source="52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.rimanenze" target="52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.farmacia">
+              <point x="-57.5" y="-59.5" />
+              <point x="57.5" y="658.0" />
+              <point x="81.625" y="658.0" />
+              <point x="81.625" y="210.0" />
+              <point x="330.4487179487179" y="210.0" />
+              <point x="-72.5" y="92.5" />
+            </edge>
+            <edge source="52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.login" target="52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.personale">
+              <point x="0.0" y="-48.5" />
+              <point x="1271.625" y="423.0" />
+              <point x="834.4583333333333" y="423.0" />
+              <point x="80.33333333333326" y="81.5" />
+            </edge>
+            <edge source="52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.ricetta" target="52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.paziente">
+              <point x="0.0" y="-70.5" />
+              <point x="743.400641025641" y="658.0" />
+              <point x="754.125" y="658.0" />
+              <point x="0.0" y="70.5" />
+            </edge>
+            <edge source="52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.messaggi" target="52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.login">
+              <point x="70.25" y="-81.5" />
+              <point x="1341.875" y="658.0" />
+              <point x="1312.625" y="658.0" />
+              <point x="41.0" y="48.5" />
+            </edge>
+            <edge source="52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.ordine" target="52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.personale">
+              <point x="0.0" y="-59.5" />
+              <point x="498.125" y="423.0" />
+              <point x="673.7916666666666" y="423.0" />
+              <point x="-80.33333333333337" y="81.5" />
+            </edge>
+            <edge source="52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.ricetta" target="52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.ordine">
+              <point x="-91.0" y="-70.5" />
+              <point x="652.400641025641" y="658.0" />
+              <point x="560.875" y="658.0" />
+              <point x="62.75" y="59.5" />
+            </edge>
+            <edge source="52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.paziente" target="52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.personale">
+              <point x="0.0" y="-70.5" />
+              <point x="0.0" y="81.5" />
+            </edge>
+            <edge source="52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.contiene" target="52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.ordine">
+              <point x="57.75" y="-48.5" />
+              <point x="423.625" y="658.0" />
+              <point x="435.375" y="658.0" />
+              <point x="-62.75" y="59.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.5038381018841591" x="466.3434903047091" y="257.3434903047091" />
+          <SelectedNodes>
+            <node>52e46335-53f1-46e2-b535-63db79b72ac6.TABLE:REG.public.personale</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.medico">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.ricetta">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.rimanenze">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.prodotti">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.contiene">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.farmacia">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.ordine">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.paziente">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.personale">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.login">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.messaggi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="786">
+          <caret line="53" column="6" lean-forward="false" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/stylesheets/css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="120" column="20" lean-forward="true" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-ob.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/stylesheets/main2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-83">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/stylesheets/main3.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/javascripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" column="32" lean-forward="false" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/struts-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="89" column="8" lean-forward="false" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
+          <folding>
+            <element signature="n#action#9;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+            <element signature="n#action#10;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+            <element signature="n#action#11;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+            <element signature="n#action#12;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+            <element signature="n#action#13;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+            <element signature="n#action#14;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+            <element signature="n#action#15;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+            <element signature="n#action#16;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.struts.diagram.DiagramEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/vendita/elenco-pazienti.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="776">
+          <caret line="71" column="26" lean-forward="true" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-df.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="36" column="11" lean-forward="true" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/messaggi/storico-messaggi.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="31" column="7" lean-forward="false" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
           <folding />
         </state>
       </provider>
