@@ -31,7 +31,7 @@ public class AttivaFarmaciaAndTFController extends Action {
         personaleDaInserire.setNomePersonale(farmacia.getNomePersonale());
         personaleDaInserire.setCognome(farmacia.getCognome());
         personaleDaInserire.setCf(farmacia.getCf());
-        personaleDaInserire.setDataNascita((java.sql.Date) farmacia.getDataNascita());
+        personaleDaInserire.setDataNascita(farmacia.getDataNascita());
         personaleDaInserire.setRuolo(farmacia.getRuolo());
 
         //recupero le credenziali assegnate al tf creato

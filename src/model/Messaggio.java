@@ -9,7 +9,6 @@ public class Messaggio extends ActionForm {
     String mittente;
     String destinatario;
     String corpo;
-    boolean visualizzato;
     java.sql.Date data;
 
     public java.sql.Date getData() {
@@ -18,14 +17,6 @@ public class Messaggio extends ActionForm {
 
     public void setData(java.sql.Date data) {
         this.data = data;
-    }
-
-    public boolean isVisualizzato() {
-        return visualizzato;
-    }
-
-    public void setVisualizzato(boolean visualizzato) {
-        this.visualizzato = visualizzato;
     }
 
     public String getMittente() {

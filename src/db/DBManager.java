@@ -270,6 +270,14 @@ public class DBManager {
         if(connection == null)
             this.connessione();
 
+        ArrayList<String> farmaciePresenti = new ArrayList<>();
+        PreparedStatement verificaSePresenteFarmacia = connection.prepareStatement("SELECT nome from farmacia");
+        ResultSet ris = verificaSePresenteFarmacia.executeQuery();
+        while (ris.next())
+            farmaciePresenti.add(ris.getString(1));
+
+        if(farmaciePresenti.contains(farmacia.getNomeFarmacia())) return false;
+
         try {
             PreparedStatement inserimentoFarmacia = connection.prepareStatement("INSERT into farmacia(nome, cap, citta, numero_telefono, provincia, via) VALUES (?,?,?,?,?,?) returning id_farmacia", PreparedStatement.RETURN_GENERATED_KEYS);
             inserimentoFarmacia.setString(1, farmacia.getNomeFarmacia());
@@ -480,7 +488,7 @@ public class DBManager {
         return false;
     }
 
-    public ArrayList<String> getElencoPazientiPerMessaggi(String ilTuoRuolo, int idFarmacia, String CFDiChiSpedisce) throws SQLException{
+    public ArrayList<String> getElencoPerMessaggi(String ilTuoRuolo, int idFarmacia, String CFDiChiSpedisce) throws SQLException{
         if(connection == null)
             this.connessione();
 
@@ -550,13 +558,12 @@ public class DBManager {
                 while (risultato.next())
                     elenco.add(risultato.getString(1));
                 for (String s : elenco) {
-                    PreparedStatement mandaATutti = connection.prepareStatement("INSERT INTO messaggi(mittente, ricevente, corpo, data, visualizzato) VALUES (?,?,?,?,?)");
+                    PreparedStatement mandaATutti = connection.prepareStatement("INSERT INTO messaggi(mittente, ricevente, corpo, data) VALUES (?,?,?,?)");
                     mandaATutti.setString(1, mittente);
                     mandaATutti.setString(2, s);
                     mandaATutti.setString(3, corpo);
                     Date data_locale = new Date(Calendar.getInstance().getTime().getTime());
                     mandaATutti.setDate(4, data_locale);
-                    mandaATutti.setBoolean(5, false);
                     if (mandaATutti.executeUpdate() > 0) mandato = true;
                 }
             }
@@ -568,13 +575,12 @@ public class DBManager {
                 while (risultato.next())
                     elenco.add(risultato.getString(1));
                 for (String s : elenco) {
-                    PreparedStatement mandaATutti = connection.prepareStatement("INSERT INTO messaggi(mittente, ricevente, corpo, data,visualizzato) VALUES (?,?,?,?,?)");
+                    PreparedStatement mandaATutti = connection.prepareStatement("INSERT INTO messaggi(mittente, ricevente, corpo, data) VALUES (?,?,?,?)");
                     mandaATutti.setString(1, mittente);
                     mandaATutti.setString(2, this.getUserByCF(s));
                     mandaATutti.setString(3, corpo);
                     Date data_locale = new Date(Calendar.getInstance().getTime().getTime());
                     mandaATutti.setDate(4, data_locale);
-                    mandaATutti.setBoolean(5, false);
                     if (mandaATutti.executeUpdate() > 0) mandato = true;
                 }
 
@@ -594,25 +600,23 @@ public class DBManager {
                     while (risultato.next())
                         CFdiTF = risultato.getString(1);
 
-                    PreparedStatement mandaATF = connection.prepareStatement("INSERT INTO messaggi(mittente, ricevente, corpo, data,visualizzato) VALUES (?,?,?,?,?)");
+                    PreparedStatement mandaATF = connection.prepareStatement("INSERT INTO messaggi(mittente, ricevente, corpo, data) VALUES (?,?,?,?)");
                     mandaATF.setString(1, mittente);
                     mandaATF.setString(2, this.getUserByCF(CFdiTF));
                     mandaATF.setString(3, corpo);
                     Date data_locale = new Date(Calendar.getInstance().getTime().getTime());
                     mandaATF.setDate(4, data_locale);
-                    mandaATF.setBoolean(5, false);
                     if (mandaATF.executeUpdate() > 0) mandato = true;
                 }
             }
 
             if (!mandato) {
-                PreparedStatement manda = connection.prepareStatement("INSERT INTO messaggi(mittente, ricevente, corpo, data,visualizzato) VALUES (?,?,?,?,?)");
+                PreparedStatement manda = connection.prepareStatement("INSERT INTO messaggi(mittente, ricevente, corpo, data) VALUES (?,?,?,?)");
                 manda.setString(1, mittente);
                 manda.setString(2, destinatario);
                 manda.setString(3, corpo);
                 Date data_locale = new Date(Calendar.getInstance().getTime().getTime());
                 manda.setDate(4, data_locale);
-                manda.setBoolean(5, false);
                 if (manda.executeUpdate() > 0) mandato = true;
             }
         } catch (SQLException e) {
@@ -627,7 +631,7 @@ public class DBManager {
 
         ArrayList<Messaggio> daLeggere = new ArrayList<>();
         Messaggio messaggio;
-        PreparedStatement query = connection.prepareStatement("SELECT mittente,ricevente, corpo, data, visualizzato from messaggi where ricevente=?");
+        PreparedStatement query = connection.prepareStatement("SELECT mittente,ricevente, corpo, data from messaggi where ricevente=?");
         query.setString(1,username);
         ResultSet resultSet = query.executeQuery();
 
@@ -637,7 +641,6 @@ public class DBManager {
             messaggio.setDestinatario(resultSet.getString(2));
             messaggio.setCorpo(resultSet.getString(3));
             messaggio.setData(resultSet.getDate(4));
-            messaggio.setVisualizzato(resultSet.getBoolean(5));
             daLeggere.add(messaggio);
         }
 
