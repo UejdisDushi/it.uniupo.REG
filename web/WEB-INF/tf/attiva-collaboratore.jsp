@@ -27,41 +27,34 @@
     <h3>
         Inserisci collaboratore
     </h3>
-    <p>
-        <label style="font-weight: bold;font-size: 17px;">Nome</label>
+
+        <label style="font-weight: bold;font-size: 16px;">Nome</label>
         <input type="text" name="nomePersonale" class="form-control" required placeholder="Nome collaboratore"/>
-    </p>
-    <p>
-        <label style="font-weight: bold;font-size: 17px;">Cognome</label>
+        <br>
+        <label style="font-weight: bold;font-size: 16px;">Cognome</label>
         <input type="text" name="cognome" class="form-control" required placeholder="Cognome collaboratore"/>
-    </p>
-    <p>
-        <label style="font-weight: bold;font-size: 17px;">CF</label>
+        <br>
+        <label style="font-weight: bold;font-size: 16px;">CF</label>
         <input type="text" name="cf" pattern="^[a-zA-Z]{6}[0-9]{2}[a-zA-Z][0-9]{2}[a-zA-Z][0-9]{3}[a-zA-Z]$" required class="form-control" placeholder="CF collaboratore"/>
-    </p>
-    <p>
-        <label style="font-weight: bold;font-size: 17px;">Data di nascita</label>
+        <br>
+        <label style="font-weight: bold;font-size: 16px;">Data di nascita</label>
         <input type="text" name="dataNascita" min="1950-01-01" max="2017-06-01" class="form-control" required placeholder="aaaa-MM-dd" pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])"/>
-    </p>
-    <p>
-        <label style="font-weight: bold;font-size: 17px;">Ruolo collaboratore</label>
-        <select id="ddt" name="ruolo" onmouseover="deleteSelectRole()">
-            <option id="def" name="" selected on>Seleziona ruolo </option>
+        <br>
+        <label style="font-weight: bold;font-size: 16px;">Ruolo collaboratore</label>
+        <select id="ddt" name="ruolo" onmouseover="deleteSelectRole()" class="form-control" style="width: 250px;margin: auto;">
+            <option id="def" name="" selected on></option>
             <option name="df">df</option>
             <option name="ob">ob</option>
         </select>
-
-    </p>
-    <p>
-        <label style="font-weight: bold;font-size: 17px;">User</label>
+        <br>
+        <label style="font-weight: bold;font-size: 16px;">User</label>
         <input type="text" name="user" class="form-control" required placeholder="Username del collaboratore"/>
-    </p>
-    <p>
-        <label style="font-weight: bold;font-size: 17px;">Password</label>
+        <br>
+        <label style="font-weight: bold;font-size: 16px;">Password</label>
         <input type="text" name="password" class="form-control" required placeholder="Password del collaboratore"/>
-    </p>
+    <br>
 
-    <input type="submit" value="Registra collaboratore"/>
+    <input type="submit" value="Registra collaboratore" style="margin-left: 347px"/>
 </form>
 </article>
 
