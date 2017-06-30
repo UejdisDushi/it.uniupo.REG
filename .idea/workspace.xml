@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="725fbaa1-ea8d-4bf4-a6fc-3c6f34d201dc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6/_metadata_/metadata.values.at" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/AttivaPersonaleController.java" afterPath="$PROJECT_DIR$/src/controller/AttivaPersonaleController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db/DBManager.java" afterPath="$PROJECT_DIR$/src/db/DBManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/tf/attiva-collaboratore.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/tf/attiva-collaboratore.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/tf/reintegra-magazzino.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/tf/reintegra-magazzino.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,8 +78,8 @@
       <file leaf-file-name="attiva-collaboratore.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/attiva-collaboratore.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="66" column="8" lean-forward="false" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+            <state relative-caret-position="143">
+              <caret line="53" column="63" lean-forward="true" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -112,11 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBManager.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DBManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/db/DBManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="727">
-              <caret line="333" column="120" lean-forward="false" selection-start-line="333" selection-start-column="120" selection-end-line="333" selection-end-column="120" />
+            <state relative-caret-position="337">
+              <caret line="97" column="5" lean-forward="true" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
               <folding>
                 <element signature="method#connessione#0;class#DBManager#0" expanded="false" />
                 <element signature="method#getTuttiProdotti#0;class#DBManager#0" expanded="false" />
@@ -212,6 +207,22 @@
                 <marker date="1498848092000" expanded="true" signature="35348:35640" ph="select avg(q... contiene" />
                 <marker date="1498848092000" expanded="true" signature="35910:36170" ph="select avg(q... contiene" />
                 <marker date="1498848092000" expanded="true" signature="36591:36628" ph="SELECT id_fa... farmacia" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reintegra-magazzino.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/reintegra-magazzino.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="382">
+              <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+              <folding>
+                <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#2;n#tr#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#3;n#tr#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#5;n#tr#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -319,7 +330,6 @@
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-ob.jsp" />
         <option value="$PROJECT_DIR$/src/controller/ReintegraMagazzinoController.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/tf/reintegra-magazzino.jsp" />
         <option value="$PROJECT_DIR$/web/login.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/ob/vendita-tramite-ob.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-df.jsp" />
@@ -359,6 +369,7 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" />
         <option value="$PROJECT_DIR$/src/db/DBManager.java" />
         <option value="$PROJECT_DIR$/src/controller/AttivaPersonaleController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/tf/reintegra-magazzino.jsp" />
       </list>
     </option>
   </component>
@@ -1263,14 +1274,7 @@
       <workItem from="1498024146485" duration="38034000" />
       <workItem from="1498675889906" duration="7211000" />
       <workItem from="1498715253202" duration="13108000" />
-      <workItem from="1498848820679" duration="654000" />
-    </task>
-    <task id="LOCAL-00002" summary="Sistemare inserimento farmacia e username, in particolare non funziona il recupero dell'id_farmacia tramite quel metodo">
-      <created>1496223294774</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1496223294774</updated>
+      <workItem from="1498848820679" duration="953000" />
     </task>
     <task id="LOCAL-00003" summary="- Aggiunto gestione login migliorato (punta alle home di ogni ruolo)&#10;- Attivazione farmacia, attivazione TF e login aggiunti">
       <created>1496407582099</created>
@@ -1608,11 +1612,18 @@
       <option name="project" value="LOCAL" />
       <updated>1498842061496</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Corretto attiva collaboratore. Inserisce errori se CF già presente e reindirizza sulla stessa pagina.">
+      <created>1498849555254</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1498849555256</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="292727000" />
+    <option name="totallyTimeSpent" value="293026000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="798" extended-state="6" />
@@ -1688,7 +1699,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Aggiustamenti vari css" />
     <MESSAGE value="Aggiunto su reintegra un controllo, se viene selezionata almeno una quantità allora stampa l'operazione avvenuta, se nessuna quantità selezionata stampa errore." />
     <MESSAGE value="Sistemato layout vendita per ob" />
     <MESSAGE value="Aggiunto su controller vendita ob il check che verifica se la quantità selezionata è concessa, quindi se ci sono abbastanza prodotti di quel tipo in magazzino" />
@@ -1713,7 +1723,8 @@
     <MESSAGE value="Sistemata visualizzazione del totale, ora non supere le due unità dopo la virgola" />
     <MESSAGE value="Rimosso &quot;visualizzato&quot; dal db e quindi rimosso anche ovunque fosse utilizzato." />
     <MESSAGE value="Ora in attiva farmacia se si inserisce una farmacia nuova ma un personale esistente la farmacia non viene creata.&#10;Sistemato un pò il js." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ora in attiva farmacia se si inserisce una farmacia nuova ma un personale esistente la farmacia non viene creata.&#10;Sistemato un pò il js." />
+    <MESSAGE value="Corretto attiva collaboratore. Inserisce errori se CF già presente e reindirizza sulla stessa pagina." />
+    <option name="LAST_COMMIT_MESSAGE" value="Corretto attiva collaboratore. Inserisce errori se CF già presente e reindirizza sulla stessa pagina." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1772,14 +1783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/reintegra-magazzino.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="85" column="41" lean-forward="false" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2134,6 +2137,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
           <caret line="69" column="23" lean-forward="false" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2210,14 +2214,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/attiva-collaboratore.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="66" column="8" lean-forward="false" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.personale">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2263,8 +2259,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/db/DBManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
-          <caret line="333" column="120" lean-forward="false" selection-start-line="333" selection-start-column="120" selection-end-line="333" selection-end-column="120" />
+        <state relative-caret-position="337">
+          <caret line="97" column="5" lean-forward="true" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
           <folding>
             <element signature="method#connessione#0;class#DBManager#0" expanded="false" />
             <element signature="method#getTuttiProdotti#0;class#DBManager#0" expanded="false" />
@@ -2360,6 +2356,28 @@
             <marker date="1498848092000" expanded="true" signature="35348:35640" ph="select avg(q... contiene" />
             <marker date="1498848092000" expanded="true" signature="35910:36170" ph="select avg(q... contiene" />
             <marker date="1498848092000" expanded="true" signature="36591:36628" ph="SELECT id_fa... farmacia" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/attiva-collaboratore.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="53" column="63" lean-forward="true" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/reintegra-magazzino.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#3;n#tr#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#5;n#tr#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

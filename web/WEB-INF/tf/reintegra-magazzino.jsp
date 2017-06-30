@@ -34,8 +34,8 @@
             <th style="width:30%;">Nome</th>
             <th style="width:25%;">Categoria</th>
             <th style="width:10%;">Costo</th>
-            <th style="width:10%;">Ricetta: si / no</th>
-            <th style="width:20%;">Quantità reintegro</th>
+            <th style="width:15%;">Ricetta: si / no</th>
+            <th style="width:15%;">Quantità reintegro</th>
             <th style="width:5%;"></th>
         </tr>
             <%
@@ -60,7 +60,7 @@
                     No<%}%>
             </td>
             <td>
-                <input type="number" min="0" name="quantita">
+                <input type="number" min="0" name="quantita" class="form-control">
             </td>
             <td>
                 <input img src="/assets/images/icona-carrello.png" type="image" value="submit">
