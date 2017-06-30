@@ -48,15 +48,18 @@ function nuovaRiga() {
     t1.name = "cf";
     t1.placeholder="CF paziente";
     t1.required="true";
+    t1.className = "form-control";
     cella1.appendChild(t1);
     var cella2 = riga.insertCell(1);
     var t2 = document.createElement("input");
+    t2.className = "form-control";
     t2.name = "nome";
     t2.placeholder="Nome paziente";
     t2.required="true";
     cella2.appendChild(t2);
     var cella3 = riga.insertCell(2);
     var t3 = document.createElement("input");
+    t3.className = "form-control";
     t3.name = "cognome";
     t3.placeholder="Cognome paziente";
     t3.required="true";
@@ -64,7 +67,7 @@ function nuovaRiga() {
     var cella4 = riga.insertCell(3);
     var t4 = document.createElement("input");
     t4.name = "dataDiNAscita";
-    t4.classid = "form-control";
+    t4.className = "form-control";
     t4.placeholder = "aaaa-MM-dd";
     t4.type = "date";
     t4.required="true";
