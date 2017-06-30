@@ -41,7 +41,7 @@
         <input type="text" name="dataNascita" min="1950-01-01" max="2017-06-01" class="form-control" required placeholder="aaaa-MM-dd" pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])"/>
         <br>
         <label style="font-weight: bold;font-size: 16px;">Ruolo collaboratore</label>
-        <select id="ddt" name="ruolo" onmouseover="deleteSelectRole()" class="form-control" style="width: 250px;margin: auto;">
+        <select id="ddt" name="ruolo" onmouseover="deleteSelectRole()" class="form-control" style="width: 250px;margin: auto;" required>
             <option id="def" name="" selected on></option>
             <option name="df">df</option>
             <option name="ob">ob</option>
@@ -66,5 +66,19 @@
     </section>
     <br>
 </footer>
+
+<%
+    String message = (String)request.getAttribute("redirect");
+    if(message != null) {
+        if(message.equals("inserimento-corretto")) { %>
+<script>
+    window.alert('Inserimento avvenuto con successo');
+</script>
+<% }else { %>
+<script>
+    window.alert('Attenzione, alcuni dati non sono corretti. Riprova.');
+</script>
+<%}}
+%>
 </body>
 </html>

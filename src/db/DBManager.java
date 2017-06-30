@@ -334,6 +334,8 @@ public class DBManager {
     public boolean attivaCollaboratore(Farmacia personaleDaInserire, Login login, long id_farmacia) throws SQLException {
         if(connection == null)
             this.connessione();
+
+        boolean status = false;
         PreparedStatement preparedStatement1;
         PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO personale(nome, cognome, cf, data_nascita, ruolo, id_farmacia) VALUES (?,?,?,?,?,?)");
         preparedStatement.setString(1, personaleDaInserire.getNomePersonale());
@@ -342,15 +344,19 @@ public class DBManager {
         preparedStatement.setDate(4, personaleDaInserire.getDataNascita());
         preparedStatement.setString(5, personaleDaInserire.getRuolo());
         preparedStatement.setLong(6, id_farmacia);
-        if (preparedStatement.executeUpdate() > 0) {
-            preparedStatement1 = connection.prepareStatement("INSERT INTO login(utente, password, cf) VALUES (?,?,?)");
-            preparedStatement1.setString(1, login.getUser());
-            preparedStatement1.setString(2, login.getPassword());
-            preparedStatement1.setString(3, personaleDaInserire.getCf());
-            if (preparedStatement1.executeUpdate() > 0)
-                return true;
+        try {
+            if (preparedStatement.executeUpdate() > 0) {
+                preparedStatement1 = connection.prepareStatement("INSERT INTO login(utente, password, cf) VALUES (?,?,?)");
+                preparedStatement1.setString(1, login.getUser());
+                preparedStatement1.setString(2, login.getPassword());
+                preparedStatement1.setString(3, personaleDaInserire.getCf());
+                if (preparedStatement1.executeUpdate() > 0)
+                    status = true;
+            }
+        } catch (SQLException e) {
+            status = false;
         }
-        return false;
+        return status;
     }
 
     public String getRuoloByCF(String CF) throws SQLException {

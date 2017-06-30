@@ -4,12 +4,11 @@
     <list default="true" id="725fbaa1-ea8d-4bf4-a6fc-3c6f34d201dc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6/_metadata_/metadata" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6/_metadata_/metadata.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/52e46335-53f1-46e2-b535-63db79b72ac6.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/AttivaPersonaleController.java" afterPath="$PROJECT_DIR$/src/controller/AttivaPersonaleController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db/DBManager.java" afterPath="$PROJECT_DIR$/src/db/DBManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/vendita/elenco-medici.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/vendita/elenco-medici.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/vendita/elenco-pazienti.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/vendita/elenco-pazienti.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/javascripts/main.js" afterPath="$PROJECT_DIR$/web/assets/javascripts/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/tf/attiva-collaboratore.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/tf/attiva-collaboratore.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,59 +80,34 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home-reg.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-reg.jsp">
+      <file leaf-file-name="attiva-collaboratore.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/attiva-collaboratore.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="41" column="26" lean-forward="false" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+            <state relative-caret-position="990">
+              <caret line="66" column="8" lean-forward="false" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="REG.public.farmacia" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.farmacia">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+      <file leaf-file-name="attiva-farmacia.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/REG/attiva-farmacia.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1425">
+              <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="107" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="struts-config.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/struts-config.xml">
+      <file leaf-file-name="AttivaFarmaciaAndTFController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/AttivaFarmaciaAndTFController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+            <state relative-caret-position="465">
+              <caret line="42" column="8" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="48" selection-end-column="9" />
               <folding>
-                <element signature="n#action#9;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-                <element signature="n#action#10;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-                <element signature="n#action#11;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-                <element signature="n#action#12;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-                <element signature="n#action#13;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-                <element signature="n#action#14;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-                <element signature="n#action#15;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-                <element signature="n#action#16;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+                <element signature="imports" expanded="false" />
               </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.struts.diagram.DiagramEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Paziente.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Paziente.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -141,9 +115,23 @@
       <file leaf-file-name="DBManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/db/DBManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="289" column="61" lean-forward="false" selection-start-line="289" selection-start-column="61" selection-end-line="289" selection-end-column="61" />
+            <state relative-caret-position="727">
+              <caret line="333" column="120" lean-forward="false" selection-start-line="333" selection-start-column="120" selection-end-line="333" selection-end-column="120" />
               <folding>
+                <element signature="method#connessione#0;class#DBManager#0" expanded="false" />
+                <element signature="method#getTuttiProdotti#0;class#DBManager#0" expanded="false" />
+                <element signature="method#getIdProdottiFarmacia#0;class#DBManager#0" expanded="false" />
+                <element signature="method#getRimanenzeByIdFarmacia#0;class#DBManager#0" expanded="false" />
+                <element signature="method#getProdottiInMagazzino#0;class#DBManager#0" expanded="false" />
+                <element signature="method#getCFByUsername#0;class#DBManager#0" expanded="false" />
+                <element signature="method#setVendita#0;class#DBManager#0" expanded="false" />
+                <element signature="method#inserisciInOrdine#0;class#DBManager#0" expanded="false" />
+                <element signature="method#getIdFarmacia#0;class#DBManager#0" expanded="false" />
+                <element signature="method#validate#0;class#DBManager#0" expanded="false" />
+                <element signature="method#elencoFarmacie#0;class#DBManager#0" expanded="false" />
+                <element signature="method#getNomeFarmacia#0;class#DBManager#0" expanded="false" />
+                <element signature="method#attivaFarmaciaAndTF#0;class#DBManager#0" expanded="false" />
+                <element signature="method#attivaCollaboratore#0;class#DBManager#0" expanded="false" />
                 <element signature="method#getRuoloByCF#0;class#DBManager#0" expanded="false" />
                 <element signature="method#reintegra#0;class#DBManager#0" expanded="false" />
                 <element signature="method#inserisciInMagazzino#0;class#DBManager#0" expanded="false" />
@@ -165,127 +153,101 @@
                 <element signature="method#getNumeroDiRicette#0;class#DBManager#0" expanded="false" />
                 <element signature="method#getMediaFarmaciPerRicetta#0;class#DBManager#0" expanded="false" />
                 <element signature="method#getNomiFarmacie#0;class#DBManager#0" expanded="false" />
-                <marker date="1498840368000" expanded="true" signature="1257:1328" ph="SELECT nome,... prodotti" />
-                <marker date="1498840368000" expanded="true" signature="2345:2398" ph="SELECT id_pr... rimanenze" />
-                <marker date="1498840368000" expanded="true" signature="3103:3161" ph="SELECT qta, rimanenze" />
-                <marker date="1498840368000" expanded="true" signature="3979:4132" ph="SELECT id_pr... prodotti" />
-                <marker date="1498840368000" expanded="true" signature="5092:5127" ph="SELECT cf fr... login" />
-                <marker date="1498840368000" expanded="true" signature="6151:6227" ph="UPDATE riman... " />
-                <marker date="1498840368000" expanded="true" signature="6819:6888" ph="insert INTO ordine... " />
-                <marker date="1498840368000" expanded="true" signature="6819:6889" ph="insert INTO ordine... " />
-                <marker date="1498840368000" expanded="true" signature="6819:6905" ph="insert INTO ordine... " />
-                <marker date="1498840368000" expanded="true" signature="6819:6912" ph="insert INTO ordine... " />
-                <marker date="1498840368000" expanded="true" signature="7943:8011" ph="insert INTO contiene... " />
-                <marker date="1498840368000" expanded="true" signature="8508:8554" ph="SELECT id_fa... personale" />
-                <marker date="1498840368000" expanded="true" signature="9193:9288" ph="select ruolo... login" />
-                <marker date="1498840368000" expanded="true" signature="9863:9885" ph="select * fro... farmacia" />
-                <marker date="1498840368000" expanded="true" signature="10772:10817" ph="select nome farmacia" />
-                <marker date="1498840368000" expanded="true" signature="11360:11385" ph="SELECT nome farmacia" />
-                <marker date="1498840368000" expanded="true" signature="12047:12071" ph="SELECT cf fr... personale" />
-                <marker date="1498840368000" expanded="true" signature="12399:12491" ph="INSERT into farmacia... " />
-                <marker date="1498840368000" expanded="true" signature="12399:12513" ph="INSERT into farmacia... " />
-                <marker date="1498840368000" expanded="true" signature="13397:13492" ph="INSERT into personale... " />
-                <marker date="1498840368000" expanded="true" signature="14067:14121" ph="insert into login... " />
-                <marker date="1498840368000" expanded="true" signature="14903:14998" ph="INSERT INTO personale... " />
-                <marker date="1498840368000" expanded="true" signature="15539:15593" ph="INSERT INTO login... " />
-                <marker date="1498840368000" expanded="true" signature="16148:16186" ph="SELECT ruolo... personale" />
-                <marker date="1498840368000" expanded="true" signature="17152:17245" ph="UPDATE riman... " />
-                <marker date="1498840368000" expanded="true" signature="18333:18371" ph="INSERT into rimanenze... " />
-                <marker date="1498840368000" expanded="true" signature="18920:18942" ph="SELECT FROM paziente... " />
-                <marker date="1498840368000" expanded="true" signature="19805:19825" ph="SELECT * FRO... medico" />
-                <marker date="1498840368000" expanded="true" signature="20603:20666" ph="SELECT qta F... rimanenze" />
-                <marker date="1498840368000" expanded="true" signature="21191:21271" ph="insert into ricetta... " />
-                <marker date="1498840368000" expanded="true" signature="21866:21946" ph="INSERT INTO paziente... " />
-                <marker date="1498840368000" expanded="true" signature="22769:22896" ph="SELECT nome farmacia" />
-                <marker date="1498840368000" expanded="true" signature="23409:23463" ph="SELECT nome,... personale" />
-                <marker date="1498840368000" expanded="true" signature="24114:24149" ph="select utent... login" />
-                <marker date="1498840368000" expanded="true" signature="24518:24563" ph="SELECT nome,... personale" />
-                <marker date="1498840368000" expanded="true" signature="25195:25219" ph="SELECT utent... login" />
-                <marker date="1498840368000" expanded="true" signature="25195:25295" ph="SELECT utent... login" />
-                <marker date="1498840368000" expanded="true" signature="25691:25762" ph="INSERT INTO messaggi... " />
-                <marker date="1498840368000" expanded="true" signature="26372:26413" ph="SELECT cf FR... personale" />
-                <marker date="1498840368000" expanded="true" signature="26704:26775" ph="INSERT INTO messaggi... " />
-                <marker date="1498840368000" expanded="true" signature="27646:27683" ph="SELECT cf fr... personale" />
-                <marker date="1498840368000" expanded="true" signature="27646:27705" ph="SELECT cf fr... personale" />
-                <marker date="1498840368000" expanded="true" signature="28032:28102" ph="INSERT INTO messaggi... " />
-                <marker date="1498840368000" expanded="true" signature="28032:28103" ph="INSERT INTO messaggi... " />
-                <marker date="1498840368000" expanded="true" signature="28628:28699" ph="INSERT INTO messaggi... " />
-                <marker date="1498840368000" expanded="true" signature="29468:29494" ph="SELECT mitte... " />
-                <marker date="1498840368000" expanded="true" signature="29468:29538" ph="SELECT mitte... messaggi" />
-                <marker date="1498840368000" expanded="true" signature="30221:30275" ph="SELECT total... ordine" />
-                <marker date="1498840368000" expanded="true" signature="30803:31044" ph="SELECT COUNT... contiene" />
-                <marker date="1498840368000" expanded="true" signature="31272:31483" ph="SELECT COUNT... contiene" />
-                <marker date="1498840368000" expanded="true" signature="31862:32142" ph="SELECT sum(q... contiene" />
-                <marker date="1498840368000" expanded="true" signature="32371:32613" ph="SELECT sum(q... contiene" />
-                <marker date="1498840368000" expanded="true" signature="32999:33290" ph="SELECT sum (... contiene" />
-                <marker date="1498840368000" expanded="true" signature="33519:33782" ph="SELECT sum (... contiene" />
-                <marker date="1498840368000" expanded="true" signature="34137:34421" ph="SELECT sum (... contiene" />
-                <marker date="1498840368000" expanded="true" signature="34786:34815" ph="select count... ricetta" />
-                <marker date="1498840368000" expanded="true" signature="35193:35485" ph="select avg(q... contiene" />
-                <marker date="1498840368000" expanded="true" signature="35755:36015" ph="select avg(q... contiene" />
-                <marker date="1498840368000" expanded="true" signature="36436:36473" ph="SELECT id_fa... farmacia" />
+                <marker date="1498848092000" expanded="true" signature="1257:1328" ph="SELECT nome,... prodotti" />
+                <marker date="1498848092000" expanded="true" signature="2345:2398" ph="SELECT id_pr... rimanenze" />
+                <marker date="1498848092000" expanded="true" signature="3103:3161" ph="SELECT qta, rimanenze" />
+                <marker date="1498848092000" expanded="true" signature="3979:4132" ph="SELECT id_pr... prodotti" />
+                <marker date="1498848092000" expanded="true" signature="5092:5127" ph="SELECT cf fr... login" />
+                <marker date="1498848092000" expanded="true" signature="6151:6227" ph="UPDATE riman... " />
+                <marker date="1498848092000" expanded="true" signature="6819:6888" ph="insert INTO ordine... " />
+                <marker date="1498848092000" expanded="true" signature="6819:6889" ph="insert INTO ordine... " />
+                <marker date="1498848092000" expanded="true" signature="6819:6905" ph="insert INTO ordine... " />
+                <marker date="1498848092000" expanded="true" signature="6819:6912" ph="insert INTO ordine... " />
+                <marker date="1498848092000" expanded="true" signature="7943:8011" ph="insert INTO contiene... " />
+                <marker date="1498848092000" expanded="true" signature="8508:8554" ph="SELECT id_fa... personale" />
+                <marker date="1498848092000" expanded="true" signature="9193:9288" ph="select ruolo... login" />
+                <marker date="1498848092000" expanded="true" signature="9863:9885" ph="select * fro... farmacia" />
+                <marker date="1498848092000" expanded="true" signature="10772:10817" ph="select nome farmacia" />
+                <marker date="1498848092000" expanded="true" signature="11360:11385" ph="SELECT nome farmacia" />
+                <marker date="1498848092000" expanded="true" signature="12047:12071" ph="SELECT cf fr... personale" />
+                <marker date="1498848092000" expanded="true" signature="12399:12491" ph="INSERT into farmacia... " />
+                <marker date="1498848092000" expanded="true" signature="12399:12513" ph="INSERT into farmacia... " />
+                <marker date="1498848092000" expanded="true" signature="13397:13492" ph="INSERT into personale... " />
+                <marker date="1498848092000" expanded="true" signature="14067:14121" ph="insert into login... " />
+                <marker date="1498848092000" expanded="true" signature="14936:15031" ph="INSERT INTO personale... " />
+                <marker date="1498848092000" expanded="true" signature="15594:15648" ph="INSERT INTO login... " />
+                <marker date="1498848092000" expanded="true" signature="16303:16341" ph="SELECT ruolo... personale" />
+                <marker date="1498848092000" expanded="true" signature="17307:17400" ph="UPDATE riman... " />
+                <marker date="1498848092000" expanded="true" signature="18488:18526" ph="INSERT into rimanenze... " />
+                <marker date="1498848092000" expanded="true" signature="19075:19097" ph="SELECT FROM paziente... " />
+                <marker date="1498848092000" expanded="true" signature="19960:19980" ph="SELECT * FRO... medico" />
+                <marker date="1498848092000" expanded="true" signature="20758:20821" ph="SELECT qta F... rimanenze" />
+                <marker date="1498848092000" expanded="true" signature="21346:21426" ph="insert into ricetta... " />
+                <marker date="1498848092000" expanded="true" signature="22021:22101" ph="INSERT INTO paziente... " />
+                <marker date="1498848092000" expanded="true" signature="22924:23051" ph="SELECT nome farmacia" />
+                <marker date="1498848092000" expanded="true" signature="23564:23618" ph="SELECT nome,... personale" />
+                <marker date="1498848092000" expanded="true" signature="24269:24304" ph="select utent... login" />
+                <marker date="1498848092000" expanded="true" signature="24673:24718" ph="SELECT nome,... personale" />
+                <marker date="1498848092000" expanded="true" signature="25350:25374" ph="SELECT utent... login" />
+                <marker date="1498848092000" expanded="true" signature="25350:25450" ph="SELECT utent... login" />
+                <marker date="1498848092000" expanded="true" signature="25846:25917" ph="INSERT INTO messaggi... " />
+                <marker date="1498848092000" expanded="true" signature="26527:26568" ph="SELECT cf FR... personale" />
+                <marker date="1498848092000" expanded="true" signature="26859:26930" ph="INSERT INTO messaggi... " />
+                <marker date="1498848092000" expanded="true" signature="27801:27838" ph="SELECT cf fr... personale" />
+                <marker date="1498848092000" expanded="true" signature="27801:27860" ph="SELECT cf fr... personale" />
+                <marker date="1498848092000" expanded="true" signature="28187:28257" ph="INSERT INTO messaggi... " />
+                <marker date="1498848092000" expanded="true" signature="28187:28258" ph="INSERT INTO messaggi... " />
+                <marker date="1498848092000" expanded="true" signature="28783:28854" ph="INSERT INTO messaggi... " />
+                <marker date="1498848092000" expanded="true" signature="29623:29649" ph="SELECT mitte... " />
+                <marker date="1498848092000" expanded="true" signature="29623:29693" ph="SELECT mitte... messaggi" />
+                <marker date="1498848092000" expanded="true" signature="30376:30430" ph="SELECT total... ordine" />
+                <marker date="1498848092000" expanded="true" signature="30958:31199" ph="SELECT COUNT... contiene" />
+                <marker date="1498848092000" expanded="true" signature="31427:31638" ph="SELECT COUNT... contiene" />
+                <marker date="1498848092000" expanded="true" signature="32017:32297" ph="SELECT sum(q... contiene" />
+                <marker date="1498848092000" expanded="true" signature="32526:32768" ph="SELECT sum(q... contiene" />
+                <marker date="1498848092000" expanded="true" signature="33154:33445" ph="SELECT sum (... contiene" />
+                <marker date="1498848092000" expanded="true" signature="33674:33937" ph="SELECT sum (... contiene" />
+                <marker date="1498848092000" expanded="true" signature="34292:34576" ph="SELECT sum (... contiene" />
+                <marker date="1498848092000" expanded="true" signature="34941:34970" ph="select count... ricetta" />
+                <marker date="1498848092000" expanded="true" signature="35348:35640" ph="select avg(q... contiene" />
+                <marker date="1498848092000" expanded="true" signature="35910:36170" ph="select avg(q... contiene" />
+                <marker date="1498848092000" expanded="true" signature="36591:36628" ph="SELECT id_fa... farmacia" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nuovo-messaggio.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/messaggi/nuovo-messaggio.jsp">
+      <file leaf-file-name="AttivaPersonaleController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/AttivaPersonaleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="42" column="57" lean-forward="false" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
-              <folding />
+            <state relative-caret-position="135">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding>
+                <element signature="method#execute#0;class#AttivaPersonaleController#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckMedicoController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/CheckMedicoController.java">
+      <file leaf-file-name="struts-config.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/struts-config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-              <folding />
+            <state relative-caret-position="492">
+              <caret line="50" column="79" lean-forward="false" selection-start-line="50" selection-start-column="79" selection-end-line="50" selection-end-column="79" />
+              <folding>
+                <element signature="n#action#9;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+                <element signature="n#action#10;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+                <element signature="n#action#11;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+                <element signature="n#action#12;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+                <element signature="n#action#13;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+                <element signature="n#action#14;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+                <element signature="n#action#15;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+                <element signature="n#action#16;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="REG.public.personale" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.personale">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="REG.public.login" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.login">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/assets/javascripts/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="69" column="23" lean-forward="false" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
-              <folding />
-            </state>
+          <provider editor-type-id="com.intellij.struts.diagram.DiagramEditorProvider">
+            <state />
           </provider>
         </entry>
       </file>
@@ -346,7 +308,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/WEB-INF/REG/home-reg.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/tf/home-tf.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/farmacie.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/WrongLogin.jsp" />
@@ -374,7 +335,6 @@
         <option value="$PROJECT_DIR$/web/assets/javascripts/jquery.canvasjs.min.js" />
         <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-tf.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/home/home-reg.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/tf/attiva-collaboratore.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/footer.jspx" />
         <option value="dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.medico" />
         <option value="dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.ricetta" />
@@ -384,7 +344,6 @@
         <option value="dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.contiene" />
         <option value="dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.personale" />
         <option value="dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.ordine" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" />
         <option value="$PROJECT_DIR$/src/controller/VenditaTramiteOB.java" />
         <option value="$PROJECT_DIR$/src/controller/AttivaFarmaciaAndTFController.java" />
         <option value="dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.messaggi" />
@@ -396,7 +355,10 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/pagine-in-comune/vendita/elenco-medici.jsp" />
         <option value="$PROJECT_DIR$/web/assets/javascripts/main.js" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/52e46335-53f1-46e2-b535-63db79b72ac6/console.sql" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/tf/attiva-collaboratore.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/struts-config.xml" />
         <option value="$PROJECT_DIR$/src/db/DBManager.java" />
+        <option value="$PROJECT_DIR$/src/controller/AttivaPersonaleController.java" />
       </list>
     </option>
   </component>
@@ -416,7 +378,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="791" />
+    <option name="height" value="798" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -436,6 +398,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -744,33 +707,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="it.uniupo.REG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="it.uniupo.REG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forward" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1322,14 +1262,8 @@
       <workItem from="1497851871583" duration="1389000" />
       <workItem from="1498024146485" duration="38034000" />
       <workItem from="1498675889906" duration="7211000" />
-      <workItem from="1498715253202" duration="10346000" />
-    </task>
-    <task id="LOCAL-00001" summary="Sistemare inserimento farmacia e username, in particolare non funziona il recupero dell'id_farmacia tramite quel metodo">
-      <created>1496175910137</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1496175910137</updated>
+      <workItem from="1498715253202" duration="13108000" />
+      <workItem from="1498848820679" duration="654000" />
     </task>
     <task id="LOCAL-00002" summary="Sistemare inserimento farmacia e username, in particolare non funziona il recupero dell'id_farmacia tramite quel metodo">
       <created>1496223294774</created>
@@ -1660,14 +1594,28 @@
       <option name="project" value="LOCAL" />
       <updated>1498717499026</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Ora in attiva farmacia se si inserisce una farmacia nuova ma un personale esistente la farmacia non viene creata.&#10;Sistemato un pò il js.">
+      <created>1498840654498</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1498840654498</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Ora in attiva farmacia se si inserisce una farmacia nuova ma un personale esistente la farmacia non viene creata.&#10;Sistemato un pò il js.">
+      <created>1498842061494</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1498842061496</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="289311000" />
+    <option name="totallyTimeSpent" value="292727000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="791" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="798" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1680,22 +1628,21 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Struts Assistant" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22246066" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22246066" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3891273" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.388102" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761088" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14592275" sideWeight="0.4939952" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14589235" sideWeight="0.4939952" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904148" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761088" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26466382" sideWeight="0.48407644" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26824033" sideWeight="0.48407644" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25250357" sideWeight="0.51592356" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1704,6 +1651,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761088" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32478634" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1740,7 +1688,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Iniziata sistemazione pagina attiva collaboratore" />
     <MESSAGE value="Aggiustamenti vari css" />
     <MESSAGE value="Aggiunto su reintegra un controllo, se viene selezionata almeno una quantità allora stampa l'operazione avvenuta, se nessuna quantità selezionata stampa errore." />
     <MESSAGE value="Sistemato layout vendita per ob" />
@@ -1765,19 +1712,12 @@
     <MESSAGE value="Aggiunto messaggio quando non ci sono messaggi in arrivo" />
     <MESSAGE value="Sistemata visualizzazione del totale, ora non supere le due unità dopo la virgola" />
     <MESSAGE value="Rimosso &quot;visualizzato&quot; dal db e quindi rimosso anche ovunque fosse utilizzato." />
-    <option name="LAST_COMMIT_MESSAGE" value="Rimosso &quot;visualizzato&quot; dal db e quindi rimosso anche ovunque fosse utilizzato." />
+    <MESSAGE value="Ora in attiva farmacia se si inserisce una farmacia nuova ma un personale esistente la farmacia non viene creata.&#10;Sistemato un pò il js." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ora in attiva farmacia se si inserisce una farmacia nuova ma un personale esistente la farmacia non viene creata.&#10;Sistemato un pò il js." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/db/DBManager.java</url>
-          <line>289</line>
-          <properties />
-          <option name="timeStamp" value="143" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="144" />
+      <option name="time" value="151" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
@@ -1790,13 +1730,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/lib/struts-core.jar!/org/apache/struts/chain/ComposableRequestProcessor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/struts-core.jar!/org/apache/struts/action/ActionServlet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
@@ -2115,16 +2048,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/AttivaFarmaciaAndTFController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/InviaMessaggioController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -2137,7 +2060,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2161,7 +2083,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -2182,7 +2103,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="217" column="4" lean-forward="false" selection-start-line="217" selection-start-column="4" selection-end-line="226" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2190,9 +2110,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2200,24 +2118,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-61">
           <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/attiva-collaboratore.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="43" column="87" lean-forward="false" selection-start-line="43" selection-start-column="87" selection-end-line="43" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/REG/attiva-farmacia.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-305">
-          <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="65" />
           <folding />
         </state>
       </provider>
@@ -2234,35 +2134,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
           <caret line="69" column="23" lean-forward="false" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/struts-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-          <folding>
-            <element signature="n#action#9;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-            <element signature="n#action#10;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-            <element signature="n#action#11;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-            <element signature="n#action#12;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-            <element signature="n#action#13;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-            <element signature="n#action#14;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-            <element signature="n#action#15;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-            <element signature="n#action#16;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.struts.diagram.DiagramEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Paziente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2278,7 +2149,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -2291,6 +2161,59 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/CheckMedicoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.farmacia">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Paziente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/REG/attiva-farmacia.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="107" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/AttivaFarmaciaAndTFController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="42" column="8" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="48" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/tf/attiva-collaboratore.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="66" column="8" lean-forward="false" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -2308,32 +2231,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/CheckMedicoController.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/struts-config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="492">
+          <caret line="50" column="79" lean-forward="false" selection-start-line="50" selection-start-column="79" selection-end-line="50" selection-end-column="79" />
+          <folding>
+            <element signature="n#action#9;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+            <element signature="n#action#10;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+            <element signature="n#action#11;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+            <element signature="n#action#12;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+            <element signature="n#action#13;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+            <element signature="n#action#14;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+            <element signature="n#action#15;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+            <element signature="n#action#16;n#action-mappings#0;n#struts-config#0;n#!!top" expanded="false" />
+          </folding>
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.struts.diagram.DiagramEditorProvider">
+        <state />
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/e73f34ea/52e46335-53f1-46e2-b535-63db79b72ac6/REG.public.farmacia">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/src/controller/AttivaPersonaleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="method#execute#0;class#AttivaPersonaleController#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/db/DBManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="289" column="61" lean-forward="false" selection-start-line="289" selection-start-column="61" selection-end-line="289" selection-end-column="61" />
+        <state relative-caret-position="727">
+          <caret line="333" column="120" lean-forward="false" selection-start-line="333" selection-start-column="120" selection-end-line="333" selection-end-column="120" />
           <folding>
+            <element signature="method#connessione#0;class#DBManager#0" expanded="false" />
+            <element signature="method#getTuttiProdotti#0;class#DBManager#0" expanded="false" />
+            <element signature="method#getIdProdottiFarmacia#0;class#DBManager#0" expanded="false" />
+            <element signature="method#getRimanenzeByIdFarmacia#0;class#DBManager#0" expanded="false" />
+            <element signature="method#getProdottiInMagazzino#0;class#DBManager#0" expanded="false" />
+            <element signature="method#getCFByUsername#0;class#DBManager#0" expanded="false" />
+            <element signature="method#setVendita#0;class#DBManager#0" expanded="false" />
+            <element signature="method#inserisciInOrdine#0;class#DBManager#0" expanded="false" />
+            <element signature="method#getIdFarmacia#0;class#DBManager#0" expanded="false" />
+            <element signature="method#validate#0;class#DBManager#0" expanded="false" />
+            <element signature="method#elencoFarmacie#0;class#DBManager#0" expanded="false" />
+            <element signature="method#getNomeFarmacia#0;class#DBManager#0" expanded="false" />
+            <element signature="method#attivaFarmaciaAndTF#0;class#DBManager#0" expanded="false" />
+            <element signature="method#attivaCollaboratore#0;class#DBManager#0" expanded="false" />
             <element signature="method#getRuoloByCF#0;class#DBManager#0" expanded="false" />
             <element signature="method#reintegra#0;class#DBManager#0" expanded="false" />
             <element signature="method#inserisciInMagazzino#0;class#DBManager#0" expanded="false" />
@@ -2355,65 +2301,65 @@
             <element signature="method#getNumeroDiRicette#0;class#DBManager#0" expanded="false" />
             <element signature="method#getMediaFarmaciPerRicetta#0;class#DBManager#0" expanded="false" />
             <element signature="method#getNomiFarmacie#0;class#DBManager#0" expanded="false" />
-            <marker date="1498840368000" expanded="true" signature="1257:1328" ph="SELECT nome,... prodotti" />
-            <marker date="1498840368000" expanded="true" signature="2345:2398" ph="SELECT id_pr... rimanenze" />
-            <marker date="1498840368000" expanded="true" signature="3103:3161" ph="SELECT qta, rimanenze" />
-            <marker date="1498840368000" expanded="true" signature="3979:4132" ph="SELECT id_pr... prodotti" />
-            <marker date="1498840368000" expanded="true" signature="5092:5127" ph="SELECT cf fr... login" />
-            <marker date="1498840368000" expanded="true" signature="6151:6227" ph="UPDATE riman... " />
-            <marker date="1498840368000" expanded="true" signature="6819:6888" ph="insert INTO ordine... " />
-            <marker date="1498840368000" expanded="true" signature="6819:6889" ph="insert INTO ordine... " />
-            <marker date="1498840368000" expanded="true" signature="6819:6905" ph="insert INTO ordine... " />
-            <marker date="1498840368000" expanded="true" signature="6819:6912" ph="insert INTO ordine... " />
-            <marker date="1498840368000" expanded="true" signature="7943:8011" ph="insert INTO contiene... " />
-            <marker date="1498840368000" expanded="true" signature="8508:8554" ph="SELECT id_fa... personale" />
-            <marker date="1498840368000" expanded="true" signature="9193:9288" ph="select ruolo... login" />
-            <marker date="1498840368000" expanded="true" signature="9863:9885" ph="select * fro... farmacia" />
-            <marker date="1498840368000" expanded="true" signature="10772:10817" ph="select nome farmacia" />
-            <marker date="1498840368000" expanded="true" signature="11360:11385" ph="SELECT nome farmacia" />
-            <marker date="1498840368000" expanded="true" signature="12047:12071" ph="SELECT cf fr... personale" />
-            <marker date="1498840368000" expanded="true" signature="12399:12491" ph="INSERT into farmacia... " />
-            <marker date="1498840368000" expanded="true" signature="12399:12513" ph="INSERT into farmacia... " />
-            <marker date="1498840368000" expanded="true" signature="13397:13492" ph="INSERT into personale... " />
-            <marker date="1498840368000" expanded="true" signature="14067:14121" ph="insert into login... " />
-            <marker date="1498840368000" expanded="true" signature="14903:14998" ph="INSERT INTO personale... " />
-            <marker date="1498840368000" expanded="true" signature="15539:15593" ph="INSERT INTO login... " />
-            <marker date="1498840368000" expanded="true" signature="16148:16186" ph="SELECT ruolo... personale" />
-            <marker date="1498840368000" expanded="true" signature="17152:17245" ph="UPDATE riman... " />
-            <marker date="1498840368000" expanded="true" signature="18333:18371" ph="INSERT into rimanenze... " />
-            <marker date="1498840368000" expanded="true" signature="18920:18942" ph="SELECT FROM paziente... " />
-            <marker date="1498840368000" expanded="true" signature="19805:19825" ph="SELECT * FRO... medico" />
-            <marker date="1498840368000" expanded="true" signature="20603:20666" ph="SELECT qta F... rimanenze" />
-            <marker date="1498840368000" expanded="true" signature="21191:21271" ph="insert into ricetta... " />
-            <marker date="1498840368000" expanded="true" signature="21866:21946" ph="INSERT INTO paziente... " />
-            <marker date="1498840368000" expanded="true" signature="22769:22896" ph="SELECT nome farmacia" />
-            <marker date="1498840368000" expanded="true" signature="23409:23463" ph="SELECT nome,... personale" />
-            <marker date="1498840368000" expanded="true" signature="24114:24149" ph="select utent... login" />
-            <marker date="1498840368000" expanded="true" signature="24518:24563" ph="SELECT nome,... personale" />
-            <marker date="1498840368000" expanded="true" signature="25195:25219" ph="SELECT utent... login" />
-            <marker date="1498840368000" expanded="true" signature="25195:25295" ph="SELECT utent... login" />
-            <marker date="1498840368000" expanded="true" signature="25691:25762" ph="INSERT INTO messaggi... " />
-            <marker date="1498840368000" expanded="true" signature="26372:26413" ph="SELECT cf FR... personale" />
-            <marker date="1498840368000" expanded="true" signature="26704:26775" ph="INSERT INTO messaggi... " />
-            <marker date="1498840368000" expanded="true" signature="27646:27683" ph="SELECT cf fr... personale" />
-            <marker date="1498840368000" expanded="true" signature="27646:27705" ph="SELECT cf fr... personale" />
-            <marker date="1498840368000" expanded="true" signature="28032:28102" ph="INSERT INTO messaggi... " />
-            <marker date="1498840368000" expanded="true" signature="28032:28103" ph="INSERT INTO messaggi... " />
-            <marker date="1498840368000" expanded="true" signature="28628:28699" ph="INSERT INTO messaggi... " />
-            <marker date="1498840368000" expanded="true" signature="29468:29494" ph="SELECT mitte... " />
-            <marker date="1498840368000" expanded="true" signature="29468:29538" ph="SELECT mitte... messaggi" />
-            <marker date="1498840368000" expanded="true" signature="30221:30275" ph="SELECT total... ordine" />
-            <marker date="1498840368000" expanded="true" signature="30803:31044" ph="SELECT COUNT... contiene" />
-            <marker date="1498840368000" expanded="true" signature="31272:31483" ph="SELECT COUNT... contiene" />
-            <marker date="1498840368000" expanded="true" signature="31862:32142" ph="SELECT sum(q... contiene" />
-            <marker date="1498840368000" expanded="true" signature="32371:32613" ph="SELECT sum(q... contiene" />
-            <marker date="1498840368000" expanded="true" signature="32999:33290" ph="SELECT sum (... contiene" />
-            <marker date="1498840368000" expanded="true" signature="33519:33782" ph="SELECT sum (... contiene" />
-            <marker date="1498840368000" expanded="true" signature="34137:34421" ph="SELECT sum (... contiene" />
-            <marker date="1498840368000" expanded="true" signature="34786:34815" ph="select count... ricetta" />
-            <marker date="1498840368000" expanded="true" signature="35193:35485" ph="select avg(q... contiene" />
-            <marker date="1498840368000" expanded="true" signature="35755:36015" ph="select avg(q... contiene" />
-            <marker date="1498840368000" expanded="true" signature="36436:36473" ph="SELECT id_fa... farmacia" />
+            <marker date="1498848092000" expanded="true" signature="1257:1328" ph="SELECT nome,... prodotti" />
+            <marker date="1498848092000" expanded="true" signature="2345:2398" ph="SELECT id_pr... rimanenze" />
+            <marker date="1498848092000" expanded="true" signature="3103:3161" ph="SELECT qta, rimanenze" />
+            <marker date="1498848092000" expanded="true" signature="3979:4132" ph="SELECT id_pr... prodotti" />
+            <marker date="1498848092000" expanded="true" signature="5092:5127" ph="SELECT cf fr... login" />
+            <marker date="1498848092000" expanded="true" signature="6151:6227" ph="UPDATE riman... " />
+            <marker date="1498848092000" expanded="true" signature="6819:6888" ph="insert INTO ordine... " />
+            <marker date="1498848092000" expanded="true" signature="6819:6889" ph="insert INTO ordine... " />
+            <marker date="1498848092000" expanded="true" signature="6819:6905" ph="insert INTO ordine... " />
+            <marker date="1498848092000" expanded="true" signature="6819:6912" ph="insert INTO ordine... " />
+            <marker date="1498848092000" expanded="true" signature="7943:8011" ph="insert INTO contiene... " />
+            <marker date="1498848092000" expanded="true" signature="8508:8554" ph="SELECT id_fa... personale" />
+            <marker date="1498848092000" expanded="true" signature="9193:9288" ph="select ruolo... login" />
+            <marker date="1498848092000" expanded="true" signature="9863:9885" ph="select * fro... farmacia" />
+            <marker date="1498848092000" expanded="true" signature="10772:10817" ph="select nome farmacia" />
+            <marker date="1498848092000" expanded="true" signature="11360:11385" ph="SELECT nome farmacia" />
+            <marker date="1498848092000" expanded="true" signature="12047:12071" ph="SELECT cf fr... personale" />
+            <marker date="1498848092000" expanded="true" signature="12399:12491" ph="INSERT into farmacia... " />
+            <marker date="1498848092000" expanded="true" signature="12399:12513" ph="INSERT into farmacia... " />
+            <marker date="1498848092000" expanded="true" signature="13397:13492" ph="INSERT into personale... " />
+            <marker date="1498848092000" expanded="true" signature="14067:14121" ph="insert into login... " />
+            <marker date="1498848092000" expanded="true" signature="14936:15031" ph="INSERT INTO personale... " />
+            <marker date="1498848092000" expanded="true" signature="15594:15648" ph="INSERT INTO login... " />
+            <marker date="1498848092000" expanded="true" signature="16303:16341" ph="SELECT ruolo... personale" />
+            <marker date="1498848092000" expanded="true" signature="17307:17400" ph="UPDATE riman... " />
+            <marker date="1498848092000" expanded="true" signature="18488:18526" ph="INSERT into rimanenze... " />
+            <marker date="1498848092000" expanded="true" signature="19075:19097" ph="SELECT FROM paziente... " />
+            <marker date="1498848092000" expanded="true" signature="19960:19980" ph="SELECT * FRO... medico" />
+            <marker date="1498848092000" expanded="true" signature="20758:20821" ph="SELECT qta F... rimanenze" />
+            <marker date="1498848092000" expanded="true" signature="21346:21426" ph="insert into ricetta... " />
+            <marker date="1498848092000" expanded="true" signature="22021:22101" ph="INSERT INTO paziente... " />
+            <marker date="1498848092000" expanded="true" signature="22924:23051" ph="SELECT nome farmacia" />
+            <marker date="1498848092000" expanded="true" signature="23564:23618" ph="SELECT nome,... personale" />
+            <marker date="1498848092000" expanded="true" signature="24269:24304" ph="select utent... login" />
+            <marker date="1498848092000" expanded="true" signature="24673:24718" ph="SELECT nome,... personale" />
+            <marker date="1498848092000" expanded="true" signature="25350:25374" ph="SELECT utent... login" />
+            <marker date="1498848092000" expanded="true" signature="25350:25450" ph="SELECT utent... login" />
+            <marker date="1498848092000" expanded="true" signature="25846:25917" ph="INSERT INTO messaggi... " />
+            <marker date="1498848092000" expanded="true" signature="26527:26568" ph="SELECT cf FR... personale" />
+            <marker date="1498848092000" expanded="true" signature="26859:26930" ph="INSERT INTO messaggi... " />
+            <marker date="1498848092000" expanded="true" signature="27801:27838" ph="SELECT cf fr... personale" />
+            <marker date="1498848092000" expanded="true" signature="27801:27860" ph="SELECT cf fr... personale" />
+            <marker date="1498848092000" expanded="true" signature="28187:28257" ph="INSERT INTO messaggi... " />
+            <marker date="1498848092000" expanded="true" signature="28187:28258" ph="INSERT INTO messaggi... " />
+            <marker date="1498848092000" expanded="true" signature="28783:28854" ph="INSERT INTO messaggi... " />
+            <marker date="1498848092000" expanded="true" signature="29623:29649" ph="SELECT mitte... " />
+            <marker date="1498848092000" expanded="true" signature="29623:29693" ph="SELECT mitte... messaggi" />
+            <marker date="1498848092000" expanded="true" signature="30376:30430" ph="SELECT total... ordine" />
+            <marker date="1498848092000" expanded="true" signature="30958:31199" ph="SELECT COUNT... contiene" />
+            <marker date="1498848092000" expanded="true" signature="31427:31638" ph="SELECT COUNT... contiene" />
+            <marker date="1498848092000" expanded="true" signature="32017:32297" ph="SELECT sum(q... contiene" />
+            <marker date="1498848092000" expanded="true" signature="32526:32768" ph="SELECT sum(q... contiene" />
+            <marker date="1498848092000" expanded="true" signature="33154:33445" ph="SELECT sum (... contiene" />
+            <marker date="1498848092000" expanded="true" signature="33674:33937" ph="SELECT sum (... contiene" />
+            <marker date="1498848092000" expanded="true" signature="34292:34576" ph="SELECT sum (... contiene" />
+            <marker date="1498848092000" expanded="true" signature="34941:34970" ph="select count... ricetta" />
+            <marker date="1498848092000" expanded="true" signature="35348:35640" ph="select avg(q... contiene" />
+            <marker date="1498848092000" expanded="true" signature="35910:36170" ph="select avg(q... contiene" />
+            <marker date="1498848092000" expanded="true" signature="36591:36628" ph="SELECT id_fa... farmacia" />
           </folding>
         </state>
       </provider>

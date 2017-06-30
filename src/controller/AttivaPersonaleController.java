@@ -26,11 +26,14 @@ public class AttivaPersonaleController extends Action {
         login.setPassword(farmacia.getPassword());
 
         DBManager dbManager = new DBManager();
-        if(dbManager.attivaCollaboratore(personaleDaInserire, login,(int) request.getSession().getAttribute("id-farmacia"))) {
-            return mapping.findForward("attiva-collaboratore-ok");
+        int idFarmacia = (int) request.getSession().getAttribute("id-farmacia");
+        if(dbManager.attivaCollaboratore(personaleDaInserire, login,idFarmacia)) {
+            request.setAttribute("redirect", "inserimento-corretto");
+            return mapping.findForward("redirect");
+        } else {
+            request.setAttribute("redirect", "inserimento-errato");
+            return mapping.findForward("redirect");
         }
-        return null;
-
     }
 }
 
