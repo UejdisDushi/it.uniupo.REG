@@ -45,20 +45,30 @@ function nuovaRiga() {
     var riga = tabella.insertRow(numerodiRighe);
     var cella1 = riga.insertCell(0);
     var t1 = document.createElement("input");
-        t1.name = "cf";
-        cella1.appendChild(t1);
+    t1.name = "cf";
+    t1.placeholder="CF paziente";
+    t1.required="true";
+    cella1.appendChild(t1);
     var cella2 = riga.insertCell(1);
     var t2 = document.createElement("input");
-        t2.name = "nome";
-        cella2.appendChild(t2);
+    t2.name = "nome";
+    t2.placeholder="Nome paziente";
+    t2.required="true";
+    cella2.appendChild(t2);
     var cella3 = riga.insertCell(2);
     var t3 = document.createElement("input");
-        t3.name = "cognome";
-        cella3.appendChild(t3);
+    t3.name = "cognome";
+    t3.placeholder="Cognome paziente";
+    t3.required="true";
+    cella3.appendChild(t3);
     var cella4 = riga.insertCell(3);
     var t4 = document.createElement("input");
-        t4.name = "dataDiNAscita";
-        cella4.appendChild(t4);
+    t4.name = "dataDiNAscita";
+    t4.classid = "form-control";
+    t4.placeholder = "aaaa-MM-dd";
+    t4.type = "date";
+    t4.required="true";
+    cella4.appendChild(t4);
     var cella5 = riga.insertCell(4);
     var t5 = document.createElement("select");
     var option1 = document.createElement( "option" );
@@ -71,5 +81,4 @@ function nuovaRiga() {
     cella5.appendChild(t5);
 
     $("#nuovoPaziente").hide();
-
 }

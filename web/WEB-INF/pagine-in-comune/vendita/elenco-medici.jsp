@@ -16,6 +16,10 @@
 
 <body>
 
+<div class="head">
+    <img src="/assets/images/logo.png">
+</div>
+
 
 <input type="text" id="cercaPerNome" onkeyup="cercaPerNome()" placeholder="Cerca per codice regionale.." title="Type in a name">
 <form action="termina-operazione.do" method="post">
@@ -60,8 +64,17 @@
     </table>
     <br>
     <br>
-    <input value="Termina operazione" type="submit">
+    <input value="Termina operazione" type="submit" style="margin-left: 589px">
 </form>
+
+<footer id="footer">
+    <section class="text">
+        <p>
+            Design & production Copyright 2017 by Uejdis Dushi.
+        </p>
+    </section>
+    <br>
+</footer>
 
 <%
     String message = (String)request.getAttribute("redirect");

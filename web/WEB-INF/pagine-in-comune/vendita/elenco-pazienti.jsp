@@ -63,10 +63,11 @@
     </table>
     <br>
     <br>
-    <input value="Check Medico" type="submit">
+        <input value="Check Medico" type="submit" style="margin-left: 624px">
 </form>
 
-<button onclick="nuovaRiga()" id="nuovoPaziente">Inserisci nuovo paziente</button>
+<button onclick="nuovaRiga()" id="nuovoPaziente" style="margin-left:616px;font-weight: bold;letter-spacing: 2px;font-size: 16px;text-transform: uppercase;border: none;color:white;padding:12px 18px 8px 18px;background:#4CAF50;border-radius: 5px;font-family: 'League Spartan'" >Nuovo paziente</button>
+
 
 <footer id="footer">
     <section class="text">

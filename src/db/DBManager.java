@@ -278,6 +278,18 @@ public class DBManager {
 
         if(farmaciePresenti.contains(farmacia.getNomeFarmacia())) return false;
 
+        //prendo l'elenco del personale presente, se sto cercando di inserirne uno con CF
+        //uguale allora faccio saltare tutto, questo perchè se inserisco una nuova farmacia
+        //ma un personale già esistente la farmacia viene creata lo stesso per come è scritto il metodo
+        ArrayList<String> elencoPersonalePresente = new ArrayList<>();
+        PreparedStatement elencoPersonale = connection.prepareStatement("SELECT cf from personale");
+        ResultSet perso = elencoPersonale.executeQuery();
+        while (perso.next())
+            elencoPersonalePresente.add(perso.getString(1));
+
+        if(elencoPersonalePresente.contains(personale.getCf())) return false;
+
+
         try {
             PreparedStatement inserimentoFarmacia = connection.prepareStatement("INSERT into farmacia(nome, cap, citta, numero_telefono, provincia, via) VALUES (?,?,?,?,?,?) returning id_farmacia", PreparedStatement.RETURN_GENERATED_KEYS);
             inserimentoFarmacia.setString(1, farmacia.getNomeFarmacia());
