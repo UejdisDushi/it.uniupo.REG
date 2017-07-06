@@ -6,6 +6,8 @@ import model.*;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.sql.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -698,6 +700,32 @@ public class DBManager {
         return resultSet.getInt(1);
     }
 
+    public int getNumeroComplessivoAcquistiByRange(int idFarmacia,Date dataDa, Date dataA) throws SQLException, ParseException {
+        if(connection == null)
+            this.connessione();
+
+        PreparedStatement totale;
+        if(idFarmacia != 0) {
+            totale = connection.prepareStatement("SELECT COUNT ( DISTINCT contiene.numero_ordine) FROM contiene " +
+                    "JOIN ordine ON contiene.numero_ordine = ordine.numero_ordine " +
+                    "JOIN personale ON ordine.utente = personale.cf where id_farmacia = ? and data_ordine BETWEEN ? and ?");
+            totale.setInt(1,idFarmacia);
+            totale.setDate(2, dataDa);
+            totale.setDate(3, dataA);
+            ResultSet resultSet = totale.executeQuery();
+            resultSet.next();
+            return resultSet.getInt(1);
+        }
+        totale = connection.prepareStatement("SELECT COUNT ( DISTINCT contiene.numero_ordine) FROM contiene " +
+                "JOIN ordine ON contiene.numero_ordine = ordine.numero_ordine " +
+                "JOIN personale ON ordine.utente = personale.cf WHERE data_ordine BETWEEN ? and ?");
+        totale.setDate(1, dataDa);
+        totale.setDate(2, dataA);
+        ResultSet resultSet = totale.executeQuery();
+        resultSet.next();
+        return resultSet.getInt(1);
+    }
+
     public int getNumeroPezziVenduti(int idFarmacia) throws SQLException {
         if(connection == null)
             this.connessione();
@@ -720,6 +748,32 @@ public class DBManager {
         return resultSet.getInt(1);
     }
 
+    public int getNumeroPezziVendutiByRange(int idFarmacia, Date dataDa, Date dataA) throws ParseException, SQLException {
+        if(connection == null)
+            this.connessione();
+
+        PreparedStatement totale;
+        if(idFarmacia != 0) {
+            totale = connection.prepareStatement("SELECT sum(qta) from contiene join ordine ON " +
+                    "contiene.numero_ordine = ordine.numero_ordine join personale on ordine.utente = personale.cf  " +
+                    "join farmacia on personale.id_farmacia = farmacia.id_farmacia where personale.id_farmacia=? and data_ordine BETWEEN ? and ?");
+            totale.setInt(1, idFarmacia);
+            totale.setDate(2, dataDa);
+            totale.setDate(3, dataA);
+            ResultSet resultSet = totale.executeQuery();
+            resultSet.next();
+            return resultSet.getInt(1);
+        }
+        totale = connection.prepareStatement("SELECT sum(qta) from contiene join ordine ON " +
+                "contiene.numero_ordine = ordine.numero_ordine join personale on ordine.utente = personale.cf  " +
+                "join farmacia on personale.id_farmacia = farmacia.id_farmacia WHERE data_ordine BETWEEN ? and ?");
+        totale.setDate(1, dataDa);
+        totale.setDate(2, dataA);
+        ResultSet resultSet = totale.executeQuery();
+        resultSet.next();
+        return resultSet.getInt(1);
+    }
+
     public int getNumeroDiFarmaciConRicetta(int idFarmacia) throws SQLException {
         if(connection == null)
             this.connessione();
@@ -737,6 +791,32 @@ public class DBManager {
         totale = connection.prepareStatement("SELECT sum ( contiene.qta) FROM contiene JOIN prodotti " +
                 "ON contiene.id_prodotto = prodotti.id JOIN ordine on contiene.numero_ordine = ordine.numero_ordine " +
                 "join personale ON ordine.utente = personale.cf where ricetta = TRUE");
+        ResultSet resultSet = totale.executeQuery();
+        resultSet.next();
+        return resultSet.getInt(1);
+    }
+
+    public int getNumeroDiFarmaciConRicettaByRange(int idFarmacia, Date dataDa, Date dataA) throws SQLException, ParseException {
+        if(connection == null)
+            this.connessione();
+
+        PreparedStatement totale;
+        if(idFarmacia != 0) {
+            totale = connection.prepareStatement("SELECT sum ( contiene.qta) FROM contiene JOIN prodotti " +
+                    "ON contiene.id_prodotto = prodotti.id JOIN ordine on contiene.numero_ordine = ordine.numero_ordine " +
+                    "join personale ON ordine.utente = personale.cf where ricetta = TRUE and id_farmacia = ? and data_ordine BETWEEN ? and ?");
+            totale.setInt(1, idFarmacia);
+            totale.setDate(2, dataDa);
+            totale.setDate(3, dataA);
+            ResultSet resultSet = totale.executeQuery();
+            resultSet.next();
+            return resultSet.getInt(1);
+        }
+        totale = connection.prepareStatement("SELECT sum ( contiene.qta) FROM contiene JOIN prodotti " +
+                "ON contiene.id_prodotto = prodotti.id JOIN ordine on contiene.numero_ordine = ordine.numero_ordine " +
+                "join personale ON ordine.utente = personale.cf where ricetta = TRUE and data_ordine BETWEEN ? and ?");
+        totale.setDate(1, dataDa);
+        totale.setDate(2, dataA);
         ResultSet resultSet = totale.executeQuery();
         resultSet.next();
         return resultSet.getInt(1);
@@ -810,6 +890,9 @@ public class DBManager {
 
         return elenco;
     }
+
+
+
 }
 
 

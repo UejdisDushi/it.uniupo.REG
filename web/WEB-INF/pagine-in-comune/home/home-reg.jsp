@@ -1,8 +1,10 @@
 <%@ page import="db.DBManager" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="model.Farmacia" %>
+<%@ page import="model.Grafici" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
+
 <html>
 <head>
     <title>Home REG</title>
@@ -17,6 +19,7 @@
 <%
     DBManager dbManager = new DBManager();
     ArrayList<Farmacia> elencoNomiFarmacie = dbManager.getNomiFarmacie();
+    Grafici data = (Grafici) request.getAttribute("grafici");
 %>
 
 <script type="text/javascript">
@@ -39,11 +42,13 @@
                         indexLabel: "{name}: {y}",
                         dataPoints: [
                             <%
-                            for(Farmacia fa:elencoNomiFarmacie) {
+                            for(Farmacia fa:elencoNomiFarmacie) { if(data == null) {
                             %>
                             {  y: <%=dbManager.getNumeroComplessivoAcquisti(fa.getIdFarmacia())%>, name: "<%=dbManager.getNomeFarmacia(fa.getIdFarmacia())%>"},
-                            <%}%>
-                            ]
+                            <%} else {%>
+                            {  y: <%=dbManager.getNumeroComplessivoAcquistiByRange(fa.getIdFarmacia(),data.getDa(), data.getA())%>, name: "<%=dbManager.getNomeFarmacia(fa.getIdFarmacia())%>"},
+                            <%}}%>
+                        ]
                     }
                 ]
             });
@@ -67,10 +72,12 @@
                         indexLabel: "{name}: {y}",
                         dataPoints: [
                             <%
-                                for(Farmacia fa:elencoNomiFarmacie) {
+                                for(Farmacia fa:elencoNomiFarmacie) { if(data == null) {
                                 %>
                             {  y: <%=dbManager.getNumeroPezziVenduti(fa.getIdFarmacia())%>, name: "<%=dbManager.getNomeFarmacia(fa.getIdFarmacia())%>"},
-                            <%}%>
+                            <%} else {%>
+                            {  y: <%=dbManager.getNumeroPezziVendutiByRange(fa.getIdFarmacia(), data.getDa(),data.getA())%>, name: "<%=dbManager.getNomeFarmacia(fa.getIdFarmacia())%>"},
+                            <%}}%>
                         ]
                     }
                 ]
@@ -94,7 +101,14 @@
 
     <h1 class="bentornato-custom">Bentornato <span>REG</span></h1>
 
+<form action="grafici-per-range.do" method="post">
+    <label style="margin-left: 430px;display: inline">Da: </label><input type="date" name="da" class="form-control" required placeholder="aaaa-MM-dd" pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])" style="width: 200px;margin: auto;display:inline;">
+    <label style="margin-left: 102px">A: </label><input type="date" name="a" class="form-control" required placeholder="aaaa-MM-dd" pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])" style="width: 200px;margin: auto;display:inline;">
+    <br><br>
+    <input value="Elabora" type="submit" style="margin-left: 655px">
+</form>
 <br>
+
 <div id="grafici">
 <div id="TotVendite" style="height: 300px; width: 70%;margin:auto"></div>
 <br><br><br>

@@ -1,10 +1,11 @@
 <%@ page import="db.DBManager" %>
 <%@ page import="model.Login" %>
+<%@ page import="model.Grafici" %>
+<%@ page import="java.sql.Date" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
 <html>
 <head>
-
     <title>Home <%= ((Login)request.getSession().getAttribute("login")).getUser()%></title> <!--bentornato ....!-->
     <link rel="stylesheet" href="/assets/stylesheets/css.css">
     <script type="application/javascript" src="assets/javascripts/main.js"></script>
@@ -17,6 +18,18 @@
     DBManager dbManager = new DBManager();
     int idFarmacia = (int)request.getSession().getAttribute("id-farmacia");
     String anagrafica = dbManager.getNomeECognomeByCf(dbManager.getCFByUsername(((Login)request.getSession().getAttribute("login")).getUser()));
+    Grafici data = (Grafici) request.getAttribute("grafici");
+    int numCompl, totPezzi, farmVenduti;
+    if(data == null) {
+        numCompl = dbManager.getNumeroComplessivoAcquisti(idFarmacia);
+        totPezzi = dbManager.getNumeroPezziVenduti(idFarmacia);
+        farmVenduti = dbManager.getNumeroDiFarmaciConRicetta(idFarmacia);
+    }
+    else {
+        numCompl = dbManager.getNumeroComplessivoAcquistiByRange(idFarmacia, data.getDa(), data.getA());
+        totPezzi = dbManager.getNumeroPezziVendutiByRange(idFarmacia,data.getDa(), data.getA());
+        farmVenduti = dbManager.getNumeroDiFarmaciConRicettaByRange(idFarmacia,data.getDa(), data.getA());
+    }
 %>
 
 <script type="text/javascript">
@@ -38,14 +51,13 @@
                         toolTipContent: "{name}: <strong>{y}</strong>",
                         indexLabel: "{name}: {y}",
                         dataPoints: [
-                            {  y: <%=dbManager.getNumeroComplessivoAcquisti(idFarmacia)%>, name: "<%=dbManager.getNomeFarmacia(idFarmacia)%>", exploded: true},
+                            {  y: <%=numCompl%>, name: "<%=dbManager.getNomeFarmacia(idFarmacia)%>", exploded: true},
                             {  y: <%=dbManager.getNumeroComplessivoAcquisti(0)%>, name: "Totale"}
                         ]
                     }
                 ]
             });
         chart.render();
-
         var chart = new CanvasJS.Chart("TotPezzi",
             {
                 title:{
@@ -63,14 +75,13 @@
                         toolTipContent: "{name}: <strong>{y}</strong>",
                         indexLabel: "{name}: {y}",
                         dataPoints: [
-                            {  y: <%=dbManager.getNumeroPezziVenduti(idFarmacia)%>, name: "<%=dbManager.getNomeFarmacia(idFarmacia)%>", exploded: true, color:"#4CAF50"},
+                            {  y: <%=totPezzi%>, name: "<%=dbManager.getNomeFarmacia(idFarmacia)%>", exploded: true, color:"#4CAF50"},
                             {  y: <%=dbManager.getNumeroPezziVenduti(0)%>, name: "Totale", color:"#2196F3"}
                         ]
                     }
                 ]
             });
         chart.render();
-
         var chart = new CanvasJS.Chart("farmaci-ricetta",
             {
                 title:{
@@ -88,7 +99,7 @@
                         toolTipContent: "{name}: <strong>{y}</strong>",
                         indexLabel: "{name}: {y}",
                         dataPoints: [
-                            {  y: <%=dbManager.getNumeroDiFarmaciConRicetta(idFarmacia)%>, name: "Con ricetta", exploded: true, color:"#f44336"},
+                            {  y: <%=farmVenduti%>, name: "Con ricetta", exploded: true, color:"#f44336"},
                             {  y: <%=dbManager.getNumeroDiFarmaciSenzaRicetta(idFarmacia)%>, name: "Senza ricetta", color:"#555"}
                         ]
                     }
@@ -114,14 +125,22 @@
 </div>
 
 <h1 class="bentornato-custom">Bentornato <%=anagrafica%></h1>
+
+
+<form action="grafici-per-range.do" method="post">
+    <label style="margin-left: 430px;display: inline">Da: </label><input type="date" name="da" class="form-control" required placeholder="aaaa-MM-dd" pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])" style="width: 200px;margin: auto;display:inline;">
+    <label style="margin-left: 102px">A: </label><input type="date" name="a" class="form-control" required placeholder="aaaa-MM-dd" pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])" style="width: 200px;margin: auto;display:inline;">
+    <br><br>
+    <input value="Elabora" type="submit" style="margin-left: 655px">
+</form>
 <br>
 
 <div id="grafici">
-<div id="TotVendite" style="height: 300px; width: 70%;margin:auto"></div>
-<br><br><br>
-<div id="TotPezzi" style="height: 300px; width: 70%;margin:auto"></div>
-<br><br><br>
-<div id="farmaci-ricetta" style="height: 300px; width: 70%;margin:auto"></div>
+    <div id="TotVendite" style="height: 300px; width: 70%;margin:auto"></div>
+    <br><br><br>
+    <div id="TotPezzi" style="height: 300px; width: 70%;margin:auto"></div>
+    <br><br><br>
+    <div id="farmaci-ricetta" style="height: 300px; width: 70%;margin:auto"></div>
 </div>
 
 
