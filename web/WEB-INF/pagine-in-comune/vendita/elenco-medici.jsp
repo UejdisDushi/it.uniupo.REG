@@ -79,13 +79,12 @@
 <%
     String message = (String)request.getAttribute("redirect");
     if(message != null) {
-        if(message.equals("medico-non-selezionato")) { %>
-<script>
-    window.alert('Attenzione, nessuna medico selezionato. Riprova.');
-</script>
-<%}}
-%>
-
+        switch (message) {
+            case "medico-non-selezionato": { %>
+<script>        window.alert('Attenzione, nessuna medico selezionato. Riprova.'); </script>
+<%break;}   case "piu-medici": { %>
+<script>        window.alert('Attenzione, è stato selezionato più di un medico. Riprova.');</script>
+<%}}}%>
 </body>
 
 </html>

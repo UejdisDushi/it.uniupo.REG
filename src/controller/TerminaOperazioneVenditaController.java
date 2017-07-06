@@ -33,6 +33,16 @@ public class TerminaOperazioneVenditaController extends Action {
             return mapping.findForward("redirect");
         }
 
+        //check per verificare che non venga selezionato più di un medico
+        int piuMedici = 0;
+        for(int i = 0;i<medici.length;i++)
+            if(medici[i].equals("Si")) piuMedici++;
+
+        if(piuMedici > 1) {
+            request.setAttribute("redirect", "piu-medici");
+            return mapping.findForward("redirect");
+        }
+
         Double totale = dbManager.getTotaleByIdOrdine(idOrdine);
         request.setAttribute("totale", totale.toString());
         return mapping.findForward("termina-vendita");
