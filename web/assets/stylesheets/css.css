@@ -4,7 +4,6 @@
 
 html {
     font-family: "League Spartan";
-
 }
 
 body {
@@ -16,10 +15,11 @@ body {
     position: fixed;
     top: 15%;
     width: 18%;
-    bottom: auto;
+    bottom: auto;       /*distanza da basso*/
 }
 
 #mySidenav a {
+    /*a è un link*/
     position: absolute;
     left: -170px;
     transition: 0.3s;
@@ -28,10 +28,11 @@ body {
     text-decoration: none;
     font-size: 20px;
     color: white;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0; /*sono i bordi, se arrotondarli o no*/
 }
 
 #mySidenav a:hover {
+    /*hover quando vado sopra con il mouse*/
     left: 0;
 }
 
@@ -68,15 +69,12 @@ body {
 #sette {
     top:380px;
     background-color: #ff9933;
-
 }
-
-
 
 #cercaPerNome {
     background-image: url('/assets/images/icona-ricerca.png');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
+    background-position: 10px 10px;     /*dove posizionare immagine*/
+    background-repeat: no-repeat;       /*non ripete l'immagine*/
     width: 1300px;
     font-size: 16px;
     padding: 12px 20px 12px 40px;
@@ -86,7 +84,7 @@ body {
 }
 
 #tabella {
-    border-collapse: collapse;
+    border-collapse: collapse;      /*i bordi collassano in un unico bordo*/
     width: 1300px;
     margin:auto;
     border: 1px solid #ddd;
@@ -96,15 +94,14 @@ body {
 #tabella th, #tabella td {
     text-align: left;
     padding: 12px;
-
 }
 
 #tabella tr {
     border-bottom: 1px solid #ddd;
-    border-radius: 5px;
 }
 
 #tabella tr.header, #tabella tr:hover {
+    /*quando passo sopra con il mouse lo coloro di grigio*/
     background-color: #f1f1f1;
 }
 
@@ -115,15 +112,13 @@ body {
     text-align: center;
     position: fixed;
     bottom: 0;
-    padding: 15px;
+    padding: 15px;              /*genero lo spazio attorno al contenuto*/
     background-color: white;
     color: silver;
     font-size: 11px;
     font-family:"Lucida Grande";
     margin-left: 38px;
 }
-
-
 
 .elencoFarmacie {
     margin:48px auto;
@@ -133,9 +128,8 @@ body {
     border: 3px #4CAF50 solid;
     border-bottom: none;
     padding-top: 60px;
-    box-shadow: 0 0 25px #4CAF50;
+    box-shadow: 0 0 25px #4CAF50;       /*creo ombreggiatura attorno al contenuto*/
 }
-
 
 .elencoMessaggi {
     margin:48px auto;
@@ -161,9 +155,12 @@ body {
 }
 
 ul {
-    list-style-type: none;
+    /*ul crea le classiche liste*/
+    list-style-type: none;      /*tolgo ogni stile all'elemento della lista*/
 }
+
 .nome{
+    /*lo uso nel nome delle farmacie*/
     color: #2c72af;
     font-weight: bold;
 }
@@ -195,7 +192,7 @@ form.login{
 
 form.login h1{
     font-family:"League Spartan";
-    margin:1em auto;
+    margin:1em auto;        /*(1em means 1 times the size of the current font) */
 }
 
 form.login input {
@@ -205,7 +202,6 @@ form.login input {
 input[type=text],input[type=password]{
     font-family:"Lucida Grande";
     color:#5c6f56;
-    /*padding:12px 200px 12px 18px;*/
     border:1px solid rgba(0,0,0,0.12);
     height: 30px;
     width: 250px;
@@ -220,7 +216,7 @@ input[type="submit"]{
     letter-spacing: 2px;
     font-size: 16px;
     text-transform: uppercase;
-    border: none;		/*testarlo*/
+    border: none;
     color:white;
     padding:12px 18px 8px 18px;
     background:#4CAF50;
@@ -245,27 +241,24 @@ input[type="submit"]{
     margin-top: 60px;
 }
 
-input {
-    border-radius: 5px;
-}
-
-
-
 h2,h3 {
     text-align: center;
 }
 
 .bentornato {
+    /*lo uso per la scritta iniziale nelle home*/
     text-align: center;
     margin-top: 270px;
 }
 
 .bentornato-custom {
+    /*è la versione custum di quello di sopra, perchè sotto ho poi le statistiche*/
     text-align: center;
     margin-top: 130px;
 }
+
 p {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5em;       /*(1.5em means 1.5 times the size of the current font) */
 }
 
 label {
@@ -273,10 +266,12 @@ label {
 }
 
 .left {
+    /*lo uso quando spezzo in due il container per attiva farmacia and tf*/
     width: 50%;
     float:left;
 }
 .right {
+    /*lo uso quando spezzo in due il container per attiva farmacia and tf*/
     width: 50%;
     float:left;
 }
@@ -292,12 +287,14 @@ label {
 }
 
 input:focus {
+    /*focus quando pigio quella roba e aggiungo effetti*/
     border-color: #4CAF50;
     outline: 0;
     box-shadow: 0 0 10px #4CAF50;
 }
 
 .form-control {
+    /*è lo style degli input form*/
     display: block;
     width: 100%;
     height: 34px;
@@ -318,7 +315,7 @@ button.accordion {
     width: 600px;
     border: none;
     text-align: left;
-    outline: none;
+    outline: none;          /*attorno al contenuto non ci metto nulla*/
     font-size: 15px;
     transition: 0.4s;
     border-radius: 5px;
@@ -329,7 +326,8 @@ button.accordion.active, button.accordion:hover {
 }
 
 button.accordion:after {
-    content: '\002B';
+    /*inserisce qualcosa dopo il contenuto con after, quindi dopo "Da" e "Data" inserisco il +*/
+    content: '\002B';       /*aggiungo il +*/
     color: #777;
     font-weight: bold;
     float: right;
@@ -337,7 +335,7 @@ button.accordion:after {
 }
 
 button.accordion.active:after {
-    content: "\2212";
+    content: "\2212";       /*inserisco il meno dopo aver cliccato sul +*/
 }
 
 div.corpo {
@@ -345,7 +343,7 @@ div.corpo {
     background-color: white;
     max-height: 0;
     width: 600px;
-    overflow: hidden;
+    overflow: hidden;       /*nascondo il contenuto dell'elemento se non ci sta nello spazio che ho deciso*/
     transition: max-height 0.2s ease-out;
     margin-left: 46px;
 }

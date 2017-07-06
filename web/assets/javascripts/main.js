@@ -1,18 +1,18 @@
-function deleteSelectRole()
-{
+function deleteSelectRole(){
     document.getElementById("def").style.display="none";
 }
 
 function cercaPerNome() {
     var input, filter, table, tr, td, i;
     input = document.getElementById("cercaPerNome");
-    filter = input.value.toUpperCase();
+    filter = input.value.toUpperCase();     //converta la stringa in input in uppercase
     table = document.getElementById("tabella");
-    tr = table.getElementsByTagName("tr");
+    tr = table.getElementsByTagName("tr");      //tr riga, th colonna, td cella
     for (i = 0; i < tr.length; i++) {
         td = tr[i].getElementsByTagName("td")[0];
+        //nascondo le righe che non metchano l'input
         if (td) {
-            if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {      //innerHTML ottengo il valore di quell'elemento, indexOf ottengo l'indice dell'elemento cercato
                 tr[i].style.display = "";
             } else {
                 tr[i].style.display = "none";
@@ -28,16 +28,15 @@ function mostraCorpo() {
     for (i = 0; i < acc.length; i++) {
         acc[i].onclick = function() {
             this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight){
-                panel.style.maxHeight = null;
+            var panel = this.nextElementSibling;    //prossimo fratello della lista
+            if (panel.style.maxHeight){     //controlla dimensione massima del div
+                panel.style.maxHeight = null;       //imposta il div a null
             } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
+                panel.style.maxHeight = panel.scrollHeight + "px";  //ottiene altezza e larhezza dell'elemento e gli aggiunge px, poi lo assegna
             }
         }
     }
 }
-
 
 function nuovaRiga() {
     var tabella = document.getElementById("tabella");
