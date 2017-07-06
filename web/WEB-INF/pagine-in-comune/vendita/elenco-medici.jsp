@@ -1,7 +1,7 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="db.DBManager" %>
-<%@ page import="model.Paziente" %>
 <%@ page import="model.Medico" %>
+<%@ page import="model.Login" %>
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
@@ -20,7 +20,6 @@
     <img src="/assets/images/logo.png">
 </div>
 
-
 <input type="text" id="cercaPerNome" onkeyup="cercaPerNome()" placeholder="Cerca per codice regionale.." title="Type in a name">
 <form action="termina-operazione.do" method="post">
     <table id="tabella">
@@ -34,6 +33,15 @@
         </tr>
         <%
             DBManager dbManager = new DBManager();
+            if(dbManager.getRuoloByCF(dbManager.getCFByUsername(((Login)request.getSession().getAttribute("login")).getUser())).equals("ob")) {
+                response.sendRedirect("/login.jsp");
+                return;
+            }
+            if(dbManager.getRuoloByCF(dbManager.getCFByUsername(((Login)request.getSession().getAttribute("login")).getUser())).equals("")) {
+                response.sendRedirect("/login.jsp");
+                return;
+            }
+
             ArrayList<Medico> elencoMedici = dbManager.getMedici();
             for(int i = 0;i < elencoMedici.size();i++) {
         %>

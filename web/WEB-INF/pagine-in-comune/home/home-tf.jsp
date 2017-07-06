@@ -16,6 +16,11 @@
 
 <%
     DBManager dbManager = new DBManager();
+    if(!dbManager.getRuoloByCF(dbManager.getCFByUsername(((Login)request.getSession().getAttribute("login")).getUser())).equals("tf")) {
+        response.sendRedirect("/login.jsp");
+        return;
+    }
+
     int idFarmacia = (int)request.getSession().getAttribute("id-farmacia");
     String anagrafica = dbManager.getNomeECognomeByCf(dbManager.getCFByUsername(((Login)request.getSession().getAttribute("login")).getUser()));
     Grafici data = (Grafici) request.getAttribute("grafici");
@@ -135,8 +140,8 @@
 </form>
 <br>
 
-<div id="grafici" style="z-index: -1;position: relative">
-    <div id="TotVendite" style="height: 300px; width: 70%;margin:auto"></div>
+<div id="grafici">
+    <div id="TotVendite" style="height: 300px; width: 70%;margin:auto;"></div>
     <br><br><br>
     <div id="TotPezzi" style="height: 300px; width: 70%;margin:auto"></div>
     <br><br><br>

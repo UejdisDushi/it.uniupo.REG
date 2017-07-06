@@ -3,6 +3,7 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html" %>
+
 <html>
 <head>
     <title>Nuovo messaggio</title>
@@ -22,11 +23,15 @@
     <html:link action="/logout" styleId="quattro">Log Out</html:link>
 </div>
 <%
+    if(request.getSession().getAttribute("login") == null) {
+        response.sendRedirect("/login.jsp");
+        return;
+    }
     DBManager dbManager = new DBManager();
-    String cf = dbManager.getCFByUsername(((Login)request.getSession().getAttribute("login")).getUser());
+    String cf = dbManager.getCFByUsername(((Login) request.getSession().getAttribute("login")).getUser());
     String ruolo = dbManager.getRuoloByCF(cf);
-    int idFarmacia = (int)request.getSession().getAttribute("id-farmacia");
-    ArrayList<String> elencoNominativi = dbManager.getElencoPerMessaggi(ruolo,idFarmacia,cf);
+    int idFarmacia = (int) request.getSession().getAttribute("id-farmacia");
+    ArrayList<String> elencoNominativi = dbManager.getElencoPerMessaggi(ruolo, idFarmacia, cf);
 %>
 <div class="container">
     <div class="row">

@@ -2,6 +2,7 @@
 <%@ page import="model.Prodotti" %>
 <%@ page import="model.Rimanenze" %>
 <%@ page import="db.DBManager" %>
+<%@ page import="model.Login" %>
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
@@ -13,12 +14,7 @@
     <title>Vendita</title>
 </head>
 
-
-
-
 <body>
-
-
 
 <div class="head">
     <img src="/assets/images/logo.png">
@@ -31,7 +27,6 @@
     <a href="mailto: uejdis.dushi@gmail.com" id="quattro">Contattaci</a>
     <html:link action="/logout" styleId="cinque">Log Out</html:link>
 </div>
-
 
 <input type="text" id="cercaPerNome" onkeyup="cercaPerNome()" placeholder="Cerca per nome.." title="Type in a name">
 <form action="/vendita-prodotti-per-ob.do" method="post">
@@ -47,14 +42,15 @@
         </tr>
         <%
             DBManager dbManager = new DBManager();
+            if(!dbManager.getRuoloByCF(dbManager.getCFByUsername(((Login)request.getSession().getAttribute("login")).getUser())).equals("ob")) {
+                response.sendRedirect("/login.jsp");
+                return;
+            }
             int idFarmacia = (int)request.getSession().getAttribute("id-farmacia");
-            //ArrayList<Rimanenze> magazzinoDellaFarmacia = dbManager.getRimanenzeByIdFarmacia(idFarmacia);
             ArrayList<Prodotti> prodotti = dbManager.getProdottiInMagazzino(idFarmacia);
-
             for(int i = 0;i < prodotti.size();i++) {
                 if(prodotti.get(i).isRicetta() == false){
         %>
-
 
         <tr>
             <td>
@@ -80,9 +76,7 @@
             </td>
         </tr>
         <% }} %>
-
     </table>
-
 </form>
 
 <footer id="footer">
@@ -93,7 +87,6 @@
     </section>
     <br>
 </footer>
-
 
 <%
     String message = (String)request.getAttribute("redirect");

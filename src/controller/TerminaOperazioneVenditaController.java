@@ -22,16 +22,6 @@ public class TerminaOperazioneVenditaController extends Action {
 
         boolean nonSelezionato = true;
         String[] medici = request.getParameterValues("medico");
-        for(int i = 0;i<medici.length;i++)
-            if(medici[i].equals("Si")) {
-                nonSelezionato = false;
-                if(dbManager.setRicetta(elencoMedici.get(i).getCodiceRegionale(),cfPaziente,idOrdine)){}
-            }
-
-        if(nonSelezionato) {
-            request.setAttribute("redirect", "medico-non-selezionato");
-            return mapping.findForward("redirect");
-        }
 
         //check per verificare che non venga selezionato più di un medico
         int piuMedici = 0;
@@ -40,6 +30,17 @@ public class TerminaOperazioneVenditaController extends Action {
 
         if(piuMedici > 1) {
             request.setAttribute("redirect", "piu-medici");
+            return mapping.findForward("redirect");
+        }
+
+        for(int i = 0;i<medici.length;i++)
+            if(medici[i].equals("Si")) {
+                nonSelezionato = false;
+                if(dbManager.setRicetta(elencoMedici.get(i).getCodiceRegionale(),cfPaziente,idOrdine)){}
+            }
+
+        if(nonSelezionato) {
+            request.setAttribute("redirect", "medico-non-selezionato");
             return mapping.findForward("redirect");
         }
 

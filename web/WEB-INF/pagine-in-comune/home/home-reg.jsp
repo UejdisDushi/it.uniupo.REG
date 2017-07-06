@@ -2,6 +2,7 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="model.Farmacia" %>
 <%@ page import="model.Grafici" %>
+<%@ page import="model.Login" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
 
@@ -18,6 +19,10 @@
 
 <%
     DBManager dbManager = new DBManager();
+    if(!dbManager.getRuoloByCF(dbManager.getCFByUsername(((Login)request.getSession().getAttribute("login")).getUser())).equals("")) {
+        response.sendRedirect("/login.jsp");
+        return;
+    }
     ArrayList<Farmacia> elencoNomiFarmacie = dbManager.getNomiFarmacie();
     Grafici data = (Grafici) request.getAttribute("grafici");
 %>
@@ -109,7 +114,7 @@
 </form>
 <br>
 
-<div id="grafici" style="z-index: -1;position: relative">
+<div id="grafici">
 <div id="TotVendite" style="height: 300px; width: 70%;margin:auto"></div>
 <br><br><br>
 <div id="TotPezzi" style="height: 300px; width: 70%;margin:auto"></div>

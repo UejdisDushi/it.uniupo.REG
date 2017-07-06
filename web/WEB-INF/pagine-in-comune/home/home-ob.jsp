@@ -26,6 +26,10 @@
 
 <%
     DBManager dbManager = new DBManager();
+    if(!dbManager.getRuoloByCF(dbManager.getCFByUsername(((Login)request.getSession().getAttribute("login")).getUser())).equals("ob")) {
+        response.sendRedirect("/login.jsp");
+        return;
+    }
     String anagrafica = dbManager.getNomeECognomeByCf(dbManager.getCFByUsername(((Login)request.getSession().getAttribute("login")).getUser()));
 %>
 <h1 class="bentornato">Bentornato <%=anagrafica%></h1>

@@ -1,3 +1,5 @@
+<%@ page import="db.DBManager" %>
+<%@ page import="model.Login" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html" %>
 <html>
@@ -5,9 +7,16 @@
     <meta charset="utf-8">
     <title>Attiva farmacia</title>
     <link rel="stylesheet" href="/assets/stylesheets/css.css">
-
 </head>
 <body>
+
+<%
+    DBManager db = new DBManager();
+    if(!db.getRuoloByCF(db.getCFByUsername(((Login)request.getSession().getAttribute("login")).getUser())).equals("")) {
+        response.sendRedirect("/login.jsp");
+        return;
+    }
+%>
 
 <div class="head">
     <img src="/assets/images/logo.png">

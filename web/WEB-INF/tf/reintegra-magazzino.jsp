@@ -1,6 +1,7 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="model.Prodotti" %>
 <%@ page import="db.DBManager" %>
+<%@ page import="model.Login" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="html" uri="http://struts.apache.org/tags-html" %>
 <html>
@@ -11,7 +12,13 @@
 </head>
 <body>
 
-
+<%
+    DBManager db = new DBManager();
+    if(!db.getRuoloByCF(db.getCFByUsername(((Login)request.getSession().getAttribute("login")).getUser())).equals("tf")) {
+        response.sendRedirect("/login.jsp");
+        return;
+    }
+%>
 
 <div class="head">
     <img src="/assets/images/logo.png">

@@ -1,6 +1,7 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="db.DBManager" %>
 <%@ page import="model.Paziente" %>
+<%@ page import="model.Login" %>
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
@@ -19,7 +20,6 @@
     <img src="/assets/images/logo.png">
 </div>
 
-
 <input type="text" id="cercaPerNome" onkeyup="cercaPerNome()" placeholder="Cerca per codice fiscale.." title="Type in a name">
 <form action="/check-medico.do" method="post">
     <table id="tabella">
@@ -33,6 +33,15 @@
         </tr>
         <%
             DBManager dbManager = new DBManager();
+            if(dbManager.getRuoloByCF(dbManager.getCFByUsername(((Login)request.getSession().getAttribute("login")).getUser())).equals("ob")) {
+                response.sendRedirect("/login.jsp");
+                return;
+            }
+            if(dbManager.getRuoloByCF(dbManager.getCFByUsername(((Login)request.getSession().getAttribute("login")).getUser())).equals("")) {
+                response.sendRedirect("/login.jsp");
+                return;
+            }
+
             ArrayList<Paziente> elencoPazienti = dbManager.getPazienti();
             for(int i = 0;i < elencoPazienti.size();i++) {
         %>
@@ -67,7 +76,6 @@
 </form>
 
 <button onclick="nuovaRiga()" id="nuovoPaziente" style="margin-left:616px;font-weight: bold;letter-spacing: 2px;font-size: 16px;text-transform: uppercase;border: none;color:white;padding:12px 18px 8px 18px;background:#4CAF50;border-radius: 5px;font-family: 'League Spartan'" >Nuovo paziente</button>
-
 
 <footer id="footer">
     <section class="text">

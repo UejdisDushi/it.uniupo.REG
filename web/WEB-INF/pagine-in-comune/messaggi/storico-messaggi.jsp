@@ -15,6 +15,7 @@
 <div class="head">
     <img src="/assets/images/logo.png">
 </div>
+
 <div id="mySidenav" class="sidenav">
     <html:link action="/forwardToHome" styleId="uno">Home</html:link>
     <html:link action="/forwardToNuovoMessaggio" styleId="due">Nuovo messaggio</html:link>
@@ -22,10 +23,13 @@
     <html:link action="/logout" styleId="quattro">Log Out</html:link>
 </div>
 
-
-
 <div class="elencoMessaggi">
     <%
+        if(request.getSession().getAttribute("login") == null) {
+            response.sendRedirect("/login.jsp");
+            return;
+        }
+
         DBManager dbManager = new DBManager();
         ArrayList<Messaggio> elencoMessaggi = dbManager.getMessaggiDaLeggere(((Login)request.getSession().getAttribute("login")).getUser());
         if(elencoMessaggi.size()==0) {%>
