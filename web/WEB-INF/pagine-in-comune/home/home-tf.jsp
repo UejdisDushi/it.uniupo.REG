@@ -135,7 +135,7 @@
 </form>
 <br>
 
-<div id="grafici">
+<div id="grafici" style="z-index: -1;position: relative">
     <div id="TotVendite" style="height: 300px; width: 70%;margin:auto"></div>
     <br><br><br>
     <div id="TotPezzi" style="height: 300px; width: 70%;margin:auto"></div>
