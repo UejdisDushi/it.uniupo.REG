@@ -33,7 +33,16 @@ public class CheckMedicoController extends Action {
         if(nessunPaziente) {
             request.setAttribute("redirect", "nessun-paziente");
             return mapping.findForward("redirect");
+        }
 
+        //check per verificare che non venga selezionato più di un paziente
+        int piuPazienti = 0;
+        for(int i = 0;i<clienti.length;i++)
+            if(clienti[i].equals("Si")) piuPazienti++;
+
+        if(piuPazienti > 1) {
+            request.setAttribute("redirect", "piu-pazienti");
+            return mapping.findForward("redirect");
         }
 
 

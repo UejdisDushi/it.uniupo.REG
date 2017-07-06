@@ -81,16 +81,13 @@
 <%
     String message = (String)request.getAttribute("redirect");
     if(message != null) {
-        if(message.equals("nessun-paziente")) { %>
-<script>
-    window.alert('Attenzione, nessuna paziente selezionato. Riprova.');
-</script>
-<%} else {
-%>
-<script>
-    window.alert('Attenzione, non è possibile inserire un paziente già presente.');
-</script>
-<% }}%>
+        switch (message) {
+            case "nessun-paziente": { %>
+<script>        window.alert('Attenzione, nessuna paziente selezionato. Riprova.');</script>
+<%break;}   case "paziente-già-registrato": {%>
+<script>        window.alert('Attenzione, non è possibile inserire un paziente già presente.');</script>
+<%break;}   case "piu-pazienti": {%>
+<script>        window.alert('Attenzione, non è possibile selezionare più di un paziente.');</script>
+<%break;}}}%>
 </body>
-
 </html>
