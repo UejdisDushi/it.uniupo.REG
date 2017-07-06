@@ -338,6 +338,15 @@ public class DBManager {
             this.connessione();
 
         boolean status = false;
+
+        ArrayList<String> elencoUtenti = new ArrayList<>();
+        PreparedStatement utente = connection.prepareStatement("SELECT utente from login");
+        ResultSet ris = utente.executeQuery();
+        while (ris.next())
+            elencoUtenti.add(ris.getString(1));
+
+        if(elencoUtenti.contains(login.getUser())) return false;
+
         PreparedStatement preparedStatement1;
         PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO personale(nome, cognome, cf, data_nascita, ruolo, id_farmacia) VALUES (?,?,?,?,?,?)");
         preparedStatement.setString(1, personaleDaInserire.getNomePersonale());
