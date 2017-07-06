@@ -900,8 +900,6 @@ public class DBManager {
         return elenco;
     }
 
-
-
 }
 
 

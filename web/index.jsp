@@ -3,6 +3,7 @@
 <%@ page import="model.Farmacia" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
+
 <html>
 <head>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -15,10 +16,10 @@
     <img src="/assets/images/logo.png">
 </div>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="/login.jsp" id="uno">Log In</a>
-        <a href="mailto: uejdis.dushi@gmail.com" id="due">Contattaci</a>
-    </div>
+<div id="mySidenav" class="sidenav">
+    <a href="/login.jsp" id="uno">Log In</a>
+    <a href="mailto: uejdis.dushi@gmail.com" id="due">Contattaci</a>
+</div>
 
 <div class="elencoFarmacie">
     <%

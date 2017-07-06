@@ -73,7 +73,7 @@
                 <%=dbManager.getQTAInMagazzino(idFarmacia, prodotti.get(i).getId())%>
             </td>
             <td>
-                <input type="number" min="0" name="quantita">
+                <input type="number" min="0" name="quantita" class="form-control">
             </td>
             <td>
                 <input img src="/assets/images/icona-carrello.png" type="image" value="submit">

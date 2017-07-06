@@ -25,16 +25,16 @@
             <forward name="home-df" path="/WEB-INF/pagine-in-comune/home/home-df.jsp"></forward>
         </action>
 
-        <action path="/vendita-prodotti-per-ob" type="controller.VenditaTramiteOB" name="rimanenze">
+        <action path="/vendita-prodotti-per-ob" type="controller.VenditaTramiteOB">
             <forward name="redirect" path="/WEB-INF/ob/vendita-tramite-ob.jsp"></forward>
         </action>
 
-        <action path="/check-medico" type="controller.CheckMedicoController" name="paziente">
+        <action path="/check-medico" type="controller.CheckMedicoController" name="paziente" scope="request">
             <forward name="elenco-medici" path="/WEB-INF/pagine-in-comune/vendita/elenco-medici.jsp"></forward>
             <forward name="redirect" path="/WEB-INF/pagine-in-comune/vendita/elenco-pazienti.jsp"></forward>
         </action>
 
-        <action path="/invia-messaggio" type="controller.InviaMessaggioController" name="messaggio">
+        <action path="/invia-messaggio" type="controller.InviaMessaggioController" name="messaggio" scope="request">
             <forward name="redirect" path="/WEB-INF/pagine-in-comune/messaggi/nuovo-messaggio.jsp"></forward>
         </action>
 
@@ -43,20 +43,20 @@
             <forward name="termina-vendita" path="/WEB-INF/pagine-in-comune/vendita/vendita.jsp"></forward>
         </action>
 
-        <action path="/vendita" type="controller.VenditaController" name="rimanenze">
+        <action path="/vendita" type="controller.VenditaController">
             <forward name="acquisto-con-ricetta" path="/WEB-INF/pagine-in-comune/vendita/elenco-pazienti.jsp"></forward>
             <forward name="redirect" path="/WEB-INF/pagine-in-comune/vendita/vendita.jsp"></forward>
         </action>
 
-        <action path="/attiva-collaboratore" type="controller.AttivaPersonaleController" name="attiva-collaboratore">
+        <action path="/attiva-collaboratore" type="controller.AttivaPersonaleController" name="attiva-collaboratore" scope="request">
             <forward name="redirect" path="/WEB-INF/tf/attiva-collaboratore.jsp"></forward>
         </action>
 
-        <action path="/reintegra-magazzino" type="controller.ReintegraMagazzinoController" name="rimanenze">
+        <action path="/reintegra-magazzino" type="controller.ReintegraMagazzinoController">
             <forward name="redirect" path="/WEB-INF/tf/reintegra-magazzino.jsp"></forward>
         </action>
 
-        <action path="/attiva-farmacia" type="controller.AttivaFarmaciaAndTFController" name="inserimentoFarmaciaAndTF">
+        <action path="/attiva-farmacia" type="controller.AttivaFarmaciaAndTFController" name="inserimentoFarmaciaAndTF" scope="request">
             <forward name="redirect" path="/WEB-INF/REG/attiva-farmacia.jsp"></forward>
         </action>
 
@@ -65,7 +65,6 @@
             <forward name="home-tf" path="/WEB-INF/pagine-in-comune/home/home-tf.jsp"></forward>
         </action>
 
-        <!--qui gestisco tutti i forward alle pagine dentro web-inf!-->
         <action path="/forwardToAttivaFarmacia" type="controller.forward.ForwardAttivaFarmacia">
             <forward name="attiva-farmacia" path="/WEB-INF/REG/attiva-farmacia.jsp" />
         </action>
