@@ -1,0 +1,4 @@
+INSERT INTO public.messaggi (id_messaggio, mittente, ricevente, corpo, data) VALUES (1, 'REG', 'PippoBaudo', 'Ciao Farmacie da REG', '2017-07-06');
+INSERT INTO public.messaggi (id_messaggio, mittente, ricevente, corpo, data) VALUES (2, 'REG', 'MarcoBianco', 'Ciao Farmacie da REG', '2017-07-06');
+INSERT INTO public.messaggi (id_messaggio, mittente, ricevente, corpo, data) VALUES (3, 'PippoBaudo', 'AntonioMarrone', 'Ciao Antonio Marrone, da TF', '2017-07-06');
+INSERT INTO public.messaggi (id_messaggio, mittente, ricevente, corpo, data) VALUES (5, 'MarcoBianco', 'REG', 'Ciao REG, sono Marco Bianco.', '2017-07-06');

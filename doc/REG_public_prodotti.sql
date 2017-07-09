@@ -1,0 +1,4 @@
+INSERT INTO public.prodotti (id, nome, categoria, costo, principio_attivo, qta, ricetta) VALUES (1, 'Oki Task', 'Bustine', 4.99, 'Ketoprofene sale di lisina', 10, false);
+INSERT INTO public.prodotti (id, nome, categoria, costo, principio_attivo, qta, ricetta) VALUES (2, 'Pentacolo 800', 'Compresse', 2.59, 'Mesalazina', 60, true);
+INSERT INTO public.prodotti (id, nome, categoria, costo, principio_attivo, qta, ricetta) VALUES (3, 'Oki', 'Bustine', 3.99, 'Ketoprofene sale di lisina', 20, false);
+INSERT INTO public.prodotti (id, nome, categoria, costo, principio_attivo, qta, ricetta) VALUES (4, 'Topster', 'Cannule', 2, 'Beclometasone', 25, true);

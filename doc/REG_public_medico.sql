@@ -1,0 +1,2 @@
+INSERT INTO public.medico (codice_regionale, nome, cognome, cf, data_nascita) VALUES (1, 'Giovanni', 'Canavero', 'QSTPLM90L11200P', '1967-05-01');
+INSERT INTO public.medico (codice_regionale, nome, cognome, cf, data_nascita) VALUES (2, 'Elsa', 'Barnabino', 'ASDLKJ80P24390F', '1958-11-11');

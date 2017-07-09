@@ -1,0 +1,4 @@
+INSERT INTO public.personale (nome, cognome, cf, data_nascita, ruolo, id_farmacia) VALUES ('Pippo', 'Baudo', 'LLLFFF00E02Z100K', '1993-02-05', 'tf', 1);
+INSERT INTO public.personale (nome, cognome, cf, data_nascita, ruolo, id_farmacia) VALUES ('Antonio', 'Marrone', 'DSHTYR93E02Z100K', '1997-09-09', 'ob', 1);
+INSERT INTO public.personale (nome, cognome, cf, data_nascita, ruolo, id_farmacia) VALUES ('Marco', 'Bianco', 'UUIBNM03E02Z100L', '1987-01-01', 'tf', 2);
+INSERT INTO public.personale (nome, cognome, cf, data_nascita, ruolo, id_farmacia) VALUES ('Alessandro', 'Niccolini', 'EEEKKK88E03F999L', '1991-01-02', 'df', 2);

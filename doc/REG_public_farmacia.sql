@@ -1,0 +1,2 @@
+INSERT INTO public.farmacia (id_farmacia, nome, cap, citta, numero_telefono, provincia, via) VALUES (1, 'Ravera', '13100', 'Vercelli', '0161 250672', 'VC', 'Corso Liberta 176');
+INSERT INTO public.farmacia (id_farmacia, nome, cap, citta, numero_telefono, provincia, via) VALUES (2, 'Comunale 1', '13100', 'Vercelli', '0161 257007', 'VC', 'Corso Liberta  11');
